@@ -16,11 +16,9 @@ handles.setup = function()
 		return
 	end
 
-	local config = vim.fn.expand('~/.github-handles.json')
-	if vim.fn.filereadable(config) == 0 then
+	if not has_keywords then
 		return
 	end
-	local addresses = vim.fn.json_decode(vim.fn.readfile(config))
 
 	local source = {}
 
@@ -29,26 +27,41 @@ handles.setup = function()
 	end
 
 	source.get_trigger_characters = function()
-		return { '@' }
+		return { ' ', '&', '{' }
 	end
 
 	source.get_keyword_pattern = function()
 		-- Add dot to existing keyword characters (\k).
-		return [[\%(\k\|\.\)\+]]
+		-- return [[\%(\k\|\.\)\+]]
+	end
+
+	local function validateInput(input, prefix)
+		for indx, char in ipairs(source.get_trigger_characters()) do
+			if (vim.startswith(input, char) or
+				vim.startswith(input, char) or
+				vim.startswith(input, char)) and
+				(prefix == char or
+				prefix == char or
+				prefix == char) then
+				return true
+			end
+		end
+		return false
 	end
 
 	source.complete = function(self, request, callback)
 		local input = string.sub(request.context.cursor_before_line, request.offset - 1)
 		local prefix = string.sub(request.context.cursor_before_line, 1, request.offset - 1)
 
-		if vim.startswith(input, '@') and (prefix == '@' or vim.endswith(prefix, ' @')) then
+		if validateInput(input, prefix) then
+		-- if vim.startswith(input, '@') and prefix == '@' then
 			local items = {}
-			for handle, address in pairs(addresses) do
+			for handle, address in pairs(keywords) do
 				table.insert(items, {
-					filterText = handle .. ' ' .. address,
-					label = address,
+					filterText = handle .. ' ' .. keywords,
+					label = keywords,
 					textEdit = {
-						newText = address,
+						newText = keywords,
 						range = {
 							start = {
 								line = request.context.cursor.row - 1,

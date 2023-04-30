@@ -1,6 +1,16 @@
 -- Custom nvim-cmp source for GitHub handles.
 local registered = false
 local has_keywords, keywords = pcall(require,"cmp-abl.keywords")
+local defaults = {
+  keyword_length = 3,
+  keyword_pattern = [[\%(-\?\d\+\%(\.\d\+\)\?\|\h\%(\w\|á\|Á\|é\|É\|í\|Í\|ó\|Ó\|ú\|Ú\)*\%(-\%(\w\|á\|Á\|é\|É\|í\|Í\|ó\|Ó\|ú\|Ú\)*\)*\)]],
+  get_bufnrs = function()
+    return { vim.api.nvim_get_current_buf() }
+  end,
+  indexing_batch_size = 1000,
+  indexing_interval = 100,
+  max_indexed_line_length = 1024 * 40,
+}
 
 if registered then
 	return
@@ -27,57 +37,42 @@ end
 -- 	return { ' ', '&', '{' }
 -- end
 
-source.get_keyword_pattern = function()
-	-- Add dot to existing keyword characters (\k).
-	return [[\%(-\?\d\+\%(\.\d\+\)\?\|\h\%(\w\|á\|Á\|é\|É\|í\|Í\|ó\|Ó\|ú\|Ú\)*\%(-\%(\w\|á\|Á\|é\|É\|í\|Í\|ó\|Ó\|ú\|Ú\)*\)*\)]]
+source._validate_options = function(_, params)
+	local opts = vim.tbl_deep_extend('keep', params.option, defaults)
+	vim.validate({
+		keyword_length = { opts.keyword_length, 'number' },
+		keyword_pattern = { opts.keyword_pattern, 'string' },
+		get_bufnrs = { opts.get_bufnrs, 'function' },
+		indexing_batch_size = { opts.indexing_batch_size, 'number' },
+		indexing_interval = { opts.indexing_interval, 'number' },
+	})
+	return opts
 end
 
--- local function validateInput(input, prefix)
--- 	for indx, char in ipairs(source.get_trigger_characters()) do
--- 		if (vim.startswith(input, char) or
--- 			vim.startswith(input, char) or
--- 			vim.startswith(input, char)) and
--- 			(prefix == char or
--- 			prefix == char or
--- 			prefix == char) then
--- 			return true
--- 		end
--- 	end
--- 	return false
--- end
+source.get_keyword_pattern = function(self, params)
+	local opts = self:_validate_options(params)
+	return opts.keyword_pattern
+end
+
 
 source.complete = function(self, request, callback)
 	local input = string.sub(request.context.cursor_before_line, request.offset - 1)
 	local prefix = string.sub(request.context.cursor_before_line, 1, request.offset - 1)
+	local opts = self:_validate_options(request)
 
-	-- if validateInput(input, prefix) then
-		-- if vim.startswith(input, '@') and prefix == '@' then
-		local items = {}
-		for handle, keyword in pairs(keywords) do
-			table.insert(items, {
-				label = string.format("%s", keyword),
-			})
-		end
-		callback {
-			items = items,
-			isIncomplete = true,
-		}
+	local items = {}
+	for handle, keyword in pairs(keywords) do
+		table.insert(items, {
+			label = string.format("%s", keyword),
+		})
+	end
+	callback {
+		items = items,
+		isIncomplete = true,
+	}
 	-- else
 	-- 	callback({isIncomplete = true})
 	-- end
 end
-
--- cmp.setup.filetype('gitcommit', {
-	--   sources = cmp.config.sources({
-		--     { name = 'luasnip' },
-		--     { name = 'buffer' },
-		--     { name = 'calc' },
-		--     { name = 'emoji' },
-		--     { name = 'path' },
-		--
-		--     -- My custom sources.
-		--     { name = 'handles' }, -- GitHub handles; eg. @wincent → Greg Hurrell <wincent@github.com>
-		--   }),
-		-- })
 
 return source

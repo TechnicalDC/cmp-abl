@@ -23,34 +23,34 @@ source.new = function()
 	return setmetatable({}, {__index = source})
 end
 
-source.get_trigger_characters = function()
-	return { ' ', '&', '{' }
-end
+-- source.get_trigger_characters = function()
+-- 	return { ' ', '&', '{' }
+-- end
 
 source.get_keyword_pattern = function()
 	-- Add dot to existing keyword characters (\k).
-	-- return [[\%(\k\|\.\)\+]]
+	return [[\%(-\?\d\+\%(\.\d\+\)\?\|\h\%(\w\|á\|Á\|é\|É\|í\|Í\|ó\|Ó\|ú\|Ú\)*\%(-\%(\w\|á\|Á\|é\|É\|í\|Í\|ó\|Ó\|ú\|Ú\)*\)*\)]]
 end
 
-local function validateInput(input, prefix)
-	for indx, char in ipairs(source.get_trigger_characters()) do
-		if (vim.startswith(input, char) or
-			vim.startswith(input, char) or
-			vim.startswith(input, char)) and
-			(prefix == char or
-			prefix == char or
-			prefix == char) then
-			return true
-		end
-	end
-	return false
-end
+-- local function validateInput(input, prefix)
+-- 	for indx, char in ipairs(source.get_trigger_characters()) do
+-- 		if (vim.startswith(input, char) or
+-- 			vim.startswith(input, char) or
+-- 			vim.startswith(input, char)) and
+-- 			(prefix == char or
+-- 			prefix == char or
+-- 			prefix == char) then
+-- 			return true
+-- 		end
+-- 	end
+-- 	return false
+-- end
 
 source.complete = function(self, request, callback)
 	local input = string.sub(request.context.cursor_before_line, request.offset - 1)
 	local prefix = string.sub(request.context.cursor_before_line, 1, request.offset - 1)
 
-	if validateInput(input, prefix) then
+	-- if validateInput(input, prefix) then
 		-- if vim.startswith(input, '@') and prefix == '@' then
 		local items = {}
 		for handle, keyword in pairs(keywords) do
@@ -62,9 +62,9 @@ source.complete = function(self, request, callback)
 			items = items,
 			isIncomplete = true,
 		}
-	else
-		callback({isIncomplete = true})
-	end
+	-- else
+	-- 	callback({isIncomplete = true})
+	-- end
 end
 
 -- cmp.setup.filetype('gitcommit', {

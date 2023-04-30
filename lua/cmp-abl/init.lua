@@ -53,24 +53,10 @@ source.complete = function(self, request, callback)
 	if validateInput(input, prefix) then
 		-- if vim.startswith(input, '@') and prefix == '@' then
 		local items = {}
-		for handle, address in pairs(keywords) do
+		for handle, keyword in pairs(keywords) do
 			table.insert(items, {
-				filterText = handle .. ' ' .. keywords,
-				label = keywords,
-				textEdit = {
-					newText = keywords,
-					range = {
-						start = {
-							line = request.context.cursor.row - 1,
-							character = request.context.cursor.col - 1 - #input,
-						},
-						['end'] = {
-						line = request.context.cursor.row - 1,
-						character = request.context.cursor.col - 1,
-					},
-				},
-			},
-		})
+				label = keyword,
+			})
 		end
 		callback {
 			items = items,

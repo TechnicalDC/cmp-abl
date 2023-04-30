@@ -55,7 +55,7 @@ source.complete = function(self, request, callback)
 		local items = {}
 		for handle, keyword in pairs(keywords) do
 			table.insert(items, {
-				label = keyword,
+				label = string.format("%s", keyword),
 			})
 		end
 		callback {

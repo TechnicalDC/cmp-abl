@@ -33,9 +33,9 @@ source.new = function()
 	return setmetatable({}, {__index = source})
 end
 
--- source.get_trigger_characters = function()
--- 	return { ' ', '&', '{' }
--- end
+source.get_trigger_characters = function()
+	return { '.', '&' }
+end
 
 source._validate_options = function(_, params)
 	local opts = vim.tbl_deep_extend('keep', params.option, defaults)
@@ -64,15 +64,13 @@ source.complete = function(self, request, callback)
 	for handle, keyword in pairs(keywords) do
 		table.insert(items, {
 			label = string.format("%s", keyword),
+			kind = cmp.lsp.CompletionItemKind.Keyword,
 		})
 	end
 	callback {
 		items = items,
 		isIncomplete = true,
 	}
-	-- else
-	-- 	callback({isIncomplete = true})
-	-- end
 end
 
 return source

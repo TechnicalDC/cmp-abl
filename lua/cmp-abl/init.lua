@@ -65,6 +65,10 @@ source.complete = function(self, request, callback)
 		table.insert(items, {
 			label = string.format("%s", keyword.label),
 			kind = cmp.lsp.CompletionItemKind.Keyword,
+			documentation = {
+				kind = "markdown",
+				value = string.format("# %s", keyword.documentation)
+			}
 		})
 	end
 	callback {

@@ -1505,7 +1505,7 @@ local keywords = {
 	},
 	{
 		label = "day",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = "Evaluates a date expression and returns a day of the month as an INTEGER value from 1 to 31, inclusive.",
 	},
 	{

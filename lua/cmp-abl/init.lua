@@ -63,7 +63,7 @@ source.complete = function(self, request, callback)
 	local items = {}
 	for handle, keyword in pairs(keywords) do
 		table.insert(items, {
-			label = string.format("%s", handle.label),
+			label = string.format("%s", keyword.label),
 			kind = cmp.lsp.CompletionItemKind.Keyword,
 		})
 	end

@@ -13,7 +13,7 @@ local keywords = {
 	},
 	{
 		label = "&global-define",
-		documentation = "&global-define"
+		documentation = "Globally defines a compile-time constant (preprocessor name)."
 	},
 	{
 		label = "&if",
@@ -21,11 +21,11 @@ local keywords = {
 	},
 	{
 		label = "&message",
-		documentation = "&message"
+		documentation = "Displays a message at compile time in the Compiler Messages dialog box."
 	},
 	{
 		label = "&scoped-define",
-		documentation = "&scoped-define"
+		documentation = "Defines a compile-time constant (preprocessor name) non-globally."
 	},
 	{
 		label = "&then",
@@ -69,7 +69,7 @@ local keywords = {
 	},
 	{
 		label = "absolute",
-		documentation = "absolute"
+		documentation = "Returns the absolute value of a numeric value."
 	},
 	{
 		label = "abstract",
@@ -81,11 +81,11 @@ local keywords = {
 	},
 	{
 		label = "accum",
-		documentation = "accum"
+		documentation = "Returns the value of an aggregate expression that is calculated by an ACCUMULATE or aggregate phrase of a DISPLAY statement."
 	},
 	{
 		label = "accumulate",
-		documentation = "accumulate"
+		documentation = "Calculates one or more aggregate values of an expression during the iterations of a block. Use the ACCUM function to access the result of this accumulation."
 	},
 	{
 		label = "active-form",
@@ -126,6 +126,10 @@ local keywords = {
 	{
 		label = "add-index-field",
 		documentation = "add-index-field"
+	},
+	{
+		label = "add-interval",
+		documentation = "Adds a time interval to, or subtracts a time interval from, a DATE, DATETIME, or DATETIME-TZ value, and returns the new value."
 	},
 	{
 		label = "add-last",
@@ -197,7 +201,7 @@ local keywords = {
 	},
 	{
 		label = "ambiguous",
-		documentation = "ambiguous"
+		documentation = "Returns a TRUE value if the last FIND statement for a particular record found more than one record that met the specified index criteria."
 	},
 	{
 		label = "analyze",
@@ -205,7 +209,7 @@ local keywords = {
 	},
 	{
 		label = "and",
-		documentation = "and"
+		documentation = "Returns a TRUE value if each logical expression is TRUE."
 	},
 	{
 		label = "ansi-only",
@@ -237,7 +241,7 @@ local keywords = {
 	},
 	{
 		label = "apply",
-		documentation = "apply"
+		documentation = "Applies an event to a widget or procedure."
 	},
 	{
 		label = "appserver-info",
@@ -277,7 +281,7 @@ local keywords = {
 	},
 	{
 		label = "assign",
-		documentation = "assign"
+		documentation = "Moves data previously placed in the screen buffer by a data input statement or moves data specified within the ASSIGN statement by an expression to the corresponding fields and variables in the record buffer."
 	},
 	{
 		label = "asynchronous",
@@ -293,7 +297,7 @@ local keywords = {
 	},
 	{
 		label = "at",
-		documentation = "at"
+		documentation = "The AT phrase of the Format phrase allows explicit positioning of frame objects, either by row and column or by pixels. The AT phrase of the Frame phrase allows explicit positioning of frames with windows or parent frames."
 	},
 	{
 		label = "attached-pairlist",
@@ -309,7 +313,7 @@ local keywords = {
 	},
 	{
 		label = "audit-enabled",
-		documentation = "audit-enabled"
+		documentation = "Determines whether a connected database is audit-enabled."
 	},
 	{
 		label = "audit-event-context",
@@ -369,7 +373,7 @@ local keywords = {
 	},
 	{
 		label = "available",
-		documentation = "available"
+		documentation = "Returns a TRUE value if the record buffer you name contains a record and returns a FALSE value if the record buffer is empty. When you use the FIND statement or the FOR EACH statement to find a record, the AVM reads that record from the database into a record buffer. This record buffer has the same name as the file used by the FIND or FOR EACH statement, unless you specify otherwise. The CREATE statement creates a new record in a record buffer."
 	},
 	{
 		label = "available-formats",
@@ -377,7 +381,7 @@ local keywords = {
 	},
 	{
 		label = "average",
-		documentation = "average"
+		documentation = "Calculates the average of all of the values of the expression in a break group and the average of all of the values of the expression in all break groups. "
 	},
 	{
 		label = "avg",
@@ -425,11 +429,11 @@ local keywords = {
 	},
 	{
 		label = "begins",
-		documentation = "begins"
+		documentation = "Tests a character expression to see if that expression begins with a second character expression. "
 	},
 	{
 		label = "bell",
-		documentation = "bell"
+		documentation = "Causes the terminal to make a beep sound."
 	},
 	{
 		label = "between",
@@ -465,7 +469,7 @@ local keywords = {
 	},
 	{
 		label = "block-level",
-		documentation = "block-level"
+		documentation = "Use this statement in a procedure (.p) or class (.cls) file to change the default ON ERROR directive to UNDO, THROW for all blocks that have a default error directive associated with them. (A simple DO block, for example, does not have default error handling and is not affected by this statement.). The default ON ERROR directive is either UNDO, LEAVE or UNDO, RETRY, depending on the block type. The statement must come before any executable or DEFINE statements in a file. However, it can come either before or after a USING statement. "
 	},
 	{
 		label = "border-bottom-chars",
@@ -525,7 +529,7 @@ local keywords = {
 	},
 	{
 		label = "buffer-compare",
-		documentation = "buffer-compare"
+		documentation = "Performs a bulk comparison of two records (source and target) by comparing source and target fields of the same name for equality and storing the result in a field. "
 	},
 	{
 		label = "buffer-copy",
@@ -533,7 +537,7 @@ local keywords = {
 	},
 	{
 		label = "buffer-create",
-		documentation = "buffer-create"
+		documentation = "Creates a dynamic buffer object."
 	},
 	{
 		label = "buffer-delete",
@@ -542,6 +546,10 @@ local keywords = {
 	{
 		label = "buffer-field",
 		documentation = "buffer-field"
+	},
+	{
+		label = "buffer-group-id",
+		documentation = "Returns the group ID (as an integer) of the tenant group to which the current record in a specified record buffer belongs. If the buffer does not contain a record from a tenant group, the function returns the Unknown value (?)."
 	},
 	{
 		label = "buffer-handle",
@@ -577,7 +585,7 @@ local keywords = {
 	},
 	{
 		label = "by",
-		documentation = "by"
+		documentation = "Performs aggregation for break groups if you use the BREAK option in a FOR EACH block header. "
 	},
 	{
 		label = "by-pointer",
@@ -597,7 +605,7 @@ local keywords = {
 	},
 	{
 		label = "call",
-		documentation = "call"
+		documentation = "Transfers control to a dispatch routine (PRODSP) that then calls a C function. You write the C function using ABL Host Language Call (HLC) interface."
 	},
 	{
 		label = "call-name",
@@ -625,7 +633,7 @@ local keywords = {
 	},
 	{
 		label = "can-do",
-		documentation = "can-do"
+		documentation = "Checks a user ID against a list of one or more user ID matching patterns that can be used to indicate what users have access to a given application function. The function returns TRUE if the specified user ID has access according to the list. Thus, you can implement run-time authorization checking for any procedure or class in your application."
 	},
 	{
 		label = "can-do-domain-support",
@@ -633,11 +641,11 @@ local keywords = {
 	},
 	{
 		label = "can-find",
-		documentation = "can-find"
+		documentation = "Returns a TRUE value if a record is found that meets the specified FIND criteria; otherwise it returns FALSE. CAN-FIND does not make the record available to the procedure. You typically use the CAN-FIND function within a VALIDATE option in a data handling statement, such as the UPDATE statement."
 	},
 	{
 		label = "can-query",
-		documentation = "can-query"
+		documentation = "Returns a logical value indicating whether you can query a specified attribute or method for a specified widget."
 	},
 	{
 		label = "can-read",
@@ -645,7 +653,7 @@ local keywords = {
 	},
 	{
 		label = "can-set",
-		documentation = "can-set"
+		documentation = "Returns a logical value indicating whether you can set a specified attribute for a specified widget."
 	},
 	{
 		label = "can-write",
@@ -653,7 +661,7 @@ local keywords = {
 	},
 	{
 		label = "caps",
-		documentation = "caps"
+		documentation = "Converts any lowercase characters in a CHARACTER or LONGCHAR expression to uppercase characters, and returns the result. The data type of the returned value matches the data type of the expression passed to the function."
 	},
 	{
 		label = "careful-paint",
@@ -661,7 +669,7 @@ local keywords = {
 	},
 	{
 		label = "case",
-		documentation = "case"
+		documentation = "Provides a multi-branch decision based on the value of a single expression"
 	},
 	{
 		label = "case-sensitive",
@@ -713,11 +721,11 @@ local keywords = {
 	},
 	{
 		label = "chr",
-		documentation = "chr"
+		documentation = "Converts an integer value to its corresponding character value."
 	},
 	{
 		label = "class",
-		documentation = "class"
+		documentation = "Defines a user-defined class."
 	},
 	{
 		label = "class-type",
@@ -725,7 +733,7 @@ local keywords = {
 	},
 	{
 		label = "clear",
-		documentation = "clear"
+		documentation = "Clears the data for all fill-in fields in a frame. It also clears the colors for all widgets in a frame, except for enabled fill-ins."
 	},
 	{
 		label = "clear-appl-context",
@@ -789,7 +797,7 @@ local keywords = {
 	},
 	{
 		label = "codepage-convert",
-		documentation = "codepage-convert"
+		documentation = "Converts a string value from one code page to another."
 	},
 	{
 		label = "collate",
@@ -881,11 +889,11 @@ local keywords = {
 	},
 	{
 		label = "compares",
-		documentation = "compares"
+		documentation = "COMPARE returns a LOGICAL value representing the result of the logical expression, where the comparison rules are defined by the combination of the operator, the comparison strength, and the collation."
 	},
 	{
 		label = "compile",
-		documentation = "compile"
+		documentation = "Compiles a procedure file or a class definition file. A compilation can last for a session, or you can save it permanently for use in later sessions (as an r-code file, which has a .r extension). "
 	},
 	{
 		label = "compiler",
@@ -905,15 +913,15 @@ local keywords = {
 	},
 	{
 		label = "connect",
-		documentation = "connect"
+		documentation = "Establishes a connection to one or more databases from within an ABL procedure or class. "
 	},
 	{
 		label = "connected",
-		documentation = "connected"
+		documentation = "Tells whether a database is connected. If logical name is the logical name or alias is the alias of a connected database, the CONNECTED function returns TRUE; otherwise, it returns FALSE."
 	},
 	{
 		label = "constructor",
-		documentation = "constructor"
+		documentation = "Defines a constructor for a class. A constructor is a special type of method that ABL invokes to initialize data for a new object of a class that is instantiated using the NEW function (classes), NEW statement, or DYNAMIC-NEW statement, or to initialize static members of a class."
 	},
 	{
 		label = "contains",
@@ -973,7 +981,7 @@ local keywords = {
 	},
 	{
 		label = "copy-lob",
-		documentation = "copy-lob"
+		documentation = "Copies large object data between BLOBs, CLOBs, MEMPTRs, and LONGCHARs. It also copies large object data to and from the file system, and converts large object data to or from a specified code page."
 	},
 	{
 		label = "copy-sax-attributes",
@@ -985,11 +993,11 @@ local keywords = {
 	},
 	{
 		label = "count",
-		documentation = "count"
+		documentation = "Calculates the number of times the expression was counted in a break group and the count of all the values in all break groups."
 	},
 	{
 		label = "count-of",
-		documentation = "count-of"
+		documentation = "Returns an INTEGER value that is the total number of selected records in the table or tables you are using across break groups."
 	},
 	{
 		label = "cpcase",
@@ -1033,7 +1041,7 @@ local keywords = {
 	},
 	{
 		label = "create",
-		documentation = "create"
+		documentation = "Creates a record in a table, sets all the fields in the record to their default initial values, and moves a copy of the record to the record buffer."
 	},
 	{
 		label = "create-like",
@@ -1181,7 +1189,15 @@ local keywords = {
 	},
 	{
 		label = "date",
-		documentation = "date"
+		documentation = "Converts a single character string, a set of month, day, and year values, an integer expression, a DATETIME expression, or a DATETIME-TZ expression into a DATE value."
+	},
+	{
+		label = "datetime",
+		documentation = "Converts date and time values, or a character string, into a DATETIME value."
+	},
+	{
+		label = "datetime-tz",
+		documentation = "Converts a date, time, and time zone value, or a character string, into a DATETIME-TZ value. "
 	},
 	{
 		label = "date-format",
@@ -1189,7 +1205,7 @@ local keywords = {
 	},
 	{
 		label = "day",
-		documentation = "day"
+		documentation = "Evaluates a date expression and returns a day of the month as an INTEGER value from 1 to 31, inclusive."
 	},
 	{
 		label = "dbcodepage",
@@ -1281,7 +1297,7 @@ local keywords = {
 	},
 	{
 		label = "decimal",
-		documentation = "decimal"
+		documentation = "Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a DECIMAL value."
 	},
 	{
 		label = "decimals",
@@ -1349,11 +1365,7 @@ local keywords = {
 	},
 	{
 		label = "delete",
-		documentation = "delete"
-	},
-	{
-		label = "delete",
-		documentation = "delete"
+		documentation = "Removes a record from a record buffer and from the database."
 	},
 	{
 		label = "delete-char",
@@ -1453,7 +1465,7 @@ local keywords = {
 	},
 	{
 		label = "display",
-		documentation = "display"
+		documentation = "Moves data to a screen buffer and displays the data on the screen or other output destination. "
 	},
 	{
 		label = "display-message",
@@ -1469,7 +1481,7 @@ local keywords = {
 	},
 	{
 		label = "do",
-		documentation = "do"
+		documentation = "Groups statements into a single block, optionally specifying processing services or block properties. Use an END statement to end a DO block."
 	},
 	{
 		label = "domain-description",
@@ -1493,7 +1505,7 @@ local keywords = {
 	},
 	{
 		label = "down",
-		documentation = "down"
+		documentation = "Positions the cursor on a new line in a down or multi-line frame."
 	},
 	{
 		label = "drag-enabled",
@@ -1585,7 +1597,7 @@ local keywords = {
 	},
 	{
 		label = "editing",
-		documentation = "editing"
+		documentation = "Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or UPDATE statement. "
 	},
 	{
 		label = "editor",
@@ -1609,11 +1621,11 @@ local keywords = {
 	},
 	{
 		label = "empty-temp-table",
-		documentation = "empty-temp-table"
+		documentation = "Empties a temp-table."
 	},
 	{
 		label = "enable",
-		documentation = "enable"
+		documentation = "Enables input for one or more field-level and child frame widgets within a frame."
 	},
 	{
 		label = "enabled-fields",
@@ -1637,7 +1649,7 @@ local keywords = {
 	},
 	{
 		label = "end",
-		documentation = "end"
+		documentation = "Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DESTRUCTOR, DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET property accessor. "
 	},
 	{
 		label = "end-document",
@@ -1689,7 +1701,7 @@ local keywords = {
 	},
 	{
 		label = "entry",
-		documentation = "entry"
+		documentation = "Returns a character string (CHARACTER or LONGCHAR) entry from a list based on an integer position. The data type of the returned value matches the data type of the list element."
 	},
 	{
 		label = "enum",
@@ -1697,11 +1709,11 @@ local keywords = {
 	},
 	{
 		label = "eq",
-		documentation = "eq"
+		documentation = "Returns a TRUE value if two expressions are equal."
 	},
 	{
 		label = "error",
-		documentation = "error"
+		documentation = "Indicates whether an error occurred during a FILL or SAVE-ROW-CHANGES operation on the specified ProDataSet temp-table buffer. "
 	},
 	{
 		label = "error-column",
@@ -1793,7 +1805,7 @@ local keywords = {
 	},
 	{
 		label = "export",
-		documentation = "export"
+		documentation = "Converts data to a standard character format and displays it to the current output destination (except when the current output destination is the screen) or to a named output stream. You can use data exported to a file in standard format as input to other ABL procedures."
 	},
 	{
 		label = "export-principal",
@@ -1805,7 +1817,7 @@ local keywords = {
 	},
 	{
 		label = "extent",
-		documentation = "extent"
+		documentation = "Fixes the extent (number of elements) for an unfixed indeterminate array variable or parameter. ABL treats the fixed indeterminate array as a determinate array consistent with its data type."
 	},
 	{
 		label = "external",
@@ -1881,7 +1893,7 @@ local keywords = {
 	},
 	{
 		label = "fill",
-		documentation = "fill"
+		documentation = "Generates a character string made up of a character string that is repeated a specified number of times."
 	},
 	{
 		label = "filled",
@@ -1905,7 +1917,7 @@ local keywords = {
 	},
 	{
 		label = "find",
-		documentation = "find"
+		documentation = "Locates a single record in a table and moves that record into a record buffer."
 	},
 	{
 		label = "find-by-rowid",
@@ -1957,7 +1969,8 @@ local keywords = {
 	},
 	{
 		label = "first",
-		documentation = "first"
+		kind = "Function",
+		documentation = "Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration of that block."
 	},
 	{
 		label = "first-asynch-request",
@@ -1981,7 +1994,8 @@ local keywords = {
 	},
 	{
 		label = "first-of",
-		documentation = "first-of"
+		kind = "Function",
+		documentation = "Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration for a new break group, and modifies all three block types."
 	},
 	{
 		label = "first-procedure",
@@ -2033,7 +2047,7 @@ local keywords = {
 	},
 	{
 		label = "for",
-		documentation = "for"
+		documentation = "Starts an iterating block that reads a record from each of one or more tables at the start of each block iteration. Use an END statement to end a FOR block."
 	},
 	{
 		label = "force-file",
@@ -2109,7 +2123,7 @@ local keywords = {
 	},
 	{
 		label = "frame-name",
-		documentation = "frame-name"
+		documentation = "Returns the name of the frame that the cursor is in to a field that is enabled for input."
 	},
 	{
 		label = "frame-row",
@@ -2121,7 +2135,7 @@ local keywords = {
 	},
 	{
 		label = "frame-value",
-		documentation = "frame-value"
+		documentation = "Stores the value of an expression in a frame field during a data entry statement."
 	},
 	{
 		label = "frame-x",
@@ -2185,7 +2199,8 @@ local keywords = {
 	},
 	{
 		label = "ge",
-		documentation = "ge"
+		kind = "Operator",
+		documentation = "Returns a TRUE value if the first of two expressions is greater than or equal to the second expression."
 	},
 	{
 		label = "generate-md5",
@@ -3353,7 +3368,7 @@ local keywords = {
 	},
 	{
 		label = "maximum",
-		documentation = "maximum"
+		documentation = "Calculates the maximum of all of the values of the expression in a break group and the maximum of all the values of the expression in all break groups."
 	},
 	{
 		label = "maximum-level",
@@ -3469,7 +3484,7 @@ local keywords = {
 	},
 	{
 		label = "minimum",
-		documentation = "minimum"
+		documentation = "Calculates the minimum of all of the values of the expression in a break group and the minimum of all the values of the expression in all break groups."
 	},
 	{
 		label = "min-size",
@@ -4289,7 +4304,8 @@ local keywords = {
 	},
 	{
 		label = "program-name",
-		documentation = "program-name"
+		kind = "Function",
+		documentation = "Returns the name of the calling program."
 	},
 	{
 		label = "progress",
@@ -4405,7 +4421,7 @@ local keywords = {
 	},
 	{
 		label = "query-close",
-		documentation = "query-close"
+		documentation = "Closes a query that was opened by a previous OPEN QUERY statement."
 	},
 	{
 		label = "query-off-end",
@@ -5409,15 +5425,15 @@ local keywords = {
 	},
 	{
 		label = "sub-average",
-		documentation = "sub-average"
+		documentation = "Averages values in a break group. Does not supply an average for all records, just for those in each break group."
 	},
 	{
 		label = "sub-count",
-		documentation = "sub-count"
+		documentation = "Counts the number of times an expression is in a break group. Does not supply a count for all records, just for those in each break group."
 	},
 	{
 		label = "sub-maximum",
-		documentation = "sub-maximum"
+		documentation = "Shows the maximum value of an expression in a break group. Does not supply a maximum value for all records, just for those in each break group."
 	},
 	{
 		label = "sub-menu",
@@ -5425,7 +5441,7 @@ local keywords = {
 	},
 	{
 		label = "sub-minimum",
-		documentation = "sub-minimum"
+		documentation = "Shows the minimum value of an expression in a break group. Does not supply a minimum value for all records, just for those in each break group."
 	},
 	{
 		label = "subscribe",
@@ -5441,7 +5457,7 @@ local keywords = {
 	},
 	{
 		label = "sub-total",
-		documentation = "sub-total"
+		documentation = "Subtotals all of the values of the expression in a break group. Does not supply a total value for all records, just for those in each break group."
 	},
 	{
 		label = "subtype",
@@ -5673,7 +5689,7 @@ local keywords = {
 	},
 	{
 		label = "total",
-		documentation = "total"
+		documentation = "Calculates the subtotal of all of the values of the expression in a break group and the grand total of all of the values of the expression in all break groups. When you use default aggregates, the actual display of the grand total is deferred until the frame goes out of scope. "
 	},
 	{
 		label = "trailing",

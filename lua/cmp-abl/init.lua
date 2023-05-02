@@ -59,18 +59,12 @@ source.complete = function(self, request, callback)
 	local input = string.sub(request.context.cursor_before_line, request.offset - 1)
 	local prefix = string.sub(request.context.cursor_before_line, 1, request.offset - 1)
 	local opts = self:_validate_options(request)
-	local lv_kind = ""
 
 	local items = {}
 	for handle, keyword in pairs(keywords) do
-		if keyword.kind == "" then
-			lv_kind = cmp.lsp.CompletionItemKind.Keyword
-		else
-			lv_kind = keyword.kind
-		end
 		table.insert(items, {
 			label = string.format("%s", keyword.label),
-			kind = cmp.lsp.CompletionItemKind.Keyword,
+			kind = keyword.kind,
 			-- kind = keyword.kind or cmp.lsp.CompletionItemKind.Keyword,
 			documentation = {
 				kind = "markdown",

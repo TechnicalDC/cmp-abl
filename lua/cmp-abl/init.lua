@@ -67,7 +67,7 @@ source.complete = function(self, request, callback)
 			kind = cmp.lsp.CompletionItemKind.Keyword,
 			documentation = {
 				kind = "markdown",
-				value = string.format("# %s", keyword.documentation)
+				value = string.format("# %s\n\n%s", keyword.label, keyword.documentation)
 			}
 		})
 	end

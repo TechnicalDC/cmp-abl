@@ -3822,7 +3822,6 @@ local keywords = {
 		label = "lastkey",
 		kind = "Function",
 		documentation = "Returns, as an INTEGER value, the integer key code of the most recent event read from the user (that is, from the keyboard or mouse) during an interaction with a procedure.",
-		kind = "Keyword",
 	},
 	{
 		label = "last-key",
@@ -3836,8 +3835,8 @@ local keywords = {
 	},
 	{
 		label = "last-of",
-		documentation = "last-of",
-		kind = "Keyword",
+		kind = "Function",
+		documentation = "Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the last iteration for a particular value of a break group.",
 	},
 	{
 		label = "last-procedure",
@@ -3866,13 +3865,13 @@ local keywords = {
 	},
 	{
 		label = "le",
-		documentation = "le",
-		kind = "Keyword",
+		kind = "Operator",
+		documentation = "Returns a TRUE value if the first of two expressions is less than or equal to the second.",
 	},
 	{
 		label = "leave",
-		documentation = "leave",
 		kind = "Keyword",
+		documentation = "Exits from a block. Execution continues with the first statement after the end of the block.",
 	},
 	{
 		label = "left-aligned",
@@ -3881,13 +3880,13 @@ local keywords = {
 	},
 	{
 		label = "left-trim",
-		documentation = "left-trim",
-		kind = "Keyword",
+		kind = "Function",
+		documentation = "Removes leading white space, or other specified characters, from a CHARACTER or LONGCHAR expression. The data type of the returned value matches the data type of the expression passed to the function.",
 	},
 	{
 		label = "length",
-		documentation = "length",
-		kind = "Keyword",
+		kind = "Function",
+		documentation = "Returns, as an INTEGER value, the number of characters, bytes, or columns in a string, an expression of type RAW, or a BLOB field.",
 	},
 	{
 		label = "library",

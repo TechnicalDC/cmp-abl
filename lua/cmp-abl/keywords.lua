@@ -2,7812 +2,10921 @@ local keywords = {
 	{
 		label = "&else",
 		kind = "Keyword",
-		documentation = "&else",
+		documentation = [[
+		&else
+		]],
 	},
 	{
 		label = "&elseif",
 		kind = "Keyword",
-		documentation = "&elseif",
+		documentation = [[
+		&elseif
+		]],
 	},
 	{
 		label = "&endif",
 		kind = "Keyword",
-		documentation = "&endif",
+		documentation = [[
+		&endif
+		]],
 	},
 	{
 		label = "&global-define",
 		kind = "Keyword",
-		documentation = "Globally defines a compile-time constant (preprocessor name).",
+		documentation = [[
+		Globally defines a compile-time constant (preprocessor name).
+		]],
 	},
 	{
 		label = "&if",
 		kind = "Keyword",
-		documentation = "&if",
+		documentation = [[
+		&if
+		]],
 	},
 	{
 		label = "&message",
 		kind = "Keyword",
-		documentation = "Displays a message at compile time in the Compiler Messages dialog box.",
+		documentation = [[
+		Displays a message at compile time in the Compiler Messages dialog box.
+		]],
 	},
 	{
 		label = "&scoped-define",
 		kind = "Keyword",
-		documentation = "Defines a compile-time constant (preprocessor name) non-globally.",
+		documentation = [[
+		Defines a compile-time constant (preprocessor name) non-globally.
+		]],
 	},
 	{
 		label = "&then",
 		kind = "Keyword",
-		documentation = "&then",
+		documentation = [[
+		&then
+		]],
 	},
 	{
 		label = "&undefine",
 		kind = "Keyword",
-		documentation = "&undefine",
+		documentation = [[
+		&undefine
+		]],
 	},
 	{
 		label = "&webstream",
 		kind = "Keyword",
-		documentation = "&webstream",
+		documentation = [[
+		&webstream
+		]],
 	},
 	{
 		label = "{&batch-mode}",
 		kind = "Keyword",
-		documentation = "{&batch-mode}",
+		documentation = [[
+		{&batch-mode}
+		]],
 	},
 	{
 		label = "{&file-name}",
 		kind = "Keyword",
-		documentation = "{&file-name}",
+		documentation = [[
+		{&file-name}
+		]],
 	},
 	{
 		label = "{&line-number}",
 		kind = "Keyword",
-		documentation = "{&line-number}",
+		documentation = [[
+		{&line-number}
+		]],
 	},
 	{
 		label = "{&opsys}",
 		kind = "Keyword",
-		documentation = "{&opsys}",
+		documentation = [[
+		{&opsys}
+		]],
 	},
 	{
 		label = "{&process-architecture}",
 		kind = "Keyword",
-		documentation = "{&process-architecture}",
+		documentation = [[
+		{&process-architecture}
+		]],
 	},
 	{
 		label = "{&sequence}",
 		kind = "Keyword",
-		documentation = "{&sequence}",
+		documentation = [[
+		{&sequence}
+		]],
 	},
 	{
 		label = "{&window-system}",
 		kind = "Keyword",
-		documentation = "{&window-system}",
+		documentation = [[
+		{&window-system}
+		]],
 	},
 	{
 		label = "absolute",
 		kind = "Keyword",
-		documentation = "Returns the absolute value of a numeric value.",
+		documentation = [[
+		Returns the absolute value of a numeric value.
+		]],
 	},
 	{
 		label = "abstract",
 		kind = "Keyword",
-		documentation = "abstract",
+		documentation = [[
+		abstract
+		]],
 	},
 	{
 		label = "accelerator",
 		kind = "Keyword",
-		documentation = "accelerator",
+		documentation = [[
+		accelerator
+		]],
 	},
 	{
 		label = "accum",
 		kind = "Keyword",
-		documentation = "Returns the value of an aggregate expression that is calculated by an ACCUMULATE or aggregate phrase of a DISPLAY statement.",
+		documentation = [[
+		Returns the value of an aggregate expression that is calculated by an ACCUMULATE or aggregate phrase of a DISPLAY statement.
+		]],
 	},
 	{
 		label = "accumulate",
 		kind = "Keyword",
-		documentation = "Calculates one or more aggregate values of an expression during the iterations of a block. Use the ACCUM function to access the result of this accumulation.",
+		documentation = [[
+		Calculates one or more aggregate values of an expression during the iterations of a block. Use the ACCUM function to access the result of this accumulation.
+		]],
 	},
 	{
 		label = "active-form",
 		kind = "Keyword",
-		documentation = "active-form",
+		documentation = [[
+		active-form
+		]],
 	},
 	{
 		label = "active-window",
 		kind = "Keyword",
-		documentation = "active-window",
+		documentation = [[
+		active-window
+		]],
 	},
 	{
 		label = "add",
 		kind = "Keyword",
-		documentation = "add",
+		documentation = [[
+		add
+		]],
 	},
 	{
 		label = "add-buffer",
 		kind = "Keyword",
-		documentation = "add-buffer",
+		documentation = [[
+		add-buffer
+		]],
 	},
 	{
 		label = "add-calc-column",
 		kind = "Keyword",
-		documentation = "add-calc-column",
+		documentation = [[
+		add-calc-column
+		]],
 	},
 	{
 		label = "add-columns-from",
 		kind = "Keyword",
-		documentation = "add-columns-from",
+		documentation = [[
+		add-columns-from
+		]],
 	},
 	{
 		label = "add-events-procedure",
 		kind = "Keyword",
-		documentation = "add-events-procedure",
+		documentation = [[
+		add-events-procedure
+		]],
 	},
 	{
 		label = "add-fields-from",
 		kind = "Keyword",
-		documentation = "add-fields-from",
+		documentation = [[
+		add-fields-from
+		]],
 	},
 	{
 		label = "add-first",
 		kind = "Keyword",
-		documentation = "add-first",
+		documentation = [[
+		add-first
+		]],
 	},
 	{
 		label = "add-index-field",
 		kind = "Keyword",
-		documentation = "add-index-field",
+		documentation = [[
+		add-index-field
+		]],
 	},
 	{
 		label = "add-interval",
 		kind = "Keyword",
-		documentation = "Adds a time interval to, or subtracts a time interval from, a DATE, DATETIME, or DATETIME-TZ value, and returns the new value.",
+		documentation = [[
+		Adds a time interval to, or subtracts a time interval from, a DATE, DATETIME, or DATETIME-TZ value, and returns the new value.
+		]],
 	},
 	{
 		label = "add-last",
 		kind = "Keyword",
-		documentation = "add-last",
+		documentation = [[
+		add-last
+		]],
 	},
 	{
 		label = "add-like-column",
 		kind = "Keyword",
-		documentation = "add-like-column",
+		documentation = [[
+		add-like-column
+		]],
 	},
 	{
 		label = "add-like-field",
 		kind = "Keyword",
-		documentation = "add-like-field",
+		documentation = [[
+		add-like-field
+		]],
 	},
 	{
 		label = "add-like-index",
 		kind = "Keyword",
-		documentation = "add-like-index",
+		documentation = [[
+		add-like-index
+		]],
 	},
 	{
 		label = "add-new-field",
 		kind = "Keyword",
-		documentation = "add-new-field",
+		documentation = [[
+		add-new-field
+		]],
 	},
 	{
 		label = "add-new-index",
 		kind = "Keyword",
-		documentation = "add-new-index",
+		documentation = [[
+		add-new-index
+		]],
 	},
 	{
 		label = "add-schema-location",
 		kind = "Keyword",
-		documentation = "add-schema-location",
+		documentation = [[
+		add-schema-location
+		]],
 	},
 	{
 		label = "add-super-procedure",
 		kind = "Keyword",
-		documentation = "add-super-procedure",
+		documentation = [[
+		add-super-procedure
+		]],
 	},
 	{
 		label = "adm-data",
 		kind = "Keyword",
-		documentation = "adm-data",
+		documentation = [[
+		adm-data
+		]],
 	},
 	{
 		label = "advise",
 		kind = "Keyword",
-		documentation = "advise",
+		documentation = [[
+		advise
+		]],
 	},
 	{
 		label = "alert-box",
 		kind = "Keyword",
-		documentation = "alert-box",
+		documentation = [[
+		alert-box
+		]],
 	},
 	{
 		label = "alias",
 		kind = "Keyword",
-		documentation = "alias",
+		documentation = [[
+		alias
+		]],
 	},
 	{
 		label = "all",
 		kind = "Keyword",
-		documentation = "all",
+		documentation = [[
+		all
+		]],
 	},
 	{
 		label = "allow-column-searching",
 		kind = "Keyword",
-		documentation = "allow-column-searching",
+		documentation = [[
+		allow-column-searching
+		]],
 	},
 	{
 		label = "allow-replication",
 		kind = "Keyword",
-		documentation = "allow-replication",
+		documentation = [[
+		allow-replication
+		]],
 	},
 	{
 		label = "alter",
 		kind = "Keyword",
-		documentation = "alter",
+		documentation = [[
+		alter
+		]],
 	},
 	{
 		label = "always-on-top",
 		kind = "Keyword",
-		documentation = "always-on-top",
+		documentation = [[
+		always-on-top
+		]],
 	},
 	{
 		label = "ambiguous",
 		kind = "Keyword",
-		documentation = "Returns a TRUE value if the last FIND statement for a particular record found more than one record that met the specified index criteria.",
+		documentation = [[
+		Returns a TRUE value if the last FIND statement for a particular record found more than one record that met the specified index criteria.
+		]],
 	},
 	{
 		label = "analyze",
 		kind = "Keyword",
-		documentation = "analyze",
+		documentation = [[
+		analyze
+		]],
 	},
 	{
 		label = "and",
 		kind = "Keyword",
-		documentation = "Returns a TRUE value if each logical expression is TRUE.",
+		documentation = [[
+		Returns a TRUE value if each logical expression is TRUE.
+		]],
 	},
 	{
 		label = "ansi-only",
 		kind = "Keyword",
-		documentation = "ansi-only",
+		documentation = [[
+		ansi-only
+		]],
 	},
 	{
 		label = "any",
 		kind = "Keyword",
-		documentation = "any",
+		documentation = [[
+		any
+		]],
 	},
 	{
 		label = "anywhere",
 		kind = "Keyword",
-		documentation = "anywhere",
+		documentation = [[
+		anywhere
+		]],
 	},
 	{
 		label = "append",
 		kind = "Keyword",
-		documentation = "append",
+		documentation = [[
+		append
+		]],
 	},
 	{
 		label = "appl-alert-boxes",
 		kind = "Keyword",
-		documentation = "appl-alert-boxes",
+		documentation = [[
+		appl-alert-boxes
+		]],
 	},
 	{
 		label = "appl-context-id",
 		kind = "Keyword",
-		documentation = "appl-context-id",
+		documentation = [[
+		appl-context-id
+		]],
 	},
 	{
 		label = "application",
 		kind = "Keyword",
-		documentation = "application",
+		documentation = [[
+		application
+		]],
 	},
 	{
 		label = "apply",
 		kind = "Keyword",
-		documentation = "Applies an event to a widget or procedure.",
+		documentation = [[
+		Applies an event to a widget or procedure.
+		]],
 	},
 	{
 		label = "appserver-info",
 		kind = "Keyword",
-		documentation = "appserver-info",
+		documentation = [[
+		appserver-info
+		]],
 	},
 	{
 		label = "appserver-password",
 		kind = "Keyword",
-		documentation = "appserver-password",
+		documentation = [[
+		appserver-password
+		]],
 	},
 	{
 		label = "appserver-userid",
 		kind = "Keyword",
-		documentation = "appserver-userid",
+		documentation = [[
+		appserver-userid
+		]],
 	},
 	{
 		label = "array-message",
 		kind = "Keyword",
-		documentation = "array-message",
+		documentation = [[
+		array-message
+		]],
 	},
 	{
 		label = "as",
 		kind = "Keyword",
-		documentation = "as",
+		documentation = [[
+		as
+		]],
 	},
 	{
 		label = "asc",
 		kind = "Keyword",
-		documentation = "asc",
+		documentation = [[
+		asc
+		]],
 	},
 	{
 		label = "ascending",
 		kind = "Keyword",
-		documentation = "ascending",
+		documentation = [[
+		ascending
+		]],
 	},
 	{
 		label = "ask-overwrite",
 		kind = "Keyword",
-		documentation = "ask-overwrite",
+		documentation = [[
+		ask-overwrite
+		]],
 	},
 	{
 		label = "assembly",
 		kind = "Keyword",
-		documentation = "assembly",
+		documentation = [[
+		assembly
+		]],
 	},
 	{
 		label = "assign",
 		kind = "Keyword",
-		documentation = "Moves data previously placed in the screen buffer by a data input statement or moves data specified within the ASSIGN statement by an expression to the corresponding fields and variables in the record buffer.",
+		documentation = [[
+		Moves data previously placed in the screen buffer by a data input statement or moves data specified within the ASSIGN statement by an expression to the corresponding fields and variables in the record buffer.
+		]],
 	},
 	{
 		label = "asynchronous",
 		kind = "Keyword",
-		documentation = "asynchronous",
+		documentation = [[
+		asynchronous
+		]],
 	},
 	{
 		label = "async-request-count",
 		kind = "Keyword",
-		documentation = "async-request-count",
+		documentation = [[
+		async-request-count
+		]],
 	},
 	{
 		label = "async-request-handle",
 		kind = "Keyword",
-		documentation = "async-request-handle",
+		documentation = [[
+		async-request-handle
+		]],
 	},
 	{
 		label = "at",
 		kind = "Keyword",
-		documentation = "The AT phrase of the Format phrase allows explicit positioning of frame objects, either by row and column or by pixels. The AT phrase of the Frame phrase allows explicit positioning of frames with windows or parent frames.",
+		documentation = [[
+		The AT phrase of the Format phrase allows explicit positioning of frame objects, either by row and column or by pixels. The AT phrase of the Frame phrase allows explicit positioning of frames with windows or parent frames.
+		]],
 	},
 	{
 		label = "attached-pairlist",
 		kind = "Keyword",
-		documentation = "attached-pairlist",
+		documentation = [[
+		attached-pairlist
+		]],
 	},
 	{
 		label = "attr-space",
 		kind = "Keyword",
-		documentation = "attr-space",
+		documentation = [[
+		attr-space
+		]],
 	},
 	{
 		label = "audit-control",
 		kind = "Keyword",
-		documentation = "audit-control",
+		documentation = [[
+		audit-control
+		]],
 	},
 	{
 		label = "audit-enabled",
 		kind = "Keyword",
-		documentation = "Determines whether a connected database is audit-enabled.",
+		documentation = [[
+		Determines whether a connected database is audit-enabled.
+		]],
 	},
 	{
 		label = "audit-event-context",
 		kind = "Keyword",
-		documentation = "audit-event-context",
+		documentation = [[
+		audit-event-context
+		]],
 	},
 	{
 		label = "audit-policy",
 		kind = "Keyword",
-		documentation = "audit-policy",
+		documentation = [[
+		audit-policy
+		]],
 	},
 	{
 		label = "authentication-failed",
 		kind = "Keyword",
-		documentation = "authentication-failed",
+		documentation = [[
+		authentication-failed
+		]],
 	},
 	{
 		label = "authorization",
 		kind = "Keyword",
-		documentation = "authorization",
+		documentation = [[
+		authorization
+		]],
 	},
 	{
 		label = "auto-completion",
 		kind = "Keyword",
-		documentation = "auto-completion",
+		documentation = [[
+		auto-completion
+		]],
 	},
 	{
 		label = "auto-endkey",
 		kind = "Keyword",
-		documentation = "auto-endkey",
+		documentation = [[
+		auto-endkey
+		]],
 	},
 	{
 		label = "auto-end-key",
 		kind = "Keyword",
-		documentation = "auto-end-key",
+		documentation = [[
+		auto-end-key
+		]],
 	},
 	{
 		label = "auto-go",
 		kind = "Keyword",
-		documentation = "auto-go",
+		documentation = [[
+		auto-go
+		]],
 	},
 	{
 		label = "auto-indent",
 		kind = "Keyword",
-		documentation = "auto-indent",
+		documentation = [[
+		auto-indent
+		]],
 	},
 	{
 		label = "automatic",
 		kind = "Keyword",
-		documentation = "automatic",
+		documentation = [[
+		automatic
+		]],
 	},
 	{
 		label = "auto-resize",
 		kind = "Keyword",
-		documentation = "auto-resize",
+		documentation = [[
+		auto-resize
+		]],
 	},
 	{
 		label = "auto-return",
 		kind = "Keyword",
-		documentation = "auto-return",
+		documentation = [[
+		auto-return
+		]],
 	},
 	{
 		label = "auto-synchronize",
 		kind = "Keyword",
-		documentation = "auto-synchronize",
+		documentation = [[
+		auto-synchronize
+		]],
 	},
 	{
 		label = "auto-zap",
 		kind = "Keyword",
-		documentation = "auto-zap",
+		documentation = [[
+		auto-zap
+		]],
 	},
 	{
 		label = "available",
 		kind = "Keyword",
-		documentation = "Returns a TRUE value if the record buffer you name contains a record and returns a FALSE value if the record buffer is empty. When you use the FIND statement or the FOR EACH statement to find a record, the AVM reads that record from the database into a record buffer. This record buffer has the same name as the file used by the FIND or FOR EACH statement, unless you specify otherwise. The CREATE statement creates a new record in a record buffer.",
+		documentation = [[
+		Returns a TRUE value if the record buffer you name contains a record and returns a FALSE value if the record buffer is empty. When you use the FIND statement or the FOR EACH statement to find a record, the AVM reads that record from the database into a record buffer. This record buffer has the same name as the file used by the FIND or FOR EACH statement, unless you specify otherwise. The CREATE statement creates a new record in a record buffer.
+		]],
 	},
 	{
 		label = "available-formats",
 		kind = "Keyword",
-		documentation = "available-formats",
+		documentation = [[
+		available-formats
+		]],
 	},
 	{
 		label = "average",
 		kind = "Keyword",
-		documentation = "Calculates the average of all of the values of the expression in a break group and the average of all of the values of the expression in all break groups. ",
+		documentation = [[
+		Calculates the average of all of the values of the expression in a break group and the average of all of the values of the expression in all break groups. 
+		]],
 	},
 	{
 		label = "avg",
 		kind = "Keyword",
-		documentation = "avg",
+		documentation = [[
+		avg
+		]],
 	},
 	{
 		label = "background",
 		kind = "Keyword",
-		documentation = "background",
+		documentation = [[
+		background
+		]],
 	},
 	{
 		label = "backwards",
 		kind = "Keyword",
-		documentation = "backwards",
+		documentation = [[
+		backwards
+		]],
 	},
 	{
 		label = "base64-decode",
 		kind = "Keyword",
-		documentation = "base64-decode",
+		documentation = [[
+		base64-decode
+		]],
 	},
 	{
 		label = "base64-encode",
 		kind = "Keyword",
-		documentation = "base64-encode",
+		documentation = [[
+		base64-encode
+		]],
 	},
 	{
 		label = "base-ade",
 		kind = "Keyword",
-		documentation = "base-ade",
+		documentation = [[
+		base-ade
+		]],
 	},
 	{
 		label = "base-key",
-		documentation = "base-key",
+		documentation = [[
+		base-key
+		]],
 	},
 	{
 		label = "batch-mode",
 		kind = "Keyword",
-		documentation = "batch-mode",
+		documentation = [[
+		batch-mode
+		]],
 	},
 	{
 		label = "batch-size",
 		kind = "Keyword",
-		documentation = "batch-size",
+		documentation = [[
+		batch-size
+		]],
 	},
 	{
 		label = "before-hide",
 		kind = "Keyword",
-		documentation = "before-hide",
+		documentation = [[
+		before-hide
+		]],
 	},
 	{
 		label = "begin-event-group",
 		kind = "Keyword",
-		documentation = "begin-event-group",
+		documentation = [[
+		begin-event-group
+		]],
 	},
 	{
 		label = "begins",
 		kind = "Keyword",
-		documentation = "Tests a character expression to see if that expression begins with a second character expression. ",
+		documentation = [[
+		Tests a character expression to see if that expression begins with a second character expression. 
+		]],
 	},
 	{
 		label = "bell",
 		kind = "Keyword",
-		documentation = "Causes the terminal to make a beep sound.",
+		documentation = [[
+		Causes the terminal to make a beep sound.
+		]],
 	},
 	{
 		label = "between",
 		kind = "Keyword",
-		documentation = "between",
+		documentation = [[
+		between
+		]],
 	},
 	{
 		label = "bgcolor",
 		kind = "Keyword",
-		documentation = "bgcolor",
+		documentation = [[
+		bgcolor
+		]],
 	},
 	{
 		label = "big-endian",
 		kind = "Keyword",
-		documentation = "big-endian",
+		documentation = [[
+		big-endian
+		]],
 	},
 	{
 		label = "binary",
 		kind = "Keyword",
-		documentation = "binary",
+		documentation = [[
+		binary
+		]],
 	},
 	{
 		label = "bind",
 		kind = "Keyword",
-		documentation = "bind",
+		documentation = [[
+		bind
+		]],
 	},
 	{
 		label = "bind-where",
 		kind = "Keyword",
-		documentation = "bind-where",
+		documentation = [[
+		bind-where
+		]],
 	},
 	{
 		label = "blank",
 		kind = "Keyword",
-		documentation = "blank",
+		documentation = [[
+		blank
+		]],
 	},
 	{
 		label = "block-iteration-display",
 		kind = "Keyword",
-		documentation = "block-iteration-display",
+		documentation = [[
+		block-iteration-display
+		]],
 	},
 	{
 		label = "block-level",
 		kind = "Keyword",
-		documentation = "Use this statement in a procedure (.p) or class (.cls) file to change the default ON ERROR directive to UNDO, THROW for all blocks that have a default error directive associated with them. (A simple DO block, for example, does not have default error handling and is not affected by this statement.). The default ON ERROR directive is either UNDO, LEAVE or UNDO, RETRY, depending on the block type. The statement must come before any executable or DEFINE statements in a file. However, it can come either before or after a USING statement. ",
+		documentation = [[
+		Use this statement in a procedure (.p) or class (.cls) file to change the default ON ERROR directive to UNDO, THROW for all blocks that have a default error directive associated with them. (A simple DO block, for example, does not have default error handling and is not affected by this statement.). The default ON ERROR directive is either UNDO, LEAVE or UNDO, RETRY, depending on the block type. The statement must come before any executable or DEFINE statements in a file. However, it can come either before or after a USING statement. 
+		]],
 	},
 	{
 		label = "border-bottom-chars",
 		kind = "Keyword",
-		documentation = "border-bottom-chars",
+		documentation = [[
+		border-bottom-chars
+		]],
 	},
 	{
 		label = "border-bottom-pixels",
 		kind = "Keyword",
-		documentation = "border-bottom-pixels",
+		documentation = [[
+		border-bottom-pixels
+		]],
 	},
 	{
 		label = "border-left-chars",
 		kind = "Keyword",
-		documentation = "border-left-chars",
+		documentation = [[
+		border-left-chars
+		]],
 	},
 	{
 		label = "border-left-pixels",
 		kind = "Keyword",
-		documentation = "border-left-pixels",
+		documentation = [[
+		border-left-pixels
+		]],
 	},
 	{
 		label = "border-right-chars",
 		kind = "Keyword",
-		documentation = "border-right-chars",
+		documentation = [[
+		border-right-chars
+		]],
 	},
 	{
 		label = "border-right-pixels",
 		kind = "Keyword",
-		documentation = "border-right-pixels",
+		documentation = [[
+		border-right-pixels
+		]],
 	},
 	{
 		label = "border-top-chars",
 		kind = "Keyword",
-		documentation = "border-top-chars",
+		documentation = [[
+		border-top-chars
+		]],
 	},
 	{
 		label = "border-top-pixels",
 		kind = "Keyword",
-		documentation = "border-top-pixels",
+		documentation = [[
+		border-top-pixels
+		]],
 	},
 	{
 		label = "box",
 		kind = "Keyword",
-		documentation = "box",
+		documentation = [[
+		box
+		]],
 	},
 	{
 		label = "box-selectable",
 		kind = "Keyword",
-		documentation = "box-selectable",
+		documentation = [[
+		box-selectable
+		]],
 	},
 	{
 		label = "break",
 		kind = "Keyword",
-		documentation = "break",
+		documentation = [[
+		break
+		]],
 	},
 	{
 		label = "browse",
 		kind = "Keyword",
-		documentation = "browse",
+		documentation = [[
+		browse
+		]],
 	},
 	{
 		label = "buffer",
 		kind = "Keyword",
-		documentation = "buffer",
+		documentation = [[
+		buffer
+		]],
 	},
 	{
 		label = "buffer-chars",
 		kind = "Keyword",
-		documentation = "buffer-chars",
+		documentation = [[
+		buffer-chars
+		]],
 	},
 	{
 		label = "buffer-compare",
 		kind = "Keyword",
-		documentation = "Performs a bulk comparison of two records (source and target) by comparing source and target fields of the same name for equality and storing the result in a field. ",
+		documentation = [[
+		Performs a bulk comparison of two records (source and target) by comparing source and target fields of the same name for equality and storing the result in a field. 
+		]],
 	},
 	{
 		label = "buffer-copy",
 		kind = "Keyword",
-		documentation = "buffer-copy",
+		documentation = [[
+		buffer-copy
+		]],
 	},
 	{
 		label = "buffer-create",
 		kind = "Keyword",
-		documentation = "Creates a dynamic buffer object.",
+		documentation = [[
+		Creates a dynamic buffer object.
+		]],
 	},
 	{
 		label = "buffer-delete",
 		kind = "Keyword",
-		documentation = "buffer-delete",
+		documentation = [[
+		buffer-delete
+		]],
 	},
 	{
 		label = "buffer-field",
 		kind = "Keyword",
-		documentation = "buffer-field",
+		documentation = [[
+		buffer-field
+		]],
 	},
 	{
 		label = "buffer-group-id",
 		kind = "Keyword",
-		documentation = "Returns the group ID (as an integer) of the tenant group to which the current record in a specified record buffer belongs. If the buffer does not contain a record from a tenant group, the function returns the Unknown value (?).",
+		documentation = [[
+		Returns the group ID (as an integer) of the tenant group to which the current record in a specified record buffer belongs. If the buffer does not contain a record from a tenant group, the function returns the Unknown value (?).
+		]],
 	},
 	{
 		label = "buffer-handle",
 		kind = "Keyword",
-		documentation = "buffer-handle",
+		documentation = [[
+		buffer-handle
+		]],
 	},
 	{
 		label = "buffer-lines",
 		kind = "Keyword",
-		documentation = "buffer-lines",
+		documentation = [[
+		buffer-lines
+		]],
 	},
 	{
 		label = "buffer-name",
 		kind = "Keyword",
-		documentation = "buffer-name",
+		documentation = [[
+		buffer-name
+		]],
 	},
 	{
 		label = "buffer-partition-id",
 		kind = "Keyword",
-		documentation = "buffer-partition-id",
+		documentation = [[
+		buffer-partition-id
+		]],
 	},
 	{
 		label = "buffer-release",
 		kind = "Keyword",
-		documentation = "buffer-release",
+		documentation = [[
+		buffer-release
+		]],
 	},
 	{
 		label = "buffer-value",
 		kind = "Keyword",
-		documentation = "buffer-value",
+		documentation = [[
+		buffer-value
+		]],
 	},
 	{
 		label = "button",
 		kind = "Keyword",
-		documentation = "button",
+		documentation = [[
+		button
+		]],
 	},
 	{
 		label = "buttons",
 		kind = "Keyword",
-		documentation = "buttons",
+		documentation = [[
+		buttons
+		]],
 	},
 	{
 		label = "by",
 		kind = "Keyword",
-		documentation = "Performs aggregation for break groups if you use the BREAK option in a FOR EACH block header. ",
+		documentation = [[
+		Performs aggregation for break groups if you use the BREAK option in a FOR EACH block header. 
+		]],
 	},
 	{
 		label = "by-pointer",
 		kind = "Keyword",
-		documentation = "by-pointer",
+		documentation = [[
+		by-pointer
+		]],
 	},
 	{
 		label = "by-variant-pointer",
 		kind = "Keyword",
-		documentation = "by-variant-pointer",
+		documentation = [[
+		by-variant-pointer
+		]],
 	},
 	{
 		label = "cache",
 		kind = "Keyword",
-		documentation = "cache",
+		documentation = [[
+		cache
+		]],
 	},
 	{
 		label = "cache-size",
 		kind = "Keyword",
-		documentation = "cache-size",
+		documentation = [[
+		cache-size
+		]],
 	},
 	{
 		label = "call",
 		kind = "Keyword",
-		documentation = "Transfers control to a dispatch routine (PRODSP) that then calls a C function. You write the C function using ABL Host Language Call (HLC) interface.",
+		documentation = [[
+		Transfers control to a dispatch routine (PRODSP) that then calls a C function. You write the C function using ABL Host Language Call (HLC) interface.
+		]],
 	},
 	{
 		label = "call-name",
 		kind = "Keyword",
-		documentation = "call-name",
+		documentation = [[
+		call-name
+		]],
 	},
 	{
 		label = "call-type",
 		kind = "Keyword",
-		documentation = "call-type",
+		documentation = [[
+		call-type
+		]],
 	},
 	{
 		label = "cancel-break",
 		kind = "Keyword",
-		documentation = "cancel-break",
+		documentation = [[
+		cancel-break
+		]],
 	},
 	{
 		label = "cancel-button",
 		kind = "Keyword",
-		documentation = "cancel-button",
+		documentation = [[
+		cancel-button
+		]],
 	},
 	{
 		label = "can-create",
 		kind = "Keyword",
-		documentation = "can-create",
+		documentation = [[
+		can-create
+		]],
 	},
 	{
 		label = "can-delete",
 		kind = "Keyword",
-		documentation = "can-delete",
+		documentation = [[
+		can-delete
+		]],
 	},
 	{
 		label = "can-do",
 		kind = "Keyword",
-		documentation = "Checks a user ID against a list of one or more user ID matching patterns that can be used to indicate what users have access to a given application function. The function returns TRUE if the specified user ID has access according to the list. Thus, you can implement run-time authorization checking for any procedure or class in your application.",
+		documentation = [[
+		Checks a user ID against a list of one or more user ID matching patterns that can be used to indicate what users have access to a given application function. The function returns TRUE if the specified user ID has access according to the list. Thus, you can implement run-time authorization checking for any procedure or class in your application.
+		]],
 	},
 	{
 		label = "can-do-domain-support",
 		kind = "Keyword",
-		documentation = "can-do-domain-support",
+		documentation = [[
+		can-do-domain-support
+		]],
 	},
 	{
 		label = "can-find",
 		kind = "Keyword",
-		documentation = "Returns a TRUE value if a record is found that meets the specified FIND criteria; otherwise it returns FALSE. CAN-FIND does not make the record available to the procedure. You typically use the CAN-FIND function within a VALIDATE option in a data handling statement, such as the UPDATE statement.",
+		documentation = [[
+		Returns a TRUE value if a record is found that meets the specified FIND criteria; otherwise it returns FALSE. CAN-FIND does not make the record available to the procedure. You typically use the CAN-FIND function within a VALIDATE option in a data handling statement, such as the UPDATE statement.
+		]],
 	},
 	{
 		label = "can-query",
 		kind = "Keyword",
-		documentation = "Returns a logical value indicating whether you can query a specified attribute or method for a specified widget.",
+		documentation = [[
+		Returns a logical value indicating whether you can query a specified attribute or method for a specified widget.
+		]],
 	},
 	{
 		label = "can-read",
 		kind = "Keyword",
-		documentation = "can-read",
+		documentation = [[
+		can-read
+		]],
 	},
 	{
 		label = "can-set",
 		kind = "Keyword",
-		documentation = "Returns a logical value indicating whether you can set a specified attribute for a specified widget.",
+		documentation = [[
+		Returns a logical value indicating whether you can set a specified attribute for a specified widget.
+		]],
 	},
 	{
 		label = "can-write",
 		kind = "Keyword",
-		documentation = "can-write",
+		documentation = [[
+		can-write
+		]],
 	},
 	{
 		label = "caps",
 		kind = "Keyword",
-		documentation = "Converts any lowercase characters in a CHARACTER or LONGCHAR expression to uppercase characters, and returns the result. The data type of the returned value matches the data type of the expression passed to the function.",
+		documentation = [[
+		Converts any lowercase characters in a CHARACTER or LONGCHAR expression to uppercase characters, and returns the result. The data type of the returned value matches the data type of the expression passed to the function.
+		]],
 	},
 	{
 		label = "careful-paint",
 		kind = "Keyword",
-		documentation = "careful-paint",
+		documentation = [[
+		careful-paint
+		]],
 	},
 	{
 		label = "case",
 		kind = "Keyword",
-		documentation = "Provides a multi-branch decision based on the value of a single expression",
+		documentation = [[
+		Provides a multi-branch decision based on the value of a single expression
+		]],
 	},
 	{
 		label = "case-sensitive",
 		kind = "Keyword",
-		documentation = "case-sensitive",
+		documentation = [[
+		case-sensitive
+		]],
 	},
 	{
 		label = "cast",
 		kind = "Keyword",
-		documentation = "cast",
+		documentation = [[
+		cast
+		]],
 	},
 	{
 		label = "catch",
 		kind = "Keyword",
-		documentation = "catch",
+		documentation = [[
+		catch
+		]],
 	},
 	{
 		label = "cdecl",
 		kind = "Keyword",
-		documentation = "cdecl",
+		documentation = [[
+		cdecl
+		]],
 	},
 	{
 		label = "centered",
 		kind = "Keyword",
-		documentation = "centered",
+		documentation = [[
+		centered
+		]],
 	},
 	{
 		label = "chained",
 		kind = "Keyword",
-		documentation = "chained",
+		documentation = [[
+		chained
+		]],
 	},
 	{
 		label = "character",
 		kind = "Keyword",
-		documentation = "character",
+		documentation = [[
+		character
+		]],
 	},
 	{
 		label = "character_length",
 		kind = "Keyword",
-		documentation = "character_length",
+		documentation = [[
+		character_length
+		]],
 	},
 	{
 		label = "charset",
 		kind = "Keyword",
-		documentation = "charset",
+		documentation = [[
+		charset
+		]],
 	},
 	{
 		label = "check",
 		kind = "Keyword",
-		documentation = "check",
+		documentation = [[
+		check
+		]],
 	},
 	{
 		label = "checked",
 		kind = "Keyword",
-		documentation = "checked",
+		documentation = [[
+		checked
+		]],
 	},
 	{
 		label = "choose",
 		kind = "Keyword",
-		documentation = "choose",
+		documentation = [[
+		choose
+		]],
 	},
 	{
 		label = "chr",
 		kind = "Keyword",
-		documentation = "Converts an integer value to its corresponding character value.",
+		documentation = [[
+		Converts an integer value to its corresponding character value.
+		]],
 	},
 	{
 		label = "class",
 		kind = "Keyword",
-		documentation = "Defines a user-defined class.",
+		documentation = [[
+		Defines a user-defined class.
+		]],
 	},
 	{
 		label = "class-type",
 		kind = "Keyword",
-		documentation = "class-type",
+		documentation = [[
+		class-type
+		]],
 	},
 	{
 		label = "clear",
 		kind = "Keyword",
-		documentation = "Clears the data for all fill-in fields in a frame. It also clears the colors for all widgets in a frame, except for enabled fill-ins.",
+		documentation = [[
+		Clears the data for all fill-in fields in a frame. It also clears the colors for all widgets in a frame, except for enabled fill-ins.
+		]],
 	},
 	{
 		label = "clear-appl-context",
 		kind = "Keyword",
-		documentation = "clear-appl-context",
+		documentation = [[
+		clear-appl-context
+		]],
 	},
 	{
 		label = "clear-log",
 		kind = "Keyword",
-		documentation = "clear-log",
+		documentation = [[
+		clear-log
+		]],
 	},
 	{
 		label = "clear-selection",
 		kind = "Keyword",
-		documentation = "clear-selection",
+		documentation = [[
+		clear-selection
+		]],
 	},
 	{
 		label = "clear-sort-arrows",
 		kind = "Keyword",
-		documentation = "clear-sort-arrows",
+		documentation = [[
+		clear-sort-arrows
+		]],
 	},
 	{
 		label = "client-connection-id",
 		kind = "Keyword",
-		documentation = "client-connection-id",
+		documentation = [[
+		client-connection-id
+		]],
 	},
 	{
 		label = "client-principal",
 		kind = "Keyword",
-		documentation = "client-principal",
+		documentation = [[
+		client-principal
+		]],
 	},
 	{
 		label = "client-tty",
 		kind = "Keyword",
-		documentation = "client-tty",
+		documentation = [[
+		client-tty
+		]],
 	},
 	{
 		label = "client-type",
 		kind = "Keyword",
-		documentation = "client-type",
+		documentation = [[
+		client-type
+		]],
 	},
 	{
 		label = "client-workstation",
 		kind = "Keyword",
-		documentation = "client-workstation",
+		documentation = [[
+		client-workstation
+		]],
 	},
 	{
 		label = "clipboard",
 		kind = "Keyword",
-		documentation = "clipboard",
+		documentation = [[
+		clipboard
+		]],
 	},
 	{
 		label = "close",
 		kind = "Keyword",
-		documentation = "close",
+		documentation = [[
+		close
+		]],
 	},
 	{
 		label = "close-log",
 		kind = "Keyword",
-		documentation = "close-log",
+		documentation = [[
+		close-log
+		]],
 	},
 	{
 		label = "code",
 		kind = "Keyword",
-		documentation = "code",
+		documentation = [[
+		code
+		]],
 	},
 	{
 		label = "codebase-locator",
 		kind = "Keyword",
-		documentation = "codebase-locator",
+		documentation = [[
+		codebase-locator
+		]],
 	},
 	{
 		label = "codepage",
 		kind = "Keyword",
-		documentation = "codepage",
+		documentation = [[
+		codepage
+		]],
 	},
 	{
 		label = "codepage-convert",
 		kind = "Keyword",
-		documentation = "Converts a string value from one code page to another.",
+		documentation = [[
+		Converts a string value from one code page to another.
+		]],
 	},
 	{
 		label = "collate",
 		kind = "Keyword",
-		documentation = "collate",
+		documentation = [[
+		collate
+		]],
 	},
 	{
 		label = "col-of",
 		kind = "Keyword",
-		documentation = "col-of",
+		documentation = [[
+		col-of
+		]],
 	},
 	{
 		label = "colon",
 		kind = "Keyword",
-		documentation = "colon",
+		documentation = [[
+		colon
+		]],
 	},
 	{
 		label = "colon-aligned",
 		kind = "Keyword",
-		documentation = "colon-aligned",
+		documentation = [[
+		colon-aligned
+		]],
 	},
 	{
 		label = "color",
 		kind = "Keyword",
-		documentation = "color",
+		documentation = [[
+		color
+		]],
 	},
 	{
 		label = "color-table",
 		kind = "Keyword",
-		documentation = "color-table",
+		documentation = [[
+		color-table
+		]],
 	},
 	{
 		label = "column",
 		kind = "Keyword",
-		documentation = "column",
+		documentation = [[
+		column
+		]],
 	},
 	{
 		label = "column-bgcolor",
 		kind = "Keyword",
-		documentation = "column-bgcolor",
+		documentation = [[
+		column-bgcolor
+		]],
 	},
 	{
 		label = "column-dcolor",
 		kind = "Keyword",
-		documentation = "column-dcolor",
+		documentation = [[
+		column-dcolor
+		]],
 	},
 	{
 		label = "column-fgcolor",
 		kind = "Keyword",
-		documentation = "column-fgcolor",
+		documentation = [[
+		column-fgcolor
+		]],
 	},
 	{
 		label = "column-font",
 		kind = "Keyword",
-		documentation = "column-font",
+		documentation = [[
+		column-font
+		]],
 	},
 	{
 		label = "column-label",
 		kind = "Keyword",
-		documentation = "column-label",
+		documentation = [[
+		column-label
+		]],
 	},
 	{
 		label = "column-movable",
 		kind = "Keyword",
-		documentation = "column-movable",
+		documentation = [[
+		column-movable
+		]],
 	},
 	{
 		label = "column-of",
 		kind = "Keyword",
-		documentation = "column-of",
+		documentation = [[
+		column-of
+		]],
 	},
 	{
 		label = "column-pfcolor",
 		kind = "Keyword",
-		documentation = "column-pfcolor",
+		documentation = [[
+		column-pfcolor
+		]],
 	},
 	{
 		label = "column-read-only",
 		kind = "Keyword",
-		documentation = "column-read-only",
+		documentation = [[
+		column-read-only
+		]],
 	},
 	{
 		label = "column-resizable",
 		kind = "Keyword",
-		documentation = "column-resizable",
+		documentation = [[
+		column-resizable
+		]],
 	},
 	{
 		label = "columns",
 		kind = "Keyword",
-		documentation = "columns",
+		documentation = [[
+		columns
+		]],
 	},
 	{
 		label = "column-scrolling",
 		kind = "Keyword",
-		documentation = "column-scrolling",
+		documentation = [[
+		column-scrolling
+		]],
 	},
 	{
 		label = "combo-box",
 		kind = "Keyword",
-		documentation = "combo-box",
+		documentation = [[
+		combo-box
+		]],
 	},
 	{
 		label = "com-handle",
 		kind = "Keyword",
-		documentation = "com-handle",
+		documentation = [[
+		com-handle
+		]],
 	},
 	{
 		label = "command",
 		kind = "Keyword",
-		documentation = "command",
+		documentation = [[
+		command
+		]],
 	},
 	{
 		label = "compares",
 		kind = "Keyword",
-		documentation = "COMPARE returns a LOGICAL value representing the result of the logical expression, where the comparison rules are defined by the combination of the operator, the comparison strength, and the collation.",
+		documentation = [[
+		COMPARE returns a LOGICAL value representing the result of the logical expression, where the comparison rules are defined by the combination of the operator, the comparison strength, and the collation.
+		]],
 	},
 	{
 		label = "compile",
 		kind = "Keyword",
-		documentation = "Compiles a procedure file or a class definition file. A compilation can last for a session, or you can save it permanently for use in later sessions (as an r-code file, which has a .r extension). ",
+		documentation = [[
+		Compiles a procedure file or a class definition file. A compilation can last for a session, or you can save it permanently for use in later sessions (as an r-code file, which has a .r extension). 
+		]],
 	},
 	{
 		label = "compiler",
 		kind = "Keyword",
-		documentation = "compiler",
+		documentation = [[
+		compiler
+		]],
 	},
 	{
 		label = "complete",
 		kind = "Keyword",
-		documentation = "complete",
+		documentation = [[
+		complete
+		]],
 	},
 	{
 		label = "com-self",
 		kind = "Keyword",
-		documentation = "com-self",
+		documentation = [[
+		com-self
+		]],
 	},
 	{
 		label = "config-name",
 		kind = "Keyword",
-		documentation = "config-name",
+		documentation = [[
+		config-name
+		]],
 	},
 	{
 		label = "connect",
 		kind = "Keyword",
-		documentation = "Establishes a connection to one or more databases from within an ABL procedure or class. ",
+		documentation = [[
+		Establishes a connection to one or more databases from within an ABL procedure or class. 
+		]],
 	},
 	{
 		label = "connected",
 		kind = "Keyword",
-		documentation = "Tells whether a database is connected. If logical name is the logical name or alias is the alias of a connected database, the CONNECTED function returns TRUE; otherwise, it returns FALSE.",
+		documentation = [[
+		Tells whether a database is connected. If logical name is the logical name or alias is the alias of a connected database, the CONNECTED function returns TRUE; otherwise, it returns FALSE.
+		]],
 	},
 	{
 		label = "constructor",
 		kind = "Keyword",
-		documentation = "Defines a constructor for a class. A constructor is a special type of method that ABL invokes to initialize data for a new object of a class that is instantiated using the NEW function (classes), NEW statement, or DYNAMIC-NEW statement, or to initialize static members of a class.",
+		documentation = [[
+		Defines a constructor for a class. A constructor is a special type of method that ABL invokes to initialize data for a new object of a class that is instantiated using the NEW function (classes), NEW statement, or DYNAMIC-NEW statement, or to initialize static members of a class.
+			]],
 	},
 	{
 		label = "contains",
 		kind = "Keyword",
-		documentation = "contains",
+		documentation = [[
+		contains
+		]],
 	},
 	{
 		label = "contents",
 		kind = "Keyword",
-		documentation = "contents",
+		documentation = [[
+		contents
+		]],
 	},
 	{
 		label = "context",
 		kind = "Keyword",
-		documentation = "context",
+		documentation = [[
+		context
+		]],
 	},
 	{
 		label = "context-help",
 		kind = "Keyword",
-		documentation = "context-help",
+		documentation = [[
+		context-help
+		]],
 	},
 	{
 		label = "context-help-file",
 		kind = "Keyword",
-		documentation = "context-help-file",
+		documentation = [[
+		context-help-file
+		]],
 	},
 	{
 		label = "context-help-id",
 		kind = "Keyword",
-		documentation = "context-help-id",
+		documentation = [[
+		context-help-id
+		]],
 	},
 	{
 		label = "context-popup",
 		kind = "Keyword",
-		documentation = "context-popup",
+		documentation = [[
+		context-popup
+		]],
 	},
 	{
 		label = "control",
 		kind = "Keyword",
-		documentation = "control",
+		documentation = [[
+		control
+		]],
 	},
 	{
 		label = "control-box",
 		kind = "Keyword",
-		documentation = "control-box",
+		documentation = [[
+		control-box
+		]],
 	},
 	{
 		label = "control-frame",
 		kind = "Keyword",
-		documentation = "control-frame",
+		documentation = [[
+		control-frame
+		]],
 	},
 	{
 		label = "convert",
 		kind = "Keyword",
-		documentation = "convert",
+		documentation = [[
+		convert
+		]],
 	},
 	{
 		label = "convert-3d-colors",
 		kind = "Keyword",
-		documentation = "convert-3d-colors",
+		documentation = [[
+		convert-3d-colors
+		]],
 	},
 	{
 		label = "convert-to-offset",
 		kind = "Keyword",
-		documentation = "convert-to-offset",
+		documentation = [[
+		convert-to-offset
+		]],
 	},
 	{
 		label = "copy-dataset",
 		kind = "Keyword",
-		documentation = "copy-dataset",
+		documentation = [[
+		copy-dataset
+		]],
 	},
 	{
 		label = "copy-lob",
 		kind = "Keyword",
-		documentation = "Copies large object data between BLOBs, CLOBs, MEMPTRs, and LONGCHARs. It also copies large object data to and from the file system, and converts large object data to or from a specified code page.",
+		documentation = [[
+		Copies large object data between BLOBs, CLOBs, MEMPTRs, and LONGCHARs. It also copies large object data to and from the file system, and converts large object data to or from a specified code page.
+		]],
 	},
 	{
 		label = "copy-sax-attributes",
 		kind = "Keyword",
-		documentation = "copy-sax-attributes",
+		documentation = [[
+		copy-sax-attributes
+		]],
 	},
 	{
 		label = "copy-temp-table",
 		kind = "Keyword",
-		documentation = "copy-temp-table",
+		documentation = [[
+		copy-temp-table
+		]],
 	},
 	{
 		label = "count",
 		kind = "Keyword",
-		documentation = "Calculates the number of times the expression was counted in a break group and the count of all the values in all break groups.",
+		documentation = [[
+		Calculates the number of times the expression was counted in a break group and the count of all the values in all break groups.
+		]],
 	},
 	{
 		label = "count-of",
 		kind = "Keyword",
-		documentation = "Returns an INTEGER value that is the total number of selected records in the table or tables you are using across break groups.",
+		documentation = [[
+		Returns an INTEGER value that is the total number of selected records in the table or tables you are using across break groups.
+		]],
 	},
 	{
 		label = "cpcase",
 		kind = "Keyword",
-		documentation = "cpcase",
+		documentation = [[
+		cpcase
+		]],
 	},
 	{
 		label = "cpcoll",
 		kind = "Keyword",
-		documentation = "cpcoll",
+		documentation = [[
+		cpcoll
+		]],
 	},
 	{
 		label = "cpinternal",
 		kind = "Keyword",
-		documentation = "cpinternal",
+		documentation = [[
+		cpinternal
+		]],
 	},
 	{
 		label = "cplog",
 		kind = "Keyword",
-		documentation = "cplog",
+		documentation = [[
+		cplog
+		]],
 	},
 	{
 		label = "cpprint",
 		kind = "Keyword",
-		documentation = "cpprint",
+		documentation = [[
+		cpprint
+		]],
 	},
 	{
 		label = "cprcodein",
 		kind = "Keyword",
-		documentation = "cprcodein",
+		documentation = [[
+		cprcodein
+		]],
 	},
 	{
 		label = "cprcodeout",
 		kind = "Keyword",
-		documentation = "cprcodeout",
+		documentation = [[
+		cprcodeout
+		]],
 	},
 	{
 		label = "cpstream",
 		kind = "Keyword",
-		documentation = "cpstream",
+		documentation = [[
+		cpstream
+		]],
 	},
 	{
 		label = "cpterm",
 		kind = "Keyword",
-		documentation = "cpterm",
+		documentation = [[
+		cpterm
+		]],
 	},
 	{
 		label = "crc-value",
 		kind = "Keyword",
-		documentation = "crc-value",
+		documentation = [[
+		crc-value
+		]],
 	},
 	{
 		label = "create",
 		kind = "Keyword",
-		documentation = "Creates a record in a table, sets all the fields in the record to their default initial values, and moves a copy of the record to the record buffer.",
+		documentation = [[
+		Creates a record in a table, sets all the fields in the record to their default initial values, and moves a copy of the record to the record buffer.
+		]],
 	},
 	{
 		label = "create-like",
 		kind = "Keyword",
-		documentation = "create-like",
+		documentation = [[
+		create-like
+		]],
 	},
 	{
 		label = "create-like-sequential",
 		kind = "Keyword",
-		documentation = "create-like-sequential",
+		documentation = [[
+		create-like-sequential
+		]],
 	},
 	{
 		label = "create-node-namespace",
 		kind = "Keyword",
-		documentation = "create-node-namespace",
+		documentation = [[
+		create-node-namespace
+		]],
 	},
 	{
 		label = "create-result-list-entry",
 		kind = "Keyword",
-		documentation = "create-result-list-entry",
+		documentation = [[
+		create-result-list-entry
+		]],
 	},
 	{
 		label = "create-test-file",
 		kind = "Keyword",
-		documentation = "create-test-file",
+		documentation = [[
+		create-test-file
+		]],
 	},
 	{
 		label = "current",
 		kind = "Keyword",
-		documentation = "current",
+		documentation = [[
+		current
+		]],
 	},
 	{
 		label = "current_date",
 		kind = "Keyword",
-		documentation = "current_date",
+		documentation = [[
+		current_date
+		]],
 	},
 	{
 		label = "current_date",
 		kind = "Keyword",
-		documentation = "current_date",
+		documentation = [[
+		current_date
+		]],
 	},
 	{
 		label = "current-changed",
 		kind = "Keyword",
-		documentation = "current-changed",
+		documentation = [[
+		current-changed
+		]],
 	},
 	{
 		label = "current-column",
 		kind = "Keyword",
-		documentation = "current-column",
+		documentation = [[
+		current-column
+		]],
 	},
 	{
 		label = "current-environment",
 		kind = "Keyword",
-		documentation = "current-environment",
+		documentation = [[
+		current-environment
+		]],
 	},
 	{
 		label = "current-iteration",
 		kind = "Keyword",
-		documentation = "current-iteration",
+		documentation = [[
+		current-iteration
+		]],
 	},
 	{
 		label = "current-language",
 		kind = "Keyword",
-		documentation = "current-language",
+		documentation = [[
+		current-language
+		]],
 	},
 	{
 		label = "current-query",
 		kind = "Keyword",
-		documentation = "current-query",
+		documentation = [[
+		current-query
+		]],
 	},
 	{
 		label = "current-request-info",
 		kind = "Keyword",
-		documentation = "current-request-info",
+		documentation = [[
+		current-request-info
+		]],
 	},
 	{
 		label = "current-response-info",
 		kind = "Keyword",
-		documentation = "current-response-info",
+		documentation = [[
+		current-response-info
+		]],
 	},
 	{
 		label = "current-result-row",
 		kind = "Keyword",
-		documentation = "current-result-row",
+		documentation = [[
+		current-result-row
+		]],
 	},
 	{
 		label = "current-row-modified",
 		kind = "Keyword",
-		documentation = "current-row-modified",
+		documentation = [[
+		current-row-modified
+		]],
 	},
 	{
 		label = "current-value",
 		kind = "Keyword",
-		documentation = "current-value",
+		documentation = [[
+		current-value
+		]],
 	},
 	{
 		label = "current-window",
 		kind = "Keyword",
-		documentation = "current-window",
+		documentation = [[
+		current-window
+		]],
 	},
 	{
 		label = "cursor",
 		kind = "Keyword",
-		documentation = "cursor",
+		documentation = [[
+		cursor
+		]],
 	},
 	{
 		label = "cursor-char",
 		kind = "Keyword",
-		documentation = "cursor-char",
+		documentation = [[
+		cursor-char
+		]],
 	},
 	{
 		label = "cursor-line",
 		kind = "Keyword",
-		documentation = "cursor-line",
+		documentation = [[
+		cursor-line
+		]],
 	},
 	{
 		label = "cursor-offset",
 		kind = "Keyword",
-		documentation = "cursor-offset",
+		documentation = [[
+		cursor-offset
+		]],
 	},
 	{
 		label = "database",
 		kind = "Keyword",
-		documentation = "database",
+		documentation = [[
+		database
+		]],
 	},
 	{
 		label = "data-bind",
 		kind = "Keyword",
-		documentation = "data-bind",
+		documentation = [[
+		data-bind
+		]],
 	},
 	{
 		label = "data-entry-return",
 		kind = "Keyword",
-		documentation = "data-entry-return",
+		documentation = [[
+		data-entry-return
+		]],
 	},
 	{
 		label = "data-relation",
 		kind = "Keyword",
-		documentation = "data-relation",
+		documentation = [[
+		data-relation
+		]],
 	},
 	{
 		label = "dataservers",
 		kind = "Keyword",
-		documentation = "dataservers",
+		documentation = [[
+		dataservers
+		]],
 	},
 	{
 		label = "dataset",
 		kind = "Keyword",
-		documentation = "dataset",
+		documentation = [[
+		dataset
+		]],
 	},
 	{
 		label = "dataset-handle",
 		kind = "Keyword",
-		documentation = "dataset-handle",
+		documentation = [[
+		dataset-handle
+		]],
 	},
 	{
 		label = "data-source",
 		kind = "Keyword",
-		documentation = "data-source",
+		documentation = [[
+		data-source
+		]],
 	},
 	{
 		label = "data-source-complete-map",
 		kind = "Keyword",
-		documentation = "data-source-complete-map",
+		documentation = [[
+		data-source-complete-map
+		]],
 	},
 	{
 		label = "data-source-modified",
 		kind = "Keyword",
-		documentation = "data-source-modified",
+		documentation = [[
+		data-source-modified
+		]],
 	},
 	{
 		label = "data-source-rowid",
 		kind = "Keyword",
-		documentation = "data-source-rowid",
+		documentation = [[
+		data-source-rowid
+		]],
 	},
 	{
 		label = "data-type",
 		kind = "Keyword",
-		documentation = "data-type",
+		documentation = [[
+		data-type
+		]],
 	},
 	{
 		label = "date",
 		kind = "Keyword",
-		documentation = "Converts a single character string, a set of month, day, and year values, an integer expression, a DATETIME expression, or a DATETIME-TZ expression into a DATE value.",
+		documentation = [[
+		Converts a single character string, a set of month, day, and year values, an integer expression, a DATETIME expression, or a DATETIME-TZ expression into a DATE value.
+		]],
 	},
 	{
 		label = "datetime",
 		kind = "Keyword",
-		documentation = "Converts date and time values, or a character string, into a DATETIME value.",
+		documentation = [[
+		Converts date and time values, or a character string, into a DATETIME value.
+		]],
 	},
 	{
 		label = "datetime-tz",
 		kind = "Keyword",
-		documentation = "Converts a date, time, and time zone value, or a character string, into a DATETIME-TZ value. ",
+		documentation = [[
+		Converts a date, time, and time zone value, or a character string, into a DATETIME-TZ value. 
+		]],
 	},
 	{
 		label = "date-format",
 		kind = "Keyword",
-		documentation = "date-format",
+		documentation = [[
+		date-format
+		]],
 	},
 	{
 		label = "day",
 		kind = "Function",
-		documentation = "Evaluates a date expression and returns a day of the month as an INTEGER value from 1 to 31, inclusive.",
+		documentation = [[
+		Evaluates a date expression and returns a day of the month as an INTEGER value from 1 to 31, inclusive.
+		]],
 	},
 	{
 		label = "dbcodepage",
 		kind = "Keyword",
-		documentation = "dbcodepage",
+		documentation = [[
+		dbcodepage
+		]],
 	},
 	{
 		label = "dbcollation",
 		kind = "Keyword",
-		documentation = "dbcollation",
+		documentation = [[
+		dbcollation
+		]],
 	},
 	{
 		label = "dbname",
 		kind = "Keyword",
-		documentation = "dbname",
+		documentation = [[
+		dbname
+		]],
 	},
 	{
 		label = "dbparam",
 		kind = "Keyword",
-		documentation = "dbparam",
+		documentation = [[
+		dbparam
+		]],
 	},
 	{
 		label = "db-context",
 		kind = "Keyword",
-		documentation = "db-context",
+		documentation = [[
+		db-context
+		]],
 	},
 	{
 		label = "db-references",
 		kind = "Keyword",
-		documentation = "db-references",
+		documentation = [[
+		db-references
+		]],
 	},
 	{
 		label = "dbrestrictions",
 		kind = "Keyword",
-		documentation = "dbrestrictions",
+		documentation = [[
+		dbrestrictions
+		]],
 	},
 	{
 		label = "dbtaskid",
 		kind = "Keyword",
-		documentation = "dbtaskid",
+		documentation = [[
+		dbtaskid
+		]],
 	},
 	{
 		label = "dbtype",
 		kind = "Keyword",
-		documentation = "dbtype",
+		documentation = [[
+		dbtype
+		]],
 	},
 	{
 		label = "dbversion",
 		kind = "Keyword",
-		documentation = "dbversion",
+		documentation = [[
+		dbversion
+		]],
 	},
 	{
 		label = "dcolor",
 		kind = "Keyword",
-		documentation = "dcolor",
+		documentation = [[
+		dcolor
+		]],
 	},
 	{
 		label = "dde",
 		kind = "Keyword",
-		documentation = "dde",
+		documentation = [[
+		dde
+		]],
 	},
 	{
 		label = "dde-error",
 		kind = "Keyword",
-		documentation = "dde-error",
+		documentation = [[
+		dde-error
+		]],
 	},
 	{
 		label = "dde-id",
 		kind = "Keyword",
-		documentation = "dde-id",
+		documentation = [[
+		dde-id
+		]],
 	},
 	{
 		label = "dde-item",
 		kind = "Keyword",
-		documentation = "dde-item",
+		documentation = [[
+		dde-item
+		]],
 	},
 	{
 		label = "dde-name",
 		kind = "Keyword",
-		documentation = "dde-name",
+		documentation = [[
+		dde-name
+		]],
 	},
 	{
 		label = "dde-topic",
 		kind = "Keyword",
-		documentation = "dde-topic",
+		documentation = [[
+		dde-topic
+		]],
 	},
 	{
 		label = "deblank",
 		kind = "Keyword",
-		documentation = "deblank",
+		documentation = [[
+		deblank
+		]],
 	},
 	{
 		label = "debug",
 		kind = "Keyword",
-		documentation = "debug",
+		documentation = [[
+		debug
+		]],
 	},
 	{
 		label = "debug-alert",
 		kind = "Keyword",
-		documentation = "debug-alert",
+		documentation = [[
+		debug-alert
+		]],
 	},
 	{
 		label = "debugger",
 		kind = "Keyword",
-		documentation = "debugger",
+		documentation = [[
+		debugger
+		]],
 	},
 	{
 		label = "debug-list",
 		kind = "Keyword",
-		documentation = "debug-list",
+		documentation = [[
+		debug-list
+		]],
 	},
 	{
 		label = "decimal",
 		kind = "Keyword",
-		documentation = "Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a DECIMAL value.",
+		documentation = [[
+		Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a DECIMAL value.
+		]],
 	},
 	{
 		label = "decimals",
 		kind = "Keyword",
-		documentation = "decimals",
+		documentation = [[
+		decimals
+		]],
 	},
 	{
 		label = "declare",
 		kind = "Keyword",
-		documentation = "declare",
+		documentation = [[
+		declare
+		]],
 	},
 	{
 		label = "declare-namespace",
 		kind = "Keyword",
-		documentation = "declare-namespace",
+		documentation = [[
+		declare-namespace
+		]],
 	},
 	{
 		label = "decrypt",
 		kind = "Keyword",
-		documentation = "decrypt",
+		documentation = [[
+		decrypt
+		]],
 	},
 	{
 		label = "default",
 		kind = "Keyword",
-		documentation = "default",
+		documentation = [[
+		default
+		]],
 	},
 	{
 		label = "default-buffer-handle",
 		kind = "Keyword",
-		documentation = "default-buffer-handle",
+		documentation = [[
+		default-buffer-handle
+		]],
 	},
 	{
 		label = "default-button",
 		kind = "Keyword",
-		documentation = "default-button",
+		documentation = [[
+		default-button
+		]],
 	},
 	{
 		label = "default-commit",
 		kind = "Keyword",
-		documentation = "default-commit",
+		documentation = [[
+		default-commit
+		]],
 	},
 	{
 		label = "default-extension",
 		kind = "Keyword",
-		documentation = "default-extension",
+		documentation = [[
+		default-extension
+		]],
 	},
 	{
 		label = "default-noxlate",
 		kind = "Keyword",
-		documentation = "default-noxlate",
+		documentation = [[
+		default-noxlate
+		]],
 	},
 	{
 		label = "default-value",
 		kind = "Keyword",
-		documentation = "default-value",
+		documentation = [[
+		default-value
+		]],
 	},
 	{
 		label = "default-window",
 		kind = "Keyword",
-		documentation = "default-window",
+		documentation = [[
+		default-window
+		]],
 	},
 	{
 		label = "define",
 		kind = "Keyword",
-		documentation = "define",
+		documentation = [[
+		define
+		]],
 	},
 	{
 		label = "defined",
 		kind = "Keyword",
-		documentation = "defined",
+		documentation = [[
+		defined
+		]],
 	},
 	{
 		label = "define-user-event-manager",
 		kind = "Keyword",
-		documentation = "define-user-event-manager",
+		documentation = [[
+		define-user-event-manager
+		]],
 	},
 	{
 		label = "delegate",
 		kind = "Keyword",
-		documentation = "delegate",
+		documentation = [[
+		delegate
+		]],
 	},
 	{
 		label = "delete",
 		kind = "Keyword",
-		documentation = "Removes a record from a record buffer and from the database.",
+		documentation = [[
+		Removes a record from a record buffer and from the database.
+		]],
 	},
 	{
 		label = "delete-char",
 		kind = "Keyword",
-		documentation = "delete-char",
+		documentation = [[
+		delete-char
+		]],
 	},
 	{
 		label = "delete-current-row",
 		kind = "Keyword",
-		documentation = "delete-current-row",
+		documentation = [[
+		delete-current-row
+		]],
 	},
 	{
 		label = "delete-line",
 		kind = "Keyword",
-		documentation = "delete-line",
+		documentation = [[
+		delete-line
+		]],
 	},
 	{
 		label = "delete-result-list-entry",
 		kind = "Keyword",
-		documentation = "delete-result-list-entry",
+		documentation = [[
+		delete-result-list-entry
+		]],
 	},
 	{
 		label = "delete-selected-row",
 		kind = "Keyword",
-		documentation = "delete-selected-row",
+		documentation = [[
+		delete-selected-row
+		]],
 	},
 	{
 		label = "delete-selected-rows",
 		kind = "Keyword",
-		documentation = "delete-selected-rows",
+		documentation = [[
+		delete-selected-rows
+		]],
 	},
 	{
 		label = "delimiter",
 		kind = "Keyword",
-		documentation = "delimiter",
+		documentation = [[
+		delimiter
+		]],
 	},
 	{
 		label = "desc",
 		kind = "Keyword",
-		documentation = "desc",
+		documentation = [[
+		desc
+		]],
 	},
 	{
 		label = "descending",
 		kind = "Keyword",
-		documentation = "descending",
+		documentation = [[
+		descending
+		]],
 	},
 	{
 		label = "deselect-focused-row",
 		kind = "Keyword",
-		documentation = "deselect-focused-row",
+		documentation = [[
+		deselect-focused-row
+		]],
 	},
 	{
 		label = "deselection",
 		kind = "Keyword",
-		documentation = "deselection",
+		documentation = [[
+		deselection
+		]],
 	},
 	{
 		label = "deselect-rows",
 		kind = "Keyword",
-		documentation = "deselect-rows",
+		documentation = [[
+		deselect-rows
+		]],
 	},
 	{
 		label = "deselect-selected-row",
 		kind = "Keyword",
-		documentation = "deselect-selected-row",
+		documentation = [[
+		deselect-selected-row
+		]],
 	},
 	{
 		label = "destructor",
 		kind = "Keyword",
-		documentation = "destructor",
+		documentation = [[
+		destructor
+		]],
 	},
 	{
 		label = "dialog-box",
 		kind = "Keyword",
-		documentation = "dialog-box",
+		documentation = [[
+		dialog-box
+		]],
 	},
 	{
 		label = "dictionary",
 		kind = "Keyword",
-		documentation = "dictionary",
+		documentation = [[
+		dictionary
+		]],
 	},
 	{
 		label = "dir",
 		kind = "Keyword",
-		documentation = "dir",
+		documentation = [[
+		dir
+		]],
 	},
 	{
 		label = "disable",
 		kind = "Keyword",
-		documentation = "disable",
+		documentation = [[
+		disable
+		]],
 	},
 	{
 		label = "disable-auto-zap",
 		kind = "Keyword",
-		documentation = "disable-auto-zap",
+		documentation = [[
+		disable-auto-zap
+		]],
 	},
 	{
 		label = "disabled",
 		kind = "Keyword",
-		documentation = "disabled",
+		documentation = [[
+		disabled
+		]],
 	},
 	{
 		label = "disable-dump-triggers",
 		kind = "Keyword",
-		documentation = "disable-dump-triggers",
+		documentation = [[
+		disable-dump-triggers
+		]],
 	},
 	{
 		label = "disable-load-triggers",
 		kind = "Keyword",
-		documentation = "disable-load-triggers",
+		documentation = [[
+		disable-load-triggers
+		]],
 	},
 	{
 		label = "disconnect",
 		kind = "Keyword",
-		documentation = "disconnect",
+		documentation = [[
+		disconnect
+		]],
 	},
 	{
 		label = "disp",
 		kind = "Keyword",
-		documentation = "disp",
+		documentation = [[
+		disp
+		]],
 	},
 	{
 		label = "display",
 		kind = "Keyword",
-		documentation = "Moves data to a screen buffer and displays the data on the screen or other output destination. ",
+		documentation = [[
+		Moves data to a screen buffer and displays the data on the screen or other output destination. 
+		]],
 	},
 	{
 		label = "display-message",
 		kind = "Keyword",
-		documentation = "display-message",
+		documentation = [[
+		display-message
+		]],
 	},
 	{
 		label = "display-type",
 		kind = "Keyword",
-		documentation = "display-type",
+		documentation = [[
+		display-type
+		]],
 	},
 	{
 		label = "distinct",
 		kind = "Keyword",
-		documentation = "distinct",
+		documentation = [[
+		distinct
+		]],
 	},
 	{
 		label = "do",
 		kind = "Keyword",
-		documentation = "Groups statements into a single block, optionally specifying processing services or block properties. Use an END statement to end a DO block.",
+		documentation = [[
+		Groups statements into a single block, optionally specifying processing services or block properties. Use an END statement to end a DO block.
+		]],
 	},
 	{
 		label = "domain-description",
 		kind = "Keyword",
-		documentation = "domain-description",
+		documentation = [[
+		domain-description
+		]],
 	},
 	{
 		label = "domain-name",
 		kind = "Keyword",
-		documentation = "domain-name",
+		documentation = [[
+		domain-name
+		]],
 	},
 	{
 		label = "domain-type",
 		kind = "Keyword",
-		documentation = "domain-type",
+		documentation = [[
+		domain-type
+		]],
 	},
 	{
 		label = "dos",
 		kind = "Keyword",
-		documentation = "dos",
+		documentation = [[
+		dos
+		]],
 	},
 	{
 		label = "double",
 		kind = "Keyword",
-		documentation = "double",
+		documentation = [[
+		double
+		]],
 	},
 	{
 		label = "down",
 		kind = "Keyword",
-		documentation = "Positions the cursor on a new line in a down or multi-line frame.",
+		documentation = [[
+		Positions the cursor on a new line in a down or multi-line frame.
+		]],
 	},
 	{
 		label = "drag-enabled",
 		kind = "Keyword",
-		documentation = "drag-enabled",
+		documentation = [[
+		drag-enabled
+		]],
 	},
 	{
 		label = "drop",
 		kind = "Keyword",
-		documentation = "drop",
+		documentation = [[
+		drop
+		]],
 	},
 	{
 		label = "drop-down",
 		kind = "Keyword",
-		documentation = "drop-down",
+		documentation = [[
+		drop-down
+		]],
 	},
 	{
 		label = "drop-down-list",
 		kind = "Keyword",
-		documentation = "drop-down-list",
+		documentation = [[
+		drop-down-list
+		]],
 	},
 	{
 		label = "drop-file-notify",
 		kind = "Keyword",
-		documentation = "drop-file-notify",
+		documentation = [[
+		drop-file-notify
+		]],
 	},
 	{
 		label = "drop-target",
 		kind = "Keyword",
-		documentation = "drop-target",
+		documentation = [[
+		drop-target
+		]],
 	},
 	{
 		label = "ds-close-cursor",
 		kind = "Keyword",
-		documentation = "ds-close-cursor",
+		documentation = [[
+		ds-close-cursor
+		]],
 	},
 	{
 		label = "dslog-manager",
 		kind = "Keyword",
-		documentation = "dslog-manager",
+		documentation = [[
+		dslog-manager
+		]],
 	},
 	{
 		label = "dump",
 		kind = "Keyword",
-		documentation = "dump",
+		documentation = [[
+		dump
+		]],
 	},
 	{
 		label = "dynamic",
 		kind = "Keyword",
-		documentation = "dynamic",
+		documentation = [[
+		dynamic
+		]],
 	},
 	{
 		label = "dynamic-enum",
 		kind = "Keyword",
-		documentation = "dynamic-enum",
+		documentation = [[
+		dynamic-enum
+		]],
 	},
 	{
 		label = "dynamic-function",
 		kind = "Keyword",
-		documentation = "dynamic-function",
+		documentation = [[
+		dynamic-function
+		]],
 	},
 	{
 		label = "dynamic-invoke",
 		kind = "Keyword",
-		documentation = "dynamic-invoke",
+		documentation = [[
+		dynamic-invoke
+		]],
 	},
 	{
 		label = "each",
 		kind = "Keyword",
-		documentation = "each",
+		documentation = [[
+		each
+		]],
 	},
 	{
 		label = "echo",
 		kind = "Keyword",
-		documentation = "echo",
+		documentation = [[
+		echo
+		]],
 	},
 	{
 		label = "edge-chars",
 		kind = "Keyword",
-		documentation = "edge-chars",
+		documentation = [[
+		edge-chars
+		]],
 	},
 	{
 		label = "edge-pixels",
 		kind = "Keyword",
-		documentation = "edge-pixels",
+		documentation = [[
+		edge-pixels
+		]],
 	},
 	{
 		label = "edit-can-paste",
 		kind = "Keyword",
-		documentation = "edit-can-paste",
+		documentation = [[
+		edit-can-paste
+		]],
 	},
 	{
 		label = "edit-can-undo",
 		kind = "Keyword",
-		documentation = "edit-can-undo",
+		documentation = [[
+		edit-can-undo
+		]],
 	},
 	{
 		label = "edit-clear",
 		kind = "Keyword",
-		documentation = "edit-clear",
+		documentation = [[
+		edit-clear
+		]],
 	},
 	{
 		label = "edit-copy",
 		kind = "Keyword",
-		documentation = "edit-copy",
+		documentation = [[
+		edit-copy
+		]],
 	},
 	{
 		label = "edit-cut",
 		kind = "Keyword",
-		documentation = "edit-cut",
+		documentation = [[
+		edit-cut
+		]],
 	},
 	{
 		label = "editing",
 		kind = "Keyword",
-		documentation = "Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or UPDATE statement. ",
+		documentation = [[
+		Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or UPDATE statement. 
+		]],
 	},
 	{
 		label = "editor",
 		kind = "Keyword",
-		documentation = "editor",
+		documentation = [[
+		editor
+		]],
 	},
 	{
 		label = "edit-paste",
 		kind = "Keyword",
-		documentation = "edit-paste",
+		documentation = [[
+		edit-paste
+		]],
 	},
 	{
 		label = "edit-undo",
 		kind = "Keyword",
-		documentation = "edit-undo",
+		documentation = [[
+		edit-undo
+		]],
 	},
 	{
 		label = "else",
 		kind = "Keyword",
-		documentation = "Describes the block statement to process if the expression is FALSE or the Unknown value (?). The ELSE option is not required.",
+		documentation = [[
+		Describes the block statement to process if the expression is FALSE or the Unknown value (?). The ELSE option is not required.
+		]],
 	},
 	{
 		label = "empty",
 		kind = "Keyword",
-		documentation = "empty",
+		documentation = [[
+		empty
+		]],
 	},
 	{
 		label = "empty-temp-table",
 		kind = "Keyword",
-		documentation = "Empties a temp-table.",
+		documentation = [[
+		Empties a temp-table.
+		]],
 	},
 	{
 		label = "enable",
 		kind = "Keyword",
-		documentation = "Enables input for one or more field-level and child frame widgets within a frame.",
+		documentation = [[
+		Enables input for one or more field-level and child frame widgets within a frame.
+		]],
 	},
 	{
 		label = "enabled-fields",
 		kind = "Keyword",
-		documentation = "enabled-fields",
+		documentation = [[
+		enabled-fields
+		]],
 	},
 	{
 		label = "encode",
 		kind = "Keyword",
-		documentation = "encode",
+		documentation = [[
+		encode
+		]],
 	},
 	{
 		label = "encrypt",
 		kind = "Keyword",
-		documentation = "encrypt",
+		documentation = [[
+		encrypt
+		]],
 	},
 	{
 		label = "encrypt-audit-mac-key",
 		kind = "Keyword",
-		documentation = "encrypt-audit-mac-key",
+		documentation = [[
+		encrypt-audit-mac-key
+		]],
 	},
 	{
 		label = "encryption-salt",
 		kind = "Keyword",
-		documentation = "encryption-salt",
+		documentation = [[
+		encryption-salt
+		]],
 	},
 	{
 		label = "end",
 		kind = "Keyword",
-		documentation = "Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DESTRUCTOR, DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET property accessor. ",
+		documentation = [[
+		Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DESTRUCTOR, DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET property accessor. 
+		]],
 	},
 	{
 		label = "end-document",
 		kind = "Keyword",
-		documentation = "end-document",
+		documentation = [[
+		end-document
+		]],
 	},
 	{
 		label = "end-element",
 		kind = "Keyword",
-		documentation = "end-element",
+		documentation = [[
+		end-element
+		]],
 	},
 	{
 		label = "end-event-group",
 		kind = "Keyword",
-		documentation = "end-event-group",
+		documentation = [[
+		end-event-group
+		]],
 	},
 	{
 		label = "end-file-drop",
 		kind = "Keyword",
-		documentation = "end-file-drop",
+		documentation = [[
+		end-file-drop
+		]],
 	},
 	{
 		label = "endkey",
 		kind = "Keyword",
-		documentation = "endkey",
+		documentation = [[
+		endkey
+		]],
 	},
 	{
 		label = "end-key",
 		kind = "Keyword",
-		documentation = "end-key",
+		documentation = [[
+		end-key
+		]],
 	},
 	{
 		label = "end-move",
 		kind = "Keyword",
-		documentation = "end-move",
+		documentation = [[
+		end-move
+		]],
 	},
 	{
 		label = "end-resize",
 		kind = "Keyword",
-		documentation = "end-resize",
+		documentation = [[
+		end-resize
+		]],
 	},
 	{
 		label = "end-row-resize",
 		kind = "Keyword",
-		documentation = "end-row-resize",
+		documentation = [[
+		end-row-resize
+		]],
 	},
 	{
 		label = "end-user-prompt",
 		kind = "Keyword",
-		documentation = "end-user-prompt",
+		documentation = [[
+		end-user-prompt
+		]],
 	},
 	{
 		label = "entered",
 		kind = "Keyword",
-		documentation = "entered",
+		documentation = [[
+		entered
+		]],
 	},
 	{
 		label = "entity-expansion-limit",
 		kind = "Keyword",
-		documentation = "entity-expansion-limit",
+		documentation = [[
+		entity-expansion-limit
+		]],
 	},
 	{
 		label = "entry",
 		kind = "Keyword",
-		documentation = "Returns a character string (CHARACTER or LONGCHAR) entry from a list based on an integer position. The data type of the returned value matches the data type of the list element.",
+		documentation = [[
+		Returns a character string (CHARACTER or LONGCHAR) entry from a list based on an integer position. The data type of the returned value matches the data type of the list element.
+		]],
 	},
 	{
 		label = "enum",
 		kind = "Keyword",
-		documentation = "enum",
+		documentation = [[
+		enum
+		]],
 	},
 	{
 		label = "eq",
 		kind = "Keyword",
-		documentation = "Returns a TRUE value if two expressions are equal.",
+		documentation = [[
+		Returns a TRUE value if two expressions are equal.
+		]],
 	},
 	{
 		label = "error",
 		kind = "Keyword",
-		documentation = "Indicates whether an error occurred during a FILL or SAVE-ROW-CHANGES operation on the specified ProDataSet temp-table buffer. ",
+		documentation = [[
+		Indicates whether an error occurred during a FILL or SAVE-ROW-CHANGES operation on the specified ProDataSet temp-table buffer. 
+		]],
 	},
 	{
 		label = "error-column",
 		kind = "Keyword",
-		documentation = "error-column",
+		documentation = [[
+		error-column
+		]],
 	},
 	{
 		label = "error-row",
 		kind = "Keyword",
-		documentation = "error-row",
+		documentation = [[
+		error-row
+		]],
 	},
 	{
 		label = "error-stack-trace",
 		kind = "Keyword",
-		documentation = "error-stack-trace",
+		documentation = [[
+		error-stack-trace
+		]],
 	},
 	{
 		label = "error-status",
 		kind = "Keyword",
-		documentation = "error-status",
+		documentation = [[
+		error-status
+		]],
 	},
 	{
 		label = "escape",
 		kind = "Keyword",
-		documentation = "escape",
+		documentation = [[
+		escape
+		]],
 	},
 	{
 		label = "etime",
 		kind = "Keyword",
-		documentation = "etime",
+		documentation = [[
+		etime
+		]],
 	},
 	{
 		label = "event",
 		kind = "Keyword",
-		documentation = "event",
+		documentation = [[
+		event
+		]],
 	},
 	{
 		label = "event-group-id",
 		kind = "Keyword",
-		documentation = "event-group-id",
+		documentation = [[
+		event-group-id
+		]],
 	},
 	{
 		label = "event-procedure",
 		kind = "Keyword",
-		documentation = "event-procedure",
+		documentation = [[
+		event-procedure
+		]],
 	},
 	{
 		label = "event-procedure-context",
 		kind = "Keyword",
-		documentation = "event-procedure-context",
+		documentation = [[
+		event-procedure-context
+		]],
 	},
 	{
 		label = "events",
 		kind = "Keyword",
-		documentation = "events",
+		documentation = [[
+		events
+		]],
 	},
 	{
 		label = "event-type",
 		kind = "Keyword",
-		documentation = "event-type",
+		documentation = [[
+		event-type
+		]],
 	},
 	{
 		label = "except",
 		kind = "Keyword",
-		documentation = "except",
+		documentation = [[
+		except
+		]],
 	},
 	{
 		label = "exclusive-id",
 		kind = "Keyword",
-		documentation = "exclusive-id",
+		documentation = [[
+		exclusive-id
+		]],
 	},
 	{
 		label = "exclusive-lock",
 		kind = "Keyword",
-		documentation = "exclusive-lock",
+		documentation = [[
+		exclusive-lock
+		]],
 	},
 	{
 		label = "exclusive-web-user",
 		kind = "Keyword",
-		documentation = "exclusive-web-user",
+		documentation = [[
+		exclusive-web-user
+		]],
 	},
 	{
 		label = "execute",
 		kind = "Keyword",
-		documentation = "execute",
+		documentation = [[
+		execute
+		]],
 	},
 	{
 		label = "exists",
 		kind = "Keyword",
-		documentation = "exists",
+		documentation = [[
+		exists
+		]],
 	},
 	{
 		label = "exp",
 		kind = "Keyword",
-		documentation = "exp",
+		documentation = [[
+		exp
+		]],
 	},
 	{
 		label = "expand",
 		kind = "Keyword",
-		documentation = "expand",
+		documentation = [[
+		expand
+		]],
 	},
 	{
 		label = "expandable",
 		kind = "Keyword",
-		documentation = "expandable",
+		documentation = [[
+		expandable
+		]],
 	},
 	{
 		label = "explicit",
 		kind = "Keyword",
-		documentation = "explicit",
+		documentation = [[
+		explicit
+		]],
 	},
 	{
 		label = "export",
 		kind = "Keyword",
-		documentation = "Converts data to a standard character format and displays it to the current output destination (except when the current output destination is the screen) or to a named output stream. You can use data exported to a file in standard format as input to other ABL procedures.",
+		documentation = [[
+		Converts data to a standard character format and displays it to the current output destination (except when the current output destination is the screen) or to a named output stream. You can use data exported to a file in standard format as input to other ABL procedures.
+		]],
 	},
 	{
 		label = "export-principal",
 		kind = "Keyword",
-		documentation = "export-principal",
+		documentation = [[
+		export-principal
+		]],
 	},
 	{
 		label = "extended",
 		kind = "Keyword",
-		documentation = "extended",
+		documentation = [[
+		extended
+		]],
 	},
 	{
 		label = "extent",
 		kind = "Keyword",
-		documentation = "Fixes the extent (number of elements) for an unfixed indeterminate array variable or parameter. ABL treats the fixed indeterminate array as a determinate array consistent with its data type.",
+		documentation = [[
+		Fixes the extent (number of elements) for an unfixed indeterminate array variable or parameter. ABL treats the fixed indeterminate array as a determinate array consistent with its data type.
+		]],
 	},
 	{
 		label = "external",
 		kind = "Keyword",
-		documentation = "external",
+		documentation = [[
+		external
+		]],
 	},
 	{
 		label = "false",
 		kind = "Keyword",
-		documentation = "false",
+		documentation = [[
+		false
+		]],
 	},
 	{
 		label = "fetch",
 		kind = "Keyword",
-		documentation = "fetch",
+		documentation = [[
+		fetch
+		]],
 	},
 	{
 		label = "fetch-selected-row",
 		kind = "Keyword",
-		documentation = "fetch-selected-row",
+		documentation = [[
+		fetch-selected-row
+		]],
 	},
 	{
 		label = "fgcolor",
 		kind = "Keyword",
-		documentation = "fgcolor",
+		documentation = [[
+		fgcolor
+		]],
 	},
 	{
 		label = "field",
 		kind = "Keyword",
-		documentation = "field",
+		documentation = [[
+		field
+		]],
 	},
 	{
 		label = "fields",
 		kind = "Keyword",
-		documentation = "fields",
+		documentation = [[
+		fields
+		]],
 	},
 	{
 		label = "file",
 		kind = "Keyword",
-		documentation = "file",
+		documentation = [[
+		file
+		]],
 	},
 	{
 		label = "file-create-date",
 		kind = "Keyword",
-		documentation = "file-create-date",
+		documentation = [[
+		file-create-date
+		]],
 	},
 	{
 		label = "file-create-time",
 		kind = "Keyword",
-		documentation = "file-create-time",
+		documentation = [[
+		file-create-time
+		]],
 	},
 	{
 		label = "file-information",
 		kind = "Keyword",
-		documentation = "file-information",
+		documentation = [[
+		file-information
+		]],
 	},
 	{
 		label = "file-mod-date",
 		kind = "Keyword",
-		documentation = "file-mod-date",
+		documentation = [[
+		file-mod-date
+		]],
 	},
 	{
 		label = "file-mod-time",
 		kind = "Keyword",
-		documentation = "file-mod-time",
+		documentation = [[
+		file-mod-time
+		]],
 	},
 	{
 		label = "filename",
 		kind = "Keyword",
-		documentation = "filename",
+		documentation = [[
+		filename
+		]],
 	},
 	{
 		label = "file-name",
 		kind = "Keyword",
-		documentation = "file-name",
+		documentation = [[
+		file-name
+		]],
 	},
 	{
 		label = "file-offset",
 		kind = "Keyword",
-		documentation = "file-offset",
+		documentation = [[
+		file-offset
+		]],
 	},
 	{
 		label = "file-size",
 		kind = "Keyword",
-		documentation = "file-size",
+		documentation = [[
+		file-size
+		]],
 	},
 	{
 		label = "file-type",
 		kind = "Keyword",
-		documentation = "file-type",
+		documentation = [[
+		file-type
+		]],
 	},
 	{
 		label = "fill",
 		kind = "Keyword",
-		documentation = "Generates a character string made up of a character string that is repeated a specified number of times.",
+		documentation = [[
+		Generates a character string made up of a character string that is repeated a specified number of times.
+		]],
 	},
 	{
 		label = "filled",
 		kind = "Keyword",
-		documentation = "filled",
+		documentation = [[
+		filled
+		]],
 	},
 	{
 		label = "fill-in",
 		kind = "Keyword",
-		documentation = "fill-in",
+		documentation = [[
+		fill-in
+		]],
 	},
 	{
 		label = "filters",
 		kind = "Keyword",
-		documentation = "filters",
+		documentation = [[
+		filters
+		]],
 	},
 	{
 		label = "final",
 		kind = "Keyword",
-		documentation = "final",
+		documentation = [[
+		final
+		]],
 	},
 	{
 		label = "finally",
 		kind = "Keyword",
-		documentation = "finally",
+		documentation = [[
+		finally
+		]],
 	},
 	{
 		label = "find",
 		kind = "Keyword",
-		documentation = "Locates a single record in a table and moves that record into a record buffer.",
+		documentation = [[
+		Locates a single record in a table and moves that record into a record buffer.
+		]],
 	},
 	{
 		label = "find-by-rowid",
 		kind = "Keyword",
-		documentation = "find-by-rowid",
+		documentation = [[
+		find-by-rowid
+		]],
 	},
 	{
 		label = "find-case-sensitive",
 		kind = "Keyword",
-		documentation = "find-case-sensitive",
+		documentation = [[
+		find-case-sensitive
+		]],
 	},
 	{
 		label = "find-current",
 		kind = "Keyword",
-		documentation = "find-current",
+		documentation = [[
+		find-current
+		]],
 	},
 	{
 		label = "finder",
 		kind = "Keyword",
-		documentation = "finder",
+		documentation = [[
+		finder
+		]],
 	},
 	{
 		label = "find-first",
 		kind = "Keyword",
-		documentation = "find-first",
+		documentation = [[
+		find-first
+		]],
 	},
 	{
 		label = "find-global",
 		kind = "Keyword",
-		documentation = "find-global",
+		documentation = [[
+		find-global
+		]],
 	},
 	{
 		label = "find-last",
 		kind = "Keyword",
-		documentation = "find-last",
+		documentation = [[
+		find-last
+		]],
 	},
 	{
 		label = "find-next-occurrence",
 		kind = "Keyword",
-		documentation = "find-next-occurrence",
+		documentation = [[
+		find-next-occurrence
+		]],
 	},
 	{
 		label = "find-prev-occurrence",
 		kind = "Keyword",
-		documentation = "find-prev-occurrence",
+		documentation = [[
+		find-prev-occurrence
+		]],
 	},
 	{
 		label = "find-select",
 		kind = "Keyword",
-		documentation = "find-select",
+		documentation = [[
+		find-select
+		]],
 	},
 	{
 		label = "find-unique",
 		kind = "Keyword",
-		documentation = "find-unique",
+		documentation = [[
+		find-unique
+		]],
 	},
 	{
 		label = "find-wrap-around",
 		kind = "Keyword",
-		documentation = "find-wrap-around",
+		documentation = [[
+		find-wrap-around
+		]],
 	},
 	{
 		label = "first",
 		kind = "Function",
-		documentation = "Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration of that block.",
+		documentation = [[
+		Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration of that block.
+		]],
 	},
 	{
 		label = "first-asynch-request",
 		kind = "Keyword",
-		documentation = "first-asynch-request",
+		documentation = [[
+		first-asynch-request
+		]],
 	},
 	{
 		label = "first-child",
 		kind = "Keyword",
-		documentation = "first-child",
+		documentation = [[
+		first-child
+		]],
 	},
 	{
 		label = "first-column",
 		kind = "Keyword",
-		documentation = "first-column",
+		documentation = [[
+		first-column
+		]],
 	},
 	{
 		label = "first-form",
 		kind = "Keyword",
-		documentation = "first-form",
+		documentation = [[
+		first-form
+		]],
 	},
 	{
 		label = "first-object",
 		kind = "Keyword",
-		documentation = "first-object",
+		documentation = [[
+		first-object
+		]],
 	},
 	{
 		label = "first-of",
 		kind = "Function",
-		documentation = "Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration for a new break group, and modifies all three block types.",
+		documentation = [[
+		Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration for a new break group, and modifies all three block types.
+		]],
 	},
 	{
 		label = "first-procedure",
 		kind = "Keyword",
-		documentation = "first-procedure",
+		documentation = [[
+		first-procedure
+		]],
 	},
 	{
 		label = "first-server",
 		kind = "Keyword",
-		documentation = "first-server",
+		documentation = [[
+		first-server
+		]],
 	},
 	{
 		label = "first-tab-item",
 		kind = "Keyword",
-		documentation = "first-tab-item",
+		documentation = [[
+		first-tab-item
+		]],
 	},
 	{
 		label = "fit-last-column",
 		kind = "Keyword",
-		documentation = "fit-last-column",
+		documentation = [[
+		fit-last-column
+		]],
 	},
 	{
 		label = "fixed-only",
 		kind = "Keyword",
-		documentation = "fixed-only",
+		documentation = [[
+		fixed-only
+		]],
 	},
 	{
 		label = "flat-button",
 		kind = "Keyword",
-		documentation = "flat-button",
+		documentation = [[
+		flat-button
+		]],
 	},
 	{
 		label = "float",
 		kind = "Keyword",
-		documentation = "float",
+		documentation = [[
+		float
+		]],
 	},
 	{
 		label = "focus",
 		kind = "Keyword",
-		documentation = "focus",
+		documentation = [[
+		focus
+		]],
 	},
 	{
 		label = "focused-row",
 		kind = "Keyword",
-		documentation = "focused-row",
+		documentation = [[
+		focused-row
+		]],
 	},
 	{
 		label = "focused-row-selected",
 		kind = "Keyword",
-		documentation = "focused-row-selected",
+		documentation = [[
+		focused-row-selected
+		]],
 	},
 	{
 		label = "font",
 		kind = "Keyword",
-		documentation = "font",
+		documentation = [[
+		font
+		]],
 	},
 	{
 		label = "font-table",
 		kind = "Keyword",
-		documentation = "font-table",
+		documentation = [[
+		font-table
+		]],
 	},
 	{
 		label = "for",
 		kind = "Keyword",
-		documentation = "Starts an iterating block that reads a record from each of one or more tables at the start of each block iteration. Use an END statement to end a FOR block.",
+		documentation = [[
+		Starts an iterating block that reads a record from each of one or more tables at the start of each block iteration. Use an END statement to end a FOR block.
+		]],
 	},
 	{
 		label = "force-file",
 		kind = "Keyword",
-		documentation = "force-file",
+		documentation = [[
+		force-file
+		]],
 	},
 	{
 		label = "foreground",
 		kind = "Keyword",
-		documentation = "foreground",
+		documentation = [[
+		foreground
+		]],
 	},
 	{
 		label = "form",
 		kind = "Keyword",
-		documentation = "form",
+		documentation = [[
+		form
+		]],
 	},
 	{
 		label = "form",
 		kind = "Keyword",
-		documentation = "form",
+		documentation = [[
+		form
+		]],
 	},
 	{
 		label = "format",
 		kind = "Keyword",
-		documentation = "format",
+		documentation = [[
+		format
+		]],
 	},
 	{
 		label = "formatted",
 		kind = "Keyword",
-		documentation = "formatted",
+		documentation = [[
+		formatted
+		]],
 	},
 	{
 		label = "form-long-input",
 		kind = "Keyword",
-		documentation = "form-long-input",
+		documentation = [[
+		form-long-input
+		]],
 	},
 	{
 		label = "forward",
 		kind = "Keyword",
-		documentation = "forward",
+		documentation = [[
+		forward
+		]],
 	},
 	{
 		label = "forwards",
 		kind = "Keyword",
-		documentation = "forwards",
+		documentation = [[
+		forwards
+		]],
 	},
 	{
 		label = "fragment",
 		kind = "Keyword",
-		documentation = "fragment",
+		documentation = [[
+		fragment
+		]],
 	},
 	{
 		label = "frame",
 		kind = "Keyword",
-		documentation = "frame",
+		documentation = [[
+		frame
+		]],
 	},
 	{
 		label = "frame-col",
 		kind = "Keyword",
-		documentation = "frame-col",
+		documentation = [[
+		frame-col
+		]],
 	},
 	{
 		label = "frame-db",
 		kind = "Keyword",
-		documentation = "frame-db",
+		documentation = [[
+		frame-db
+		]],
 	},
 	{
 		label = "frame-down",
 		kind = "Keyword",
-		documentation = "frame-down",
+		documentation = [[
+		frame-down
+		]],
 	},
 	{
 		label = "frame-field",
 		kind = "Keyword",
-		documentation = "frame-field",
+		documentation = [[
+		frame-field
+		]],
 	},
 	{
 		label = "frame-file",
 		kind = "Keyword",
-		documentation = "frame-file",
+		documentation = [[
+		frame-file
+		]],
 	},
 	{
 		label = "frame-index",
 		kind = "Keyword",
-		documentation = "frame-index",
+		documentation = [[
+		frame-index
+		]],
 	},
 	{
 		label = "frame-line",
 		kind = "Keyword",
-		documentation = "frame-line",
+		documentation = [[
+		frame-line
+		]],
 	},
 	{
 		label = "frame-name",
 		kind = "Keyword",
-		documentation = "Returns the name of the frame that the cursor is in to a field that is enabled for input.",
+		documentation = [[
+		Returns the name of the frame that the cursor is in to a field that is enabled for input.
+		]],
 	},
 	{
 		label = "frame-row",
 		kind = "Keyword",
-		documentation = "frame-row",
+		documentation = [[
+		frame-row
+		]],
 	},
 	{
 		label = "frame-spacing",
 		kind = "Keyword",
-		documentation = "frame-spacing",
+		documentation = [[
+		frame-spacing
+		]],
 	},
 	{
 		label = "frame-value",
 		kind = "Keyword",
-		documentation = "Stores the value of an expression in a frame field during a data entry statement.",
+		documentation = [[
+		Stores the value of an expression in a frame field during a data entry statement.
+		]],
 	},
 	{
 		label = "frame-x",
 		kind = "Keyword",
-		documentation = "frame-x",
+		documentation = [[
+		frame-x
+		]],
 	},
 	{
 		label = "frame-y",
 		kind = "Keyword",
-		documentation = "frame-y",
+		documentation = [[
+		frame-y
+		]],
 	},
 	{
 		label = "frequency",
 		kind = "Keyword",
-		documentation = "frequency",
+		documentation = [[
+		frequency
+		]],
 	},
 	{
 		label = "from",
 		kind = "Keyword",
-		documentation = "from",
+		documentation = [[
+		from
+		]],
 	},
 	{
 		label = "from-chars",
 		kind = "Keyword",
-		documentation = "from-chars",
+		documentation = [[
+		from-chars
+		]],
 	},
 	{
 		label = "from-current",
 		kind = "Keyword",
-		documentation = "from-current",
+		documentation = [[
+		from-current
+		]],
 	},
 	{
 		label = "from-pixels",
 		kind = "Keyword",
-		documentation = "from-pixels",
+		documentation = [[
+		from-pixels
+		]],
 	},
 	{
 		label = "full-height-chars",
 		kind = "Keyword",
-		documentation = "full-height-chars",
+		documentation = [[
+		full-height-chars
+		]],
 	},
 	{
 		label = "full-height-pixels",
 		kind = "Keyword",
-		documentation = "full-height-pixels",
+		documentation = [[
+		full-height-pixels
+		]],
 	},
 	{
 		label = "full-pathname",
 		kind = "Keyword",
-		documentation = "full-pathname",
+		documentation = [[
+		full-pathname
+		]],
 	},
 	{
 		label = "full-width-chars",
 		kind = "Keyword",
-		documentation = "full-width-chars",
+		documentation = [[
+		full-width-chars
+		]],
 	},
 	{
 		label = "full-width-pixels",
 		kind = "Keyword",
-		documentation = "full-width-pixels",
+		documentation = [[
+		full-width-pixels
+		]],
 	},
 	{
 		label = "function",
 		kind = "Keyword",
-		documentation = "function",
+		documentation = [[
+		function
+		]],
 	},
 	{
 		label = "function-call-type",
 		kind = "Keyword",
-		documentation = "function-call-type",
+		documentation = [[
+		function-call-type
+		]],
 	},
 	{
 		label = "gateways",
 		kind = "Keyword",
-		documentation = "gateways",
+		documentation = [[
+		gateways
+		]],
 	},
 	{
 		label = "ge",
-		kind = "Keyword",
 		kind = "Operator",
-		documentation = "Returns a TRUE value if the first of two expressions is greater than or equal to the second expression.",
+		documentation = [[
+		Returns a TRUE value if the first of two expressions is greater than or equal to the second expression.
+		]],
 	},
 	{
 		label = "generate-md5",
 		kind = "Keyword",
-		documentation = "generate-md5",
+		documentation = [[
+		generate-md5
+		]],
 	},
 	{
 		label = "generate-pbe-key",
 		kind = "Keyword",
-		documentation = "generate-pbe-key",
+		documentation = [[
+		generate-pbe-key
+		]],
 	},
 	{
 		label = "generate-pbe-salt",
 		kind = "Keyword",
-		documentation = "generate-pbe-salt",
+		documentation = [[
+		generate-pbe-salt
+		]],
 	},
 	{
 		label = "generate-random-key",
 		kind = "Keyword",
-		documentation = "generate-random-key",
+		documentation = [[
+		generate-random-key
+		]],
 	},
 	{
 		label = "generate-uuid",
 		kind = "Keyword",
-		documentation = "generate-uuid",
+		documentation = [[
+		generate-uuid
+		]],
 	},
 	{
 		label = "get",
 		kind = "Keyword",
-		documentation = "Returns one record for a previously opened query.",
+		documentation = [[
+		Returns one record for a previously opened query.
+		]],
 	},
 	{
 		label = "get-attr-call-type",
 		kind = "Keyword",
-		documentation = "get-attr-call-type",
+		documentation = [[
+		get-attr-call-type
+		]],
 	},
 	{
 		label = "get-attribute-node",
 		kind = "Keyword",
-		documentation = "get-attribute-node",
+		documentation = [[
+		get-attribute-node
+		]],
 	},
 	{
 		label = "get-binary-data",
 		kind = "Keyword",
-		documentation = "get-binary-data",
+		documentation = [[
+		get-binary-data
+		]],
 	},
 	{
 		label = "get-blue-value",
 		kind = "Keyword",
-		documentation = "get-blue-value",
+		documentation = [[
+		get-blue-value
+		]],
 	},
 	{
 		label = "get-browse-column",
 		kind = "Keyword",
-		documentation = "get-browse-column",
+		documentation = [[
+		get-browse-column
+		]],
 	},
 	{
 		label = "get-buffer-handle",
 		kind = "Keyword",
-		documentation = "get-buffer-handle",
+		documentation = [[
+		get-buffer-handle
+		]],
 	},
 	{
 		label = "getbyte",
 		kind = "Keyword",
-		documentation = "getbyte",
+		documentation = [[
+		getbyte
+		]],
 	},
 	{
 		label = "get-byte",
 		kind = "Keyword",
-		documentation = "get-byte",
+		documentation = [[
+		get-byte
+		]],
 	},
 	{
 		label = "get-callback-proc-context",
 		kind = "Keyword",
-		documentation = "get-callback-proc-context",
+		documentation = [[
+		get-callback-proc-context
+		]],
 	},
 	{
 		label = "get-callback-proc-name",
 		kind = "Keyword",
-		documentation = "get-callback-proc-name",
+		documentation = [[
+		get-callback-proc-name
+		]],
 	},
 	{
 		label = "get-cgi-list",
 		kind = "Keyword",
-		documentation = "get-cgi-list",
+		documentation = [[
+		get-cgi-list
+		]],
 	},
 	{
 		label = "get-cgi-long-value",
 		kind = "Keyword",
-		documentation = "get-cgi-long-value",
+		documentation = [[
+		get-cgi-long-value
+		]],
 	},
 	{
 		label = "get-cgi-value",
 		kind = "Keyword",
-		documentation = "get-cgi-value",
+		documentation = [[
+		get-cgi-value
+		]],
 	},
 	{
 		label = "get-class",
 		kind = "Keyword",
-		documentation = "get-class",
+		documentation = [[
+		get-class
+		]],
 	},
 	{
 		label = "get-codepages",
 		kind = "Keyword",
-		documentation = "get-codepages",
+		documentation = [[
+		get-codepages
+		]],
 	},
 	{
 		label = "get-collations",
 		kind = "Keyword",
-		documentation = "get-collations",
+		documentation = [[
+		get-collations
+		]],
 	},
 	{
 		label = "get-config-value",
 		kind = "Keyword",
-		documentation = "get-config-value",
+		documentation = [[
+		get-config-value
+		]],
 	},
 	{
 		label = "get-current",
 		kind = "Keyword",
-		documentation = "get-current",
+		documentation = [[
+		get-current
+		]],
 	},
 	{
 		label = "get-double",
 		kind = "Keyword",
-		documentation = "get-double",
+		documentation = [[
+		get-double
+		]],
 	},
 	{
 		label = "get-dropped-file",
 		kind = "Keyword",
-		documentation = "get-dropped-file",
+		documentation = [[
+		get-dropped-file
+		]],
 	},
 	{
 		label = "get-dynamic",
 		kind = "Keyword",
-		documentation = "get-dynamic",
+		documentation = [[
+		get-dynamic
+		]],
 	},
 	{
 		label = "get-error-column",
 		kind = "Keyword",
-		documentation = "get-error-column",
+		documentation = [[
+		get-error-column
+		]],
 	},
 	{
 		label = "get-error-row",
 		kind = "Keyword",
-		documentation = "get-error-row",
+		documentation = [[
+		get-error-row
+		]],
 	},
 	{
 		label = "get-file",
 		kind = "Keyword",
-		documentation = "get-file",
+		documentation = [[
+		get-file
+		]],
 	},
 	{
 		label = "get-file-name",
 		kind = "Keyword",
-		documentation = "get-file-name",
+		documentation = [[
+		get-file-name
+		]],
 	},
 	{
 		label = "get-file-offset",
 		kind = "Keyword",
-		documentation = "get-file-offset",
+		documentation = [[
+		get-file-offset
+		]],
 	},
 	{
 		label = "get-first",
 		kind = "Keyword",
-		documentation = "get-first",
+		documentation = [[
+		get-first
+		]],
 	},
 	{
 		label = "get-float",
 		kind = "Keyword",
-		documentation = "get-float",
+		documentation = [[
+		get-float
+		]],
 	},
 	{
 		label = "get-green-value",
 		kind = "Keyword",
-		documentation = "get-green-value",
+		documentation = [[
+		get-green-value
+		]],
 	},
 	{
 		label = "get-index-by-namespace-name",
 		kind = "Keyword",
-		documentation = "get-index-by-namespace-name",
+		documentation = [[
+		get-index-by-namespace-name
+		]],
 	},
 	{
 		label = "get-index-by-qname",
 		kind = "Keyword",
-		documentation = "get-index-by-qname",
+		documentation = [[
+		get-index-by-qname
+		]],
 	},
 	{
 		label = "get-int64",
 		kind = "Keyword",
-		documentation = "get-int64",
+		documentation = [[
+		get-int64
+		]],
 	},
 	{
 		label = "get-iteration",
 		kind = "Keyword",
-		documentation = "get-iteration",
+		documentation = [[
+		get-iteration
+		]],
 	},
 	{
 		label = "get-key-value",
 		kind = "Keyword",
-		documentation = "get-key-value",
+		documentation = [[
+		get-key-value
+		]],
 	},
 	{
 		label = "get-last",
 		kind = "Keyword",
-		documentation = "get-last",
+		documentation = [[
+		get-last
+		]],
 	},
 	{
 		label = "get-localname-by-index",
 		kind = "Keyword",
-		documentation = "get-localname-by-index",
+		documentation = [[
+		get-localname-by-index
+		]],
 	},
 	{
 		label = "get-long",
 		kind = "Keyword",
-		documentation = "get-long",
+		documentation = [[
+		get-long
+		]],
 	},
 	{
 		label = "get-message",
 		kind = "Keyword",
-		documentation = "get-message",
+		documentation = [[
+		get-message
+		]],
 	},
 	{
 		label = "get-next",
 		kind = "Keyword",
-		documentation = "get-next",
+		documentation = [[
+		get-next
+		]],
 	},
 	{
 		label = "get-number",
 		kind = "Keyword",
-		documentation = "get-number",
+		documentation = [[
+		get-number
+		]],
 	},
 	{
 		label = "get-pointer-value",
 		kind = "Keyword",
-		documentation = "get-pointer-value",
+		documentation = [[
+		get-pointer-value
+		]],
 	},
 	{
 		label = "get-prev",
 		kind = "Keyword",
-		documentation = "get-prev",
+		documentation = [[
+		get-prev
+		]],
 	},
 	{
 		label = "get-printers",
 		kind = "Keyword",
-		documentation = "get-printers",
+		documentation = [[
+		get-printers
+		]],
 	},
 	{
 		label = "get-property",
 		kind = "Keyword",
-		documentation = "get-property",
+		documentation = [[
+		get-property
+		]],
 	},
 	{
 		label = "get-qname-by-index",
 		kind = "Keyword",
-		documentation = "get-qname-by-index",
+		documentation = [[
+		get-qname-by-index
+		]],
 	},
 	{
 		label = "get-red-value",
 		kind = "Keyword",
-		documentation = "get-red-value",
+		documentation = [[
+		get-red-value
+		]],
 	},
 	{
 		label = "get-repositioned-row",
 		kind = "Keyword",
-		documentation = "get-repositioned-row",
+		documentation = [[
+		get-repositioned-row
+		]],
 	},
 	{
 		label = "get-rgb-value",
 		kind = "Keyword",
-		documentation = "get-rgb-value",
+		documentation = [[
+		get-rgb-value
+		]],
 	},
 	{
 		label = "get-selected-widget",
 		kind = "Keyword",
-		documentation = "get-selected-widget",
+		documentation = [[
+		get-selected-widget
+		]],
 	},
 	{
 		label = "get-short",
 		kind = "Keyword",
-		documentation = "get-short",
+		documentation = [[
+		get-short
+		]],
 	},
 	{
 		label = "get-signature",
 		kind = "Keyword",
-		documentation = "get-signature",
+		documentation = [[
+		get-signature
+		]],
 	},
 	{
 		label = "get-size",
 		kind = "Keyword",
-		documentation = "get-size",
+		documentation = [[
+		get-size
+		]],
 	},
 	{
 		label = "get-string",
 		kind = "Keyword",
-		documentation = "get-string",
+		documentation = [[
+		get-string
+		]],
 	},
 	{
 		label = "get-tab-item",
 		kind = "Keyword",
-		documentation = "get-tab-item",
+		documentation = [[
+		get-tab-item
+		]],
 	},
 	{
 		label = "get-text-height-chars",
 		kind = "Keyword",
-		documentation = "get-text-height-chars",
+		documentation = [[
+		get-text-height-chars
+		]],
 	},
 	{
 		label = "get-text-height-pixels",
 		kind = "Keyword",
-		documentation = "get-text-height-pixels",
+		documentation = [[
+		get-text-height-pixels
+		]],
 	},
 	{
 		label = "get-text-width-chars",
 		kind = "Keyword",
-		documentation = "get-text-width-chars",
+		documentation = [[
+		get-text-width-chars
+		]],
 	},
 	{
 		label = "get-text-width-pixels",
 		kind = "Keyword",
-		documentation = "get-text-width-pixels",
+		documentation = [[
+		get-text-width-pixels
+		]],
 	},
 	{
 		label = "get-type-by-index",
 		kind = "Keyword",
-		documentation = "get-type-by-index",
+		documentation = [[
+		get-type-by-index
+		]],
 	},
 	{
 		label = "get-type-by-namespace-name",
 		kind = "Keyword",
-		documentation = "get-type-by-namespace-name",
+		documentation = [[
+		get-type-by-namespace-name
+		]],
 	},
 	{
 		label = "get-type-by-qname",
 		kind = "Keyword",
-		documentation = "get-type-by-qname",
+		documentation = [[
+		get-type-by-qname
+		]],
 	},
 	{
 		label = "get-unsigned-long",
 		kind = "Keyword",
-		documentation = "get-unsigned-long",
+		documentation = [[
+		get-unsigned-long
+		]],
 	},
 	{
 		label = "get-unsigned-short",
 		kind = "Keyword",
-		documentation = "get-unsigned-short",
+		documentation = [[
+		get-unsigned-short
+		]],
 	},
 	{
 		label = "get-uri-by-index",
 		kind = "Keyword",
-		documentation = "get-uri-by-index",
+		documentation = [[
+		get-uri-by-index
+		]],
 	},
 	{
 		label = "get-value-by-index",
 		kind = "Keyword",
-		documentation = "get-value-by-index",
+		documentation = [[
+		get-value-by-index
+		]],
 	},
 	{
 		label = "get-value-by-namespace-name",
 		kind = "Keyword",
-		documentation = "get-value-by-namespace-name",
+		documentation = [[
+		get-value-by-namespace-name
+		]],
 	},
 	{
 		label = "get-value-by-qname",
 		kind = "Keyword",
-		documentation = "get-value-by-qname",
+		documentation = [[
+		get-value-by-qname
+		]],
 	},
 	{
 		label = "get-wait-state",
 		kind = "Keyword",
-		documentation = "get-wait-state",
+		documentation = [[
+		get-wait-state
+		]],
 	},
 	{
 		label = "global",
 		kind = "Keyword",
-		documentation = "global",
+		documentation = [[
+		global
+		]],
 	},
 	{
 		label = "go-on",
 		kind = "Keyword",
-		documentation = "go-on",
+		documentation = [[
+		go-on
+		]],
 	},
 	{
 		label = "go-pending",
 		kind = "Keyword",
-		documentation = "go-pending",
+		documentation = [[
+		go-pending
+		]],
 	},
 	{
 		label = "grant",
 		kind = "Keyword",
-		documentation = "grant",
+		documentation = [[
+		grant
+		]],
 	},
 	{
 		label = "graphic-edge",
 		kind = "Keyword",
-		documentation = "graphic-edge",
+		documentation = [[
+		graphic-edge
+		]],
 	},
 	{
 		label = "grid-factor-horizontal",
 		kind = "Keyword",
-		documentation = "grid-factor-horizontal",
+		documentation = [[
+		grid-factor-horizontal
+		]],
 	},
 	{
 		label = "grid-factor-vertical",
 		kind = "Keyword",
-		documentation = "grid-factor-vertical",
+		documentation = [[
+		grid-factor-vertical
+		]],
 	},
 	{
 		label = "grid-snap",
 		kind = "Keyword",
-		documentation = "grid-snap",
+		documentation = [[
+		grid-snap
+		]],
 	},
 	{
 		label = "grid-unit-height-chars",
 		kind = "Keyword",
-		documentation = "grid-unit-height-chars",
+		documentation = [[
+		grid-unit-height-chars
+		]],
 	},
 	{
 		label = "grid-unit-height-pixels",
 		kind = "Keyword",
-		documentation = "grid-unit-height-pixels",
+		documentation = [[
+		grid-unit-height-pixels
+		]],
 	},
 	{
 		label = "grid-unit-width-chars",
 		kind = "Keyword",
-		documentation = "grid-unit-width-chars",
+		documentation = [[
+		grid-unit-width-chars
+		]],
 	},
 	{
 		label = "grid-unit-width-pixels",
 		kind = "Keyword",
-		documentation = "grid-unit-width-pixels",
+		documentation = [[
+		grid-unit-width-pixels
+		]],
 	},
 	{
 		label = "grid-visible",
 		kind = "Keyword",
-		documentation = "grid-visible",
+		documentation = [[
+		grid-visible
+		]],
 	},
 	{
 		label = "group",
 		kind = "Keyword",
-		documentation = "group",
+		documentation = [[
+		group
+		]],
 	},
 	{
 		label = "gt",
-		kind = "Keyword",
 		kind = "Operator",
-		documentation = "Returns a TRUE value if the first of two expressions is greater than the second expression.",
+		documentation = [[
+		Returns a TRUE value if the first of two expressions is greater than the second expression.
+		]],
 	},
 	{
 		label = "guid",
 		kind = "Keyword",
-		documentation = "guid",
+		documentation = [[
+		guid
+		]],
 	},
 	{
 		label = "handle",
 		kind = "Keyword",
-		documentation = "handle",
+		documentation = [[
+		handle
+		]],
 	},
 	{
 		label = "handler",
 		kind = "Keyword",
-		documentation = "handler",
+		documentation = [[
+		handler
+		]],
 	},
 	{
 		label = "has-records",
 		kind = "Keyword",
-		documentation = "has-records",
+		documentation = [[
+		has-records
+		]],
 	},
 	{
 		label = "having",
 		kind = "Keyword",
-		documentation = "having",
+		documentation = [[
+		having
+		]],
 	},
 	{
 		label = "header",
 		kind = "Keyword",
-		documentation = "header",
+		documentation = [[
+		header
+		]],
 	},
 	{
 		label = "height-chars",
 		kind = "Keyword",
-		documentation = "height-chars",
+		documentation = [[
+		height-chars
+		]],
 	},
 	{
 		label = "height-pixels",
 		kind = "Keyword",
-		documentation = "height-pixels",
+		documentation = [[
+		height-pixels
+		]],
 	},
 	{
 		label = "help",
 		kind = "Keyword",
-		documentation = "help",
+		documentation = [[
+		help
+		]],
 	},
 	{
 		label = "hex-decode",
 		kind = "Keyword",
-		documentation = "hex-decode",
+		documentation = [[
+		hex-decode
+		]],
 	},
 	{
 		label = "hex-encode",
 		kind = "Keyword",
-		documentation = "hex-encode",
+		documentation = [[
+		hex-encode
+		]],
 	},
 	{
 		label = "hidden",
 		kind = "Keyword",
-		documentation = "hidden",
+		documentation = [[
+		hidden
+		]],
 	},
 	{
 		label = "hide",
 		kind = "Keyword",
-		documentation = "hide",
+		documentation = [[
+		hide
+		]],
 	},
 	{
 		label = "horizontal",
 		kind = "Keyword",
-		documentation = "horizontal",
+		documentation = [[
+		horizontal
+		]],
 	},
 	{
 		label = "host-byte-order",
 		kind = "Keyword",
-		documentation = "host-byte-order",
+		documentation = [[
+		host-byte-order
+		]],
 	},
 	{
 		label = "html-charset",
 		kind = "Keyword",
-		documentation = "html-charset",
+		documentation = [[
+		html-charset
+		]],
 	},
 	{
 		label = "html-end-of-line",
 		kind = "Keyword",
-		documentation = "html-end-of-line",
+		documentation = [[
+		html-end-of-line
+		]],
 	},
 	{
 		label = "html-end-of-page",
 		kind = "Keyword",
-		documentation = "html-end-of-page",
+		documentation = [[
+		html-end-of-page
+		]],
 	},
 	{
 		label = "html-frame-begin",
 		kind = "Keyword",
-		documentation = "html-frame-begin",
+		documentation = [[
+		html-frame-begin
+		]],
 	},
 	{
 		label = "html-frame-end",
 		kind = "Keyword",
-		documentation = "html-frame-end",
+		documentation = [[
+		html-frame-end
+		]],
 	},
 	{
 		label = "html-header-begin",
 		kind = "Keyword",
-		documentation = "html-header-begin",
+		documentation = [[
+		html-header-begin
+		]],
 	},
 	{
 		label = "html-header-end",
 		kind = "Keyword",
-		documentation = "html-header-end",
+		documentation = [[
+		html-header-end
+		]],
 	},
 	{
 		label = "html-title-begin",
 		kind = "Keyword",
-		documentation = "html-title-begin",
+		documentation = [[
+		html-title-begin
+		]],
 	},
 	{
 		label = "html-title-end",
 		kind = "Keyword",
-		documentation = "html-title-end",
+		documentation = [[
+		html-title-end
+		]],
 	},
 	{
 		label = "hwnd",
 		kind = "Keyword",
-		documentation = "hwnd",
+		documentation = [[
+		hwnd
+		]],
 	},
 	{
 		label = "icon",
 		kind = "Keyword",
-		documentation = "icon",
+		documentation = [[
+		icon
+		]],
 	},
 	{
 		label = "if",
 		kind = "Keyword",
-		documentation = "if",
+		documentation = [[
+		if
+		]],
 	},
 	{
 		label = "image",
 		kind = "Keyword",
-		documentation = "image",
+		documentation = [[
+		image
+		]],
 	},
 	{
 		label = "image-down",
 		kind = "Keyword",
-		documentation = "image-down",
+		documentation = [[
+		image-down
+		]],
 	},
 	{
 		label = "image-insensitive",
 		kind = "Keyword",
-		documentation = "image-insensitive",
+		documentation = [[
+		image-insensitive
+		]],
 	},
 	{
 		label = "image-size",
 		kind = "Keyword",
-		documentation = "image-size",
+		documentation = [[
+		image-size
+		]],
 	},
 	{
 		label = "image-size-chars",
 		kind = "Keyword",
-		documentation = "image-size-chars",
+		documentation = [[
+		image-size-chars
+		]],
 	},
 	{
 		label = "image-size-pixels",
 		kind = "Keyword",
-		documentation = "image-size-pixels",
+		documentation = [[
+		image-size-pixels
+		]],
 	},
 	{
 		label = "image-up",
 		kind = "Keyword",
-		documentation = "image-up",
+		documentation = [[
+		image-up
+		]],
 	},
 	{
 		label = "immediate-display",
 		kind = "Keyword",
-		documentation = "immediate-display",
+		documentation = [[
+		immediate-display
+		]],
 	},
 	{
 		label = "implements",
 		kind = "Keyword",
-		documentation = "implements",
+		documentation = [[
+		implements
+		]],
 	},
 	{
 		label = "import",
 		kind = "Keyword",
-		documentation = "Reads a line from an input file that might have been created by EXPORT. ",
+		documentation = [[
+		Reads a line from an input file that might have been created by EXPORT. 
+		]],
 	},
 	{
 		label = "import-principal",
 		kind = "Keyword",
-		documentation = "import-principal",
+		documentation = [[
+		import-principal
+		]],
 	},
 	{
 		label = "in",
 		kind = "Keyword",
-		documentation = "in",
+		documentation = [[
+		in
+		]],
 	},
 	{
 		label = "increment-exclusive-id",
 		kind = "Keyword",
-		documentation = "increment-exclusive-id",
+		documentation = [[
+		increment-exclusive-id
+		]],
 	},
 	{
 		label = "index",
-		kind = "Keyword",
 		kind = "Function",
-		documentation = "Returns an INTEGER value that indicates the position of the target string within the source string.",
+		documentation = [[
+		Returns an INTEGER value that indicates the position of the target string within the source string.
+		]],
 	},
 	{
 		label = "indexed-reposition",
 		kind = "Keyword",
-		documentation = "indexed-reposition",
+		documentation = [[
+		indexed-reposition
+		]],
 	},
 	{
 		label = "index-hint",
 		kind = "Keyword",
-		documentation = "index-hint",
+		documentation = [[
+		index-hint
+		]],
 	},
 	{
 		label = "index-information",
 		kind = "Keyword",
-		documentation = "index-information",
+		documentation = [[
+		index-information
+		]],
 	},
 	{
 		label = "indicator",
 		kind = "Keyword",
-		documentation = "indicator",
+		documentation = [[
+		indicator
+		]],
 	},
 	{
 		label = "information",
 		kind = "Keyword",
-		documentation = "information",
+		documentation = [[
+		information
+		]],
 	},
 	{
 		label = "in-handle",
 		kind = "Keyword",
-		documentation = "in-handle",
+		documentation = [[
+		in-handle
+		]],
 	},
 	{
 		label = "inherit-bgcolor",
 		kind = "Keyword",
-		documentation = "inherit-bgcolor",
+		documentation = [[
+		inherit-bgcolor
+		]],
 	},
 	{
 		label = "inherit-fgcolor",
 		kind = "Keyword",
-		documentation = "inherit-fgcolor",
+		documentation = [[
+		inherit-fgcolor
+		]],
 	},
 	{
 		label = "inherits",
 		kind = "Keyword",
-		documentation = "inherits",
+		documentation = [[
+		inherits
+		]],
 	},
 	{
 		label = "initial",
 		kind = "Keyword",
-		documentation = "initial",
+		documentation = [[
+		initial
+		]],
 	},
 	{
 		label = "initial-dir",
 		kind = "Keyword",
-		documentation = "initial-dir",
+		documentation = [[
+		initial-dir
+		]],
 	},
 	{
 		label = "initial-filter",
 		kind = "Keyword",
-		documentation = "initial-filter",
+		documentation = [[
+		initial-filter
+		]],
 	},
 	{
 		label = "initialize-document-type",
 		kind = "Keyword",
-		documentation = "initialize-document-type",
+		documentation = [[
+		initialize-document-type
+		]],
 	},
 	{
 		label = "initiate",
 		kind = "Keyword",
-		documentation = "initiate",
+		documentation = [[
+		initiate
+		]],
 	},
 	{
 		label = "inner-chars",
 		kind = "Keyword",
-		documentation = "inner-chars",
+		documentation = [[
+		inner-chars
+		]],
 	},
 	{
 		label = "inner-lines",
 		kind = "Keyword",
-		documentation = "inner-lines",
+		documentation = [[
+		inner-lines
+		]],
 	},
 	{
 		label = "input",
 		kind = "Keyword",
-		documentation = "input",
+		documentation = [[
+		input
+		]],
 	},
 	{
 		label = "input-output",
 		kind = "Keyword",
-		documentation = "input-output",
+		documentation = [[
+		input-output
+		]],
 	},
 	{
 		label = "input-value",
 		kind = "Keyword",
-		documentation = "input-value",
+		documentation = [[
+		input-value
+		]],
 	},
 	{
 		label = "insert",
 		kind = "Keyword",
-		documentation = "insert",
+		documentation = [[
+		insert
+		]],
 	},
 	{
 		label = "insert-attribute",
 		kind = "Keyword",
-		documentation = "insert-attribute",
+		documentation = [[
+		insert-attribute
+		]],
 	},
 	{
 		label = "insert-backtab",
 		kind = "Keyword",
-		documentation = "insert-backtab",
+		documentation = [[
+		insert-backtab
+		]],
 	},
 	{
 		label = "insert-file",
 		kind = "Keyword",
-		documentation = "insert-file",
+		documentation = [[
+		insert-file
+		]],
 	},
 	{
 		label = "insert-row",
 		kind = "Keyword",
-		documentation = "insert-row",
+		documentation = [[
+		insert-row
+		]],
 	},
 	{
 		label = "insert-string",
 		kind = "Keyword",
-		documentation = "insert-string",
+		documentation = [[
+		insert-string
+		]],
 	},
 	{
 		label = "insert-tab",
 		kind = "Keyword",
-		documentation = "insert-tab",
+		documentation = [[
+		insert-tab
+		]],
 	},
 	{
 		label = "int",
 		kind = "Keyword",
-		documentation = "int",
+		documentation = [[
+		int
+		]],
 	},
 	{
 		label = "int64",
 		kind = "Keyword",
-		documentation = "int64",
+		documentation = [[
+		int64
+		]],
 	},
 	{
 		label = "integer",
-		kind = "Keyword",
 		kind = "Function",
-		documentation = "Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a 32-bit integer value of data type INTEGER, rounding that value if necessary.",
+		documentation = [[
+		Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a 32-bit integer value of data type INTEGER, rounding that value if necessary.
+		]],
 	},
 	{
 		label = "interface",
 		kind = "Keyword",
-		documentation = "interface",
+		documentation = [[
+		interface
+		]],
 	},
 	{
 		label = "internal-entries",
 		kind = "Keyword",
-		documentation = "internal-entries",
+		documentation = [[
+		internal-entries
+		]],
 	},
 	{
 		label = "into",
 		kind = "Keyword",
-		documentation = "into",
+		documentation = [[
+		into
+		]],
 	},
 	{
 		label = "invoke",
 		kind = "Keyword",
-		documentation = "invoke",
+		documentation = [[
+		invoke
+		]],
 	},
 	{
 		label = "is",
 		kind = "Keyword",
-		documentation = "is",
+		documentation = [[
+		is
+		]],
 	},
 	{
 		label = "is-attr-space",
 		kind = "Keyword",
-		documentation = "is-attr-space",
+		documentation = [[
+		is-attr-space
+		]],
 	},
 	{
 		label = "is-class",
 		kind = "Keyword",
-		documentation = "is-class",
+		documentation = [[
+		is-class
+		]],
 	},
 	{
 		label = "is-json",
 		kind = "Keyword",
-		documentation = "is-json",
+		documentation = [[
+		is-json
+		]],
 	},
 	{
 		label = "is-lead-byte",
 		kind = "Keyword",
-		documentation = "is-lead-byte",
+		documentation = [[
+		is-lead-byte
+		]],
 	},
 	{
 		label = "is-open",
 		kind = "Keyword",
-		documentation = "is-open",
+		documentation = [[
+		is-open
+		]],
 	},
 	{
 		label = "is-parameter-set",
 		kind = "Keyword",
-		documentation = "is-parameter-set",
+		documentation = [[
+		is-parameter-set
+		]],
 	},
 	{
 		label = "is-partitioned",
 		kind = "Keyword",
-		documentation = "is-partitioned",
+		documentation = [[
+		is-partitioned
+		]],
 	},
 	{
 		label = "is-row-selected",
 		kind = "Keyword",
-		documentation = "is-row-selected",
+		documentation = [[
+		is-row-selected
+		]],
 	},
 	{
 		label = "is-selected",
 		kind = "Keyword",
-		documentation = "is-selected",
+		documentation = [[
+		is-selected
+		]],
 	},
 	{
 		label = "is-xml",
 		kind = "Keyword",
-		documentation = "is-xml",
+		documentation = [[
+		is-xml
+		]],
 	},
 	{
 		label = "item",
 		kind = "Keyword",
-		documentation = "item",
+		documentation = [[
+		item
+		]],
 	},
 	{
 		label = "items-per-row",
 		kind = "Keyword",
-		documentation = "items-per-row",
+		documentation = [[
+		items-per-row
+		]],
 	},
 	{
 		label = "join",
 		kind = "Keyword",
-		documentation = "join",
+		documentation = [[
+		join
+		]],
 	},
 	{
 		label = "join-by-sqldb",
 		kind = "Keyword",
-		documentation = "join-by-sqldb",
+		documentation = [[
+		join-by-sqldb
+		]],
 	},
 	{
 		label = "kblabel",
-		kind = "Keyword",
 		kind = "Function",
-		documentation = "Returns the keyboard label (such as F1) of the key that performs a specified ABL function (such as GO). ",
-			kind = "Keyword",
+		documentation = [[
+		Returns the keyboard label (such as F1) of the key that performs a specified ABL function (such as GO). 
+		]],
 	},
 	{
 		label = "keep-connection-open",
-		documentation = "keep-connection-open",
+		documentation = [[
+		keep-connection-open
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "keep-frame-z-order",
-		documentation = "keep-frame-z-order",
+		documentation = [[
+		keep-frame-z-order
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "keep-messages",
-		documentation = "keep-messages",
+		documentation = [[
+		keep-messages
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "keep-security-cache",
-		documentation = "keep-security-cache",
+		documentation = [[
+		keep-security-cache
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "keep-tab-order",
-		documentation = "keep-tab-order",
+		documentation = [[
+		keep-tab-order
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "key",
-		documentation = "key",
+		documentation = [[
+		key
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "keycode",
-		documentation = "keycode",
+		documentation = [[
+		keycode
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "key-code",
-		documentation = "key-code",
+		documentation = [[
+		key-code
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "keyfunction",
 		kind = "Function",
-		documentation = "Evaluates an integer expression (such as 301) and returns a character string that is the function of the key associated with that integer expression (such as GO).",
-		kind = "Keyword",
+		documentation = [[
+		Evaluates an integer expression (such as 301) and returns a character string that is the function of the key associated with that integer expression (such as GO).
+		]],
 	},
 	{
 		label = "key-function",
-		documentation = "key-function",
+		documentation = [[
+		key-function
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "keylabel",
 		kind = "Function",
-		documentation = "Evaluates a key code (such as 301) and returns a character string that is the predefined keyboard label for that key (such as F1). ",
-		kind = "Keyword",
+		documentation = [[
+		Evaluates a key code (such as 301) and returns a character string that is the predefined keyboard label for that key (such as F1). 
+		]],
 	},
 	{
 		label = "key-label",
-		documentation = "key-label",
+		documentation = [[
+		key-label
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "keys",
-		documentation = "keys",
+		documentation = [[
+		keys
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "keyword",
 		kind = "Function",
-		documentation = "Returns a character value that indicates whether a string is an ABL reserved keyword.",
-		kind = "Keyword",
+		documentation = [[
+		Returns a character value that indicates whether a string is an ABL reserved keyword.
+		]],
 	},
 	{
 		label = "keyword-all",
-		documentation = "keyword-all",
+		documentation = [[
+		keyword-all
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "label",
-		documentation = "label",
+		documentation = [[
+		label
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "label-bgcolor",
-		documentation = "label-bgcolor",
+		documentation = [[
+		label-bgcolor
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "label-dcolor",
-		documentation = "label-dcolor",
+		documentation = [[
+		label-dcolor
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "label-fgcolor",
-		documentation = "label-fgcolor",
+		documentation = [[
+		label-fgcolor
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "label-font",
-		documentation = "label-font",
+		documentation = [[
+		label-font
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "label-pfcolor",
-		documentation = "label-pfcolor",
+		documentation = [[
+		label-pfcolor
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "labels",
-		documentation = "labels",
+		documentation = [[
+		labels
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "labels-have-colons",
-		documentation = "labels-have-colons",
+		documentation = [[
+		labels-have-colons
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "landscape",
-		documentation = "landscape",
+		documentation = [[
+		landscape
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "languages",
-		documentation = "languages",
+		documentation = [[
+		languages
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "large",
-		documentation = "large",
+		documentation = [[
+		large
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "large-to-small",
-		documentation = "large-to-small",
+		documentation = [[
+		large-to-small
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "last",
 		kind = "Function",
-		documentation = "Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the last iteration of that block.",
-		kind = "Keyword",
+		documentation = [[
+		Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the last iteration of that block.
+		]],
 	},
 	{
 		label = "last-asynch-request",
-		documentation = "last-asynch-request",
+		documentation = [[
+		last-asynch-request
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "last-batch",
-		documentation = "last-batch",
+		documentation = [[
+		last-batch
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "last-child",
-		documentation = "last-child",
+		documentation = [[
+		last-child
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "last-event",
-		documentation = "last-event",
+		documentation = [[
+		last-event
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "last-form",
-		documentation = "last-form",
+		documentation = [[
+		last-form
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "lastkey",
 		kind = "Function",
-		documentation = "Returns, as an INTEGER value, the integer key code of the most recent event read from the user (that is, from the keyboard or mouse) during an interaction with a procedure.",
+		documentation = [[
+		Returns, as an INTEGER value, the integer key code of the most recent event read from the user (that is, from the keyboard or mouse) during an interaction with a procedure.
+		]],
 	},
 	{
 		label = "last-key",
-		documentation = "last-key",
+		documentation = [[
+		last-key
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "last-object",
-		documentation = "last-object",
+		documentation = [[
+		last-object
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "last-of",
 		kind = "Function",
-		documentation = "Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the last iteration for a particular value of a break group.",
+		documentation = [[
+		Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the last iteration for a particular value of a break group.
+		]],
 	},
 	{
 		label = "last-procedure",
-		documentation = "last-procedure",
+		documentation = [[
+		last-procedure
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "last-server",
-		documentation = "last-server",
+		documentation = [[
+		last-server
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "last-tab-item",
-		documentation = "last-tab-item",
+		documentation = [[
+		last-tab-item
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "lc",
-		documentation = "lc",
+		documentation = [[
+		lc
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "ldbname",
-		documentation = "ldbname",
+		documentation = [[
+		ldbname
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "le",
 		kind = "Operator",
-		documentation = "Returns a TRUE value if the first of two expressions is less than or equal to the second.",
+		documentation = [[
+		Returns a TRUE value if the first of two expressions is less than or equal to the second.
+		]],
 	},
 	{
 		label = "leave",
 		kind = "Keyword",
-		documentation = "Exits from a block. Execution continues with the first statement after the end of the block.",
+		documentation = [[
+		Exits from a block. Execution continues with the first statement after the end of the block.
+		]],
 	},
 	{
 		label = "left-aligned",
-		documentation = "left-aligned",
+		documentation = [[
+		left-aligned
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "left-trim",
 		kind = "Function",
-		documentation = "Removes leading white space, or other specified characters, from a CHARACTER or LONGCHAR expression. The data type of the returned value matches the data type of the expression passed to the function.",
+		documentation = [[
+		Removes leading white space, or other specified characters, from a CHARACTER or LONGCHAR expression. The data type of the returned value matches the data type of the expression passed to the function.
+		]],
 	},
 	{
 		label = "length",
 		kind = "Function",
-		documentation = "Returns, as an INTEGER value, the number of characters, bytes, or columns in a string, an expression of type RAW, or a BLOB field.",
+		documentation = [[
+		Returns, as an INTEGER value, the number of characters, bytes, or columns in a string, an expression of type RAW, or a BLOB field.
+		]],
 	},
 	{
 		label = "library",
-		documentation = "library",
+		documentation = [[
+		library
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "like",
-		documentation = "like",
+		documentation = [[
+		like
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "like-sequential",
-		documentation = "like-sequential",
+		documentation = [[
+		like-sequential
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "line",
-		documentation = "line",
+		documentation = [[
+		line
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "line-counter",
-		documentation = "line-counter",
+		documentation = [[
+		line-counter
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "list-events",
-		documentation = "list-events",
+		documentation = [[
+		list-events
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "listing",
-		documentation = "listing",
+		documentation = [[
+		listing
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "list-item-pairs",
-		documentation = "list-item-pairs",
+		documentation = [[
+		list-item-pairs
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "list-items",
-		documentation = "list-items",
+		documentation = [[
+		list-items
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "list-property-names",
-		documentation = "list-property-names",
+		documentation = [[
+		list-property-names
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "list-query-attrs",
-		documentation = "list-query-attrs",
+		documentation = [[
+		list-query-attrs
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "list-set-attrs",
-		documentation = "list-set-attrs",
+		documentation = [[
+		list-set-attrs
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "list-widgets",
-		documentation = "list-widgets",
+		documentation = [[
+		list-widgets
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "literal-question",
-		documentation = "literal-question",
+		documentation = [[
+		literal-question
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "little-endian",
-		documentation = "little-endian",
+		documentation = [[
+		little-endian
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load",
-		documentation = "load",
+		documentation = [[
+		load
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load-domains",
-		documentation = "load-domains",
+		documentation = [[
+		load-domains
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load-icon",
-		documentation = "load-icon",
+		documentation = [[
+		load-icon
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load-image",
-		documentation = "load-image",
+		documentation = [[
+		load-image
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load-image-down",
-		documentation = "load-image-down",
+		documentation = [[
+		load-image-down
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load-image-insensitive",
-		documentation = "load-image-insensitive",
+		documentation = [[
+		load-image-insensitive
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load-image-up",
-		documentation = "load-image-up",
+		documentation = [[
+		load-image-up
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load-mouse-pointer",
-		documentation = "load-mouse-pointer",
+		documentation = [[
+		load-mouse-pointer
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load-picture",
-		documentation = "load-picture",
+		documentation = [[
+		load-picture
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "load-small-icon",
-		documentation = "load-small-icon",
+		documentation = [[
+		load-small-icon
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "local-name",
-		documentation = "local-name",
+		documentation = [[
+		local-name
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "local-version-info",
-		documentation = "local-version-info",
+		documentation = [[
+		local-version-info
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "locator-column-number",
-		documentation = "locator-column-number",
+		documentation = [[
+		locator-column-number
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "locator-line-number",
-		documentation = "locator-line-number",
+		documentation = [[
+		locator-line-number
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "locator-public-id",
-		documentation = "locator-public-id",
+		documentation = [[
+		locator-public-id
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "locator-system-id",
-		documentation = "locator-system-id",
+		documentation = [[
+		locator-system-id
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "locator-type",
-		documentation = "locator-type",
+		documentation = [[
+		locator-type
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "locked",
-		documentation = "locked",
+		documentation = [[
+		locked
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "lock-registration",
-		documentation = "lock-registration",
+		documentation = [[
+		lock-registration
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "log",
-		documentation = "log",
+		documentation = [[
+		log
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "log-audit-event",
-		documentation = "log-audit-event",
+		documentation = [[
+		log-audit-event
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "logical",
-		documentation = "logical",
+		documentation = [[
+		logical
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "login-expiration-timestamp",
-		documentation = "login-expiration-timestamp",
+		documentation = [[
+		login-expiration-timestamp
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "login-host",
-		documentation = "login-host",
+		documentation = [[
+		login-host
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "login-state",
-		documentation = "login-state",
+		documentation = [[
+		login-state
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "log-manager",
-		documentation = "log-manager",
+		documentation = [[
+		log-manager
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "logout",
-		documentation = "logout",
+		documentation = [[
+		logout
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "lookahead",
-		documentation = "lookahead",
+		documentation = [[
+		lookahead
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "lookup",
-		documentation = "lookup",
+		documentation = [[
+		lookup
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "lt",
-		documentation = "lt",
+		documentation = [[
+		lt
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "machine-class",
-		documentation = "machine-class",
+		documentation = [[
+		machine-class
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "mandatory",
-		documentation = "mandatory",
+		documentation = [[
+		mandatory
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "manual-highlight",
-		documentation = "manual-highlight",
+		documentation = [[
+		manual-highlight
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "map",
-		documentation = "map",
+		documentation = [[
+		map
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "margin-extra",
-		documentation = "margin-extra",
+		documentation = [[
+		margin-extra
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "margin-height-chars",
-		documentation = "margin-height-chars",
+		documentation = [[
+		margin-height-chars
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "margin-height-pixels",
-		documentation = "margin-height-pixels",
+		documentation = [[
+		margin-height-pixels
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "margin-width-chars",
-		documentation = "margin-width-chars",
+		documentation = [[
+		margin-width-chars
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "margin-width-pixels",
-		documentation = "margin-width-pixels",
+		documentation = [[
+		margin-width-pixels
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "mark-new",
-		documentation = "mark-new",
+		documentation = [[
+		mark-new
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "mark-row-state",
-		documentation = "mark-row-state",
+		documentation = [[
+		mark-row-state
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "matches",
-		documentation = "matches",
+		documentation = [[
+		matches
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max",
-		documentation = "max",
+		documentation = [[
+		max
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-button",
-		documentation = "max-button",
+		documentation = [[
+		max-button
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-chars",
-		documentation = "max-chars",
+		documentation = [[
+		max-chars
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-data-guess",
-		documentation = "max-data-guess",
+		documentation = [[
+		max-data-guess
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-height",
-		documentation = "max-height",
+		documentation = [[
+		max-height
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-height-chars",
-		documentation = "max-height-chars",
+		documentation = [[
+		max-height-chars
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-height-pixels",
-		documentation = "max-height-pixels",
+		documentation = [[
+		max-height-pixels
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "maximize",
-		documentation = "maximize",
+		documentation = [[
+		maximize
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "maximum",
-		documentation = "Calculates the maximum of all of the values of the expression in a break group and the maximum of all the values of the expression in all break groups.",
+		documentation = [[
+		Calculates the maximum of all of the values of the expression in a break group and the maximum of all the values of the expression in all break groups.
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "maximum-level",
-		documentation = "maximum-level",
+		documentation = [[
+		maximum-level
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-rows",
-		documentation = "max-rows",
+		documentation = [[
+		max-rows
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-size",
-		documentation = "max-size",
+		documentation = [[
+		max-size
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-value",
-		documentation = "max-value",
+		documentation = [[
+		max-value
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-width",
-		documentation = "max-width",
+		documentation = [[
+		max-width
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-width-chars",
-		documentation = "max-width-chars",
+		documentation = [[
+		max-width-chars
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "max-width-pixels",
-		documentation = "max-width-pixels",
+		documentation = [[
+		max-width-pixels
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "md5-digest",
-		documentation = "md5-digest",
+		documentation = [[
+		md5-digest
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "member",
-		documentation = "member",
+		documentation = [[
+		member
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "memptr-to-node-value",
-		documentation = "memptr-to-node-value",
+		documentation = [[
+		memptr-to-node-value
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "menu",
-		documentation = "menu",
+		documentation = [[
+		menu
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "menubar",
-		documentation = "menubar",
+		documentation = [[
+		menubar
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "menu-bar",
-		documentation = "menu-bar",
+		documentation = [[
+		menu-bar
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "menu-item",
-		documentation = "menu-item",
+		documentation = [[
+		menu-item
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "menu-key",
-		documentation = "menu-key",
+		documentation = [[
+		menu-key
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "menu-mouse",
-		documentation = "menu-mouse",
+		documentation = [[
+		menu-mouse
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "merge-by-field",
-		documentation = "merge-by-field",
+		documentation = [[
+		merge-by-field
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "message",
-		documentation = "message",
+		documentation = [[
+		message
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "message-area",
-		documentation = "message-area",
+		documentation = [[
+		message-area
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "message-area-font",
-		documentation = "message-area-font",
+		documentation = [[
+		message-area-font
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "message-lines",
-		documentation = "message-lines",
+		documentation = [[
+		message-lines
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "method",
-		documentation = "method",
+		documentation = [[
+		method
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min",
-		documentation = "min",
+		documentation = [[
+		min
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min-button",
-		documentation = "min-button",
+		documentation = [[
+		min-button
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min-column-width-chars",
-		documentation = "min-column-width-chars",
+		documentation = [[
+		min-column-width-chars
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min-column-width-pixels",
-		documentation = "min-column-width-pixels",
+		documentation = [[
+		min-column-width-pixels
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min-height-chars",
-		documentation = "min-height-chars",
+		documentation = [[
+		min-height-chars
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min-height-pixels",
-		documentation = "min-height-pixels",
+		documentation = [[
+		min-height-pixels
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "minimum",
-		documentation = "Calculates the minimum of all of the values of the expression in a break group and the minimum of all the values of the expression in all break groups.",
+		documentation = [[
+		Calculates the minimum of all of the values of the expression in a break group and the minimum of all the values of the expression in all break groups.
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min-size",
-		documentation = "min-size",
+		documentation = [[
+		min-size
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min-value",
-		documentation = "min-value",
+		documentation = [[
+		min-value
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min-width-chars",
-		documentation = "min-width-chars",
+		documentation = [[
+		min-width-chars
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "min-width-pixels",
-		documentation = "min-width-pixels",
+		documentation = [[
+		min-width-pixels
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "modified",
-		documentation = "modified",
+		documentation = [[
+		modified
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "modulo",
-		documentation = "modulo",
+		documentation = [[
+		modulo
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "month",
-		documentation = "month",
+		documentation = [[
+		month
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "mouse",
-		documentation = "mouse",
+		documentation = [[
+		mouse
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "mouse-pointer",
-		documentation = "mouse-pointer",
+		documentation = [[
+		mouse-pointer
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "movable",
-		documentation = "movable",
+		documentation = [[
+		movable
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "move-after-tab-item",
-		documentation = "move-after-tab-item",
+		documentation = [[
+		move-after-tab-item
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "move-before-tab-item",
-		documentation = "move-before-tab-item",
+		documentation = [[
+		move-before-tab-item
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "move-column",
-		documentation = "move-column",
+		documentation = [[
+		move-column
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "move-to-bottom",
-		documentation = "move-to-bottom",
+		documentation = [[
+		move-to-bottom
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "move-to-eof",
-		documentation = "move-to-eof",
+		documentation = [[
+		move-to-eof
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "move-to-top",
-		documentation = "move-to-top",
+		documentation = [[
+		move-to-top
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "mpe",
-		documentation = "mpe",
+		documentation = [[
+		mpe
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "mtime",
-		documentation = "mtime",
+		documentation = [[
+		mtime
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "multi-compile",
-		documentation = "multi-compile",
+		documentation = [[
+		multi-compile
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "multiple",
-		documentation = "multiple",
+		documentation = [[
+		multiple
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "multiple-key",
-		documentation = "multiple-key",
+		documentation = [[
+		multiple-key
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "multitasking-interval",
-		documentation = "multitasking-interval",
+		documentation = [[
+		multitasking-interval
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "must-exist",
-		documentation = "must-exist",
+		documentation = [[
+		must-exist
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "name",
-		documentation = "name",
+		documentation = [[
+		name
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "namespace-prefix",
-		documentation = "namespace-prefix",
+		documentation = [[
+		namespace-prefix
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "namespace-uri",
-		documentation = "namespace-uri",
+		documentation = [[
+		namespace-uri
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "native",
-		documentation = "native",
+		documentation = [[
+		native
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "ne",
-		documentation = "ne",
+		documentation = [[
+		ne
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "needs-appserver-prompt",
-		documentation = "needs-appserver-prompt",
+		documentation = [[
+		needs-appserver-prompt
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "needs-prompt",
-		documentation = "needs-prompt",
+		documentation = [[
+		needs-prompt
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "new",
-		documentation = "new",
+		documentation = [[
+		new
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "new-instance",
-		documentation = "new-instance",
+		documentation = [[
+		new-instance
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "new-row",
-		documentation = "new-row",
+		documentation = [[
+		new-row
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "next",
-		documentation = "next",
+		documentation = [[
+		next
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "next-column",
-		documentation = "next-column",
+		documentation = [[
+		next-column
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "next-prompt",
-		documentation = "next-prompt",
+		documentation = [[
+		next-prompt
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "next-rowid",
-		documentation = "next-rowid",
+		documentation = [[
+		next-rowid
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "next-sibling",
-		documentation = "next-sibling",
+		documentation = [[
+		next-sibling
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "next-tab-item",
-		documentation = "next-tab-item",
+		documentation = [[
+		next-tab-item
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "next-value",
-		documentation = "next-value",
+		documentation = [[
+		next-value
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no",
-		documentation = "no",
+		documentation = [[
+		no
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-apply",
-		documentation = "no-apply",
+		documentation = [[
+		no-apply
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-array-message",
-		documentation = "no-array-message",
+		documentation = [[
+		no-array-message
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-assign",
-		documentation = "no-assign",
+		documentation = [[
+		no-assign
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-attr-list",
-		documentation = "no-attr-list",
+		documentation = [[
+		no-attr-list
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-attr-space",
-		documentation = "no-attr-space",
+		documentation = [[
+		no-attr-space
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-auto-validate",
-		documentation = "no-auto-validate",
+		documentation = [[
+		no-auto-validate
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-bind-where",
-		documentation = "no-bind-where",
+		documentation = [[
+		no-bind-where
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-box",
-		documentation = "no-box",
+		documentation = [[
+		no-box
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-console",
-		documentation = "no-console",
+		documentation = [[
+		no-console
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-convert",
-		documentation = "no-convert",
+		documentation = [[
+		no-convert
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-convert-3d-colors",
-		documentation = "no-convert-3d-colors",
+		documentation = [[
+		no-convert-3d-colors
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-current-value",
-		documentation = "no-current-value",
+		documentation = [[
+		no-current-value
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-debug",
-		documentation = "no-debug",
+		documentation = [[
+		no-debug
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "node-value-to-memptr",
-		documentation = "node-value-to-memptr",
+		documentation = [[
+		node-value-to-memptr
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-drag",
-		documentation = "no-drag",
+		documentation = [[
+		no-drag
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-echo",
-		documentation = "no-echo",
+		documentation = [[
+		no-echo
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-empty-space",
-		documentation = "no-empty-space",
+		documentation = [[
+		no-empty-space
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-error",
-		documentation = "no-error",
+		documentation = [[
+		no-error
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-fill",
-		documentation = "no-fill",
+		documentation = [[
+		no-fill
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-focus",
-		documentation = "no-focus",
+		documentation = [[
+		no-focus
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-help",
-		documentation = "no-help",
+		documentation = [[
+		no-help
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-hide",
-		documentation = "no-hide",
+		documentation = [[
+		no-hide
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-index-hint",
-		documentation = "no-index-hint",
+		documentation = [[
+		no-index-hint
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-inherit-bgcolor",
-		documentation = "no-inherit-bgcolor",
+		documentation = [[
+		no-inherit-bgcolor
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-inherit-fgcolor",
-		documentation = "no-inherit-fgcolor",
+		documentation = [[
+		no-inherit-fgcolor
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-join-by-sqldb",
-		documentation = "no-join-by-sqldb",
+		documentation = [[
+		no-join-by-sqldb
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-labels",
-		documentation = "no-labels",
+		documentation = [[
+		no-labels
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-lobs",
-		documentation = "no-lobs",
+		documentation = [[
+		no-lobs
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-lock",
-		documentation = "no-lock",
+		documentation = [[
+		no-lock
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-lookahead",
-		documentation = "no-lookahead",
+		documentation = [[
+		no-lookahead
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-map",
-		documentation = "no-map",
+		documentation = [[
+		no-map
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-message",
-		documentation = "no-message",
+		documentation = [[
+		no-message
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "nonamespace-schema-location",
-		documentation = "nonamespace-schema-location",
+		documentation = [[
+		nonamespace-schema-location
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "none",
-		documentation = "none",
+		documentation = [[
+		none
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-pause",
-		documentation = "no-pause",
+		documentation = [[
+		no-pause
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-prefetch",
-		documentation = "no-prefetch",
+		documentation = [[
+		no-prefetch
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "normalize",
-		documentation = "normalize",
+		documentation = [[
+		normalize
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-row-markers",
-		documentation = "no-row-markers",
+		documentation = [[
+		no-row-markers
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-scrollbar-vertical",
-		documentation = "no-scrollbar-vertical",
+		documentation = [[
+		no-scrollbar-vertical
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-separate-connection",
-		documentation = "no-separate-connection",
+		documentation = [[
+		no-separate-connection
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-separators",
-		documentation = "no-separators",
+		documentation = [[
+		no-separators
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "not",
-		documentation = "not",
+		documentation = [[
+		not
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-tab-stop",
-		documentation = "no-tab-stop",
+		documentation = [[
+		no-tab-stop
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "not-active",
-		documentation = "not-active",
+		documentation = [[
+		not-active
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-underline",
-		documentation = "no-underline",
+		documentation = [[
+		no-underline
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-undo",
-		documentation = "no-undo",
+		documentation = [[
+		no-undo
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-validate",
-		documentation = "no-validate",
+		documentation = [[
+		no-validate
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "now",
-		documentation = "now",
+		documentation = [[
+		now
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-wait",
-		documentation = "no-wait",
+		documentation = [[
+		no-wait
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "no-word-wrap",
-		documentation = "no-word-wrap",
+		documentation = [[
+		no-word-wrap
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "null",
-		documentation = "null",
+		documentation = [[
+		null
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-aliases",
-		documentation = "num-aliases",
+		documentation = [[
+		num-aliases
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-buffers",
-		documentation = "num-buffers",
+		documentation = [[
+		num-buffers
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-buttons",
-		documentation = "num-buttons",
+		documentation = [[
+		num-buttons
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-columns",
-		documentation = "num-columns",
+		documentation = [[
+		num-columns
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-copies",
-		documentation = "num-copies",
+		documentation = [[
+		num-copies
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-dbs",
-		documentation = "num-dbs",
+		documentation = [[
+		num-dbs
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-dropped-files",
-		documentation = "num-dropped-files",
+		documentation = [[
+		num-dropped-files
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-entries",
-		documentation = "num-entries",
+		documentation = [[
+		num-entries
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "numeric",
-		documentation = "numeric",
+		documentation = [[
+		numeric
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "numeric-format",
-		documentation = "numeric-format",
+		documentation = [[
+		numeric-format
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-fields",
-		documentation = "num-fields",
+		documentation = [[
+		num-fields
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-formats",
-		documentation = "num-formats",
+		documentation = [[
+		num-formats
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-items",
-		documentation = "num-items",
+		documentation = [[
+		num-items
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-iterations",
-		documentation = "num-iterations",
+		documentation = [[
+		num-iterations
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-lines",
-		documentation = "num-lines",
+		documentation = [[
+		num-lines
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-locked-columns",
-		documentation = "num-locked-columns",
+		documentation = [[
+		num-locked-columns
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-messages",
-		documentation = "num-messages",
+		documentation = [[
+		num-messages
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-parameters",
-		documentation = "num-parameters",
+		documentation = [[
+		num-parameters
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-references",
-		documentation = "num-references",
+		documentation = [[
+		num-references
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-replaced",
-		documentation = "num-replaced",
+		documentation = [[
+		num-replaced
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-results",
-		documentation = "num-results",
+		documentation = [[
+		num-results
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-selected-rows",
-		documentation = "num-selected-rows",
+		documentation = [[
+		num-selected-rows
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-selected-widgets",
-		documentation = "num-selected-widgets",
+		documentation = [[
+		num-selected-widgets
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-tabs",
-		documentation = "num-tabs",
+		documentation = [[
+		num-tabs
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-to-retain",
-		documentation = "num-to-retain",
+		documentation = [[
+		num-to-retain
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "num-visible-columns",
-		documentation = "num-visible-columns",
+		documentation = [[
+		num-visible-columns
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "octet-length",
-		documentation = "octet-length",
+		documentation = [[
+		octet-length
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "of",
-		documentation = "of",
+		documentation = [[
+		of
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "off",
-		documentation = "off",
+		documentation = [[
+		off
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "ok",
-		documentation = "ok",
+		documentation = [[
+		ok
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "ok-cancel",
-		documentation = "ok-cancel",
+		documentation = [[
+		ok-cancel
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "old",
-		documentation = "old",
+		documentation = [[
+		old
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "on",
-		documentation = "on",
+		documentation = [[
+		on
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "on-frame-border",
-		documentation = "on-frame-border",
+		documentation = [[
+		on-frame-border
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "open",
-		documentation = "open",
+		documentation = [[
+		open
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "opsys",
-		documentation = "opsys",
+		documentation = [[
+		opsys
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "option",
-		documentation = "option",
+		documentation = [[
+		option
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "or",
-		documentation = "or",
+		documentation = [[
+		or
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "ordered-join",
-		documentation = "ordered-join",
+		documentation = [[
+		ordered-join
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "ordinal",
-		documentation = "ordinal",
+		documentation = [[
+		"ordinal"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-append",
-		documentation = "os-append",
+		documentation = [[
+		"os-append"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-command",
-		documentation = "os-command",
+		documentation = [[
+		"os-command"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-copy",
-		documentation = "os-copy",
+		documentation = [[
+		"os-copy"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-create-dir",
-		documentation = "os-create-dir",
+		documentation = [[
+		"os-create-dir"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-delete",
-		documentation = "os-delete",
+		documentation = [[
+		"os-delete"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-dir",
-		documentation = "os-dir",
+		documentation = [[
+		"os-dir"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-drives",
-		documentation = "os-drives",
+		documentation = [[
+		"os-drives"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-error",
-		documentation = "os-error",
+		documentation = [[
+		"os-error"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-getenv",
-		documentation = "os-getenv",
+		documentation = [[
+		"os-getenv"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "os-rename",
-		documentation = "os-rename",
+		documentation = [[
+		"os-rename"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "otherwise",
-		documentation = "otherwise",
+		documentation = [[
+		"otherwise"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "output",
-		documentation = "output",
+		documentation = [[
+		"output"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "overlay",
-		documentation = "overlay",
+		documentation = [[
+		"overlay"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "override",
-		documentation = "override",
+		documentation = [[
+		"override"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "owner",
-		documentation = "owner",
+		documentation = [[
+		"owner"
+		]],
 		kind = "Keyword",
 	},
 	{
 		label = "page",
 		kind = "Keyword",
-		documentation = "page",
+		documentation = [[
+		"page"
+		]],
 	},
 	{
 		label = "page-bottom",
 		kind = "Keyword",
-		documentation = "page-bottom",
+		documentation = [[
+		"page-bottom"
+		]],
 	},
 	{
 		label = "paged",
 		kind = "Keyword",
-		documentation = "paged",
+		documentation = [[
+		"paged"
+		]],
 	},
 	{
 		label = "page-number",
 		kind = "Keyword",
-		documentation = "page-number",
+		documentation = [[
+		"page-number"
+		]],
 	},
 	{
 		label = "page-size",
 		kind = "Keyword",
-		documentation = "page-size",
+		documentation = [[
+		"page-size"
+		]],
 	},
 	{
 		label = "page-top",
 		kind = "Keyword",
-		documentation = "page-top",
+		documentation = [[
+		"page-top"
+		]],
 	},
 	{
 		label = "page-width",
 		kind = "Keyword",
-		documentation = "page-width",
+		documentation = [[
+		"page-width"
+		]],
 	},
 	{
 		label = "parameter",
 		kind = "Keyword",
-		documentation = "parameter",
+		documentation = [[
+		"parameter"
+		]],
 	},
 	{
 		label = "parent",
 		kind = "Keyword",
-		documentation = "parent",
+		documentation = [[
+		"parent"
+		]],
 	},
 	{
 		label = "parse-status",
 		kind = "Keyword",
-		documentation = "parse-status",
+		documentation = [[
+		"parse-status"
+		]],
 	},
 	{
 		label = "partial-key",
 		kind = "Keyword",
-		documentation = "partial-key",
+		documentation = [[
+		"partial-key"
+		]],
 	},
 	{
 		label = "pascal",
 		kind = "Keyword",
-		documentation = "pascal",
+		documentation = [[
+		"pascal"
+		]],
 	},
 	{
 		label = "password-field",
 		kind = "Keyword",
-		documentation = "password-field",
+		documentation = [[
+		"password-field"
+		]],
 	},
 	{
 		label = "pathname",
 		kind = "Keyword",
-		documentation = "pathname",
+		documentation = [[
+		"pathname"
+		]],
 	},
 	{
 		label = "pause",
 		kind = "Keyword",
-		documentation = "pause",
+		documentation = [[
+		"pause"
+		]],
 	},
 	{
 		label = "pbe-hash-algorithm",
 		kind = "Keyword",
-		documentation = "pbe-hash-algorithm",
+		documentation = [[
+		"pbe-hash-algorithm"
+		]],
 	},
 	{
 		label = "pbe-key-rounds",
 		kind = "Keyword",
-		documentation = "pbe-key-rounds",
+		documentation = [[
+		"pbe-key-rounds"
+		]],
 	},
 	{
 		label = "pdbname",
 		kind = "Keyword",
-		documentation = "pdbname",
+		documentation = [[
+		"pdbname"
+		]],
 	},
 	{
 		label = "persistent",
 		kind = "Keyword",
-		documentation = "persistent",
+		documentation = [[
+		"persistent"
+		]],
 	},
 	{
 		label = "persistent-cache-disabled",
 		kind = "Keyword",
-		documentation = "persistent-cache-disabled",
+		documentation = [[
+		"persistent-cache-disabled"
+		]],
 	},
 	{
 		label = "pfcolor",
 		kind = "Keyword",
-		documentation = "pfcolor",
+		documentation = [[
+		"pfcolor"
+		]],
 	},
 	{
 		label = "pixels",
 		kind = "Keyword",
-		documentation = "pixels",
+		documentation = [[
+		"pixels"
+		]],
 	},
 	{
 		label = "pixels-per-column",
 		kind = "Keyword",
-		documentation = "pixels-per-column",
+		documentation = [[
+		"pixels-per-column"
+		]],
 	},
 	{
 		label = "pixels-per-row",
 		kind = "Keyword",
-		documentation = "pixels-per-row",
+		documentation = [[
+		"pixels-per-row"
+		]],
 	},
 	{
 		label = "popup-menu",
 		kind = "Keyword",
-		documentation = "popup-menu",
+		documentation = [[
+		"popup-menu"
+		]],
 	},
 	{
 		label = "popup-only",
 		kind = "Keyword",
-		documentation = "popup-only",
+		documentation = [[
+		"popup-only"
+		]],
 	},
 	{
 		label = "portrait",
 		kind = "Keyword",
-		documentation = "portrait",
+		documentation = [[
+		"portrait"
+		]],
 	},
 	{
 		label = "position",
 		kind = "Keyword",
-		documentation = "position",
+		documentation = [[
+		"position"
+		]],
 	},
 	{
 		label = "precision",
 		kind = "Keyword",
-		documentation = "precision",
+		documentation = [[
+		"precision"
+		]],
 	},
 	{
 		label = "prefer-dataset",
 		kind = "Keyword",
-		documentation = "prefer-dataset",
+		documentation = [[
+		"prefer-dataset"
+		]],
 	},
 	{
 		label = "prepared",
 		kind = "Keyword",
-		documentation = "prepared",
+		documentation = [[
+		"prepared"
+		]],
 	},
 	{
 		label = "prepare-string",
 		kind = "Keyword",
-		documentation = "prepare-string",
+		documentation = [[
+		"prepare-string"
+		]],
 	},
 	{
 		label = "preprocess",
 		kind = "Keyword",
-		documentation = "preprocess",
+		documentation = [[
+		"preprocess"
+		]],
 	},
 	{
 		label = "preselect",
 		kind = "Keyword",
-		documentation = "preselect",
+		documentation = [[
+		"preselect"
+		]],
 	},
 	{
 		label = "prev",
 		kind = "Keyword",
-		documentation = "prev",
+		documentation = [[
+		"prev"
+		]],
 	},
 	{
 		label = "prev-column",
 		kind = "Keyword",
-		documentation = "prev-column",
+		documentation = [[
+		"prev-column"
+		]],
 	},
 	{
 		label = "prev-sibling",
 		kind = "Keyword",
-		documentation = "prev-sibling",
+		documentation = [[
+		"prev-sibling"
+		]],
 	},
 	{
 		label = "prev-tab-item",
 		kind = "Keyword",
-		documentation = "prev-tab-item",
+		documentation = [[
+		"prev-tab-item"
+		]],
 	},
 	{
 		label = "primary",
 		kind = "Keyword",
-		documentation = "primary",
+		documentation = [[
+		"primary"
+		]],
 	},
 	{
 		label = "printer",
 		kind = "Keyword",
-		documentation = "printer",
+		documentation = [[
+		"printer"
+		]],
 	},
 	{
 		label = "printer-control-handle",
 		kind = "Keyword",
-		documentation = "printer-control-handle",
+		documentation = [[
+		"printer-control-handle"
+		]],
 	},
 	{
 		label = "printer-hdc",
 		kind = "Keyword",
-		documentation = "printer-hdc",
+		documentation = [[
+		"printer-hdc"
+		]],
 	},
 	{
 		label = "printer-name",
 		kind = "Keyword",
-		documentation = "printer-name",
+		documentation = [[
+		"printer-name"
+		]],
 	},
 	{
 		label = "printer-port",
 		kind = "Keyword",
-		documentation = "printer-port",
+		documentation = [[
+		"printer-port"
+		]],
 	},
 	{
 		label = "printer-setup",
 		kind = "Keyword",
-		documentation = "printer-setup",
+		documentation = [[
+		"printer-setup"
+		]],
 	},
 	{
 		label = "private",
 		kind = "Keyword",
-		documentation = "private",
+		documentation = [[
+		"private"
+		]],
 	},
 	{
 		label = "private-data",
 		kind = "Keyword",
-		documentation = "private-data",
+		documentation = [[
+		"private-data"
+		]],
 	},
 	{
 		label = "privileges",
 		kind = "Keyword",
-		documentation = "privileges",
+		documentation = [[
+		"privileges"
+		]],
 	},
 	{
 		label = "procedure",
 		kind = "Keyword",
-		documentation = "procedure",
+		documentation = [[
+		"procedure"
+		]],
 	},
 	{
 		label = "procedure-call-type",
 		kind = "Keyword",
-		documentation = "procedure-call-type",
+		documentation = [[
+		"procedure-call-type"
+		]],
 	},
 	{
 		label = "procedure-type",
 		kind = "Keyword",
-		documentation = "procedure-type",
+		documentation = [[
+		"procedure-type"
+		]],
 	},
 	{
 		label = "process",
 		kind = "Keyword",
-		documentation = "process",
+		documentation = [[
+		"process"
+		]],
 	},
 	{
 		label = "proc-handle",
 		kind = "Keyword",
-		documentation = "proc-handle",
+		documentation = [[
+		"proc-handle"
+		]],
 	},
 	{
 		label = "proc-status",
 		kind = "Keyword",
-		documentation = "proc-status",
+		documentation = [[
+		"proc-status"
+		]],
 	},
 	{
 		label = "proc-text",
 		kind = "Keyword",
-		documentation = "proc-text",
+		documentation = [[
+		"proc-text"
+		]],
 	},
 	{
 		label = "proc-text-buffer",
 		kind = "Keyword",
-		documentation = "proc-text-buffer",
+		documentation = [[
+		"proc-text-buffer"
+		]],
 	},
 	{
 		label = "profiler",
 		kind = "Keyword",
-		documentation = "profiler",
+		documentation = [[
+		"profiler"
+		]],
 	},
 	{
 		label = "program-name",
-		kind = "Keyword",
 		kind = "Function",
-		documentation = "Returns the name of the calling program.",
+		documentation = [[
+		Returns the name of the calling program.
+		]],
 	},
 	{
 		label = "progress",
 		kind = "Keyword",
-		documentation = "progress",
+		documentation = [[
+		progress
+		]],
 	},
 	{
 		label = "progress-source",
 		kind = "Keyword",
-		documentation = "progress-source",
+		documentation = [[
+		progress-source
+		]],
 	},
 	{
 		label = "prompt",
 		kind = "Keyword",
-		documentation = "prompt",
+		documentation = [[
+		prompt
+		]],
 	},
 	{
 		label = "prompt-for",
 		kind = "Keyword",
-		documentation = "prompt-for",
+		documentation = [[
+		prompt-for
+		]],
 	},
 	{
 		label = "promsgs",
 		kind = "Keyword",
-		documentation = "promsgs",
+		documentation = [[
+		promsgs
+		]],
 	},
 	{
 		label = "propath",
 		kind = "Keyword",
-		documentation = "propath",
+		documentation = [[
+		propath
+		]],
 	},
 	{
 		label = "property",
 		kind = "Keyword",
-		documentation = "property",
+		documentation = [[
+		property
+		]],
 	},
 	{
 		label = "protected",
 		kind = "Keyword",
-		documentation = "protected",
+		documentation = [[
+		protected
+		]],
 	},
 	{
 		label = "proversion",
 		kind = "Keyword",
-		documentation = "proversion",
+		documentation = [[
+		proversion
+		]],
 	},
 	{
 		label = "proxy",
 		kind = "Keyword",
-		documentation = "proxy",
+		documentation = [[
+		proxy
+		]],
 	},
 	{
 		label = "proxy-password",
 		kind = "Keyword",
-		documentation = "proxy-password",
+		documentation = [[
+		proxy-password
+		]],
 	},
 	{
 		label = "proxy-userid",
 		kind = "Keyword",
-		documentation = "proxy-userid",
+		documentation = [[
+		proxy-userid
+		]],
 	},
 	{
 		label = "public",
 		kind = "Keyword",
-		documentation = "public",
+		documentation = [[
+		public
+		]],
 	},
 	{
 		label = "public-id",
 		kind = "Keyword",
-		documentation = "public-id",
+		documentation = [[
+		public-id
+		]],
 	},
 	{
 		label = "publish",
 		kind = "Keyword",
-		documentation = "publish",
+		documentation = [[
+		publish
+		]],
 	},
 	{
 		label = "published-events",
 		kind = "Keyword",
-		documentation = "published-events",
+		documentation = [[
+		published-events
+		]],
 	},
 	{
 		label = "put",
 		kind = "Keyword",
-		documentation = "put",
+		documentation = [[
+		put
+		]],
 	},
 	{
 		label = "putbyte",
 		kind = "Keyword",
-		documentation = "putbyte",
+		documentation = [[
+		putbyte
+		]],
 	},
 	{
 		label = "put-byte",
 		kind = "Keyword",
-		documentation = "put-byte",
+		documentation = [[
+		put-byte
+		]],
 	},
 	{
 		label = "put-double",
 		kind = "Keyword",
-		documentation = "put-double",
+		documentation = [[
+		put-double
+		]],
 	},
 	{
 		label = "put-float",
 		kind = "Keyword",
-		documentation = "put-float",
+		documentation = [[
+		put-float
+		]],
 	},
 	{
 		label = "put-int64",
 		kind = "Keyword",
-		documentation = "put-int64",
+		documentation = [[
+		put-int64
+		]],
 	},
 	{
 		label = "put-key-value",
 		kind = "Keyword",
-		documentation = "put-key-value",
+		documentation = [[
+		put-key-value
+		]],
 	},
 	{
 		label = "put-long",
 		kind = "Keyword",
-		documentation = "put-long",
+		documentation = [[
+		put-long
+		]],
 	},
 	{
 		label = "put-short",
 		kind = "Keyword",
-		documentation = "put-short",
+		documentation = [[
+		put-short
+		]],
 	},
 	{
 		label = "put-string",
 		kind = "Keyword",
-		documentation = "put-string",
+		documentation = [[
+		put-string
+		]],
 	},
 	{
 		label = "put-unsigned-long",
 		kind = "Keyword",
-		documentation = "put-unsigned-long",
+		documentation = [[
+		put-unsigned-long
+		]],
 	},
 	{
 		label = "query",
 		kind = "Keyword",
-		documentation = "query",
+		documentation = [[
+		query
+		]],
 	},
 	{
 		label = "query-close",
 		kind = "Keyword",
-		documentation = "Closes a query that was opened by a previous OPEN QUERY statement.",
+		documentation = [[
+		Closes a query that was opened by a previous OPEN QUERY statement.
+		]],
 	},
 	{
 		label = "query-off-end",
 		kind = "Keyword",
-		documentation = "query-off-end",
+		documentation = [[
+		query-off-end
+		]],
 	},
 	{
 		label = "query-open",
 		kind = "Keyword",
-		documentation = "query-open",
+		documentation = [[
+		query-open
+		]],
 	},
 	{
 		label = "query-prepare",
 		kind = "Keyword",
-		documentation = "query-prepare",
+		documentation = [[
+		query-prepare
+		]],
 	},
 	{
 		label = "query-tuning",
 		kind = "Keyword",
-		documentation = "query-tuning",
+		documentation = [[
+		query-tuning
+		]],
 	},
 	{
 		label = "question",
 		kind = "Keyword",
-		documentation = "question",
+		documentation = [[
+		question
+		]],
 	},
 	{
 		label = "quit",
 		kind = "Keyword",
-		documentation = "quit",
+		documentation = [[
+		quit
+		]],
 	},
 	{
 		label = "quoter",
 		kind = "Keyword",
-		documentation = "quoter",
+		documentation = [[
+		quoter
+		]],
 	},
 	{
 		label = "radio-buttons",
 		kind = "Keyword",
-		documentation = "radio-buttons",
+		documentation = [[
+		radio-buttons
+		]],
 	},
 	{
 		label = "radio-set",
 		kind = "Keyword",
-		documentation = "radio-set",
+		documentation = [[
+		radio-set
+		]],
 	},
 	{
 		label = "random",
 		kind = "Keyword",
-		documentation = "random",
+		documentation = [[
+		random
+		]],
 	},
 	{
 		label = "raw",
 		kind = "Keyword",
-		documentation = "raw",
+		documentation = [[
+		raw
+		]],
 	},
 	{
 		label = "raw-transfer",
 		kind = "Keyword",
-		documentation = "raw-transfer",
+		documentation = [[
+		raw-transfer
+		]],
 	},
 	{
 		label = "rcode-information",
 		kind = "Keyword",
-		documentation = "rcode-information",
+		documentation = [[
+		rcode-information
+		]],
 	},
 	{
 		label = "read-available",
 		kind = "Keyword",
-		documentation = "read-available",
+		documentation = [[
+		read-available
+		]],
 	},
 	{
 		label = "read-exact-num",
 		kind = "Keyword",
-		documentation = "read-exact-num",
+		documentation = [[
+		read-exact-num
+		]],
 	},
 	{
 		label = "read-file",
 		kind = "Keyword",
-		documentation = "read-file",
+		documentation = [[
+		read-file
+		]],
 	},
 	{
 		label = "read-json",
 		kind = "Keyword",
-		documentation = "read-json",
+		documentation = [[
+		read-json
+		]],
 	},
 	{
 		label = "read-only",
 		kind = "Keyword",
-		documentation = "read-only",
+		documentation = [[
+		read-only
+		]],
 	},
 	{
 		label = "read-xml",
 		kind = "Keyword",
-		documentation = "read-xml",
+		documentation = [[
+		read-xml
+		]],
 	},
 	{
 		label = "readkey",
 		kind = "Keyword",
-		documentation = "readkey",
+		documentation = [[
+		readkey
+		]],
 	},
 	{
 		label = "real",
 		kind = "Keyword",
-		documentation = "real",
+		documentation = [[
+		real
+		]],
 	},
 	{
 		label = "recid",
 		kind = "Keyword",
-		documentation = "recid",
+		documentation = [[
+		recid
+		]],
 	},
 	{
 		label = "record-length",
 		kind = "Keyword",
-		documentation = "record-length",
+		documentation = [[
+		record-length
+		]],
 	},
 	{
 		label = "rectangle",
 		kind = "Keyword",
-		documentation = "rectangle",
+		documentation = [[
+		rectangle
+		]],
 	},
 	{
 		label = "recursive",
 		kind = "Keyword",
-		documentation = "recursive",
+		documentation = [[
+		recursive
+		]],
 	},
 	{
 		label = "reference-only",
 		kind = "Keyword",
-		documentation = "reference-only",
+		documentation = [[
+		reference-only
+		]],
 	},
 	{
 		label = "refresh",
 		kind = "Keyword",
-		documentation = "refresh",
+		documentation = [[
+		refresh
+		]],
 	},
 	{
 		label = "refreshable",
 		kind = "Keyword",
-		documentation = "refreshable",
+		documentation = [[
+		refreshable
+		]],
 	},
 	{
 		label = "refresh-audit-policy",
 		kind = "Keyword",
-		documentation = "refresh-audit-policy",
+		documentation = [[
+		refresh-audit-policy
+		]],
 	},
 	{
 		label = "register-domain",
 		kind = "Keyword",
-		documentation = "register-domain",
+		documentation = [[
+		register-domain
+		]],
 	},
 	{
 		label = "release",
 		kind = "Keyword",
-		documentation = "release",
+		documentation = [[
+		release
+		]],
 	},
 	{
 		label = "remote",
 		kind = "Keyword",
-		documentation = "remote",
+		documentation = [[
+		remote
+		]],
 	},
 	{
 		label = "remove-events-procedure",
 		kind = "Keyword",
-		documentation = "remove-events-procedure",
+		documentation = [[
+		remove-events-procedure
+		]],
 	},
 	{
 		label = "remove-super-procedure",
 		kind = "Keyword",
-		documentation = "remove-super-procedure",
+		documentation = [[
+		remove-super-procedure
+		]],
 	},
 	{
 		label = "repeat",
 		kind = "Keyword",
-		documentation = "repeat",
+		documentation = [[
+		repeat
+		]],
 	},
 	{
 		label = "replace",
 		kind = "Keyword",
-		documentation = "replace",
+		documentation = [[
+		replace
+		]],
 	},
 	{
 		label = "replace-selection-text",
 		kind = "Keyword",
-		documentation = "replace-selection-text",
+		documentation = [[
+		replace-selection-text
+		]],
 	},
 	{
 		label = "reposition",
 		kind = "Keyword",
-		documentation = "reposition",
+		documentation = [[
+		reposition
+		]],
 	},
 	{
 		label = "reposition-backward",
 		kind = "Keyword",
-		documentation = "reposition-backward",
+		documentation = [[
+		reposition-backward
+		]],
 	},
 	{
 		label = "reposition-forward",
 		kind = "Keyword",
-		documentation = "reposition-forward",
+		documentation = [[
+		reposition-forward
+		]],
 	},
 	{
 		label = "reposition-mode",
 		kind = "Keyword",
-		documentation = "reposition-mode",
+		documentation = [[
+		reposition-mode
+		]],
 	},
 	{
 		label = "reposition-to-row",
 		kind = "Keyword",
-		documentation = "reposition-to-row",
+		documentation = [[
+		reposition-to-row
+		]],
 	},
 	{
 		label = "reposition-to-rowid",
 		kind = "Keyword",
-		documentation = "reposition-to-rowid",
+		documentation = [[
+		reposition-to-rowid
+		]],
 	},
 	{
 		label = "request",
 		kind = "Keyword",
-		documentation = "request",
+		documentation = [[
+		request
+		]],
 	},
 	{
 		label = "request-info",
 		kind = "Keyword",
-		documentation = "request-info",
+		documentation = [[
+		request-info
+		]],
 	},
 	{
 		label = "reset",
 		kind = "Keyword",
-		documentation = "reset",
+		documentation = [[
+		reset
+		]],
 	},
 	{
 		label = "resizable",
 		kind = "Keyword",
-		documentation = "resizable",
+		documentation = [[
+		resizable
+		]],
 	},
 	{
 		label = "resize",
 		kind = "Keyword",
-		documentation = "resize",
+		documentation = [[
+		resize
+		]],
 	},
 	{
 		label = "response-info",
 		kind = "Keyword",
-		documentation = "response-info",
+		documentation = [[
+		response-info
+		]],
 	},
 	{
 		label = "restart-row",
 		kind = "Keyword",
-		documentation = "restart-row",
+		documentation = [[
+		restart-row
+		]],
 	},
 	{
 		label = "restart-rowid",
 		kind = "Keyword",
-		documentation = "restart-rowid",
+		documentation = [[
+		restart-rowid
+		]],
 	},
 	{
 		label = "retain",
 		kind = "Keyword",
-		documentation = "retain",
+		documentation = [[
+		retain
+		]],
 	},
 	{
 		label = "retain-shape",
 		kind = "Keyword",
-		documentation = "retain-shape",
+		documentation = [[
+		retain-shape
+		]],
 	},
 	{
 		label = "retry",
 		kind = "Keyword",
-		documentation = "retry",
+		documentation = [[
+		retry
+		]],
 	},
 	{
 		label = "retry-cancel",
 		kind = "Keyword",
-		documentation = "retry-cancel",
+		documentation = [[
+		retry-cancel
+		]],
 	},
 	{
 		label = "return",
 		kind = "Keyword",
-		documentation = "return",
+		documentation = [[
+		return
+		]],
 	},
 	{
 		label = "return-inserted",
 		kind = "Keyword",
-		documentation = "return-inserted",
+		documentation = [[
+		return-inserted
+		]],
 	},
 	{
 		label = "returns",
 		kind = "Keyword",
-		documentation = "returns",
+		documentation = [[
+		returns
+		]],
 	},
 	{
 		label = "return-to-start-dir",
 		kind = "Keyword",
-		documentation = "return-to-start-dir",
+		documentation = [[
+		return-to-start-dir
+		]],
 	},
 	{
 		label = "return-value",
 		kind = "Keyword",
-		documentation = "return-value",
+		documentation = [[
+		return-value
+		]],
 	},
 	{
 		label = "return-value-data-type",
 		kind = "Keyword",
-		documentation = "return-value-data-type",
+		documentation = [[
+		return-value-data-type
+		]],
 	},
 	{
 		label = "reverse-from",
 		kind = "Keyword",
-		documentation = "reverse-from",
+		documentation = [[
+		reverse-from
+		]],
 	},
 	{
 		label = "revert",
 		kind = "Keyword",
-		documentation = "revert",
+		documentation = [[
+		revert
+		]],
 	},
 	{
 		label = "revoke",
 		kind = "Keyword",
-		documentation = "revoke",
+		documentation = [[
+		revoke
+		]],
 	},
 	{
 		label = "rgb-value",
 		kind = "Keyword",
-		documentation = "rgb-value",
+		documentation = [[
+		rgb-value
+		]],
 	},
 	{
 		label = "right-aligned",
 		kind = "Keyword",
-		documentation = "right-aligned",
+		documentation = [[
+		right-aligned
+		]],
 	},
 	{
 		label = "right-trim",
 		kind = "Keyword",
-		documentation = "right-trim",
+		documentation = [[
+		right-trim
+		]],
 	},
 	{
 		label = "r-index",
 		kind = "Keyword",
-		documentation = "r-index",
+		documentation = [[
+		r-index
+		]],
 	},
 	{
 		label = "roles",
 		kind = "Keyword",
-		documentation = "roles",
+		documentation = [[
+		roles
+		]],
 	},
 	{
 		label = "round",
 		kind = "Keyword",
-		documentation = "round",
+		documentation = [[
+		round
+		]],
 	},
 	{
 		label = "routine-level",
 		kind = "Keyword",
-		documentation = "routine-level",
+		documentation = [[
+		routine-level
+		]],
 	},
 	{
 		label = "row",
 		kind = "Keyword",
-		documentation = "row",
+		documentation = [[
+		row
+		]],
 	},
 	{
 		label = "row-height-chars",
 		kind = "Keyword",
-		documentation = "row-height-chars",
+		documentation = [[
+		row-height-chars
+		]],
 	},
 	{
 		label = "row-height-pixels",
 		kind = "Keyword",
-		documentation = "row-height-pixels",
+		documentation = [[
+		row-height-pixels
+		]],
 	},
 	{
 		label = "rowid",
 		kind = "Keyword",
-		documentation = "rowid",
+		documentation = [[
+		rowid
+		]],
 	},
 	{
 		label = "row-markers",
 		kind = "Keyword",
-		documentation = "row-markers",
+		documentation = [[
+		row-markers
+		]],
 	},
 	{
 		label = "row-of",
 		kind = "Keyword",
-		documentation = "row-of",
+		documentation = [[
+		row-of
+		]],
 	},
 	{
 		label = "row-resizable",
 		kind = "Keyword",
-		documentation = "row-resizable",
+		documentation = [[
+		row-resizable
+		]],
 	},
 	{
 		label = "rule",
 		kind = "Keyword",
-		documentation = "rule",
+		documentation = [[
+		rule
+		]],
 	},
 	{
 		label = "run",
 		kind = "Keyword",
-		documentation = "run",
+		documentation = [[
+		run
+		]],
 	},
 	{
 		label = "run-procedure",
 		kind = "Keyword",
-		documentation = "run-procedure",
+		documentation = [[
+		run-procedure
+		]],
 	},
 	{
 		label = "save",
 		kind = "Keyword",
-		documentation = "save",
+		documentation = [[
+		save
+		]],
 	},
 	{
 		label = "save",
 		kind = "Keyword",
-		documentation = "save",
+		documentation = [[
+		save
+		]],
 	},
 	{
 		label = "save-as",
 		kind = "Keyword",
-		documentation = "save-as",
+		documentation = [[
+		save-as
+		]],
 	},
 	{
 		label = "save-file",
 		kind = "Keyword",
-		documentation = "save-file",
+		documentation = [[
+		save-file
+		]],
 	},
 	{
 		label = "sax-complete",
 		kind = "Keyword",
-		documentation = "sax-complete",
+		documentation = [[
+		sax-complete
+		]],
 	},
 	{
 		label = "sax-parse",
 		kind = "Keyword",
-		documentation = "sax-parse",
+		documentation = [[
+		sax-parse
+		]],
 	},
 	{
 		label = "sax-parse-first",
 		kind = "Keyword",
-		documentation = "sax-parse-first",
+		documentation = [[
+		sax-parse-first
+		]],
 	},
 	{
 		label = "sax-parse-next",
 		kind = "Keyword",
-		documentation = "sax-parse-next",
+		documentation = [[
+		sax-parse-next
+		]],
 	},
 	{
 		label = "sax-parser-error",
 		kind = "Keyword",
-		documentation = "sax-parser-error",
+		documentation = [[
+		sax-parser-error
+		]],
 	},
 	{
 		label = "sax-running",
 		kind = "Keyword",
-		documentation = "sax-running",
+		documentation = [[
+		sax-running
+		]],
 	},
 	{
 		label = "sax-uninitialized",
 		kind = "Keyword",
-		documentation = "sax-uninitialized",
+		documentation = [[
+		sax-uninitialized
+		]],
 	},
 	{
 		label = "sax-write-begin",
 		kind = "Keyword",
-		documentation = "sax-write-begin",
+		documentation = [[
+		sax-write-begin
+		]],
 	},
 	{
 		label = "sax-write-complete",
 		kind = "Keyword",
-		documentation = "sax-write-complete",
+		documentation = [[
+		sax-write-complete
+		]],
 	},
 	{
 		label = "sax-write-content",
 		kind = "Keyword",
-		documentation = "sax-write-content",
+		documentation = [[
+		sax-write-content
+		]],
 	},
 	{
 		label = "sax-write-element",
 		kind = "Keyword",
-		documentation = "sax-write-element",
+		documentation = [[
+		sax-write-element
+		]],
 	},
 	{
 		label = "sax-write-error",
 		kind = "Keyword",
-		documentation = "sax-write-error",
+		documentation = [[
+		sax-write-error
+		]],
 	},
 	{
 		label = "sax-write-idle",
 		kind = "Keyword",
-		documentation = "sax-write-idle",
+		documentation = [[
+		sax-write-idle
+		]],
 	},
 	{
 		label = "sax-writer",
 		kind = "Keyword",
-		documentation = "sax-writer",
+		documentation = [[
+		sax-writer
+		]],
 	},
 	{
 		label = "sax-write-tag",
 		kind = "Keyword",
-		documentation = "sax-write-tag",
+		documentation = [[
+		sax-write-tag
+		]],
 	},
 	{
 		label = "schema",
 		kind = "Keyword",
-		documentation = "schema",
+		documentation = [[
+		schema
+		]],
 	},
 	{
 		label = "schema-location",
 		kind = "Keyword",
-		documentation = "schema-location",
+		documentation = [[
+		schema-location
+		]],
 	},
 	{
 		label = "schema-marshal",
 		kind = "Keyword",
-		documentation = "schema-marshal",
+		documentation = [[
+		schema-marshal
+		]],
 	},
 	{
 		label = "schema-path",
 		kind = "Keyword",
-		documentation = "schema-path",
+		documentation = [[
+		schema-path
+		]],
 	},
 	{
 		label = "screen",
 		kind = "Keyword",
-		documentation = "screen",
+		documentation = [[
+		screen
+		]],
 	},
 	{
 		label = "screen-io",
 		kind = "Keyword",
-		documentation = "screen-io",
+		documentation = [[
+		screen-io
+		]],
 	},
 	{
 		label = "screen-lines",
 		kind = "Keyword",
-		documentation = "screen-lines",
+		documentation = [[
+		screen-lines
+		]],
 	},
 	{
 		label = "screen-value",
 		kind = "Keyword",
-		documentation = "screen-value",
+		documentation = [[
+		screen-value
+		]],
 	},
 	{
 		label = "scroll",
 		kind = "Keyword",
-		documentation = "scroll",
+		documentation = [[
+		scroll
+		]],
 	},
 	{
 		label = "scrollable",
 		kind = "Keyword",
-		documentation = "scrollable",
+		documentation = [[
+		scrollable
+		]],
 	},
 	{
 		label = "scrollbar-horizontal",
 		kind = "Keyword",
-		documentation = "scrollbar-horizontal",
+		documentation = [[
+		scrollbar-horizontal
+		]],
 	},
 	{
 		label = "scroll-bars",
 		kind = "Keyword",
-		documentation = "scroll-bars",
+		documentation = [[
+		scroll-bars
+		]],
 	},
 	{
 		label = "scrollbar-vertical",
 		kind = "Keyword",
-		documentation = "scrollbar-vertical",
+		documentation = [[
+		scrollbar-vertical
+		]],
 	},
 	{
 		label = "scroll-delta",
 		kind = "Keyword",
-		documentation = "scroll-delta",
+		documentation = [[
+		scroll-delta
+		]],
 	},
 	{
 		label = "scrolled-row-position",
 		kind = "Keyword",
-		documentation = "scrolled-row-position",
+		documentation = [[
+		scrolled-row-position
+		]],
 	},
 	{
 		label = "scrolling",
 		kind = "Keyword",
-		documentation = "scrolling",
+		documentation = [[
+		scrolling
+		]],
 	},
 	{
 		label = "scroll-offset",
 		kind = "Keyword",
-		documentation = "scroll-offset",
+		documentation = [[
+		scroll-offset
+		]],
 	},
 	{
 		label = "scroll-to-current-row",
 		kind = "Keyword",
-		documentation = "scroll-to-current-row",
+		documentation = [[
+		scroll-to-current-row
+		]],
 	},
 	{
 		label = "scroll-to-item",
 		kind = "Keyword",
-		documentation = "scroll-to-item",
+		documentation = [[
+		scroll-to-item
+		]],
 	},
 	{
 		label = "scroll-to-selected-row",
 		kind = "Keyword",
-		documentation = "scroll-to-selected-row",
+		documentation = [[
+		scroll-to-selected-row
+		]],
 	},
 	{
 		label = "sdbname",
 		kind = "Keyword",
-		documentation = "sdbname",
+		documentation = [[
+		sdbname
+		]],
 	},
 	{
 		label = "seal",
 		kind = "Keyword",
-		documentation = "seal",
+		documentation = [[
+		seal
+		]],
 	},
 	{
 		label = "seal-timestamp",
 		kind = "Keyword",
-		documentation = "seal-timestamp",
+		documentation = [[
+		seal-timestamp
+		]],
 	},
 	{
 		label = "search",
 		kind = "Keyword",
-		documentation = "search",
+		documentation = [[
+		search
+		]],
 	},
 	{
 		label = "search-self",
 		kind = "Keyword",
-		documentation = "search-self",
+		documentation = [[
+		search-self
+		]],
 	},
 	{
 		label = "search-targer",
 		kind = "Keyword",
-		documentation = "search-targer",
+		documentation = [[
+		search-targer
+		]],
 	},
 	{
 		label = "section",
 		kind = "Keyword",
-		documentation = "section",
+		documentation = [[
+		section
+		]],
 	},
 	{
 		label = "security-policy",
 		kind = "Keyword",
-		documentation = "security-policy",
+		documentation = [[
+		security-policy
+		]],
 	},
 	{
 		label = "seek",
 		kind = "Keyword",
-		documentation = "seek",
+		documentation = [[
+		seek
+		]],
 	},
 	{
 		label = "select",
 		kind = "Keyword",
-		documentation = "select",
+		documentation = [[
+		select
+		]],
 	},
 	{
 		label = "selectable",
 		kind = "Keyword",
-		documentation = "selectable",
+		documentation = [[
+		selectable
+		]],
 	},
 	{
 		label = "select-all",
 		kind = "Keyword",
-		documentation = "select-all",
+		documentation = [[
+		select-all
+		]],
 	},
 	{
 		label = "selected",
 		kind = "Keyword",
-		documentation = "selected",
+		documentation = [[
+		selected
+		]],
 	},
 	{
 		label = "select-focused-row",
 		kind = "Keyword",
-		documentation = "select-focused-row",
+		documentation = [[
+		select-focused-row
+		]],
 	},
 	{
 		label = "selection",
 		kind = "Keyword",
-		documentation = "selection",
+		documentation = [[
+		selection
+		]],
 	},
 	{
 		label = "selection-end",
 		kind = "Keyword",
-		documentation = "selection-end",
+		documentation = [[
+		selection-end
+		]],
 	},
 	{
 		label = "selection-list",
 		kind = "Keyword",
-		documentation = "selection-list",
+		documentation = [[
+		selection-list
+		]],
 	},
 	{
 		label = "selection-start",
 		kind = "Keyword",
-		documentation = "selection-start",
+		documentation = [[
+		selection-start
+		]],
 	},
 	{
 		label = "selection-text",
 		kind = "Keyword",
-		documentation = "selection-text",
+		documentation = [[
+		selection-text
+		]],
 	},
 	{
 		label = "select-next-row",
 		kind = "Keyword",
-		documentation = "select-next-row",
+		documentation = [[
+		select-next-row
+		]],
 	},
 	{
 		label = "select-prev-row",
 		kind = "Keyword",
-		documentation = "select-prev-row",
+		documentation = [[
+		select-prev-row
+		]],
 	},
 	{
 		label = "select-row",
 		kind = "Keyword",
-		documentation = "select-row",
+		documentation = [[
+		select-row
+		]],
 	},
 	{
 		label = "self",
 		kind = "Keyword",
-		documentation = "self",
+		documentation = [[
+		self
+		]],
 	},
 	{
 		label = "send",
 		kind = "Keyword",
-		documentation = "send",
+		documentation = [[
+		send
+		]],
 	},
 	{
 		label = "send-sql-statement",
 		kind = "Keyword",
-		documentation = "send-sql-statement",
+		documentation = [[
+		send-sql-statement
+		]],
 	},
 	{
 		label = "sensitive",
 		kind = "Keyword",
-		documentation = "sensitive",
+		documentation = [[
+		sensitive
+		]],
 	},
 	{
 		label = "separate-connection",
 		kind = "Keyword",
-		documentation = "separate-connection",
+		documentation = [[
+		separate-connection
+		]],
 	},
 	{
 		label = "separator-fgcolor",
 		kind = "Keyword",
-		documentation = "separator-fgcolor",
+		documentation = [[
+		separator-fgcolor
+		]],
 	},
 	{
 		label = "separators",
 		kind = "Keyword",
-		documentation = "separators",
+		documentation = [[
+		separators
+		]],
 	},
 	{
 		label = "serializable",
 		kind = "Keyword",
-		documentation = "serializable",
+		documentation = [[
+		serializable
+		]],
 	},
 	{
 		label = "serialize-hidden",
 		kind = "Keyword",
-		documentation = "serialize-hidden",
+		documentation = [[
+		serialize-hidden
+		]],
 	},
 	{
 		label = "serialize-name",
 		kind = "Keyword",
-		documentation = "serialize-name",
+		documentation = [[
+		serialize-name
+		]],
 	},
 	{
 		label = "server",
 		kind = "Keyword",
-		documentation = "server",
+		documentation = [[
+		server
+		]],
 	},
 	{
 		label = "server-connection-bound",
 		kind = "Keyword",
-		documentation = "server-connection-bound",
+		documentation = [[
+		server-connection-bound
+		]],
 	},
 	{
 		label = "server-connection-bound-request",
 		kind = "Keyword",
-		documentation = "server-connection-bound-request",
+		documentation = [[
+		server-connection-bound-request
+		]],
 	},
 	{
 		label = "server-connection-context",
 		kind = "Keyword",
-		documentation = "server-connection-context",
+		documentation = [[
+		server-connection-context
+		]],
 	},
 	{
 		label = "server-connection-id",
 		kind = "Keyword",
-		documentation = "server-connection-id",
+		documentation = [[
+		server-connection-id
+		]],
 	},
 	{
 		label = "server-operating-mode",
 		kind = "Keyword",
-		documentation = "server-operating-mode",
+		documentation = [[
+		server-operating-mode
+		]],
 	},
 	{
 		label = "session",
 		kind = "Keyword",
-		documentation = "session",
+		documentation = [[
+		session
+		]],
 	},
 	{
 		label = "session-id",
 		kind = "Keyword",
-		documentation = "session-id",
+		documentation = [[
+		session-id
+		]],
 	},
 	{
 		label = "set",
 		kind = "Keyword",
-		documentation = "set",
+		documentation = [[
+		set
+		]],
 	},
 	{
 		label = "set-appl-context",
 		kind = "Keyword",
-		documentation = "set-appl-context",
+		documentation = [[
+		set-appl-context
+		]],
 	},
 	{
 		label = "set-attr-call-type",
 		kind = "Keyword",
-		documentation = "set-attr-call-type",
+		documentation = [[
+		set-attr-call-type
+		]],
 	},
 	{
 		label = "set-attribute-node",
 		kind = "Keyword",
-		documentation = "set-attribute-node",
+		documentation = [[
+		set-attribute-node
+		]],
 	},
 	{
 		label = "set-blue-value",
 		kind = "Keyword",
-		documentation = "set-blue-value",
+		documentation = [[
+		set-blue-value
+		]],
 	},
 	{
 		label = "set-break",
 		kind = "Keyword",
-		documentation = "set-break",
+		documentation = [[
+		set-break
+		]],
 	},
 	{
 		label = "set-buffers",
 		kind = "Keyword",
-		documentation = "set-buffers",
+		documentation = [[
+		set-buffers
+		]],
 	},
 	{
 		label = "set-callback",
 		kind = "Keyword",
-		documentation = "set-callback",
+		documentation = [[
+		set-callback
+		]],
 	},
 	{
 		label = "set-client",
 		kind = "Keyword",
-		documentation = "set-client",
+		documentation = [[
+		set-client
+		]],
 	},
 	{
 		label = "set-commit",
 		kind = "Keyword",
-		documentation = "set-commit",
+		documentation = [[
+		set-commit
+		]],
 	},
 	{
 		label = "set-contents",
 		kind = "Keyword",
-		documentation = "set-contents",
+		documentation = [[
+		set-contents
+		]],
 	},
 	{
 		label = "set-current-value",
 		kind = "Keyword",
-		documentation = "set-current-value",
+		documentation = [[
+		set-current-value
+		]],
 	},
 	{
 		label = "set-db-client",
 		kind = "Keyword",
-		documentation = "set-db-client",
+		documentation = [[
+		set-db-client
+		]],
 	},
 	{
 		label = "set-dynamic",
 		kind = "Keyword",
-		documentation = "set-dynamic",
+		documentation = [[
+		set-dynamic
+		]],
 	},
 	{
 		label = "set-event-manager-option",
 		kind = "Keyword",
-		documentation = "set-event-manager-option",
+		documentation = [[
+		set-event-manager-option
+		]],
 	},
 	{
 		label = "set-green-value",
 		kind = "Keyword",
-		documentation = "set-green-value",
+		documentation = [[
+		set-green-value
+		]],
 	},
 	{
 		label = "set-input-source",
 		kind = "Keyword",
-		documentation = "set-input-source",
+		documentation = [[
+		set-input-source
+		]],
 	},
 	{
 		label = "set-option",
 		kind = "Keyword",
-		documentation = "set-option",
+		documentation = [[
+		set-option
+		]],
 	},
 	{
 		label = "set-output-destination",
 		kind = "Keyword",
-		documentation = "set-output-destination",
+		documentation = [[
+		set-output-destination
+		]],
 	},
 	{
 		label = "set-parameter",
 		kind = "Keyword",
-		documentation = "set-parameter",
+		documentation = [[
+		set-parameter
+		]],
 	},
 	{
 		label = "set-pointer-value",
 		kind = "Keyword",
-		documentation = "set-pointer-value",
+		documentation = [[
+		set-pointer-value
+		]],
 	},
 	{
 		label = "set-property",
 		kind = "Keyword",
-		documentation = "set-property",
+		documentation = [[
+		set-property
+		]],
 	},
 	{
 		label = "set-red-value",
 		kind = "Keyword",
-		documentation = "set-red-value",
+		documentation = [[
+		set-red-value
+		]],
 	},
 	{
 		label = "set-repositioned-row",
 		kind = "Keyword",
-		documentation = "set-repositioned-row",
+		documentation = [[
+		set-repositioned-row
+		]],
 	},
 	{
 		label = "set-rgb-value",
 		kind = "Keyword",
-		documentation = "set-rgb-value",
+		documentation = [[
+		set-rgb-value
+		]],
 	},
 	{
 		label = "set-rollback",
 		kind = "Keyword",
-		documentation = "set-rollback",
+		documentation = [[
+		set-rollback
+		]],
 	},
 	{
 		label = "set-selection",
 		kind = "Keyword",
-		documentation = "set-selection",
+		documentation = [[
+		set-selection
+		]],
 	},
 	{
 		label = "set-size",
 		kind = "Keyword",
-		documentation = "set-size",
+		documentation = [[
+		set-size
+		]],
 	},
 	{
 		label = "set-sort-arrow",
 		kind = "Keyword",
-		documentation = "set-sort-arrow",
+		documentation = [[
+		set-sort-arrow
+		]],
 	},
 	{
 		label = "setuserid",
 		kind = "Keyword",
-		documentation = "setuserid",
+		documentation = [[
+		setuserid
+		]],
 	},
 	{
 		label = "set-wait-state",
 		kind = "Keyword",
-		documentation = "set-wait-state",
+		documentation = [[
+		set-wait-state
+		]],
 	},
 	{
 		label = "sha1-digest",
 		kind = "Keyword",
-		documentation = "sha1-digest",
+		documentation = [[
+		sha1-digest
+		]],
 	},
 	{
 		label = "shared",
 		kind = "Keyword",
-		documentation = "shared",
+		documentation = [[
+		shared
+		]],
 	},
 	{
 		label = "share-lock",
 		kind = "Keyword",
-		documentation = "share-lock",
+		documentation = [[
+		share-lock
+		]],
 	},
 	{
 		label = "show-in-taskbar",
 		kind = "Keyword",
-		documentation = "show-in-taskbar",
+		documentation = [[
+		show-in-taskbar
+		]],
 	},
 	{
 		label = "show-stats",
 		kind = "Keyword",
-		documentation = "show-stats",
+		documentation = [[
+		show-stats
+		]],
 	},
 	{
 		label = "side-label-handle",
 		kind = "Keyword",
-		documentation = "side-label-handle",
+		documentation = [[
+		side-label-handle
+		]],
 	},
 	{
 		label = "side-labels",
 		kind = "Keyword",
-		documentation = "side-labels",
+		documentation = [[
+		side-labels
+		]],
 	},
 	{
 		label = "signature",
 		kind = "Keyword",
-		documentation = "signature",
+		documentation = [[
+		signature
+		]],
 	},
 	{
 		label = "silent",
 		kind = "Keyword",
-		documentation = "silent",
+		documentation = [[
+		silent
+		]],
 	},
 	{
 		label = "simple",
 		kind = "Keyword",
-		documentation = "simple",
+		documentation = [[
+		simple
+		]],
 	},
 	{
 		label = "single",
 		kind = "Keyword",
-		documentation = "single",
+		documentation = [[
+		single
+		]],
 	},
 	{
 		label = "single-run",
 		kind = "Keyword",
-		documentation = "single-run",
+		documentation = [[
+		single-run
+		]],
 	},
 	{
 		label = "singleton",
 		kind = "Keyword",
-		documentation = "singleton",
+		documentation = [[
+		singleton
+		]],
 	},
 	{
 		label = "size",
 		kind = "Keyword",
-		documentation = "size",
+		documentation = [[
+		size
+		]],
 	},
 	{
 		label = "size-chars",
 		kind = "Keyword",
-		documentation = "size-chars",
+		documentation = [[
+		size-chars
+		]],
 	},
 	{
 		label = "size-pixels",
 		kind = "Keyword",
-		documentation = "size-pixels",
+		documentation = [[
+		size-pixels
+		]],
 	},
 	{
 		label = "skip",
 		kind = "Keyword",
-		documentation = "skip",
+		documentation = [[
+		skip
+		]],
 	},
 	{
 		label = "skip-deleted-record",
 		kind = "Keyword",
-		documentation = "skip-deleted-record",
+		documentation = [[
+		skip-deleted-record
+		]],
 	},
 	{
 		label = "slider",
 		kind = "Keyword",
-		documentation = "slider",
+		documentation = [[
+		slider
+		]],
 	},
 	{
 		label = "small-icon",
 		kind = "Keyword",
-		documentation = "small-icon",
+		documentation = [[
+		small-icon
+		]],
 	},
 	{
 		label = "smallint",
 		kind = "Keyword",
-		documentation = "smallint",
+		documentation = [[
+		smallint
+		]],
 	},
 	{
 		label = "small-title",
 		kind = "Keyword",
-		documentation = "small-title",
+		documentation = [[
+		small-title
+		]],
 	},
 	{
 		label = "some",
 		kind = "Keyword",
-		documentation = "some",
+		documentation = [[
+		some
+		]],
 	},
 	{
 		label = "sort",
 		kind = "Keyword",
-		documentation = "sort",
+		documentation = [[
+		sort
+		]],
 	},
 	{
 		label = "sort-ascending",
 		kind = "Keyword",
-		documentation = "sort-ascending",
+		documentation = [[
+		sort-ascending
+		]],
 	},
 	{
 		label = "sort-number",
 		kind = "Keyword",
-		documentation = "sort-number",
+		documentation = [[
+		sort-number
+		]],
 	},
 	{
 		label = "source",
 		kind = "Keyword",
-		documentation = "source",
+		documentation = [[
+		source
+		]],
 	},
 	{
 		label = "source-procedure",
 		kind = "Keyword",
-		documentation = "source-procedure",
+		documentation = [[
+		source-procedure
+		]],
 	},
 	{
 		label = "space",
 		kind = "Keyword",
-		documentation = "space",
+		documentation = [[
+		space
+		]],
 	},
 	{
 		label = "sql",
 		kind = "Keyword",
-		documentation = "sql",
+		documentation = [[
+		sql
+		]],
 	},
 	{
 		label = "sqrt",
 		kind = "Keyword",
-		documentation = "sqrt",
+		documentation = [[
+		sqrt
+		]],
 	},
 	{
 		label = "ssl-server-name",
 		kind = "Keyword",
-		documentation = "ssl-server-name",
+		documentation = [[
+		ssl-server-name
+		]],
 	},
 	{
 		label = "standalone",
 		kind = "Keyword",
-		documentation = "standalone",
+		documentation = [[
+		standalone
+		]],
 	},
 	{
 		label = "start",
 		kind = "Keyword",
-		documentation = "start",
+		documentation = [[
+		start
+		]],
 	},
 	{
 		label = "start-document",
 		kind = "Keyword",
-		documentation = "start-document",
+		documentation = [[
+		start-document
+		]],
 	},
 	{
 		label = "start-element",
 		kind = "Keyword",
-		documentation = "start-element",
+		documentation = [[
+		start-element
+		]],
 	},
 	{
 		label = "start-move",
 		kind = "Keyword",
-		documentation = "start-move",
+		documentation = [[
+		start-move
+		]],
 	},
 	{
 		label = "start-resize",
 		kind = "Keyword",
-		documentation = "start-resize",
+		documentation = [[
+		start-resize
+		]],
 	},
 	{
 		label = "start-row-resize",
 		kind = "Keyword",
-		documentation = "start-row-resize",
+		documentation = [[
+		start-row-resize
+		]],
 	},
 	{
 		label = "state-detail",
 		kind = "Keyword",
-		documentation = "state-detail",
+		documentation = [[
+		state-detail
+		]],
 	},
 	{
 		label = "static",
 		kind = "Keyword",
-		documentation = "static",
+		documentation = [[
+		static
+		]],
 	},
 	{
 		label = "status",
 		kind = "Keyword",
-		documentation = "status",
+		documentation = [[
+		status
+		]],
 	},
 	{
 		label = "status-area",
 		kind = "Keyword",
-		documentation = "status-area",
+		documentation = [[
+		status-area
+		]],
 	},
 	{
 		label = "status-area-font",
 		kind = "Keyword",
-		documentation = "status-area-font",
+		documentation = [[
+		status-area-font
+		]],
 	},
 	{
 		label = "stdcall",
 		kind = "Keyword",
-		documentation = "stdcall",
+		documentation = [[
+		stdcall
+		]],
 	},
 	{
 		label = "stop",
 		kind = "Keyword",
-		documentation = "stop",
+		documentation = [[
+		stop
+		]],
 	},
 	{
 		label = "stop-after",
 		kind = "Keyword",
-		documentation = "stop-after",
+		documentation = [[
+		stop-after
+		]],
 	},
 	{
 		label = "stop-parsing",
 		kind = "Keyword",
-		documentation = "stop-parsing",
+		documentation = [[
+		stop-parsing
+		]],
 	},
 	{
 		label = "stopped",
 		kind = "Keyword",
-		documentation = "stopped",
+		documentation = [[
+		stopped
+		]],
 	},
 	{
 		label = "stored-procedure",
 		kind = "Keyword",
-		documentation = "stored-procedure",
+		documentation = [[
+		stored-procedure
+		]],
 	},
 	{
 		label = "stream",
 		kind = "Keyword",
-		documentation = "stream",
+		documentation = [[
+		stream
+		]],
 	},
 	{
 		label = "stream-handle",
 		kind = "Keyword",
-		documentation = "stream-handle",
+		documentation = [[
+		stream-handle
+		]],
 	},
 	{
 		label = "stream-io",
 		kind = "Keyword",
-		documentation = "stream-io",
+		documentation = [[
+		stream-io
+		]],
 	},
 	{
 		label = "stretch-to-fit",
 		kind = "Keyword",
-		documentation = "stretch-to-fit",
+		documentation = [[
+		stretch-to-fit
+		]],
 	},
 	{
 		label = "strict",
 		kind = "Keyword",
-		documentation = "strict",
+		documentation = [[
+		strict
+		]],
 	},
 	{
 		label = "strict-entity-resolution",
 		kind = "Keyword",
-		documentation = "strict-entity-resolution",
+		documentation = [[
+		strict-entity-resolution
+		]],
 	},
 	{
 		label = "string",
-		kind = "Function",
-		documentation = "Converts a value of any data type into a character value. ",
+		kind = "Keyword",
+		documentation = [[
+		string
+		]],
 	},
 	{
 		label = "string-value",
 		kind = "Keyword",
-		documentation = "string-value",
+		documentation = [[
+		string-value
+		]],
 	},
 	{
 		label = "string-xref",
 		kind = "Keyword",
-		documentation = "string-xref",
+		documentation = [[
+		string-xref
+		]],
 	},
 	{
 		label = "sub-average",
 		kind = "Keyword",
-		documentation = "Averages values in a break group. Does not supply an average for all records, just for those in each break group.",
+		documentation = [[
+		Averages values in a break group. Does not supply an average for all records, just for those in each break group.
+		]],
 	},
 	{
 		label = "sub-count",
 		kind = "Keyword",
-		documentation = "Counts the number of times an expression is in a break group. Does not supply a count for all records, just for those in each break group.",
+		documentation = [[
+		Counts the number of times an expression is in a break group. Does not supply a count for all records, just for those in each break group.
+		]],
 	},
 	{
 		label = "sub-maximum",
 		kind = "Keyword",
-		documentation = "Shows the maximum value of an expression in a break group. Does not supply a maximum value for all records, just for those in each break group.",
+		documentation = [[
+		Shows the maximum value of an expression in a break group. Does not supply a maximum value for all records, just for those in each break group.
+		]],
 	},
 	{
 		label = "sub-menu",
 		kind = "Keyword",
-		documentation = "sub-menu",
+		documentation = [[
+		sub-menu
+		]],
 	},
 	{
 		label = "sub-minimum",
 		kind = "Keyword",
-		documentation = "Shows the minimum value of an expression in a break group. Does not supply a minimum value for all records, just for those in each break group.",
+		documentation = [[
+		Shows the minimum value of an expression in a break group. Does not supply a minimum value for all records, just for those in each break group.
+		]],
 	},
 	{
 		label = "subscribe",
 		kind = "Keyword",
-		documentation = "subscribe",
+		documentation = [[
+		subscribe
+		]],
 	},
 	{
 		label = "substitute",
 		kind = "Keyword",
-		documentation = "substitute",
+		documentation = [[
+		substitute
+		]],
 	},
 	{
 		label = "substring",
-		kind = "Function",
-		documentation = "Extracts a portion of a character string from a field or variable.",
+		kind = "Keyword",
+		documentation = [[
+		substring
+		]],
 	},
 	{
 		label = "sub-total",
 		kind = "Keyword",
-		documentation = "Subtotals all of the values of the expression in a break group. Does not supply a total value for all records, just for those in each break group.",
+		documentation = [[
+		Subtotals all of the values of the expression in a break group. Does not supply a total value for all records, just for those in each break group.
+		]],
 	},
 	{
 		label = "subtype",
 		kind = "Keyword",
-		documentation = "subtype",
+		documentation = [[
+		subtype
+		]],
 	},
 	{
 		label = "sum",
 		kind = "Keyword",
-		documentation = "sum",
+		documentation = [[
+		sum
+		]],
 	},
 	{
 		label = "super",
 		kind = "Keyword",
-		documentation = "super",
+		documentation = [[
+		super
+		]],
 	},
 	{
 		label = "super-procedures",
 		kind = "Keyword",
-		documentation = "super-procedures",
+		documentation = [[
+		super-procedures
+		]],
 	},
 	{
 		label = "suppress-namespace-processing",
 		kind = "Keyword",
-		documentation = "suppress-namespace-processing",
+		documentation = [[
+		suppress-namespace-processing
+		]],
 	},
 	{
 		label = "suppress-warnings",
 		kind = "Keyword",
-		documentation = "suppress-warnings",
+		documentation = [[
+		suppress-warnings
+		]],
 	},
 	{
 		label = "symmetric-encryption-algorithm",
 		kind = "Keyword",
-		documentation = "symmetric-encryption-algorithm",
+		documentation = [[
+		symmetric-encryption-algorithm
+		]],
 	},
 	{
 		label = "symmetric-encryption-iv",
 		kind = "Keyword",
-		documentation = "symmetric-encryption-iv",
+		documentation = [[
+		symmetric-encryption-iv
+		]],
 	},
 	{
 		label = "symmetric-encryption-key",
 		kind = "Keyword",
-		documentation = "symmetric-encryption-key",
+		documentation = [[
+		symmetric-encryption-key
+		]],
 	},
 	{
 		label = "symmetric-support",
 		kind = "Keyword",
-		documentation = "symmetric-support",
+		documentation = [[
+		symmetric-support
+		]],
 	},
 	{
 		label = "system-alert-boxes",
 		kind = "Keyword",
-		documentation = "system-alert-boxes",
+		documentation = [[
+		system-alert-boxes
+		]],
 	},
 	{
 		label = "system-dialog",
 		kind = "Keyword",
-		documentation = "system-dialog",
+		documentation = [[
+		system-dialog
+		]],
 	},
 	{
 		label = "system-help",
 		kind = "Keyword",
-		documentation = "system-help",
+		documentation = [[
+		system-help
+		]],
 	},
 	{
 		label = "system-id",
 		kind = "Keyword",
-		documentation = "system-id",
+		documentation = [[
+		system-id
+		]],
 	},
 	{
 		label = "table",
 		kind = "Keyword",
-		documentation = "table",
+		documentation = [[
+		table
+		]],
 	},
 	{
 		label = "table-handle",
 		kind = "Keyword",
-		documentation = "table-handle",
+		documentation = [[
+		table-handle
+		]],
 	},
 	{
 		label = "table-number",
 		kind = "Keyword",
-		documentation = "table-number",
+		documentation = [[
+		table-number
+		]],
 	},
 	{
 		label = "table-scan",
 		kind = "Keyword",
-		documentation = "table-scan",
+		documentation = [[
+		table-scan
+		]],
 	},
 	{
 		label = "tab-position",
 		kind = "Keyword",
-		documentation = "tab-position",
+		documentation = [[
+		tab-position
+		]],
 	},
 	{
 		label = "tab-stop",
 		kind = "Keyword",
-		documentation = "tab-stop",
+		documentation = [[
+		tab-stop
+		]],
 	},
 	{
 		label = "target",
 		kind = "Keyword",
-		documentation = "target",
+		documentation = [[
+		target
+		]],
 	},
 	{
 		label = "target-procedure",
 		kind = "Keyword",
-		documentation = "target-procedure",
+		documentation = [[
+		target-procedure
+		]],
 	},
 	{
 		label = "temp-directory",
 		kind = "Keyword",
-		documentation = "temp-directory",
+		documentation = [[
+		temp-directory
+		]],
 	},
 	{
 		label = "temp-table",
 		kind = "Keyword",
-		documentation = "temp-table",
+		documentation = [[
+		temp-table
+		]],
 	},
 	{
 		label = "temp-table-prepare",
 		kind = "Keyword",
-		documentation = "temp-table-prepare",
+		documentation = [[
+		temp-table-prepare
+		]],
 	},
 	{
 		label = "term",
 		kind = "Keyword",
-		documentation = "term",
+		documentation = [[
+		term
+		]],
 	},
 	{
 		label = "terminal",
 		kind = "Keyword",
-		documentation = "terminal",
+		documentation = [[
+		terminal
+		]],
 	},
 	{
 		label = "terminate",
 		kind = "Keyword",
-		documentation = "terminate",
+		documentation = [[
+		terminate
+		]],
 	},
 	{
 		label = "text",
 		kind = "Keyword",
-		documentation = "text",
+		documentation = [[
+		text
+		]],
 	},
 	{
 		label = "text-cursor",
 		kind = "Keyword",
-		documentation = "text-cursor",
+		documentation = [[
+		text-cursor
+		]],
 	},
 	{
 		label = "text-seg-grow",
 		kind = "Keyword",
-		documentation = "text-seg-grow",
+		documentation = [[
+		text-seg-grow
+		]],
 	},
 	{
 		label = "text-selected",
 		kind = "Keyword",
-		documentation = "text-selected",
+		documentation = [[
+		text-selected
+		]],
 	},
 	{
 		label = "then",
 		kind = "Keyword",
-		documentation = "Describes the block statement to process if the expression is TRUE.",
+		documentation = [[
+		Describes the block statement to process if the expression is TRUE.
+		]],
 	},
 	{
 		label = "this-object",
 		kind = "Keyword",
-		documentation = "this-object",
+		documentation = [[
+		this-object
+		]],
 	},
 	{
 		label = "this-procedure",
 		kind = "Keyword",
-		documentation = "this-procedure",
+		documentation = [[
+		this-procedure
+		]],
 	},
 	{
 		label = "thread-safe",
 		kind = "Keyword",
-		documentation = "thread-safe",
+		documentation = [[
+		thread-safe
+		]],
 	},
 	{
 		label = "three-d",
 		kind = "Keyword",
-		documentation = "three-d",
+		documentation = [[
+		three-d
+		]],
 	},
 	{
 		label = "throw",
 		kind = "Keyword",
-		documentation = "throw",
+		documentation = [[
+		throw
+		]],
 	},
 	{
 		label = "through",
 		kind = "Keyword",
-		documentation = "through",
+		documentation = [[
+		through
+		]],
 	},
 	{
 		label = "thru",
 		kind = "Keyword",
-		documentation = "thru",
+		documentation = [[
+		thru
+		]],
 	},
 	{
 		label = "tic-marks",
 		kind = "Keyword",
-		documentation = "tic-marks",
+		documentation = [[
+		tic-marks
+		]],
 	},
 	{
 		label = "time",
-		kind = "Function",
-		documentation = "Returns an INTEGER value representing the time as the number of seconds since midnight. Use this function together with the STRING function to produce the time in hours, minutes, and seconds",
+		kind = "Keyword",
+		documentation = [[
+		time
+		]],
 	},
 	{
 		label = "time-source",
 		kind = "Keyword",
-		documentation = "time-source",
+		documentation = [[
+		time-source
+		]],
 	},
 	{
 		label = "title",
 		kind = "Keyword",
-		documentation = "title",
+		documentation = [[
+		title
+		]],
 	},
 	{
 		label = "title-bgcolor",
 		kind = "Keyword",
-		documentation = "title-bgcolor",
+		documentation = [[
+		title-bgcolor
+		]],
 	},
 	{
 		label = "title-dcolor",
 		kind = "Keyword",
-		documentation = "title-dcolor",
+		documentation = [[
+		title-dcolor
+		]],
 	},
 	{
 		label = "title-fgcolor",
 		kind = "Keyword",
-		documentation = "title-fgcolor",
+		documentation = [[
+		title-fgcolor
+		]],
 	},
 	{
 		label = "title-font",
 		kind = "Keyword",
-		documentation = "title-font",
+		documentation = [[
+		title-font
+		]],
 	},
 	{
 		label = "to",
 		kind = "Keyword",
-		documentation = "to",
+		documentation = [[
+		to
+		]],
 	},
 	{
 		label = "today",
 		kind = "Keyword",
-		documentation = "Returns the current system date.",
+		documentation = [[
+		today
+		]],
 	},
 	{
 		label = "toggle-box",
 		kind = "Keyword",
-		documentation = "toggle-box",
+		documentation = [[
+		toggle-box
+		]],
 	},
 	{
 		label = "tooltip",
 		kind = "Keyword",
-		documentation = "tooltip",
+		documentation = [[
+		tooltip
+		]],
 	},
 	{
 		label = "tooltips",
 		kind = "Keyword",
-		documentation = "tooltips",
+		documentation = [[
+		tooltips
+		]],
 	},
 	{
 		label = "topic",
 		kind = "Keyword",
-		documentation = "topic",
+		documentation = [[
+		topic
+		]],
 	},
 	{
 		label = "top-nav-query",
 		kind = "Keyword",
-		documentation = "top-nav-query",
+		documentation = [[
+		top-nav-query
+		]],
 	},
 	{
 		label = "top-only",
 		kind = "Keyword",
-		documentation = "top-only",
+		documentation = [[
+		top-only
+		]],
 	},
 	{
 		label = "to-rowid",
 		kind = "Keyword",
-		documentation = "to-rowid",
+		documentation = [[
+		to-rowid
+		]],
 	},
 	{
 		label = "total",
 		kind = "Keyword",
-		documentation = "Calculates the subtotal of all of the values of the expression in a break group and the grand total of all of the values of the expression in all break groups. When you use default aggregates, the actual display of the grand total is deferred until the frame goes out of scope. ",
+		documentation = [[
+		Calculates the subtotal of all of the values of the expression in a break group and the grand total of all of the values of the expression in all break groups. When you use default aggregates, the actual display of the grand total is deferred until the frame goes out of scope. 
+		]],
 	},
 	{
 		label = "trailing",
 		kind = "Keyword",
-		documentation = "trailing",
+		documentation = [[
+		trailing
+		]],
 	},
 	{
 		label = "trans",
 		kind = "Keyword",
-		documentation = "trans",
+		documentation = [[
+		trans
+		]],
 	},
 	{
 		label = "transaction",
 		kind = "Keyword",
-		documentation = "transaction",
+		documentation = [[
+		transaction
+		]],
 	},
 	{
 		label = "transaction-mode",
 		kind = "Keyword",
-		documentation = "transaction-mode",
+		documentation = [[
+		transaction-mode
+		]],
 	},
 	{
 		label = "trans-init-procedure",
 		kind = "Keyword",
-		documentation = "trans-init-procedure",
+		documentation = [[
+		trans-init-procedure
+		]],
 	},
 	{
 		label = "transparent",
 		kind = "Keyword",
-		documentation = "transparent",
+		documentation = [[
+		transparent
+		]],
 	},
 	{
 		label = "trigger",
 		kind = "Keyword",
-		documentation = "trigger",
+		documentation = [[
+		trigger
+		]],
 	},
 	{
 		label = "triggers",
 		kind = "Keyword",
-		documentation = "triggers",
+		documentation = [[
+		triggers
+		]],
 	},
 	{
 		label = "trim",
 		kind = "Keyword",
-		documentation = "trim",
+		documentation = [[
+		trim
+		]],
 	},
 	{
 		label = "true",
 		kind = "Keyword",
-		documentation = "true",
+		documentation = [[
+		true
+		]],
 	},
 	{
 		label = "truncate",
 		kind = "Keyword",
-		documentation = "truncate",
+		documentation = [[
+		truncate
+		]],
 	},
 	{
 		label = "type",
 		kind = "Keyword",
-		documentation = "type",
+		documentation = [[
+		type
+		]],
 	},
 	{
 		label = "type-of",
 		kind = "Keyword",
-		documentation = "type-of",
+		documentation = [[
+		type-of
+		]],
 	},
 	{
 		label = "unbox",
 		kind = "Keyword",
-		documentation = "unbox",
+		documentation = [[
+		unbox
+		]],
 	},
 	{
 		label = "unbuffered",
 		kind = "Keyword",
-		documentation = "unbuffered",
+		documentation = [[
+		unbuffered
+		]],
 	},
 	{
 		label = "underline",
 		kind = "Keyword",
-		documentation = "underline",
+		documentation = [[
+		underline
+		]],
 	},
 	{
 		label = "undo",
 		kind = "Keyword",
-		documentation = "Backs out all modifications to fields and variables made during the current iteration of a block, and indicates what action to take next.",
+		documentation = [[
+		undo
+		]],
 	},
 	{
 		label = "unformatted",
 		kind = "Keyword",
-		documentation = "unformatted",
+		documentation = [[
+		unformatted
+		]],
 	},
 	{
 		label = "union",
 		kind = "Keyword",
-		documentation = "union",
+		documentation = [[
+		union
+		]],
 	},
 	{
 		label = "unique",
 		kind = "Keyword",
-		documentation = "unique",
+		documentation = [[
+		unique
+		]],
 	},
 	{
 		label = "unique-id",
 		kind = "Keyword",
-		documentation = "unique-id",
+		documentation = [[
+		unique-id
+		]],
 	},
 	{
 		label = "unique-match",
 		kind = "Keyword",
-		documentation = "unique-match",
+		documentation = [[
+		unique-match
+		]],
 	},
 	{
 		label = "unix",
 		kind = "Keyword",
-		documentation = "Runs a program, UNIX command, or UNIX script, or starts a UNIX interactive shell to allow interactive processing of UNIX commands. ",
+		documentation = [[
+		unix
+		]],
 	},
 	{
 		label = "unless-hidden",
 		kind = "Keyword",
-		documentation = "unless-hidden",
+		documentation = [[
+		unless-hidden
+		]],
 	},
 	{
 		label = "unload",
 		kind = "Keyword",
-		documentation = "unload",
+		documentation = [[
+		unload
+		]],
 	},
 	{
 		label = "unsigned-long",
 		kind = "Keyword",
-		documentation = "unsigned-long",
+		documentation = [[
+		unsigned-long
+		]],
 	},
 	{
 		label = "unsubscribe",
 		kind = "Keyword",
-		documentation = "unsubscribe",
+		documentation = [[
+		unsubscribe
+		]],
 	},
 	{
 		label = "up",
 		kind = "Keyword",
-		documentation = "up",
+		documentation = [[
+		up
+		]],
 	},
 	{
 		label = "update",
 		kind = "Keyword",
-		documentation = "Displays fields or variables, requests input, and then puts the input data in both the screen buffer and in the specified fields or variables.",
+		documentation = [[
+		update
+		]],
 	},
 	{
 		label = "update-attribute",
 		kind = "Keyword",
-		documentation = "update-attribute",
+		documentation = [[
+		update-attribute
+		]],
 	},
 	{
 		label = "url",
 		kind = "Keyword",
-		documentation = "url",
+		documentation = [[
+		url
+		]],
 	},
 	{
 		label = "url-decode",
 		kind = "Keyword",
-		documentation = "url-decode",
+		documentation = [[
+		url-decode
+		]],
 	},
 	{
 		label = "url-encode",
 		kind = "Keyword",
-		documentation = "url-encode",
+		documentation = [[
+		url-encode
+		]],
 	},
 	{
 		label = "url-password",
 		kind = "Keyword",
-		documentation = "url-password",
+		documentation = [[
+		url-password
+		]],
 	},
 	{
 		label = "url-userid",
 		kind = "Keyword",
-		documentation = "url-userid",
+		documentation = [[
+		url-userid
+		]],
 	},
 	{
 		label = "use",
 		kind = "Keyword",
-		documentation = "use",
+		documentation = [[
+		use
+		]],
 	},
 	{
 		label = "use-dict-exps",
 		kind = "Keyword",
-		documentation = "use-dict-exps",
+		documentation = [[
+		use-dict-exps
+		]],
 	},
 	{
 		label = "use-filename",
 		kind = "Keyword",
-		documentation = "use-filename",
+		documentation = [[
+		use-filename
+		]],
 	},
 	{
 		label = "use-index",
 		kind = "Keyword",
-		documentation = "use-index",
+		documentation = [[
+		use-index
+		]],
 	},
 	{
 		label = "user",
 		kind = "Keyword",
-		documentation = "user",
+		documentation = [[
+		user
+		]],
 	},
 	{
 		label = "use-revvideo",
 		kind = "Keyword",
-		documentation = "use-revvideo",
+		documentation = [[
+		use-revvideo
+		]],
 	},
 	{
 		label = "userid",
 		kind = "Keyword",
-		documentation = "userid",
+		documentation = [[
+		userid
+		]],
 	},
 	{
 		label = "user-id",
 		kind = "Keyword",
-		documentation = "user-id",
+		documentation = [[
+		user-id
+		]],
 	},
 	{
 		label = "use-text",
 		kind = "Keyword",
-		documentation = "use-text",
+		documentation = [[
+		use-text
+		]],
 	},
 	{
 		label = "use-underline",
 		kind = "Keyword",
-		documentation = "use-underline",
+		documentation = [[
+		use-underline
+		]],
 	},
 	{
 		label = "use-widget-pool",
 		kind = "Keyword",
-		documentation = "use-widget-pool",
+		documentation = [[
+		use-widget-pool
+		]],
 	},
 	{
 		label = "using",
 		kind = "Keyword",
-		documentation = "Allows you to reference a single specified ABL or .NET object type, or reference all the types in an ABL package or .NET namespace, using their unqualified type names.",
+		documentation = [[
+		using
+		]],
 	},
 	{
 		label = "v6display",
 		kind = "Keyword",
-		documentation = "v6display",
+		documentation = [[
+		v6display
+		]],
 	},
 	{
 		label = "v6frame",
 		kind = "Keyword",
-		documentation = "v6frame",
+		documentation = [[
+		v6frame
+		]],
 	},
 	{
 		label = "validate",
-		kind = "Function",
-		documentation = "Verifies that a record complies with mandatory field and unique index definitions. ",
+		kind = "Keyword",
+		documentation = [[
+		validate
+		]],
 	},
 	{
 		label = "validate-expression",
 		kind = "Keyword",
-		documentation = "validate-expression",
+		documentation = [[
+		validate-expression
+		]],
 	},
 	{
 		label = "validate-message",
 		kind = "Keyword",
-		documentation = "validate-message",
+		documentation = [[
+		validate-message
+		]],
 	},
 	{
 		label = "validate-seal",
 		kind = "Keyword",
-		documentation = "validate-seal",
+		documentation = [[
+		validate-seal
+		]],
 	},
 	{
 		label = "validation-enabled",
 		kind = "Keyword",
-		documentation = "validation-enabled",
+		documentation = [[
+		validation-enabled
+		]],
 	},
 	{
 		label = "valid-event",
 		kind = "Keyword",
-		documentation = "valid-event",
+		documentation = [[
+		valid-event
+		]],
 	},
 	{
 		label = "valid-handle",
 		kind = "Keyword",
-		documentation = "valid-handle",
+		documentation = [[
+		valid-handle
+		]],
 	},
 	{
 		label = "valid-object",
 		kind = "Keyword",
-		documentation = "valid-object",
+		documentation = [[
+		valid-object
+		]],
 	},
 	{
 		label = "value",
 		kind = "Keyword",
-		documentation = "value",
+		documentation = [[
+		value
+		]],
 	},
 	{
 		label = "value-changed",
 		kind = "Keyword",
-		documentation = "value-changed",
+		documentation = [[
+		value-changed
+		]],
 	},
 	{
 		label = "values",
 		kind = "Keyword",
-		documentation = "values",
+		documentation = [[
+		values
+		]],
 	},
 	{
 		label = "variable",
 		kind = "Keyword",
-		documentation = "variable",
+		documentation = [[
+		variable
+		]],
 	},
 	{
 		label = "verbose",
 		kind = "Keyword",
-		documentation = "verbose",
+		documentation = [[
+		verbose
+		]],
 	},
 	{
 		label = "version",
 		kind = "Keyword",
-		documentation = "version",
+		documentation = [[
+		version
+		]],
 	},
 	{
 		label = "vertical",
 		kind = "Keyword",
-		documentation = "vertical",
+		documentation = [[
+		vertical
+		]],
 	},
 	{
 		label = "view",
 		kind = "Keyword",
-		documentation = "Displays a widget (sets its VISIBLE attribute to TRUE).",
+		documentation = [[
+		view
+		]],
 	},
 	{
 		label = "view-as",
 		kind = "Keyword",
-		documentation = "Defines a compile-time defined (static) widget to represent a field or variable on the screen.",
+		documentation = [[
+		view-as
+		]],
 	},
 	{
 		label = "view-first-column-on-reopen",
 		kind = "Keyword",
-		documentation = "view-first-column-on-reopen",
+		documentation = [[
+		view-first-column-on-reopen
+		]],
 	},
 	{
 		label = "virtual-height-chars",
 		kind = "Keyword",
-		documentation = "virtual-height-chars",
+		documentation = [[
+		virtual-height-chars
+		]],
 	},
 	{
 		label = "virtual-height-pixels",
 		kind = "Keyword",
-		documentation = "virtual-height-pixels",
+		documentation = [[
+		virtual-height-pixels
+		]],
 	},
 	{
 		label = "virtual-width-chars",
 		kind = "Keyword",
-		documentation = "virtual-width-chars",
+		documentation = [[
+		virtual-width-chars
+		]],
 	},
 	{
 		label = "virtual-width-pixels",
 		kind = "Keyword",
-		documentation = "virtual-width-pixels",
+		documentation = [[
+		virtual-width-pixels
+		]],
 	},
 	{
 		label = "visible",
 		kind = "Keyword",
-		documentation = "visible",
+		documentation = [[
+		visible
+		]],
 	},
 	{
 		label = "void",
 		kind = "Keyword",
-		documentation = "void",
+		documentation = [[
+		void
+		]],
 	},
 	{
 		label = "wait",
 		kind = "Keyword",
-		documentation = "wait",
+		documentation = [[
+		wait
+		]],
 	},
 	{
 		label = "wait-for",
 		kind = "Keyword",
-		documentation = "wait-for",
+		documentation = [[
+		wait-for
+		]],
 	},
 	{
 		label = "warning",
 		kind = "Keyword",
-		documentation = "warning",
+		documentation = [[
+		warning
+		]],
 	},
 	{
 		label = "web-context",
 		kind = "Keyword",
-		documentation = "web-context",
+		documentation = [[
+		web-context
+		]],
 	},
 	{
 		label = "weekday",
 		kind = "Keyword",
-		documentation = "Evaluates a date expression and returns the day of the week as an INTEGER value from 1 (Sunday) to 7 (Saturday) for that date.",
+		documentation = [[
+		weekday
+		]],
 	},
 	{
 		label = "when",
 		kind = "Keyword",
-		documentation = "when",
+		documentation = [[
+		when
+		]],
 	},
 	{
 		label = "where",
 		kind = "Keyword",
-		documentation = "where",
+		documentation = [[
+		where
+		]],
 	},
 	{
 		label = "while",
 		kind = "Keyword",
-		documentation = "while",
+		documentation = [[
+		while
+		]],
 	},
 	{
 		label = "widget",
 		kind = "Keyword",
-		documentation = "widget",
+		documentation = [[
+		widget
+		]],
 	},
 	{
 		label = "widget-enter",
 		kind = "Keyword",
-		documentation = "widget-enter",
+		documentation = [[
+		widget-enter
+		]],
 	},
 	{
 		label = "widget-id",
 		kind = "Keyword",
-		documentation = "widget-id",
+		documentation = [[
+		widget-id
+		]],
 	},
 	{
 		label = "widget-leave",
 		kind = "Keyword",
-		documentation = "widget-leave",
+		documentation = [[
+		widget-leave
+		]],
 	},
 	{
 		label = "widget-pool",
 		kind = "Keyword",
-		documentation = "widget-pool",
+		documentation = [[
+		widget-pool
+		]],
 	},
 	{
 		label = "width",
 		kind = "Keyword",
-		documentation = "width",
+		documentation = [[
+		width
+		]],
 	},
 	{
 		label = "width-chars",
 		kind = "Keyword",
-		documentation = "width-chars",
+		documentation = [[
+		width-chars
+		]],
 	},
 	{
 		label = "width-pixels",
 		kind = "Keyword",
-		documentation = "width-pixels",
+		documentation = [[
+		width-pixels
+		]],
 	},
 	{
 		label = "window",
 		kind = "Keyword",
-		documentation = "window",
+		documentation = [[
+		window
+		]],
 	},
 	{
 		label = "window-maximized",
 		kind = "Keyword",
-		documentation = "window-maximized",
+		documentation = [[
+		window-maximized
+		]],
 	},
 	{
 		label = "window-minimized",
 		kind = "Keyword",
-		documentation = "window-minimized",
+		documentation = [[
+		window-minimized
+		]],
 	},
 	{
 		label = "window-name",
 		kind = "Keyword",
-		documentation = "window-name",
+		documentation = [[
+		window-name
+		]],
 	},
 	{
 		label = "window-normal",
 		kind = "Keyword",
-		documentation = "window-normal",
+		documentation = [[
+		window-normal
+		]],
 	},
 	{
 		label = "window-state",
 		kind = "Keyword",
-		documentation = "window-state",
+		documentation = [[
+		window-state
+		]],
 	},
 	{
 		label = "window-system",
 		kind = "Keyword",
-		documentation = "window-system",
+		documentation = [[
+		window-system
+		]],
 	},
 	{
 		label = "with",
 		kind = "Keyword",
-		documentation = "with",
+		documentation = [[
+		with
+		]],
 	},
 	{
 		label = "word-index",
 		kind = "Keyword",
-		documentation = "word-index",
+		documentation = [[
+		word-index
+		]],
 	},
 	{
 		label = "word-wrap",
 		kind = "Keyword",
-		documentation = "word-wrap",
+		documentation = [[
+		word-wrap
+		]],
 	},
 	{
 		label = "work-area-height-pixels",
 		kind = "Keyword",
-		documentation = "work-area-height-pixels",
+		documentation = [[
+		work-area-height-pixels
+		]],
 	},
 	{
 		label = "work-area-width-pixels",
 		kind = "Keyword",
-		documentation = "work-area-width-pixels",
+		documentation = [[
+		work-area-width-pixels
+		]],
 	},
 	{
 		label = "work-area-x",
 		kind = "Keyword",
-		documentation = "work-area-x",
+		documentation = [[
+		work-area-x
+		]],
 	},
 	{
 		label = "work-area-y",
 		kind = "Keyword",
-		documentation = "work-area-y",
+		documentation = [[
+		work-area-y
+		]],
 	},
 	{
 		label = "workfile",
 		kind = "Keyword",
-		documentation = "workfile",
+		documentation = [[
+		workfile
+		]],
 	},
 	{
 		label = "work-table",
 		kind = "Keyword",
-		documentation = "work-table",
+		documentation = [[
+		work-table
+		]],
 	},
 	{
 		label = "write",
 		kind = "Keyword",
-		documentation = "write",
+		documentation = [[
+		write
+		]],
 	},
 	{
 		label = "write-cdata",
 		kind = "Keyword",
-		documentation = "write-cdata",
+		documentation = [[
+		write-cdata
+		]],
 	},
 	{
 		label = "write-characters",
 		kind = "Keyword",
-		documentation = "write-characters",
+		documentation = [[
+		write-characters
+		]],
 	},
 	{
 		label = "write-comment",
 		kind = "Keyword",
-		documentation = "write-comment",
+		documentation = [[
+		write-comment
+		]],
 	},
 	{
 		label = "write-data-element",
 		kind = "Keyword",
-		documentation = "write-data-element",
+		documentation = [[
+		write-data-element
+		]],
 	},
 	{
 		label = "write-empty-element",
 		kind = "Keyword",
-		documentation = "write-empty-element",
+		documentation = [[
+		write-empty-element
+		]],
 	},
 	{
 		label = "write-entity-ref",
 		kind = "Keyword",
-		documentation = "write-entity-ref",
+		documentation = [[
+		write-entity-ref
+		]],
 	},
 	{
 		label = "write-external-dtd",
 		kind = "Keyword",
-		documentation = "write-external-dtd",
+		documentation = [[
+		write-external-dtd
+		]],
 	},
 	{
 		label = "write-fragment",
 		kind = "Keyword",
-		documentation = "write-fragment",
+		documentation = [[
+		write-fragment
+		]],
 	},
 	{
 		label = "write-json",
 		kind = "Keyword",
-		documentation = "write-json",
+		documentation = [[
+		write-json
+		]],
 	},
 	{
 		label = "write-message",
 		kind = "Keyword",
-		documentation = "write-message",
+		documentation = [[
+		write-message
+		]],
 	},
 	{
 		label = "write-processing-instruction",
 		kind = "Keyword",
-		documentation = "write-processing-instruction",
+		documentation = [[
+		write-processing-instruction
+		]],
 	},
 	{
 		label = "write-status",
 		kind = "Keyword",
-		documentation = "write-status",
+		documentation = [[
+		write-status
+		]],
 	},
 	{
 		label = "write-xml",
 		kind = "Keyword",
-		documentation = "write-xml",
+		documentation = [[
+		write-xml
+		]],
 	},
 	{
 		label = "write-xmlschema",
 		kind = "Keyword",
-		documentation = "write-xmlschema",
+		documentation = [[
+		write-xmlschema
+		]],
 	},
 	{
 		label = "x",
 		kind = "Keyword",
-		documentation = "x",
+		documentation = [[
+		x
+		]],
 	},
 	{
 		label = "xcode",
 		kind = "Keyword",
-		documentation = "xcode",
+		documentation = [[
+		xcode
+		]],
 	},
 	{
 		label = "xml-data-type",
 		kind = "Keyword",
-		documentation = "xml-data-type",
+		documentation = [[
+		xml-data-type
+		]],
 	},
 	{
 		label = "xml-entity-expansion-limit",
 		kind = "Keyword",
-		documentation = "xml-entity-expansion-limit",
+		documentation = [[
+		xml-entity-expansion-limit
+		]],
 	},
 	{
 		label = "xml-node-type",
 		kind = "Keyword",
-		documentation = "xml-node-type",
+		documentation = [[
+		xml-node-type
+		]],
 	},
 	{
 		label = "xml-schema-path",
 		kind = "Keyword",
-		documentation = "xml-schema-path",
+		documentation = [[
+		xml-schema-path
+		]],
 	},
 	{
 		label = "xml-strict-entity-resolution",
 		kind = "Keyword",
-		documentation = "xml-strict-entity-resolution",
+		documentation = [[
+		xml-strict-entity-resolution
+		]],
 	},
 	{
 		label = "xml-suppress-namespace-processing",
 		kind = "Keyword",
-		documentation = "xml-suppress-namespace-processing",
+		documentation = [[
+		xml-suppress-namespace-processing
+		]],
 	},
 	{
 		label = "x-of",
 		kind = "Keyword",
-		documentation = "x-of",
+		documentation = [[
+		x-of
+		]],
 	},
 	{
 		label = "xref",
 		kind = "Keyword",
-		documentation = "xref",
+		documentation = [[
+		xref
+		]],
 	},
 	{
 		label = "xref-xml",
 		kind = "Keyword",
-		documentation = "xref-xml",
+		documentation = [[
+		xref-xml
+		]],
 	},
 	{
 		label = "y",
 		kind = "Keyword",
-		documentation = "y",
+		documentation = [[
+		y
+		]],
 	},
 	{
 		label = "year",
 		kind = "Keyword",
-		documentation = "Evaluates a date expression and returns the year value of that date, including the century, as an INTEGER value",
+		documentation = [[
+		year
+		]],
 	},
 	{
 		label = "year-offset",
 		kind = "Keyword",
-		documentation = "year-offset",
+		documentation = [[
+		year-offset
+		]],
 	},
 	{
 		label = "yes",
 		kind = "Keyword",
-		documentation = "yes",
+		documentation = [[
+		yes
+		]],
 	},
 	{
 		label = "yes-no",
 		kind = "Keyword",
-		documentation = "yes-no",
+		documentation = [[
+		yes-no
+		]],
 	},
 	{
 		label = "yes-no-cancel",
 		kind = "Keyword",
-		documentation = "yes-no-cancel",
+		documentation = [[
+		yes-no-cancel
+		]],
 	},
 	{
 		label = "y-of",
 		kind = "Keyword",
-		documentation = "y-of",
+		documentation = [[
+		y-of
+		]],
 	},
 }
 

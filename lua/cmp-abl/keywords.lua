@@ -24,7 +24,7 @@ local keywords = {
 		label = "&global-define",
 		kind = "Keyword",
 		documentation = [[
-		Globally defines a compile-time constant (preprocessor name).
+Globally defines a compile-time constant (preprocessor name).
 		]],
 	},
 	{
@@ -38,14 +38,14 @@ local keywords = {
 		label = "&message",
 		kind = "Keyword",
 		documentation = [[
-		Displays a message at compile time in the Compiler Messages dialog box.
+Displays a message at compile time in the Compiler Messages dialog box.
 		]],
 	},
 	{
 		label = "&scoped-define",
 		kind = "Keyword",
 		documentation = [[
-		Defines a compile-time constant (preprocessor name) non-globally.
+Defines a compile-time constant (preprocessor name) non-globally.
 		]],
 	},
 	{
@@ -143,14 +143,17 @@ local keywords = {
 		label = "accum",
 		kind = "Keyword",
 		documentation = [[
-		Returns the value of an aggregate expression that is calculated by an ACCUMULATE or aggregate phrase of a DISPLAY statement.
+Returns the value of an aggregate expression that is calculated 
+by an ACCUMULATE or aggregate phrase of a DISPLAY statement.
 		]],
 	},
 	{
 		label = "accumulate",
 		kind = "Keyword",
 		documentation = [[
-		Calculates one or more aggregate values of an expression during the iterations of a block. Use the ACCUM function to access the result of this accumulation.
+Calculates one or more aggregate values of an expression during 
+the iterations of a block. Use the ACCUM function to access the 
+result of this accumulation.
 		]],
 	},
 	{
@@ -227,7 +230,8 @@ local keywords = {
 		label = "add-interval",
 		kind = "Keyword",
 		documentation = [[
-		Adds a time interval to, or subtracts a time interval from, a DATE, DATETIME, or DATETIME-TZ value, and returns the new value.
+Adds a time interval to, or subtracts a time interval from, a DATE, 
+DATETIME, or DATETIME-TZ value, and returns the new value.
 		]],
 	},
 	{
@@ -353,7 +357,8 @@ local keywords = {
 		label = "ambiguous",
 		kind = "Keyword",
 		documentation = [[
-		Returns a TRUE value if the last FIND statement for a particular record found more than one record that met the specified index criteria.
+Returns a TRUE value if the last FIND statement for a particular record 
+found more than one record that met the specified index criteria.
 		]],
 	},
 	{
@@ -367,7 +372,7 @@ local keywords = {
 		label = "and",
 		kind = "Keyword",
 		documentation = [[
-		Returns a TRUE value if each logical expression is TRUE.
+Returns a TRUE value if each logical expression is TRUE.
 		]],
 	},
 	{
@@ -423,7 +428,7 @@ local keywords = {
 		label = "apply",
 		kind = "Keyword",
 		documentation = [[
-		Applies an event to a widget or procedure.
+Applies an event to a widget or procedure.
 		]],
 	},
 	{
@@ -493,7 +498,9 @@ local keywords = {
 		label = "assign",
 		kind = "Keyword",
 		documentation = [[
-		Moves data previously placed in the screen buffer by a data input statement or moves data specified within the ASSIGN statement by an expression to the corresponding fields and variables in the record buffer.
+Moves data previously placed in the screen buffer by a data input statement 
+or moves data specified within the ASSIGN statement by an expression to the 
+corresponding fields and variables in the record buffer.
 		]],
 	},
 	{
@@ -521,7 +528,9 @@ local keywords = {
 		label = "at",
 		kind = "Keyword",
 		documentation = [[
-		The AT phrase of the Format phrase allows explicit positioning of frame objects, either by row and column or by pixels. The AT phrase of the Frame phrase allows explicit positioning of frames with windows or parent frames.
+The AT phrase of the Format phrase allows explicit positioning of frame objects, 
+either by row and column or by pixels. The AT phrase of the Frame phrase allows 
+explicit positioning of frames with windows or parent frames.
 		]],
 	},
 	{
@@ -1106,9 +1115,13 @@ local keywords = {
 	},
 	{
 		label = "can-do",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		Checks a user ID against a list of one or more user ID matching patterns that can be used to indicate what users have access to a given application function. The function returns TRUE if the specified user ID has access according to the list. Thus, you can implement run-time authorization checking for any procedure or class in your application.
+Checks a user ID against a list of one or more user ID matching patterns 
+that can be used to indicate what users have access to a given application 
+function. The function returns TRUE if the specified user ID has access 
+according to the list. Thus, you can implement run-time authorization 
+checking for any procedure or class in your application.
 		]],
 	},
 	{
@@ -1120,16 +1133,20 @@ local keywords = {
 	},
 	{
 		label = "can-find",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		Returns a TRUE value if a record is found that meets the specified FIND criteria; otherwise it returns FALSE. CAN-FIND does not make the record available to the procedure. You typically use the CAN-FIND function within a VALIDATE option in a data handling statement, such as the UPDATE statement.
+Returns a TRUE value if a record is found that meets the specified FIND 
+criteria; otherwise it returns FALSE. CAN-FIND does not make the record 
+available to the procedure. You typically use the CAN-FIND function within 
+a VALIDATE option in a data handling statement, such as the UPDATE statement.
 		]],
 	},
 	{
 		label = "can-query",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		Returns a logical value indicating whether you can query a specified attribute or method for a specified widget.
+Returns a logical value indicating whether you can query a 
+specified attribute or method for a specified widget.
 		]],
 	},
 	{
@@ -1143,7 +1160,8 @@ local keywords = {
 		label = "can-set",
 		kind = "Keyword",
 		documentation = [[
-		Returns a logical value indicating whether you can set a specified attribute for a specified widget.
+Returns a logical value indicating whether you can set a specified attribute 
+for a specified widget.
 		]],
 	},
 	{
@@ -1155,9 +1173,11 @@ local keywords = {
 	},
 	{
 		label = "caps",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		Converts any lowercase characters in a CHARACTER or LONGCHAR expression to uppercase characters, and returns the result. The data type of the returned value matches the data type of the expression passed to the function.
+Converts any lowercase characters in a CHARACTER or LONGCHAR expression to 
+uppercase characters, and returns the result. The data type of the returned 
+value matches the data type of the expression passed to the function.
 		]],
 	},
 	{
@@ -2079,23 +2099,26 @@ local keywords = {
 	},
 	{
 		label = "date",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		Converts a single character string, a set of month, day, and year values, an integer expression, a DATETIME expression, or a DATETIME-TZ expression into a DATE value.
+Converts a single character string, a set of month, day, and year values, an 
+integer expression, a DATETIME expression, or a DATETIME-TZ expression into a 
+DATE value.
 		]],
 	},
 	{
 		label = "datetime",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		Converts date and time values, or a character string, into a DATETIME value.
+Converts date and time values, or a character string, into a DATETIME value.
 		]],
 	},
 	{
 		label = "datetime-tz",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		Converts a date, time, and time zone value, or a character string, into a DATETIME-TZ value. 
+Converts a date, time, and time zone value, or a character string, into a 
+DATETIME-TZ value. 
 		]],
 	},
 	{
@@ -2109,7 +2132,8 @@ local keywords = {
 		label = "day",
 		kind = "Function",
 		documentation = [[
-		Evaluates a date expression and returns a day of the month as an INTEGER value from 1 to 31, inclusive.
+Evaluates a date expression and returns a day of the month as an 
+INTEGER value from 1 to 31, inclusive.
 		]],
 	},
 	{
@@ -2975,9 +2999,11 @@ local keywords = {
 	},
 	{
 		label = "entry",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		Returns a character string (CHARACTER or LONGCHAR) entry from a list based on an integer position. The data type of the returned value matches the data type of the list element.
+Returns a character string (CHARACTER or LONGCHAR) entry from a list based 
+on an integer position. The data type of the returned value matches the 
+data type of the list element.
 		]],
 	},
 	{
@@ -5420,14 +5446,17 @@ local keywords = {
 		label = "left-trim",
 		kind = "Function",
 		documentation = [[
-		Removes leading white space, or other specified characters, from a CHARACTER or LONGCHAR expression. The data type of the returned value matches the data type of the expression passed to the function.
+Removes leading white space, or other specified characters, from a 
+CHARACTER or LONGCHAR expression. The data type of the returned value 
+matches the data type of the expression passed to the function.
 		]],
 	},
 	{
 		label = "length",
 		kind = "Function",
 		documentation = [[
-		Returns, as an INTEGER value, the number of characters, bytes, or columns in a string, an expression of type RAW, or a BLOB field.
+Returns, as an INTEGER value, the number of characters, bytes, 
+or columns in a string, an expression of type RAW, or a BLOB field.
 		]],
 	},
 	{
@@ -5824,10 +5853,11 @@ local keywords = {
 	},
 	{
 		label = "matches",
+		kind = "Operator",
 		documentation = [[
-		matches
+Compares a character expression to a pattern and evaluates to a TRUE 
+value if the expression satisfies the pattern criteria. 
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "max",
@@ -5887,10 +5917,10 @@ local keywords = {
 	},
 	{
 		label = "maximum",
+		kind = "Function",
 		documentation = [[
-		Calculates the maximum of all of the values of the expression in a break group and the maximum of all the values of the expression in all break groups.
+Compares two or more values and returns the largest value.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "maximum-level",
@@ -6013,10 +6043,12 @@ local keywords = {
 	},
 	{
 		label = "message",
-		documentation = [[
-		message
-		]],
 		kind = "Keyword",
+		documentation = [[
+Displays messages in the message area at the bottom of the window or in an 
+alert box (or in an output stream—see the Notes section). By default, an 
+area at the bottom line of the window is reserved for ABL system messages.
+		]],
 	},
 	{
 		label = "message-area",
@@ -6090,10 +6122,10 @@ local keywords = {
 	},
 	{
 		label = "minimum",
+		kind = "Function",
 		documentation = [[
-		Calculates the minimum of all of the values of the expression in a break group and the minimum of all the values of the expression in all break groups.
+Compares two or more values and returns the smallest.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "min-size",
@@ -6132,17 +6164,17 @@ local keywords = {
 	},
 	{
 		label = "modulo",
+		kind = "Operator",
 		documentation = [[
-		modulo
+Determines the remainder after division.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "month",
+		kind = "Function",
 		documentation = [[
-		month
+Evaluates a date expression and returns a month INTEGER value from 1 to 12, inclusive.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "mouse",
@@ -6286,10 +6318,10 @@ local keywords = {
 	},
 	{
 		label = "ne",
+		kind = "Operator",
 		documentation = [[
-		ne
+Compares two expressions and returns a TRUE value if they are not equal.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "needs-appserver-prompt",
@@ -6328,10 +6360,11 @@ local keywords = {
 	},
 	{
 		label = "next",
-		documentation = [[
-		next
-		]],
 		kind = "Keyword",
+		documentation = [[
+Goes directly to the END of an iterating block and starts the next iteration 
+of the block.
+		]],
 	},
 	{
 		label = "next-column",
@@ -6342,10 +6375,11 @@ local keywords = {
 	},
 	{
 		label = "next-prompt",
-		documentation = [[
-		next-prompt
-		]],
 		kind = "Keyword",
+		documentation = [[
+Specifies the field in which you want to position the cursor during 
+the next input operation that involves that field in a frame.
+		]],
 	},
 	{
 		label = "next-rowid",
@@ -6370,10 +6404,11 @@ local keywords = {
 	},
 	{
 		label = "next-value",
+		kind = "Function",
 		documentation = [[
-		next-value
+Returns the next INT64 value of a static sequence, incremented by the 
+positive or negative value defined in the Data Dictionary.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "no",
@@ -6671,10 +6706,10 @@ local keywords = {
 	},
 	{
 		label = "not",
-		documentation = [[
-		not
-		]],
 		kind = "Keyword",
+		documentation = [[
+Returns TRUE if an expression is false, and FALSE if an expression is true.
+		]],
 	},
 	{
 		label = "no-tab-stop",
@@ -6790,10 +6825,10 @@ local keywords = {
 	},
 	{
 		label = "num-entries",
+		kind = "Function",
 		documentation = [[
-		num-entries
+Returns the number of elements in a list of character strings as an INTEGER value.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "numeric",
@@ -6965,10 +7000,11 @@ local keywords = {
 	},
 	{
 		label = "on",
-		documentation = [[
-		on
-		]],
 		kind = "Keyword",
+		documentation = [[
+The ON statement specifies a trigger for one or more events or 
+redefines terminal keys for an application.
+		]],
 	},
 	{
 		label = "on-frame-border",
@@ -6978,11 +7014,13 @@ local keywords = {
 		kind = "Keyword",
 	},
 	{
-		label = "open",
-		documentation = [[
-		open
-		]],
+		label = "open query",
 		kind = "Keyword",
+		documentation = [[
+Opens a query, which might have been previously defined in a 
+DEFINE QUERY statement. Opening a query makes it available 
+for use within a GET statement, or in a browse widget.
+		]],
 	},
 	{
 		label = "opsys",
@@ -7000,10 +7038,10 @@ local keywords = {
 	},
 	{
 		label = "or",
+		kind = "Operator",
 		documentation = [[
-		or
+Returns a TRUE value if either of two logical expressions is TRUE.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "ordered-join",
@@ -7021,38 +7059,40 @@ local keywords = {
 	},
 	{
 		label = "os-append",
-		documentation = [[
-		"os-append"
-		]],
 		kind = "Keyword",
+		documentation = [[
+Executes an operating system file append command from within ABL.
+		]],
 	},
 	{
 		label = "os-command",
+		kind = "Function",
 		documentation = [[
-		"os-command"
+Escapes to the current operating system and executes an operating system command.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "os-copy",
-		documentation = [[
-		"os-copy"
-		]],
 		kind = "Keyword",
+		documentation = [[
+Executes an operating system file copy command from within ABL.
+		]],
 	},
 	{
 		label = "os-create-dir",
+		kind = "Function",
 		documentation = [[
-		"os-create-dir"
+Executes an operating system command from within ABL that creates 
+one or more new directories.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "os-delete",
+		kind = "Function",
 		documentation = [[
-		"os-delete"
+Executes an operating system file or directory delete from within ABL. 
+Can delete one or more files, a directory, or an entire directory branch.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "os-dir",
@@ -7062,32 +7102,28 @@ local keywords = {
 		kind = "Keyword",
 	},
 	{
-		label = "os-drives",
-		documentation = [[
-		"os-drives"
-		]],
-		kind = "Keyword",
-	},
-	{
 		label = "os-error",
+		kind = "Function",
 		documentation = [[
-		"os-error"
+Returns, as an INTEGER value, an ABL error code that indicates whether an 
+execution error occurred during the last OS-APPEND, OS-COPY, OS-CREATE-DIR, 
+OS-DELETE, OS-RENAME or SAVE CACHE statement.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "os-getenv",
+		kind = "Function",
 		documentation = [[
-		"os-getenv"
+Returns a string that contains the value of the desired environment variable 
+in the environment in which the ABL session is running.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "os-rename",
+		kind = "Function",
 		documentation = [[
-		"os-rename"
+Executes an operating system file rename or directory rename command from within ABL.
 		]],
-		kind = "Keyword",
 	},
 	{
 		label = "otherwise",
@@ -7097,9 +7133,17 @@ local keywords = {
 		kind = "Keyword",
 	},
 	{
-		label = "output",
+		label = "output to",
 		documentation = [[
-		"output"
+Specifies the new output destination for a stream.
+		]],
+		kind = "Keyword",
+	},
+	{
+		label = "output close",
+		documentation = [[
+Closes the default output destination or the output stream you name with 
+the STREAM keyword in a prior OUTPUT TO statement.
 		]],
 		kind = "Keyword",
 	},
@@ -7128,7 +7172,8 @@ local keywords = {
 		label = "page",
 		kind = "Keyword",
 		documentation = [[
-		"page"
+Starts a new output page for PAGED output. No action is taken if output 
+is already positioned at the beginning of a page. 
 		]],
 	},
 	{
@@ -7226,7 +7271,8 @@ local keywords = {
 		label = "pause",
 		kind = "Keyword",
 		documentation = [[
-		"pause"
+Suspends processing indefinitely, or for a specified number of seconds, or 
+until the user presses any key. 
 		]],
 	},
 	{
@@ -7464,7 +7510,10 @@ local keywords = {
 		label = "procedure",
 		kind = "Keyword",
 		documentation = [[
-		"procedure"
+Defines an internal procedure as an ABL procedure or declares an internal procedure 
+prototype for an external routine in a Windows dynamic link library (DLL) or UNIX 
+shared library, or for an internal ABL procedure defined in an external procedure 
+that is itself a super procedure of the declaration procedure.
 		]],
 	},
 	{
@@ -7527,7 +7576,7 @@ local keywords = {
 		label = "program-name",
 		kind = "Function",
 		documentation = [[
-		Returns the name of the calling program.
+Returns the name of the calling program.
 		]],
 	},
 	{
@@ -7555,7 +7604,7 @@ local keywords = {
 		label = "prompt-for",
 		kind = "Keyword",
 		documentation = [[
-		prompt-for
+Requests input and places that input in the screen buffer (frame).
 		]],
 	},
 	{
@@ -7728,21 +7777,22 @@ local keywords = {
 	},
 	{
 		label = "query-close",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		Closes a query that was opened by a previous OPEN QUERY statement.
+Closes a query that was opened by a previous OPEN QUERY statement.
 		]],
 	},
 	{
 		label = "query-off-end",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		query-off-end
+Returns a LOGICAL value indicating whether the specified query is positioned at 
+the end of its result list (either before the first record or after the last record).
 		]],
 	},
 	{
 		label = "query-open",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
 		query-open
 		]],
@@ -7777,9 +7827,10 @@ local keywords = {
 	},
 	{
 		label = "quoter",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		quoter
+Converts the specified data type to CHARACTER and encloses the results in 
+quotes when necessary.
 		]],
 	},
 	{
@@ -7870,7 +7921,9 @@ local keywords = {
 		label = "readkey",
 		kind = "Keyword",
 		documentation = [[
-		readkey
+Reads one keystroke from an input source and sets the value of LASTKEY to the 
+keycode of that keystroke. Use the READKEY statement when you want to look at 
+each keystroke a user makes and take some action based on that keystroke.
 		]],
 	},
 	{
@@ -7882,9 +7935,10 @@ local keywords = {
 	},
 	{
 		label = "recid",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		recid
+Returns the unique internal identifier of the database record currently 
+associated with the record buffer you name. 
 		]],
 	},
 	{
@@ -7975,14 +8029,16 @@ local keywords = {
 		label = "repeat",
 		kind = "Keyword",
 		documentation = [[
-		repeat
+Begins a block of statements that are processed repeatedly until the block 
+ends in one of several ways. Use an END statement to end a REPEAT block.
 		]],
 	},
 	{
 		label = "replace",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		replace
+Returns a string with specified substring replacements. The data type of the 
+returned value matches the data type of the expression passed to the function.
 		]],
 	},
 	{
@@ -8112,6 +8168,13 @@ local keywords = {
 		]],
 	},
 	{
+		label = "retry",
+		kind = "Function",
+		documentation = [[
+Returns a TRUE value if the current block is being reprocessed after a previous UNDO, RETRY.
+		]],
+	},
+	{
 		label = "retry-cancel",
 		kind = "Keyword",
 		documentation = [[
@@ -8122,7 +8185,11 @@ local keywords = {
 		label = "return",
 		kind = "Keyword",
 		documentation = [[
-		return
+Leaves the local or remote procedure or user-defined function block, trigger block, 
+database trigger block, the method block of a class, the class constructor block, 
+or the property accessor block, and returns to the calling procedure, user-defined 
+function, method, constructor, or property accessor. If there is no caller, RETURN 
+returns to the Procedure Editor
 		]],
 	},
 	{
@@ -8218,9 +8285,9 @@ local keywords = {
 	},
 	{
 		label = "round",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		round
+Rounds a decimal expression to a specified number of places after the decimal point.
 		]],
 	},
 	{
@@ -8290,7 +8357,7 @@ local keywords = {
 		label = "run",
 		kind = "Keyword",
 		documentation = [[
-		run
+Calls an ABL procedure.
 		]],
 	},
 	{
@@ -8596,9 +8663,12 @@ local keywords = {
 	},
 	{
 		label = "search",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		search
+Searches the directories and libraries defined in the PROPATH environment 
+variable for a file. The SEARCH function returns the full pathname of the 
+file unless it is found in your current working directory. If SEARCH does 
+not find the file, it returns the Unknown value (?). 
 		]],
 	},
 	{
@@ -9361,7 +9431,7 @@ local keywords = {
 		label = "status",
 		kind = "Keyword",
 		documentation = [[
-		status
+Specifies the text that appears in the status line of a window. 
 		]],
 	},
 	{
@@ -9464,9 +9534,9 @@ local keywords = {
 	},
 	{
 		label = "string",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		string
+Converts a value of any data type into a character value.
 		]],
 	},
 	{
@@ -9515,7 +9585,8 @@ local keywords = {
 		label = "sub-minimum",
 		kind = "Keyword",
 		documentation = [[
-		Shows the minimum value of an expression in a break group. Does not supply a minimum value for all records, just for those in each break group.
+Shows the minimum value of an expression in a break group. Does not 
+supply a minimum value for all records, just for those in each break group.
 		]],
 	},
 	{
@@ -9534,16 +9605,18 @@ local keywords = {
 	},
 	{
 		label = "substring",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		substring
+Extracts a portion of a character string from a field or variable.
 		]],
 	},
 	{
 		label = "sub-total",
 		kind = "Keyword",
 		documentation = [[
-		Subtotals all of the values of the expression in a break group. Does not supply a total value for all records, just for those in each break group.
+Subtotals all of the values of the expression in a break group. 
+Does not supply a total value for all records, just for those 
+in each break group.
 		]],
 	},
 	{
@@ -9564,7 +9637,8 @@ local keywords = {
 		label = "super",
 		kind = "Keyword",
 		documentation = [[
-		super
+Invokes a constructor for the immediate super class as the first statement 
+in a constructor of the defining class.
 		]],
 	},
 	{
@@ -9774,7 +9848,7 @@ local keywords = {
 		label = "then",
 		kind = "Keyword",
 		documentation = [[
-		Describes the block statement to process if the expression is TRUE.
+Describes the block statement to process if the expression is TRUE.
 		]],
 	},
 	{
@@ -9835,9 +9909,11 @@ local keywords = {
 	},
 	{
 		label = "time",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		time
+Returns an INTEGER value representing the time as the number of seconds since 
+midnight. Use this function together with the STRING function to produce the 
+time in hours, minutes, and seconds.
 		]],
 	},
 	{
@@ -9893,7 +9969,7 @@ local keywords = {
 		label = "today",
 		kind = "Keyword",
 		documentation = [[
-		today
+Returns the current system date.
 		]],
 	},
 	{
@@ -9949,7 +10025,10 @@ local keywords = {
 		label = "total",
 		kind = "Keyword",
 		documentation = [[
-		Calculates the subtotal of all of the values of the expression in a break group and the grand total of all of the values of the expression in all break groups. When you use default aggregates, the actual display of the grand total is deferred until the frame goes out of scope. 
+Calculates the subtotal of all of the values of the expression in a 
+break group and the grand total of all of the values of the expression 
+in all break groups. When you use default aggregates, the actual display 
+of the grand total is deferred until the frame goes out of scope. 
 		]],
 	},
 	{
@@ -10068,7 +10147,8 @@ local keywords = {
 		label = "undo",
 		kind = "Keyword",
 		documentation = [[
-		undo
+Backs out all modifications to fields and variables made during the 
+current iteration of a block, and indicates what action to take next.
 		]],
 	},
 	{
@@ -10110,7 +10190,8 @@ local keywords = {
 		label = "unix",
 		kind = "Keyword",
 		documentation = [[
-		unix
+Runs a program, UNIX command, or UNIX script, or starts a UNIX 
+interactive shell to allow interactive processing of UNIX commands. 
 		]],
 	},
 	{
@@ -10145,14 +10226,16 @@ local keywords = {
 		label = "up",
 		kind = "Keyword",
 		documentation = [[
-		up
+Positions the cursor on a new line in a down or multi-line frame. 
 		]],
 	},
 	{
 		label = "update",
 		kind = "Keyword",
 		documentation = [[
-		update
+Displays fields or variables, requests input, and then puts the 
+input data in both the screen buffer and in the specified fields 
+or variables.
 		]],
 	},
 	{
@@ -10278,7 +10361,9 @@ local keywords = {
 		label = "using",
 		kind = "Keyword",
 		documentation = [[
-		using
+Allows you to reference a single specified ABL or .NET object type, or 
+reference all the types in an ABL package or .NET namespace, using their 
+unqualified type names.
 		]],
 	},
 	{
@@ -10404,14 +10489,15 @@ local keywords = {
 		label = "view",
 		kind = "Keyword",
 		documentation = [[
-		view
+Displays a widget 
 		]],
 	},
 	{
 		label = "view-as",
 		kind = "Keyword",
 		documentation = [[
-		view-as
+Defines a compile-time defined (static) widget to represent a 
+field or variable on the screen.
 		]],
 	},
 	{
@@ -10474,7 +10560,10 @@ local keywords = {
 		label = "wait-for",
 		kind = "Keyword",
 		documentation = [[
-		wait-for
+This WAIT-FOR statement instructs the AVM to stop executing the current 
+block until a specific ABL event occurs. The AVM continues to respond to 
+all other incoming events and execute any associated triggers or event 
+procedures while in this wait state.
 		]],
 	},
 	{
@@ -10493,9 +10582,10 @@ local keywords = {
 	},
 	{
 		label = "weekday",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		weekday
+Evaluates a date expression and returns the day of the week as 
+an INTEGER value from 1 (Sunday) to 7 (Saturday) for that date.
 		]],
 	},
 	{
@@ -10878,9 +10968,10 @@ local keywords = {
 	},
 	{
 		label = "year",
-		kind = "Keyword",
+		kind = "Function",
 		documentation = [[
-		year
+Evaluates a date expression and returns the year value of that 
+date, including the century, as an INTEGER value.
 		]],
 	},
 	{

@@ -6771,8 +6771,8 @@ local keywords = {
 	},
 	{
 		label = "string",
-		kind = "Keyword",
-		documentation = "string",
+		kind = "Function",
+		documentation = "Converts a value of any data type into a character value. ",
 	},
 	{
 		label = "string-value",
@@ -6821,8 +6821,8 @@ local keywords = {
 	},
 	{
 		label = "substring",
-		kind = "Keyword",
-		documentation = "substring",
+		kind = "Function",
+		documentation = "Extracts a portion of a character string from a field or variable.",
 	},
 	{
 		label = "sub-total",
@@ -7036,8 +7036,8 @@ local keywords = {
 	},
 	{
 		label = "time",
-		kind = "Keyword",
-		documentation = "time",
+		kind = "Function",
+		documentation = "Returns an INTEGER value representing the time as the number of seconds since midnight. Use this function together with the STRING function to produce the time in hours, minutes, and seconds",
 	},
 	{
 		label = "time-source",
@@ -7077,7 +7077,7 @@ local keywords = {
 	{
 		label = "today",
 		kind = "Keyword",
-		documentation = "today",
+		documentation = "Returns the current system date.",
 	},
 	{
 		label = "toggle-box",
@@ -7202,7 +7202,7 @@ local keywords = {
 	{
 		label = "undo",
 		kind = "Keyword",
-		documentation = "undo",
+		documentation = "Backs out all modifications to fields and variables made during the current iteration of a block, and indicates what action to take next.",
 	},
 	{
 		label = "unformatted",
@@ -7232,7 +7232,7 @@ local keywords = {
 	{
 		label = "unix",
 		kind = "Keyword",
-		documentation = "unix",
+		documentation = "Runs a program, UNIX command, or UNIX script, or starts a UNIX interactive shell to allow interactive processing of UNIX commands. ",
 	},
 	{
 		label = "unless-hidden",
@@ -7262,7 +7262,7 @@ local keywords = {
 	{
 		label = "update",
 		kind = "Keyword",
-		documentation = "update",
+		documentation = "Displays fields or variables, requests input, and then puts the input data in both the screen buffer and in the specified fields or variables.",
 	},
 	{
 		label = "update-attribute",
@@ -7352,7 +7352,7 @@ local keywords = {
 	{
 		label = "using",
 		kind = "Keyword",
-		documentation = "using",
+		documentation = "Allows you to reference a single specified ABL or .NET object type, or reference all the types in an ABL package or .NET namespace, using their unqualified type names.",
 	},
 	{
 		label = "v6display",
@@ -7366,8 +7366,8 @@ local keywords = {
 	},
 	{
 		label = "validate",
-		kind = "Keyword",
-		documentation = "validate",
+		kind = "Function",
+		documentation = "Verifies that a record complies with mandatory field and unique index definitions. ",
 	},
 	{
 		label = "validate-expression",
@@ -7442,12 +7442,12 @@ local keywords = {
 	{
 		label = "view",
 		kind = "Keyword",
-		documentation = "view",
+		documentation = "Displays a widget (sets its VISIBLE attribute to TRUE).",
 	},
 	{
 		label = "view-as",
 		kind = "Keyword",
-		documentation = "view-as",
+		documentation = "Defines a compile-time defined (static) widget to represent a field or variable on the screen.",
 	},
 	{
 		label = "view-first-column-on-reopen",
@@ -7507,7 +7507,7 @@ local keywords = {
 	{
 		label = "weekday",
 		kind = "Keyword",
-		documentation = "weekday",
+		documentation = "Evaluates a date expression and returns the day of the week as an INTEGER value from 1 (Sunday) to 7 (Saturday) for that date.",
 	},
 	{
 		label = "when",
@@ -7782,7 +7782,7 @@ local keywords = {
 	{
 		label = "year",
 		kind = "Keyword",
-		documentation = "year",
+		documentation = "Evaluates a date expression and returns the year value of that date, including the century, as an INTEGER value",
 	},
 	{
 		label = "year-offset",

@@ -31,21 +31,21 @@ local keywords = {
 		label = "&else",
 		kind = Kind.Keyword,
 		documentation = [[
-		&else
+&else
 		]],
 	},
 	{
 		label = "&elseif",
 		kind = Kind.Keyword,
 		documentation = [[
-		&elseif
+&elseif
 		]],
 	},
 	{
 		label = "&endif",
 		kind = Kind.Keyword,
 		documentation = [[
-		&endif
+&endif
 		]],
 	},
 	{
@@ -59,7 +59,7 @@ Globally defines a compile-time constant (preprocessor name).
 		label = "&if",
 		kind = Kind.Keyword,
 		documentation = [[
-		&if
+&if
 		]],
 	},
 	{
@@ -80,91 +80,91 @@ Defines a compile-time constant (preprocessor name) non-globally.
 		label = "&then",
 		kind = Kind.Keyword,
 		documentation = [[
-		&then
+&then
 		]],
 	},
 	{
 		label = "&undefine",
 		kind = Kind.Keyword,
 		documentation = [[
-		&undefine
+&undefine
 		]],
 	},
 	{
 		label = "&webstream",
 		kind = Kind.Keyword,
 		documentation = [[
-		&webstream
+&webstream
 		]],
 	},
 	{
 		label = "{&batch-mode}",
 		kind = Kind.Keyword,
 		documentation = [[
-		{&batch-mode}
+{&batch-mode}
 		]],
 	},
 	{
 		label = "{&file-name}",
 		kind = Kind.Keyword,
 		documentation = [[
-		{&file-name}
+{&file-name}
 		]],
 	},
 	{
 		label = "{&line-number}",
 		kind = Kind.Keyword,
 		documentation = [[
-		{&line-number}
+{&line-number}
 		]],
 	},
 	{
 		label = "{&opsys}",
 		kind = Kind.Keyword,
 		documentation = [[
-		{&opsys}
+{&opsys}
 		]],
 	},
 	{
 		label = "{&process-architecture}",
 		kind = Kind.Keyword,
 		documentation = [[
-		{&process-architecture}
+{&process-architecture}
 		]],
 	},
 	{
 		label = "{&sequence}",
 		kind = Kind.Keyword,
 		documentation = [[
-		{&sequence}
+{&sequence}
 		]],
 	},
 	{
 		label = "{&window-system}",
 		kind = Kind.Keyword,
 		documentation = [[
-		{&window-system}
+{&window-system}
 		]],
 	},
 	{
 		label = "absolute",
 		kind = Kind.Keyword,
 		documentation = [[
-		Returns the absolute value of a numeric value.
+Returns the absolute value of a numeric value.
 		]],
 	},
 	{
 		label = "abstract",
 		kind = Kind.Keyword,
 		documentation = [[
-		abstract
+abstract
 		]],
 	},
 	{
 		label = "accelerator",
 		kind = Kind.Keyword,
 		documentation = [[
-		accelerator
+accelerator
 		]],
 	},
 	{
@@ -188,70 +188,70 @@ result of this accumulation.
 		label = "active-form",
 		kind = Kind.Keyword,
 		documentation = [[
-		active-form
+active-form
 		]],
 	},
 	{
 		label = "active-window",
 		kind = Kind.Keyword,
 		documentation = [[
-		active-window
+active-window
 		]],
 	},
 	{
 		label = "add",
 		kind = Kind.Keyword,
 		documentation = [[
-		add
+add
 		]],
 	},
 	{
 		label = "add-buffer",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-buffer
+add-buffer
 		]],
 	},
 	{
 		label = "add-calc-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-calc-column
+add-calc-column
 		]],
 	},
 	{
 		label = "add-columns-from",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-columns-from
+add-columns-from
 		]],
 	},
 	{
 		label = "add-events-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-events-procedure
+add-events-procedure
 		]],
 	},
 	{
 		label = "add-fields-from",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-fields-from
+add-fields-from
 		]],
 	},
 	{
 		label = "add-first",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-first
+add-first
 		]],
 	},
 	{
 		label = "add-index-field",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-index-field
+add-index-field
 		]],
 	},
 	{
@@ -266,119 +266,119 @@ DATETIME, or DATETIME-TZ value, and returns the new value.
 		label = "add-last",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-last
+add-last
 		]],
 	},
 	{
 		label = "add-like-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-like-column
+add-like-column
 		]],
 	},
 	{
 		label = "add-like-field",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-like-field
+add-like-field
 		]],
 	},
 	{
 		label = "add-like-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-like-index
+add-like-index
 		]],
 	},
 	{
 		label = "add-new-field",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-new-field
+add-new-field
 		]],
 	},
 	{
 		label = "add-new-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-new-index
+add-new-index
 		]],
 	},
 	{
 		label = "add-schema-location",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-schema-location
+add-schema-location
 		]],
 	},
 	{
 		label = "add-super-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		add-super-procedure
+add-super-procedure
 		]],
 	},
 	{
 		label = "adm-data",
 		kind = Kind.Keyword,
 		documentation = [[
-		adm-data
+adm-data
 		]],
 	},
 	{
 		label = "advise",
 		kind = Kind.Keyword,
 		documentation = [[
-		advise
+advise
 		]],
 	},
 	{
 		label = "alert-box",
 		kind = Kind.Keyword,
 		documentation = [[
-		alert-box
+alert-box
 		]],
 	},
 	{
 		label = "alias",
 		kind = Kind.Keyword,
 		documentation = [[
-		alias
+alias
 		]],
 	},
 	{
 		label = "all",
 		kind = Kind.Keyword,
 		documentation = [[
-		all
+all
 		]],
 	},
 	{
 		label = "allow-column-searching",
 		kind = Kind.Keyword,
 		documentation = [[
-		allow-column-searching
+allow-column-searching
 		]],
 	},
 	{
 		label = "allow-replication",
 		kind = Kind.Keyword,
 		documentation = [[
-		allow-replication
+allow-replication
 		]],
 	},
 	{
 		label = "alter",
 		kind = Kind.Keyword,
 		documentation = [[
-		alter
+alter
 		]],
 	},
 	{
 		label = "always-on-top",
 		kind = Kind.Keyword,
 		documentation = [[
-		always-on-top
+always-on-top
 		]],
 	},
 	{
@@ -393,7 +393,7 @@ found more than one record that met the specified index criteria.
 		label = "analyze",
 		kind = Kind.Keyword,
 		documentation = [[
-		analyze
+analyze
 		]],
 	},
 	{
@@ -407,49 +407,49 @@ Returns a TRUE value if each logical expression is TRUE.
 		label = "ansi-only",
 		kind = Kind.Keyword,
 		documentation = [[
-		ansi-only
+ansi-only
 		]],
 	},
 	{
 		label = "any",
 		kind = Kind.Keyword,
 		documentation = [[
-		any
+any
 		]],
 	},
 	{
 		label = "anywhere",
 		kind = Kind.Keyword,
 		documentation = [[
-		anywhere
+anywhere
 		]],
 	},
 	{
 		label = "append",
 		kind = Kind.Keyword,
 		documentation = [[
-		append
+append
 		]],
 	},
 	{
 		label = "appl-alert-boxes",
 		kind = Kind.Keyword,
 		documentation = [[
-		appl-alert-boxes
+appl-alert-boxes
 		]],
 	},
 	{
 		label = "appl-context-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		appl-context-id
+appl-context-id
 		]],
 	},
 	{
 		label = "application",
 		kind = Kind.Keyword,
 		documentation = [[
-		application
+application
 		]],
 	},
 	{
@@ -463,63 +463,63 @@ Applies an event to a widget or procedure.
 		label = "appserver-info",
 		kind = Kind.Keyword,
 		documentation = [[
-		appserver-info
+appserver-info
 		]],
 	},
 	{
 		label = "appserver-password",
 		kind = Kind.Keyword,
 		documentation = [[
-		appserver-password
+appserver-password
 		]],
 	},
 	{
 		label = "appserver-userid",
 		kind = Kind.Keyword,
 		documentation = [[
-		appserver-userid
+appserver-userid
 		]],
 	},
 	{
 		label = "array-message",
 		kind = Kind.Keyword,
 		documentation = [[
-		array-message
+array-message
 		]],
 	},
 	{
 		label = "as",
 		kind = Kind.Keyword,
 		documentation = [[
-		as
+as
 		]],
 	},
 	{
 		label = "asc",
 		kind = Kind.Keyword,
 		documentation = [[
-		asc
+asc
 		]],
 	},
 	{
 		label = "ascending",
 		kind = Kind.Keyword,
 		documentation = [[
-		ascending
+ascending
 		]],
 	},
 	{
 		label = "ask-overwrite",
 		kind = Kind.Keyword,
 		documentation = [[
-		ask-overwrite
+ask-overwrite
 		]],
 	},
 	{
 		label = "assembly",
 		kind = Kind.Keyword,
 		documentation = [[
-		assembly
+assembly
 		]],
 	},
 	{
@@ -535,21 +535,21 @@ corresponding fields and variables in the record buffer.
 		label = "asynchronous",
 		kind = Kind.Keyword,
 		documentation = [[
-		asynchronous
+asynchronous
 		]],
 	},
 	{
 		label = "async-request-count",
 		kind = Kind.Keyword,
 		documentation = [[
-		async-request-count
+async-request-count
 		]],
 	},
 	{
 		label = "async-request-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		async-request-handle
+async-request-handle
 		]],
 	},
 	{
@@ -565,580 +565,580 @@ explicit positioning of frames with windows or parent frames.
 		label = "attached-pairlist",
 		kind = Kind.Keyword,
 		documentation = [[
-		attached-pairlist
+attached-pairlist
 		]],
 	},
 	{
 		label = "attr-space",
 		kind = Kind.Keyword,
 		documentation = [[
-		attr-space
+attr-space
 		]],
 	},
 	{
 		label = "audit-control",
 		kind = Kind.Keyword,
 		documentation = [[
-		audit-control
+audit-control
 		]],
 	},
 	{
 		label = "audit-enabled",
 		kind = Kind.Keyword,
 		documentation = [[
-		Determines whether a connected database is audit-enabled.
+Determines whether a connected database is audit-enabled.
 		]],
 	},
 	{
 		label = "audit-event-context",
 		kind = Kind.Keyword,
 		documentation = [[
-		audit-event-context
+audit-event-context
 		]],
 	},
 	{
 		label = "audit-policy",
 		kind = Kind.Keyword,
 		documentation = [[
-		audit-policy
+audit-policy
 		]],
 	},
 	{
 		label = "authentication-failed",
 		kind = Kind.Keyword,
 		documentation = [[
-		authentication-failed
+authentication-failed
 		]],
 	},
 	{
 		label = "authorization",
 		kind = Kind.Keyword,
 		documentation = [[
-		authorization
+authorization
 		]],
 	},
 	{
 		label = "auto-completion",
 		kind = Kind.Keyword,
 		documentation = [[
-		auto-completion
+auto-completion
 		]],
 	},
 	{
 		label = "auto-endkey",
 		kind = Kind.Keyword,
 		documentation = [[
-		auto-endkey
+auto-endkey
 		]],
 	},
 	{
 		label = "auto-end-key",
 		kind = Kind.Keyword,
 		documentation = [[
-		auto-end-key
+auto-end-key
 		]],
 	},
 	{
 		label = "auto-go",
 		kind = Kind.Keyword,
 		documentation = [[
-		auto-go
+auto-go
 		]],
 	},
 	{
 		label = "auto-indent",
 		kind = Kind.Keyword,
 		documentation = [[
-		auto-indent
+auto-indent
 		]],
 	},
 	{
 		label = "automatic",
 		kind = Kind.Keyword,
 		documentation = [[
-		automatic
+automatic
 		]],
 	},
 	{
 		label = "auto-resize",
 		kind = Kind.Keyword,
 		documentation = [[
-		auto-resize
+auto-resize
 		]],
 	},
 	{
 		label = "auto-return",
 		kind = Kind.Keyword,
 		documentation = [[
-		auto-return
+auto-return
 		]],
 	},
 	{
 		label = "auto-synchronize",
 		kind = Kind.Keyword,
 		documentation = [[
-		auto-synchronize
+auto-synchronize
 		]],
 	},
 	{
 		label = "auto-zap",
 		kind = Kind.Keyword,
 		documentation = [[
-		auto-zap
+auto-zap
 		]],
 	},
 	{
 		label = "available",
 		kind = Kind.Keyword,
 		documentation = [[
-		Returns a TRUE value if the record buffer you name contains a record and returns a FALSE value if the record buffer is empty. When you use the FIND statement or the FOR EACH statement to find a record, the AVM reads that record from the database into a record buffer. This record buffer has the same name as the file used by the FIND or FOR EACH statement, unless you specify otherwise. The CREATE statement creates a new record in a record buffer.
+Returns a TRUE value if the record buffer you name contains a record and returns a FALSE value if the record buffer is empty. When you use the FIND statement or the FOR EACH statement to find a record, the AVM reads that record from the database into a record buffer. This record buffer has the same name as the file used by the FIND or FOR EACH statement, unless you specify otherwise. The CREATE statement creates a new record in a record buffer.
 		]],
 	},
 	{
 		label = "available-formats",
 		kind = Kind.Keyword,
 		documentation = [[
-		available-formats
+available-formats
 		]],
 	},
 	{
 		label = "average",
 		kind = Kind.Keyword,
 		documentation = [[
-		Calculates the average of all of the values of the expression in a break group and the average of all of the values of the expression in all break groups. 
+Calculates the average of all of the values of the expression in a break group and the average of all of the values of the expression in all break groups. 
 		]],
 	},
 	{
 		label = "avg",
 		kind = Kind.Keyword,
 		documentation = [[
-		avg
+avg
 		]],
 	},
 	{
 		label = "background",
 		kind = Kind.Keyword,
 		documentation = [[
-		background
+background
 		]],
 	},
 	{
 		label = "backwards",
 		kind = Kind.Keyword,
 		documentation = [[
-		backwards
+backwards
 		]],
 	},
 	{
 		label = "base64-decode",
 		kind = Kind.Keyword,
 		documentation = [[
-		base64-decode
+base64-decode
 		]],
 	},
 	{
 		label = "base64-encode",
 		kind = Kind.Keyword,
 		documentation = [[
-		base64-encode
+base64-encode
 		]],
 	},
 	{
 		label = "base-ade",
 		kind = Kind.Keyword,
 		documentation = [[
-		base-ade
+base-ade
 		]],
 	},
 	{
 		label = "base-key",
 		documentation = [[
-		base-key
+base-key
 		]],
 	},
 	{
 		label = "batch-mode",
 		kind = Kind.Keyword,
 		documentation = [[
-		batch-mode
+batch-mode
 		]],
 	},
 	{
 		label = "batch-size",
 		kind = Kind.Keyword,
 		documentation = [[
-		batch-size
+batch-size
 		]],
 	},
 	{
 		label = "before-hide",
 		kind = Kind.Keyword,
 		documentation = [[
-		before-hide
+before-hide
 		]],
 	},
 	{
 		label = "begin-event-group",
 		kind = Kind.Keyword,
 		documentation = [[
-		begin-event-group
+begin-event-group
 		]],
 	},
 	{
 		label = "begins",
 		kind = Kind.Keyword,
 		documentation = [[
-		Tests a character expression to see if that expression begins with a second character expression. 
+Tests a character expression to see if that expression begins with a second character expression. 
 		]],
 	},
 	{
 		label = "bell",
 		kind = Kind.Keyword,
 		documentation = [[
-		Causes the terminal to make a beep sound.
+Causes the terminal to make a beep sound.
 		]],
 	},
 	{
 		label = "between",
 		kind = Kind.Keyword,
 		documentation = [[
-		between
+between
 		]],
 	},
 	{
 		label = "bgcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		bgcolor
+bgcolor
 		]],
 	},
 	{
 		label = "big-endian",
 		kind = Kind.Keyword,
 		documentation = [[
-		big-endian
+big-endian
 		]],
 	},
 	{
 		label = "binary",
 		kind = Kind.Keyword,
 		documentation = [[
-		binary
+binary
 		]],
 	},
 	{
 		label = "bind",
 		kind = Kind.Keyword,
 		documentation = [[
-		bind
+bind
 		]],
 	},
 	{
 		label = "bind-where",
 		kind = Kind.Keyword,
 		documentation = [[
-		bind-where
+bind-where
 		]],
 	},
 	{
 		label = "blank",
 		kind = Kind.Keyword,
 		documentation = [[
-		blank
+blank
 		]],
 	},
 	{
 		label = "block-iteration-display",
 		kind = Kind.Keyword,
 		documentation = [[
-		block-iteration-display
+block-iteration-display
 		]],
 	},
 	{
 		label = "block-level",
 		kind = Kind.Keyword,
 		documentation = [[
-		Use this statement in a procedure (.p) or class (.cls) file to change the default ON ERROR directive to UNDO, THROW for all blocks that have a default error directive associated with them. (A simple DO block, for example, does not have default error handling and is not affected by this statement.). The default ON ERROR directive is either UNDO, LEAVE or UNDO, RETRY, depending on the block type. The statement must come before any executable or DEFINE statements in a file. However, it can come either before or after a USING statement. 
+Use this statement in a procedure (.p) or class (.cls) file to change the default ON ERROR directive to UNDO, THROW for all blocks that have a default error directive associated with them. (A simple DO block, for example, does not have default error handling and is not affected by this statement.). The default ON ERROR directive is either UNDO, LEAVE or UNDO, RETRY, depending on the block type. The statement must come before any executable or DEFINE statements in a file. However, it can come either before or after a USING statement. 
 		]],
 	},
 	{
 		label = "border-bottom-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		border-bottom-chars
+border-bottom-chars
 		]],
 	},
 	{
 		label = "border-bottom-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		border-bottom-pixels
+border-bottom-pixels
 		]],
 	},
 	{
 		label = "border-left-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		border-left-chars
+border-left-chars
 		]],
 	},
 	{
 		label = "border-left-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		border-left-pixels
+border-left-pixels
 		]],
 	},
 	{
 		label = "border-right-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		border-right-chars
+border-right-chars
 		]],
 	},
 	{
 		label = "border-right-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		border-right-pixels
+border-right-pixels
 		]],
 	},
 	{
 		label = "border-top-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		border-top-chars
+border-top-chars
 		]],
 	},
 	{
 		label = "border-top-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		border-top-pixels
+border-top-pixels
 		]],
 	},
 	{
 		label = "box",
 		kind = Kind.Keyword,
 		documentation = [[
-		box
+box
 		]],
 	},
 	{
 		label = "box-selectable",
 		kind = Kind.Keyword,
 		documentation = [[
-		box-selectable
+box-selectable
 		]],
 	},
 	{
 		label = "break",
 		kind = Kind.Keyword,
 		documentation = [[
-		break
+break
 		]],
 	},
 	{
 		label = "browse",
 		kind = Kind.Keyword,
 		documentation = [[
-		browse
+browse
 		]],
 	},
 	{
 		label = "buffer",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer
+buffer
 		]],
 	},
 	{
 		label = "buffer-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-chars
+buffer-chars
 		]],
 	},
 	{
 		label = "buffer-compare",
 		kind = Kind.Keyword,
 		documentation = [[
-		Performs a bulk comparison of two records (source and target) by comparing source and target fields of the same name for equality and storing the result in a field. 
+Performs a bulk comparison of two records (source and target) by comparing source and target fields of the same name for equality and storing the result in a field. 
 		]],
 	},
 	{
 		label = "buffer-copy",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-copy
+buffer-copy
 		]],
 	},
 	{
 		label = "buffer-create",
 		kind = Kind.Keyword,
 		documentation = [[
-		Creates a dynamic buffer object.
+Creates a dynamic buffer object.
 		]],
 	},
 	{
 		label = "buffer-delete",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-delete
+buffer-delete
 		]],
 	},
 	{
 		label = "buffer-field",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-field
+buffer-field
 		]],
 	},
 	{
 		label = "buffer-group-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		Returns the group ID (as an integer) of the tenant group to which the current record in a specified record buffer belongs. If the buffer does not contain a record from a tenant group, the function returns the Unknown value (?).
+Returns the group ID (as an integer) of the tenant group to which the current record in a specified record buffer belongs. If the buffer does not contain a record from a tenant group, the function returns the Unknown value (?).
 		]],
 	},
 	{
 		label = "buffer-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-handle
+buffer-handle
 		]],
 	},
 	{
 		label = "buffer-lines",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-lines
+buffer-lines
 		]],
 	},
 	{
 		label = "buffer-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-name
+buffer-name
 		]],
 	},
 	{
 		label = "buffer-partition-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-partition-id
+buffer-partition-id
 		]],
 	},
 	{
 		label = "buffer-release",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-release
+buffer-release
 		]],
 	},
 	{
 		label = "buffer-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		buffer-value
+buffer-value
 		]],
 	},
 	{
 		label = "button",
 		kind = Kind.Keyword,
 		documentation = [[
-		button
+button
 		]],
 	},
 	{
 		label = "buttons",
 		kind = Kind.Keyword,
 		documentation = [[
-		buttons
+buttons
 		]],
 	},
 	{
 		label = "by",
 		kind = Kind.Keyword,
 		documentation = [[
-		Performs aggregation for break groups if you use the BREAK option in a FOR EACH block header. 
+Performs aggregation for break groups if you use the BREAK option in a FOR EACH block header. 
 		]],
 	},
 	{
 		label = "by-pointer",
 		kind = Kind.Keyword,
 		documentation = [[
-		by-pointer
+by-pointer
 		]],
 	},
 	{
 		label = "by-variant-pointer",
 		kind = Kind.Keyword,
 		documentation = [[
-		by-variant-pointer
+by-variant-pointer
 		]],
 	},
 	{
 		label = "cache",
 		kind = Kind.Keyword,
 		documentation = [[
-		cache
+cache
 		]],
 	},
 	{
 		label = "cache-size",
 		kind = Kind.Keyword,
 		documentation = [[
-		cache-size
+cache-size
 		]],
 	},
 	{
 		label = "call",
 		kind = Kind.Keyword,
 		documentation = [[
-		Transfers control to a dispatch routine (PRODSP) that then calls a C function. You write the C function using ABL Host Language Call (HLC) interface.
+Transfers control to a dispatch routine (PRODSP) that then calls a C function. You write the C function using ABL Host Language Call (HLC) interface.
 		]],
 	},
 	{
 		label = "call-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		call-name
+call-name
 		]],
 	},
 	{
 		label = "call-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		call-type
+call-type
 		]],
 	},
 	{
 		label = "cancel-break",
 		kind = Kind.Keyword,
 		documentation = [[
-		cancel-break
+cancel-break
 		]],
 	},
 	{
 		label = "cancel-button",
 		kind = Kind.Keyword,
 		documentation = [[
-		cancel-button
+cancel-button
 		]],
 	},
 	{
 		label = "can-create",
 		kind = Kind.Keyword,
 		documentation = [[
-		can-create
+can-create
 		]],
 	},
 	{
 		label = "can-delete",
 		kind = Kind.Keyword,
 		documentation = [[
-		can-delete
+can-delete
 		]],
 	},
 	{
@@ -1156,7 +1156,7 @@ checking for any procedure or class in your application.
 		label = "can-do-domain-support",
 		kind = Kind.Keyword,
 		documentation = [[
-		can-do-domain-support
+can-do-domain-support
 		]],
 	},
 	{
@@ -1181,7 +1181,7 @@ specified attribute or method for a specified widget.
 		label = "can-read",
 		kind = Kind.Keyword,
 		documentation = [[
-		can-read
+can-read
 		]],
 	},
 	{
@@ -1196,7 +1196,7 @@ for a specified widget.
 		label = "can-write",
 		kind = Kind.Keyword,
 		documentation = [[
-		can-write
+can-write
 		]],
 	},
 	{
@@ -1212,917 +1212,917 @@ value matches the data type of the expression passed to the function.
 		label = "careful-paint",
 		kind = Kind.Keyword,
 		documentation = [[
-		careful-paint
+careful-paint
 		]],
 	},
 	{
 		label = "case",
 		kind = Kind.Keyword,
 		documentation = [[
-		Provides a multi-branch decision based on the value of a single expression
+Provides a multi-branch decision based on the value of a single expression
 		]],
 	},
 	{
 		label = "case-sensitive",
 		kind = Kind.Keyword,
 		documentation = [[
-		case-sensitive
+case-sensitive
 		]],
 	},
 	{
 		label = "cast",
 		kind = Kind.Keyword,
 		documentation = [[
-		cast
+cast
 		]],
 	},
 	{
 		label = "catch",
 		kind = Kind.Keyword,
 		documentation = [[
-		catch
+catch
 		]],
 	},
 	{
 		label = "cdecl",
 		kind = Kind.Keyword,
 		documentation = [[
-		cdecl
+cdecl
 		]],
 	},
 	{
 		label = "centered",
 		kind = Kind.Keyword,
 		documentation = [[
-		centered
+centered
 		]],
 	},
 	{
 		label = "chained",
 		kind = Kind.Keyword,
 		documentation = [[
-		chained
+chained
 		]],
 	},
 	{
 		label = "character",
 		kind = Kind.Keyword,
 		documentation = [[
-		character
+character
 		]],
 	},
 	{
 		label = "character_length",
 		kind = Kind.Keyword,
 		documentation = [[
-		character_length
+character_length
 		]],
 	},
 	{
 		label = "charset",
 		kind = Kind.Keyword,
 		documentation = [[
-		charset
+charset
 		]],
 	},
 	{
 		label = "check",
 		kind = Kind.Keyword,
 		documentation = [[
-		check
+check
 		]],
 	},
 	{
 		label = "checked",
 		kind = Kind.Keyword,
 		documentation = [[
-		checked
+checked
 		]],
 	},
 	{
 		label = "choose",
 		kind = Kind.Keyword,
 		documentation = [[
-		choose
+choose
 		]],
 	},
 	{
 		label = "chr",
 		kind = Kind.Keyword,
 		documentation = [[
-		Converts an integer value to its corresponding character value.
+Converts an integer value to its corresponding character value.
 		]],
 	},
 	{
 		label = "class",
 		kind = Kind.Keyword,
 		documentation = [[
-		Defines a user-defined class.
+Defines a user-defined class.
 		]],
 	},
 	{
 		label = "class-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		class-type
+class-type
 		]],
 	},
 	{
 		label = "clear",
 		kind = Kind.Keyword,
 		documentation = [[
-		Clears the data for all fill-in fields in a frame. It also clears the colors for all widgets in a frame, except for enabled fill-ins.
+Clears the data for all fill-in fields in a frame. It also clears the colors for all widgets in a frame, except for enabled fill-ins.
 		]],
 	},
 	{
 		label = "clear-appl-context",
 		kind = Kind.Keyword,
 		documentation = [[
-		clear-appl-context
+clear-appl-context
 		]],
 	},
 	{
 		label = "clear-log",
 		kind = Kind.Keyword,
 		documentation = [[
-		clear-log
+clear-log
 		]],
 	},
 	{
 		label = "clear-selection",
 		kind = Kind.Keyword,
 		documentation = [[
-		clear-selection
+clear-selection
 		]],
 	},
 	{
 		label = "clear-sort-arrows",
 		kind = Kind.Keyword,
 		documentation = [[
-		clear-sort-arrows
+clear-sort-arrows
 		]],
 	},
 	{
 		label = "client-connection-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		client-connection-id
+client-connection-id
 		]],
 	},
 	{
 		label = "client-principal",
 		kind = Kind.Keyword,
 		documentation = [[
-		client-principal
+client-principal
 		]],
 	},
 	{
 		label = "client-tty",
 		kind = Kind.Keyword,
 		documentation = [[
-		client-tty
+client-tty
 		]],
 	},
 	{
 		label = "client-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		client-type
+client-type
 		]],
 	},
 	{
 		label = "client-workstation",
 		kind = Kind.Keyword,
 		documentation = [[
-		client-workstation
+client-workstation
 		]],
 	},
 	{
 		label = "clipboard",
 		kind = Kind.Keyword,
 		documentation = [[
-		clipboard
+clipboard
 		]],
 	},
 	{
 		label = "close",
 		kind = Kind.Keyword,
 		documentation = [[
-		close
+close
 		]],
 	},
 	{
 		label = "close-log",
 		kind = Kind.Keyword,
 		documentation = [[
-		close-log
+close-log
 		]],
 	},
 	{
 		label = "code",
 		kind = Kind.Keyword,
 		documentation = [[
-		code
+code
 		]],
 	},
 	{
 		label = "codebase-locator",
 		kind = Kind.Keyword,
 		documentation = [[
-		codebase-locator
+codebase-locator
 		]],
 	},
 	{
 		label = "codepage",
 		kind = Kind.Keyword,
 		documentation = [[
-		codepage
+codepage
 		]],
 	},
 	{
 		label = "codepage-convert",
 		kind = Kind.Keyword,
 		documentation = [[
-		Converts a string value from one code page to another.
+Converts a string value from one code page to another.
 		]],
 	},
 	{
 		label = "collate",
 		kind = Kind.Keyword,
 		documentation = [[
-		collate
+collate
 		]],
 	},
 	{
 		label = "col-of",
 		kind = Kind.Keyword,
 		documentation = [[
-		col-of
+col-of
 		]],
 	},
 	{
 		label = "colon",
 		kind = Kind.Keyword,
 		documentation = [[
-		colon
+colon
 		]],
 	},
 	{
 		label = "colon-aligned",
 		kind = Kind.Keyword,
 		documentation = [[
-		colon-aligned
+colon-aligned
 		]],
 	},
 	{
 		label = "color",
 		kind = Kind.Keyword,
 		documentation = [[
-		color
+color
 		]],
 	},
 	{
 		label = "color-table",
 		kind = Kind.Keyword,
 		documentation = [[
-		color-table
+color-table
 		]],
 	},
 	{
 		label = "column",
 		kind = Kind.Keyword,
 		documentation = [[
-		column
+column
 		]],
 	},
 	{
 		label = "column-bgcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-bgcolor
+column-bgcolor
 		]],
 	},
 	{
 		label = "column-dcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-dcolor
+column-dcolor
 		]],
 	},
 	{
 		label = "column-fgcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-fgcolor
+column-fgcolor
 		]],
 	},
 	{
 		label = "column-font",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-font
+column-font
 		]],
 	},
 	{
 		label = "column-label",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-label
+column-label
 		]],
 	},
 	{
 		label = "column-movable",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-movable
+column-movable
 		]],
 	},
 	{
 		label = "column-of",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-of
+column-of
 		]],
 	},
 	{
 		label = "column-pfcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-pfcolor
+column-pfcolor
 		]],
 	},
 	{
 		label = "column-read-only",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-read-only
+column-read-only
 		]],
 	},
 	{
 		label = "column-resizable",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-resizable
+column-resizable
 		]],
 	},
 	{
 		label = "columns",
 		kind = Kind.Keyword,
 		documentation = [[
-		columns
+columns
 		]],
 	},
 	{
 		label = "column-scrolling",
 		kind = Kind.Keyword,
 		documentation = [[
-		column-scrolling
+column-scrolling
 		]],
 	},
 	{
 		label = "combo-box",
 		kind = Kind.Keyword,
 		documentation = [[
-		combo-box
+combo-box
 		]],
 	},
 	{
 		label = "com-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		com-handle
+com-handle
 		]],
 	},
 	{
 		label = "command",
 		kind = Kind.Keyword,
 		documentation = [[
-		command
+command
 		]],
 	},
 	{
 		label = "compares",
 		kind = Kind.Keyword,
 		documentation = [[
-		COMPARE returns a LOGICAL value representing the result of the logical expression, where the comparison rules are defined by the combination of the operator, the comparison strength, and the collation.
+COMPARE returns a LOGICAL value representing the result of the logical expression, where the comparison rules are defined by the combination of the operator, the comparison strength, and the collation.
 		]],
 	},
 	{
 		label = "compile",
 		kind = Kind.Keyword,
 		documentation = [[
-		Compiles a procedure file or a class definition file. A compilation can last for a session, or you can save it permanently for use in later sessions (as an r-code file, which has a .r extension). 
+Compiles a procedure file or a class definition file. A compilation can last for a session, or you can save it permanently for use in later sessions (as an r-code file, which has a .r extension). 
 		]],
 	},
 	{
 		label = "compiler",
 		kind = Kind.Keyword,
 		documentation = [[
-		compiler
+compiler
 		]],
 	},
 	{
 		label = "complete",
 		kind = Kind.Keyword,
 		documentation = [[
-		complete
+complete
 		]],
 	},
 	{
 		label = "com-self",
 		kind = Kind.Keyword,
 		documentation = [[
-		com-self
+com-self
 		]],
 	},
 	{
 		label = "config-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		config-name
+config-name
 		]],
 	},
 	{
 		label = "connect",
 		kind = Kind.Keyword,
 		documentation = [[
-		Establishes a connection to one or more databases from within an ABL procedure or class. 
+Establishes a connection to one or more databases from within an ABL procedure or class. 
 		]],
 	},
 	{
 		label = "connected",
 		kind = Kind.Keyword,
 		documentation = [[
-		Tells whether a database is connected. If logical name is the logical name or alias is the alias of a connected database, the CONNECTED function returns TRUE; otherwise, it returns FALSE.
+Tells whether a database is connected. If logical name is the logical name or alias is the alias of a connected database, the CONNECTED function returns TRUE; otherwise, it returns FALSE.
 		]],
 	},
 	{
 		label = "constructor",
 		kind = Kind.Keyword,
 		documentation = [[
-		Defines a constructor for a class. A constructor is a special type of method that ABL invokes to initialize data for a new object of a class that is instantiated using the NEW function (classes), NEW statement, or DYNAMIC-NEW statement, or to initialize static members of a class.
+Defines a constructor for a class. A constructor is a special type of method that ABL invokes to initialize data for a new object of a class that is instantiated using the NEW function (classes), NEW statement, or DYNAMIC-NEW statement, or to initialize static members of a class.
 			]],
 	},
 	{
 		label = "contains",
 		kind = Kind.Keyword,
 		documentation = [[
-		contains
+contains
 		]],
 	},
 	{
 		label = "contents",
 		kind = Kind.Keyword,
 		documentation = [[
-		contents
+contents
 		]],
 	},
 	{
 		label = "context",
 		kind = Kind.Keyword,
 		documentation = [[
-		context
+context
 		]],
 	},
 	{
 		label = "context-help",
 		kind = Kind.Keyword,
 		documentation = [[
-		context-help
+context-help
 		]],
 	},
 	{
 		label = "context-help-file",
 		kind = Kind.Keyword,
 		documentation = [[
-		context-help-file
+context-help-file
 		]],
 	},
 	{
 		label = "context-help-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		context-help-id
+context-help-id
 		]],
 	},
 	{
 		label = "context-popup",
 		kind = Kind.Keyword,
 		documentation = [[
-		context-popup
+context-popup
 		]],
 	},
 	{
 		label = "control",
 		kind = Kind.Keyword,
 		documentation = [[
-		control
+control
 		]],
 	},
 	{
 		label = "control-box",
 		kind = Kind.Keyword,
 		documentation = [[
-		control-box
+control-box
 		]],
 	},
 	{
 		label = "control-frame",
 		kind = Kind.Keyword,
 		documentation = [[
-		control-frame
+control-frame
 		]],
 	},
 	{
 		label = "convert",
 		kind = Kind.Keyword,
 		documentation = [[
-		convert
+convert
 		]],
 	},
 	{
 		label = "convert-3d-colors",
 		kind = Kind.Keyword,
 		documentation = [[
-		convert-3d-colors
+convert-3d-colors
 		]],
 	},
 	{
 		label = "convert-to-offset",
 		kind = Kind.Keyword,
 		documentation = [[
-		convert-to-offset
+convert-to-offset
 		]],
 	},
 	{
 		label = "copy-dataset",
 		kind = Kind.Keyword,
 		documentation = [[
-		copy-dataset
+copy-dataset
 		]],
 	},
 	{
 		label = "copy-lob",
 		kind = Kind.Keyword,
 		documentation = [[
-		Copies large object data between BLOBs, CLOBs, MEMPTRs, and LONGCHARs. It also copies large object data to and from the file system, and converts large object data to or from a specified code page.
+Copies large object data between BLOBs, CLOBs, MEMPTRs, and LONGCHARs. It also copies large object data to and from the file system, and converts large object data to or from a specified code page.
 		]],
 	},
 	{
 		label = "copy-sax-attributes",
 		kind = Kind.Keyword,
 		documentation = [[
-		copy-sax-attributes
+copy-sax-attributes
 		]],
 	},
 	{
 		label = "copy-temp-table",
 		kind = Kind.Keyword,
 		documentation = [[
-		copy-temp-table
+copy-temp-table
 		]],
 	},
 	{
 		label = "count",
 		kind = Kind.Keyword,
 		documentation = [[
-		Calculates the number of times the expression was counted in a break group and the count of all the values in all break groups.
+Calculates the number of times the expression was counted in a break group and the count of all the values in all break groups.
 		]],
 	},
 	{
 		label = "count-of",
 		kind = Kind.Keyword,
 		documentation = [[
-		Returns an INTEGER value that is the total number of selected records in the table or tables you are using across break groups.
+Returns an INTEGER value that is the total number of selected records in the table or tables you are using across break groups.
 		]],
 	},
 	{
 		label = "cpcase",
 		kind = Kind.Keyword,
 		documentation = [[
-		cpcase
+cpcase
 		]],
 	},
 	{
 		label = "cpcoll",
 		kind = Kind.Keyword,
 		documentation = [[
-		cpcoll
+cpcoll
 		]],
 	},
 	{
 		label = "cpinternal",
 		kind = Kind.Keyword,
 		documentation = [[
-		cpinternal
+cpinternal
 		]],
 	},
 	{
 		label = "cplog",
 		kind = Kind.Keyword,
 		documentation = [[
-		cplog
+cplog
 		]],
 	},
 	{
 		label = "cpprint",
 		kind = Kind.Keyword,
 		documentation = [[
-		cpprint
+cpprint
 		]],
 	},
 	{
 		label = "cprcodein",
 		kind = Kind.Keyword,
 		documentation = [[
-		cprcodein
+cprcodein
 		]],
 	},
 	{
 		label = "cprcodeout",
 		kind = Kind.Keyword,
 		documentation = [[
-		cprcodeout
+cprcodeout
 		]],
 	},
 	{
 		label = "cpstream",
 		kind = Kind.Keyword,
 		documentation = [[
-		cpstream
+cpstream
 		]],
 	},
 	{
 		label = "cpterm",
 		kind = Kind.Keyword,
 		documentation = [[
-		cpterm
+cpterm
 		]],
 	},
 	{
 		label = "crc-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		crc-value
+crc-value
 		]],
 	},
 	{
 		label = "create",
 		kind = Kind.Keyword,
 		documentation = [[
-		Creates a record in a table, sets all the fields in the record to their default initial values, and moves a copy of the record to the record buffer.
+Creates a record in a table, sets all the fields in the record to their default initial values, and moves a copy of the record to the record buffer.
 		]],
 	},
 	{
 		label = "create-like",
 		kind = Kind.Keyword,
 		documentation = [[
-		create-like
+create-like
 		]],
 	},
 	{
 		label = "create-like-sequential",
 		kind = Kind.Keyword,
 		documentation = [[
-		create-like-sequential
+create-like-sequential
 		]],
 	},
 	{
 		label = "create-node-namespace",
 		kind = Kind.Keyword,
 		documentation = [[
-		create-node-namespace
+create-node-namespace
 		]],
 	},
 	{
 		label = "create-result-list-entry",
 		kind = Kind.Keyword,
 		documentation = [[
-		create-result-list-entry
+create-result-list-entry
 		]],
 	},
 	{
 		label = "create-test-file",
 		kind = Kind.Keyword,
 		documentation = [[
-		create-test-file
+create-test-file
 		]],
 	},
 	{
 		label = "current",
 		kind = Kind.Keyword,
 		documentation = [[
-		current
+current
 		]],
 	},
 	{
 		label = "current_date",
 		kind = Kind.Keyword,
 		documentation = [[
-		current_date
+current_date
 		]],
 	},
 	{
 		label = "current_date",
 		kind = Kind.Keyword,
 		documentation = [[
-		current_date
+current_date
 		]],
 	},
 	{
 		label = "current-changed",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-changed
+current-changed
 		]],
 	},
 	{
 		label = "current-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-column
+current-column
 		]],
 	},
 	{
 		label = "current-environment",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-environment
+current-environment
 		]],
 	},
 	{
 		label = "current-iteration",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-iteration
+current-iteration
 		]],
 	},
 	{
 		label = "current-language",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-language
+current-language
 		]],
 	},
 	{
 		label = "current-query",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-query
+current-query
 		]],
 	},
 	{
 		label = "current-request-info",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-request-info
+current-request-info
 		]],
 	},
 	{
 		label = "current-response-info",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-response-info
+current-response-info
 		]],
 	},
 	{
 		label = "current-result-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-result-row
+current-result-row
 		]],
 	},
 	{
 		label = "current-row-modified",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-row-modified
+current-row-modified
 		]],
 	},
 	{
 		label = "current-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-value
+current-value
 		]],
 	},
 	{
 		label = "current-window",
 		kind = Kind.Keyword,
 		documentation = [[
-		current-window
+current-window
 		]],
 	},
 	{
 		label = "cursor",
 		kind = Kind.Keyword,
 		documentation = [[
-		cursor
+cursor
 		]],
 	},
 	{
 		label = "cursor-char",
 		kind = Kind.Keyword,
 		documentation = [[
-		cursor-char
+cursor-char
 		]],
 	},
 	{
 		label = "cursor-line",
 		kind = Kind.Keyword,
 		documentation = [[
-		cursor-line
+cursor-line
 		]],
 	},
 	{
 		label = "cursor-offset",
 		kind = Kind.Keyword,
 		documentation = [[
-		cursor-offset
+cursor-offset
 		]],
 	},
 	{
 		label = "database",
 		kind = Kind.Keyword,
 		documentation = [[
-		database
+database
 		]],
 	},
 	{
 		label = "data-bind",
 		kind = Kind.Keyword,
 		documentation = [[
-		data-bind
+data-bind
 		]],
 	},
 	{
 		label = "data-entry-return",
 		kind = Kind.Keyword,
 		documentation = [[
-		data-entry-return
+data-entry-return
 		]],
 	},
 	{
 		label = "data-relation",
 		kind = Kind.Keyword,
 		documentation = [[
-		data-relation
+data-relation
 		]],
 	},
 	{
 		label = "dataservers",
 		kind = Kind.Keyword,
 		documentation = [[
-		dataservers
+dataservers
 		]],
 	},
 	{
 		label = "dataset",
 		kind = Kind.Keyword,
 		documentation = [[
-		dataset
+dataset
 		]],
 	},
 	{
 		label = "dataset-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		dataset-handle
+dataset-handle
 		]],
 	},
 	{
 		label = "data-source",
 		kind = Kind.Keyword,
 		documentation = [[
-		data-source
+data-source
 		]],
 	},
 	{
 		label = "data-source-complete-map",
 		kind = Kind.Keyword,
 		documentation = [[
-		data-source-complete-map
+data-source-complete-map
 		]],
 	},
 	{
 		label = "data-source-modified",
 		kind = Kind.Keyword,
 		documentation = [[
-		data-source-modified
+data-source-modified
 		]],
 	},
 	{
 		label = "data-source-rowid",
 		kind = Kind.Keyword,
 		documentation = [[
-		data-source-rowid
+data-source-rowid
 		]],
 	},
 	{
 		label = "data-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		data-type
+data-type
 		]],
 	},
 	{
@@ -2153,7 +2153,7 @@ DATETIME-TZ value.
 		label = "date-format",
 		kind = Kind.Keyword,
 		documentation = [[
-		date-format
+date-format
 		]],
 	},
 	{
@@ -2168,861 +2168,861 @@ INTEGER value from 1 to 31, inclusive.
 		label = "dbcodepage",
 		kind = Kind.Keyword,
 		documentation = [[
-		dbcodepage
+dbcodepage
 		]],
 	},
 	{
 		label = "dbcollation",
 		kind = Kind.Keyword,
 		documentation = [[
-		dbcollation
+dbcollation
 		]],
 	},
 	{
 		label = "dbname",
 		kind = Kind.Keyword,
 		documentation = [[
-		dbname
+dbname
 		]],
 	},
 	{
 		label = "dbparam",
 		kind = Kind.Keyword,
 		documentation = [[
-		dbparam
+dbparam
 		]],
 	},
 	{
 		label = "db-context",
 		kind = Kind.Keyword,
 		documentation = [[
-		db-context
+db-context
 		]],
 	},
 	{
 		label = "db-references",
 		kind = Kind.Keyword,
 		documentation = [[
-		db-references
+db-references
 		]],
 	},
 	{
 		label = "dbrestrictions",
 		kind = Kind.Keyword,
 		documentation = [[
-		dbrestrictions
+dbrestrictions
 		]],
 	},
 	{
 		label = "dbtaskid",
 		kind = Kind.Keyword,
 		documentation = [[
-		dbtaskid
+dbtaskid
 		]],
 	},
 	{
 		label = "dbtype",
 		kind = Kind.Keyword,
 		documentation = [[
-		dbtype
+dbtype
 		]],
 	},
 	{
 		label = "dbversion",
 		kind = Kind.Keyword,
 		documentation = [[
-		dbversion
+dbversion
 		]],
 	},
 	{
 		label = "dcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		dcolor
+dcolor
 		]],
 	},
 	{
 		label = "dde",
 		kind = Kind.Keyword,
 		documentation = [[
-		dde
+dde
 		]],
 	},
 	{
 		label = "dde-error",
 		kind = Kind.Keyword,
 		documentation = [[
-		dde-error
+dde-error
 		]],
 	},
 	{
 		label = "dde-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		dde-id
+dde-id
 		]],
 	},
 	{
 		label = "dde-item",
 		kind = Kind.Keyword,
 		documentation = [[
-		dde-item
+dde-item
 		]],
 	},
 	{
 		label = "dde-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		dde-name
+dde-name
 		]],
 	},
 	{
 		label = "dde-topic",
 		kind = Kind.Keyword,
 		documentation = [[
-		dde-topic
+dde-topic
 		]],
 	},
 	{
 		label = "deblank",
 		kind = Kind.Keyword,
 		documentation = [[
-		deblank
+deblank
 		]],
 	},
 	{
 		label = "debug",
 		kind = Kind.Keyword,
 		documentation = [[
-		debug
+debug
 		]],
 	},
 	{
 		label = "debug-alert",
 		kind = Kind.Keyword,
 		documentation = [[
-		debug-alert
+debug-alert
 		]],
 	},
 	{
 		label = "debugger",
 		kind = Kind.Keyword,
 		documentation = [[
-		debugger
+debugger
 		]],
 	},
 	{
 		label = "debug-list",
 		kind = Kind.Keyword,
 		documentation = [[
-		debug-list
+debug-list
 		]],
 	},
 	{
 		label = "decimal",
 		kind = Kind.Keyword,
 		documentation = [[
-		Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a DECIMAL value.
+Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a DECIMAL value.
 		]],
 	},
 	{
 		label = "decimals",
 		kind = Kind.Keyword,
 		documentation = [[
-		decimals
+decimals
 		]],
 	},
 	{
 		label = "declare",
 		kind = Kind.Keyword,
 		documentation = [[
-		declare
+declare
 		]],
 	},
 	{
 		label = "declare-namespace",
 		kind = Kind.Keyword,
 		documentation = [[
-		declare-namespace
+declare-namespace
 		]],
 	},
 	{
 		label = "decrypt",
 		kind = Kind.Keyword,
 		documentation = [[
-		decrypt
+decrypt
 		]],
 	},
 	{
 		label = "default",
 		kind = Kind.Keyword,
 		documentation = [[
-		default
+default
 		]],
 	},
 	{
 		label = "default-buffer-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		default-buffer-handle
+default-buffer-handle
 		]],
 	},
 	{
 		label = "default-button",
 		kind = Kind.Keyword,
 		documentation = [[
-		default-button
+default-button
 		]],
 	},
 	{
 		label = "default-commit",
 		kind = Kind.Keyword,
 		documentation = [[
-		default-commit
+default-commit
 		]],
 	},
 	{
 		label = "default-extension",
 		kind = Kind.Keyword,
 		documentation = [[
-		default-extension
+default-extension
 		]],
 	},
 	{
 		label = "default-noxlate",
 		kind = Kind.Keyword,
 		documentation = [[
-		default-noxlate
+default-noxlate
 		]],
 	},
 	{
 		label = "default-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		default-value
+default-value
 		]],
 	},
 	{
 		label = "default-window",
 		kind = Kind.Keyword,
 		documentation = [[
-		default-window
+default-window
 		]],
 	},
 	{
 		label = "define",
 		kind = Kind.Keyword,
 		documentation = [[
-		define
+define
 		]],
 	},
 	{
 		label = "defined",
 		kind = Kind.Keyword,
 		documentation = [[
-		defined
+defined
 		]],
 	},
 	{
 		label = "define-user-event-manager",
 		kind = Kind.Keyword,
 		documentation = [[
-		define-user-event-manager
+define-user-event-manager
 		]],
 	},
 	{
 		label = "delegate",
 		kind = Kind.Keyword,
 		documentation = [[
-		delegate
+delegate
 		]],
 	},
 	{
 		label = "delete",
 		kind = Kind.Keyword,
 		documentation = [[
-		Removes a record from a record buffer and from the database.
+Removes a record from a record buffer and from the database.
 		]],
 	},
 	{
 		label = "delete-char",
 		kind = Kind.Keyword,
 		documentation = [[
-		delete-char
+delete-char
 		]],
 	},
 	{
 		label = "delete-current-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		delete-current-row
+delete-current-row
 		]],
 	},
 	{
 		label = "delete-line",
 		kind = Kind.Keyword,
 		documentation = [[
-		delete-line
+delete-line
 		]],
 	},
 	{
 		label = "delete-result-list-entry",
 		kind = Kind.Keyword,
 		documentation = [[
-		delete-result-list-entry
+delete-result-list-entry
 		]],
 	},
 	{
 		label = "delete-selected-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		delete-selected-row
+delete-selected-row
 		]],
 	},
 	{
 		label = "delete-selected-rows",
 		kind = Kind.Keyword,
 		documentation = [[
-		delete-selected-rows
+delete-selected-rows
 		]],
 	},
 	{
 		label = "delimiter",
 		kind = Kind.Keyword,
 		documentation = [[
-		delimiter
+delimiter
 		]],
 	},
 	{
 		label = "desc",
 		kind = Kind.Keyword,
 		documentation = [[
-		desc
+desc
 		]],
 	},
 	{
 		label = "descending",
 		kind = Kind.Keyword,
 		documentation = [[
-		descending
+descending
 		]],
 	},
 	{
 		label = "deselect-focused-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		deselect-focused-row
+deselect-focused-row
 		]],
 	},
 	{
 		label = "deselection",
 		kind = Kind.Keyword,
 		documentation = [[
-		deselection
+deselection
 		]],
 	},
 	{
 		label = "deselect-rows",
 		kind = Kind.Keyword,
 		documentation = [[
-		deselect-rows
+deselect-rows
 		]],
 	},
 	{
 		label = "deselect-selected-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		deselect-selected-row
+deselect-selected-row
 		]],
 	},
 	{
 		label = "destructor",
 		kind = Kind.Keyword,
 		documentation = [[
-		destructor
+destructor
 		]],
 	},
 	{
 		label = "dialog-box",
 		kind = Kind.Keyword,
 		documentation = [[
-		dialog-box
+dialog-box
 		]],
 	},
 	{
 		label = "dictionary",
 		kind = Kind.Keyword,
 		documentation = [[
-		dictionary
+dictionary
 		]],
 	},
 	{
 		label = "dir",
 		kind = Kind.Keyword,
 		documentation = [[
-		dir
+dir
 		]],
 	},
 	{
 		label = "disable",
 		kind = Kind.Keyword,
 		documentation = [[
-		disable
+disable
 		]],
 	},
 	{
 		label = "disable-auto-zap",
 		kind = Kind.Keyword,
 		documentation = [[
-		disable-auto-zap
+disable-auto-zap
 		]],
 	},
 	{
 		label = "disabled",
 		kind = Kind.Keyword,
 		documentation = [[
-		disabled
+disabled
 		]],
 	},
 	{
 		label = "disable-dump-triggers",
 		kind = Kind.Keyword,
 		documentation = [[
-		disable-dump-triggers
+disable-dump-triggers
 		]],
 	},
 	{
 		label = "disable-load-triggers",
 		kind = Kind.Keyword,
 		documentation = [[
-		disable-load-triggers
+disable-load-triggers
 		]],
 	},
 	{
 		label = "disconnect",
 		kind = Kind.Keyword,
 		documentation = [[
-		disconnect
+disconnect
 		]],
 	},
 	{
 		label = "disp",
 		kind = Kind.Keyword,
 		documentation = [[
-		disp
+disp
 		]],
 	},
 	{
 		label = "display",
 		kind = Kind.Keyword,
 		documentation = [[
-		Moves data to a screen buffer and displays the data on the screen or other output destination. 
+Moves data to a screen buffer and displays the data on the screen or other output destination. 
 		]],
 	},
 	{
 		label = "display-message",
 		kind = Kind.Keyword,
 		documentation = [[
-		display-message
+display-message
 		]],
 	},
 	{
 		label = "display-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		display-type
+display-type
 		]],
 	},
 	{
 		label = "distinct",
 		kind = Kind.Keyword,
 		documentation = [[
-		distinct
+distinct
 		]],
 	},
 	{
 		label = "do",
 		kind = Kind.Keyword,
 		documentation = [[
-		Groups statements into a single block, optionally specifying processing services or block properties. Use an END statement to end a DO block.
+Groups statements into a single block, optionally specifying processing services or block properties. Use an END statement to end a DO block.
 		]],
 	},
 	{
 		label = "domain-description",
 		kind = Kind.Keyword,
 		documentation = [[
-		domain-description
+domain-description
 		]],
 	},
 	{
 		label = "domain-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		domain-name
+domain-name
 		]],
 	},
 	{
 		label = "domain-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		domain-type
+domain-type
 		]],
 	},
 	{
 		label = "dos",
 		kind = Kind.Keyword,
 		documentation = [[
-		dos
+dos
 		]],
 	},
 	{
 		label = "double",
 		kind = Kind.Keyword,
 		documentation = [[
-		double
+double
 		]],
 	},
 	{
 		label = "down",
 		kind = Kind.Keyword,
 		documentation = [[
-		Positions the cursor on a new line in a down or multi-line frame.
+Positions the cursor on a new line in a down or multi-line frame.
 		]],
 	},
 	{
 		label = "drag-enabled",
 		kind = Kind.Keyword,
 		documentation = [[
-		drag-enabled
+drag-enabled
 		]],
 	},
 	{
 		label = "drop",
 		kind = Kind.Keyword,
 		documentation = [[
-		drop
+drop
 		]],
 	},
 	{
 		label = "drop-down",
 		kind = Kind.Keyword,
 		documentation = [[
-		drop-down
+drop-down
 		]],
 	},
 	{
 		label = "drop-down-list",
 		kind = Kind.Keyword,
 		documentation = [[
-		drop-down-list
+drop-down-list
 		]],
 	},
 	{
 		label = "drop-file-notify",
 		kind = Kind.Keyword,
 		documentation = [[
-		drop-file-notify
+drop-file-notify
 		]],
 	},
 	{
 		label = "drop-target",
 		kind = Kind.Keyword,
 		documentation = [[
-		drop-target
+drop-target
 		]],
 	},
 	{
 		label = "ds-close-cursor",
 		kind = Kind.Keyword,
 		documentation = [[
-		ds-close-cursor
+ds-close-cursor
 		]],
 	},
 	{
 		label = "dslog-manager",
 		kind = Kind.Keyword,
 		documentation = [[
-		dslog-manager
+dslog-manager
 		]],
 	},
 	{
 		label = "dump",
 		kind = Kind.Keyword,
 		documentation = [[
-		dump
+dump
 		]],
 	},
 	{
 		label = "dynamic",
 		kind = Kind.Keyword,
 		documentation = [[
-		dynamic
+dynamic
 		]],
 	},
 	{
 		label = "dynamic-enum",
 		kind = Kind.Keyword,
 		documentation = [[
-		dynamic-enum
+dynamic-enum
 		]],
 	},
 	{
 		label = "dynamic-function",
 		kind = Kind.Keyword,
 		documentation = [[
-		dynamic-function
+dynamic-function
 		]],
 	},
 	{
 		label = "dynamic-invoke",
 		kind = Kind.Keyword,
 		documentation = [[
-		dynamic-invoke
+dynamic-invoke
 		]],
 	},
 	{
 		label = "each",
 		kind = Kind.Keyword,
 		documentation = [[
-		each
+each
 		]],
 	},
 	{
 		label = "echo",
 		kind = Kind.Keyword,
 		documentation = [[
-		echo
+echo
 		]],
 	},
 	{
 		label = "edge-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		edge-chars
+edge-chars
 		]],
 	},
 	{
 		label = "edge-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		edge-pixels
+edge-pixels
 		]],
 	},
 	{
 		label = "edit-can-paste",
 		kind = Kind.Keyword,
 		documentation = [[
-		edit-can-paste
+edit-can-paste
 		]],
 	},
 	{
 		label = "edit-can-undo",
 		kind = Kind.Keyword,
 		documentation = [[
-		edit-can-undo
+edit-can-undo
 		]],
 	},
 	{
 		label = "edit-clear",
 		kind = Kind.Keyword,
 		documentation = [[
-		edit-clear
+edit-clear
 		]],
 	},
 	{
 		label = "edit-copy",
 		kind = Kind.Keyword,
 		documentation = [[
-		edit-copy
+edit-copy
 		]],
 	},
 	{
 		label = "edit-cut",
 		kind = Kind.Keyword,
 		documentation = [[
-		edit-cut
+edit-cut
 		]],
 	},
 	{
 		label = "editing",
 		kind = Kind.Keyword,
 		documentation = [[
-		Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or UPDATE statement. 
+Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or UPDATE statement. 
 		]],
 	},
 	{
 		label = "editor",
 		kind = Kind.Keyword,
 		documentation = [[
-		editor
+editor
 		]],
 	},
 	{
 		label = "edit-paste",
 		kind = Kind.Keyword,
 		documentation = [[
-		edit-paste
+edit-paste
 		]],
 	},
 	{
 		label = "edit-undo",
 		kind = Kind.Keyword,
 		documentation = [[
-		edit-undo
+edit-undo
 		]],
 	},
 	{
 		label = "else",
 		kind = Kind.Keyword,
 		documentation = [[
-		Describes the block statement to process if the expression is FALSE or the Unknown value (?). The ELSE option is not required.
+Describes the block statement to process if the expression is FALSE or the Unknown value (?). The ELSE option is not required.
 		]],
 	},
 	{
 		label = "empty",
 		kind = Kind.Keyword,
 		documentation = [[
-		empty
+empty
 		]],
 	},
 	{
 		label = "empty-temp-table",
 		kind = Kind.Keyword,
 		documentation = [[
-		Empties a temp-table.
+Empties a temp-table.
 		]],
 	},
 	{
 		label = "enable",
 		kind = Kind.Keyword,
 		documentation = [[
-		Enables input for one or more field-level and child frame widgets within a frame.
+Enables input for one or more field-level and child frame widgets within a frame.
 		]],
 	},
 	{
 		label = "enabled-fields",
 		kind = Kind.Keyword,
 		documentation = [[
-		enabled-fields
+enabled-fields
 		]],
 	},
 	{
 		label = "encode",
 		kind = Kind.Keyword,
 		documentation = [[
-		encode
+encode
 		]],
 	},
 	{
 		label = "encrypt",
 		kind = Kind.Keyword,
 		documentation = [[
-		encrypt
+encrypt
 		]],
 	},
 	{
 		label = "encrypt-audit-mac-key",
 		kind = Kind.Keyword,
 		documentation = [[
-		encrypt-audit-mac-key
+encrypt-audit-mac-key
 		]],
 	},
 	{
 		label = "encryption-salt",
 		kind = Kind.Keyword,
 		documentation = [[
-		encryption-salt
+encryption-salt
 		]],
 	},
 	{
 		label = "end",
 		kind = Kind.Keyword,
 		documentation = [[
-		Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DESTRUCTOR, DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET property accessor. 
+Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DESTRUCTOR, DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET property accessor. 
 		]],
 	},
 	{
 		label = "end-document",
 		kind = Kind.Keyword,
 		documentation = [[
-		end-document
+end-document
 		]],
 	},
 	{
 		label = "end-element",
 		kind = Kind.Keyword,
 		documentation = [[
-		end-element
+end-element
 		]],
 	},
 	{
 		label = "end-event-group",
 		kind = Kind.Keyword,
 		documentation = [[
-		end-event-group
+end-event-group
 		]],
 	},
 	{
 		label = "end-file-drop",
 		kind = Kind.Keyword,
 		documentation = [[
-		end-file-drop
+end-file-drop
 		]],
 	},
 	{
 		label = "endkey",
 		kind = Kind.Keyword,
 		documentation = [[
-		endkey
+endkey
 		]],
 	},
 	{
 		label = "end-key",
 		kind = Kind.Keyword,
 		documentation = [[
-		end-key
+end-key
 		]],
 	},
 	{
 		label = "end-move",
 		kind = Kind.Keyword,
 		documentation = [[
-		end-move
+end-move
 		]],
 	},
 	{
 		label = "end-resize",
 		kind = Kind.Keyword,
 		documentation = [[
-		end-resize
+end-resize
 		]],
 	},
 	{
 		label = "end-row-resize",
 		kind = Kind.Keyword,
 		documentation = [[
-		end-row-resize
+end-row-resize
 		]],
 	},
 	{
 		label = "end-user-prompt",
 		kind = Kind.Keyword,
 		documentation = [[
-		end-user-prompt
+end-user-prompt
 		]],
 	},
 	{
 		label = "entered",
 		kind = Kind.Keyword,
 		documentation = [[
-		entered
+entered
 		]],
 	},
 	{
 		label = "entity-expansion-limit",
 		kind = Kind.Keyword,
 		documentation = [[
-		entity-expansion-limit
+entity-expansion-limit
 		]],
 	},
 	{
@@ -3038,2176 +3038,2176 @@ data type of the list element.
 		label = "enum",
 		kind = Kind.Keyword,
 		documentation = [[
-		enum
+enum
 		]],
 	},
 	{
 		label = "eq",
 		kind = Kind.Keyword,
 		documentation = [[
-		Returns a TRUE value if two expressions are equal.
+Returns a TRUE value if two expressions are equal.
 		]],
 	},
 	{
 		label = "error",
 		kind = Kind.Keyword,
 		documentation = [[
-		Indicates whether an error occurred during a FILL or SAVE-ROW-CHANGES operation on the specified ProDataSet temp-table buffer. 
+Indicates whether an error occurred during a FILL or SAVE-ROW-CHANGES operation on the specified ProDataSet temp-table buffer. 
 		]],
 	},
 	{
 		label = "error-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		error-column
+error-column
 		]],
 	},
 	{
 		label = "error-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		error-row
+error-row
 		]],
 	},
 	{
 		label = "error-stack-trace",
 		kind = Kind.Keyword,
 		documentation = [[
-		error-stack-trace
+error-stack-trace
 		]],
 	},
 	{
 		label = "error-status",
 		kind = Kind.Keyword,
 		documentation = [[
-		error-status
+error-status
 		]],
 	},
 	{
 		label = "escape",
 		kind = Kind.Keyword,
 		documentation = [[
-		escape
+escape
 		]],
 	},
 	{
 		label = "etime",
 		kind = Kind.Keyword,
 		documentation = [[
-		etime
+etime
 		]],
 	},
 	{
 		label = "event",
 		kind = Kind.Keyword,
 		documentation = [[
-		event
+event
 		]],
 	},
 	{
 		label = "event-group-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		event-group-id
+event-group-id
 		]],
 	},
 	{
 		label = "event-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		event-procedure
+event-procedure
 		]],
 	},
 	{
 		label = "event-procedure-context",
 		kind = Kind.Keyword,
 		documentation = [[
-		event-procedure-context
+event-procedure-context
 		]],
 	},
 	{
 		label = "events",
 		kind = Kind.Keyword,
 		documentation = [[
-		events
+events
 		]],
 	},
 	{
 		label = "event-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		event-type
+event-type
 		]],
 	},
 	{
 		label = "except",
 		kind = Kind.Keyword,
 		documentation = [[
-		except
+except
 		]],
 	},
 	{
 		label = "exclusive-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		exclusive-id
+exclusive-id
 		]],
 	},
 	{
 		label = "exclusive-lock",
 		kind = Kind.Keyword,
 		documentation = [[
-		exclusive-lock
+exclusive-lock
 		]],
 	},
 	{
 		label = "exclusive-web-user",
 		kind = Kind.Keyword,
 		documentation = [[
-		exclusive-web-user
+exclusive-web-user
 		]],
 	},
 	{
 		label = "execute",
 		kind = Kind.Keyword,
 		documentation = [[
-		execute
+execute
 		]],
 	},
 	{
 		label = "exists",
 		kind = Kind.Keyword,
 		documentation = [[
-		exists
+exists
 		]],
 	},
 	{
 		label = "exp",
 		kind = Kind.Keyword,
 		documentation = [[
-		exp
+exp
 		]],
 	},
 	{
 		label = "expand",
 		kind = Kind.Keyword,
 		documentation = [[
-		expand
+expand
 		]],
 	},
 	{
 		label = "expandable",
 		kind = Kind.Keyword,
 		documentation = [[
-		expandable
+expandable
 		]],
 	},
 	{
 		label = "explicit",
 		kind = Kind.Keyword,
 		documentation = [[
-		explicit
+explicit
 		]],
 	},
 	{
 		label = "export",
 		kind = Kind.Keyword,
 		documentation = [[
-		Converts data to a standard character format and displays it to the current output destination (except when the current output destination is the screen) or to a named output stream. You can use data exported to a file in standard format as input to other ABL procedures.
+Converts data to a standard character format and displays it to the current output destination (except when the current output destination is the screen) or to a named output stream. You can use data exported to a file in standard format as input to other ABL procedures.
 		]],
 	},
 	{
 		label = "export-principal",
 		kind = Kind.Keyword,
 		documentation = [[
-		export-principal
+export-principal
 		]],
 	},
 	{
 		label = "extended",
 		kind = Kind.Keyword,
 		documentation = [[
-		extended
+extended
 		]],
 	},
 	{
 		label = "extent",
 		kind = Kind.Keyword,
 		documentation = [[
-		Fixes the extent (number of elements) for an unfixed indeterminate array variable or parameter. ABL treats the fixed indeterminate array as a determinate array consistent with its data type.
+Fixes the extent (number of elements) for an unfixed indeterminate array variable or parameter. ABL treats the fixed indeterminate array as a determinate array consistent with its data type.
 		]],
 	},
 	{
 		label = "external",
 		kind = Kind.Keyword,
 		documentation = [[
-		external
+external
 		]],
 	},
 	{
 		label = "false",
 		kind = Kind.Keyword,
 		documentation = [[
-		false
+false
 		]],
 	},
 	{
 		label = "fetch",
 		kind = Kind.Keyword,
 		documentation = [[
-		fetch
+fetch
 		]],
 	},
 	{
 		label = "fetch-selected-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		fetch-selected-row
+fetch-selected-row
 		]],
 	},
 	{
 		label = "fgcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		fgcolor
+fgcolor
 		]],
 	},
 	{
 		label = "field",
 		kind = Kind.Keyword,
 		documentation = [[
-		field
+field
 		]],
 	},
 	{
 		label = "fields",
 		kind = Kind.Keyword,
 		documentation = [[
-		fields
+fields
 		]],
 	},
 	{
 		label = "file",
 		kind = Kind.Keyword,
 		documentation = [[
-		file
+file
 		]],
 	},
 	{
 		label = "file-create-date",
 		kind = Kind.Keyword,
 		documentation = [[
-		file-create-date
+file-create-date
 		]],
 	},
 	{
 		label = "file-create-time",
 		kind = Kind.Keyword,
 		documentation = [[
-		file-create-time
+file-create-time
 		]],
 	},
 	{
 		label = "file-information",
 		kind = Kind.Keyword,
 		documentation = [[
-		file-information
+file-information
 		]],
 	},
 	{
 		label = "file-mod-date",
 		kind = Kind.Keyword,
 		documentation = [[
-		file-mod-date
+file-mod-date
 		]],
 	},
 	{
 		label = "file-mod-time",
 		kind = Kind.Keyword,
 		documentation = [[
-		file-mod-time
+file-mod-time
 		]],
 	},
 	{
 		label = "filename",
 		kind = Kind.Keyword,
 		documentation = [[
-		filename
+filename
 		]],
 	},
 	{
 		label = "file-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		file-name
+file-name
 		]],
 	},
 	{
 		label = "file-offset",
 		kind = Kind.Keyword,
 		documentation = [[
-		file-offset
+file-offset
 		]],
 	},
 	{
 		label = "file-size",
 		kind = Kind.Keyword,
 		documentation = [[
-		file-size
+file-size
 		]],
 	},
 	{
 		label = "file-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		file-type
+file-type
 		]],
 	},
 	{
 		label = "fill",
 		kind = Kind.Keyword,
 		documentation = [[
-		Generates a character string made up of a character string that is repeated a specified number of times.
+Generates a character string made up of a character string that is repeated a specified number of times.
 		]],
 	},
 	{
 		label = "filled",
 		kind = Kind.Keyword,
 		documentation = [[
-		filled
+filled
 		]],
 	},
 	{
 		label = "fill-in",
 		kind = Kind.Keyword,
 		documentation = [[
-		fill-in
+fill-in
 		]],
 	},
 	{
 		label = "filters",
 		kind = Kind.Keyword,
 		documentation = [[
-		filters
+filters
 		]],
 	},
 	{
 		label = "final",
 		kind = Kind.Keyword,
 		documentation = [[
-		final
+final
 		]],
 	},
 	{
 		label = "finally",
 		kind = Kind.Keyword,
 		documentation = [[
-		finally
+finally
 		]],
 	},
 	{
 		label = "find",
 		kind = Kind.Keyword,
 		documentation = [[
-		Locates a single record in a table and moves that record into a record buffer.
+Locates a single record in a table and moves that record into a record buffer.
 		]],
 	},
 	{
 		label = "find-by-rowid",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-by-rowid
+find-by-rowid
 		]],
 	},
 	{
 		label = "find-case-sensitive",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-case-sensitive
+find-case-sensitive
 		]],
 	},
 	{
 		label = "find-current",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-current
+find-current
 		]],
 	},
 	{
 		label = "finder",
 		kind = Kind.Keyword,
 		documentation = [[
-		finder
+finder
 		]],
 	},
 	{
 		label = "find-first",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-first
+find-first
 		]],
 	},
 	{
 		label = "find-global",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-global
+find-global
 		]],
 	},
 	{
 		label = "find-last",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-last
+find-last
 		]],
 	},
 	{
 		label = "find-next-occurrence",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-next-occurrence
+find-next-occurrence
 		]],
 	},
 	{
 		label = "find-prev-occurrence",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-prev-occurrence
+find-prev-occurrence
 		]],
 	},
 	{
 		label = "find-select",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-select
+find-select
 		]],
 	},
 	{
 		label = "find-unique",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-unique
+find-unique
 		]],
 	},
 	{
 		label = "find-wrap-around",
 		kind = Kind.Keyword,
 		documentation = [[
-		find-wrap-around
+find-wrap-around
 		]],
 	},
 	{
 		label = "first",
 		kind = Kind.Function,
 		documentation = [[
-		Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration of that block.
+Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration of that block.
 		]],
 	},
 	{
 		label = "first-asynch-request",
 		kind = Kind.Keyword,
 		documentation = [[
-		first-asynch-request
+first-asynch-request
 		]],
 	},
 	{
 		label = "first-child",
 		kind = Kind.Keyword,
 		documentation = [[
-		first-child
+first-child
 		]],
 	},
 	{
 		label = "first-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		first-column
+first-column
 		]],
 	},
 	{
 		label = "first-form",
 		kind = Kind.Keyword,
 		documentation = [[
-		first-form
+first-form
 		]],
 	},
 	{
 		label = "first-object",
 		kind = Kind.Keyword,
 		documentation = [[
-		first-object
+first-object
 		]],
 	},
 	{
 		label = "first-of",
 		kind = Kind.Function,
 		documentation = [[
-		Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration for a new break group, and modifies all three block types.
+Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration for a new break group, and modifies all three block types.
 		]],
 	},
 	{
 		label = "first-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		first-procedure
+first-procedure
 		]],
 	},
 	{
 		label = "first-server",
 		kind = Kind.Keyword,
 		documentation = [[
-		first-server
+first-server
 		]],
 	},
 	{
 		label = "first-tab-item",
 		kind = Kind.Keyword,
 		documentation = [[
-		first-tab-item
+first-tab-item
 		]],
 	},
 	{
 		label = "fit-last-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		fit-last-column
+fit-last-column
 		]],
 	},
 	{
 		label = "fixed-only",
 		kind = Kind.Keyword,
 		documentation = [[
-		fixed-only
+fixed-only
 		]],
 	},
 	{
 		label = "flat-button",
 		kind = Kind.Keyword,
 		documentation = [[
-		flat-button
+flat-button
 		]],
 	},
 	{
 		label = "float",
 		kind = Kind.Keyword,
 		documentation = [[
-		float
+float
 		]],
 	},
 	{
 		label = "focus",
 		kind = Kind.Keyword,
 		documentation = [[
-		focus
+focus
 		]],
 	},
 	{
 		label = "focused-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		focused-row
+focused-row
 		]],
 	},
 	{
 		label = "focused-row-selected",
 		kind = Kind.Keyword,
 		documentation = [[
-		focused-row-selected
+focused-row-selected
 		]],
 	},
 	{
 		label = "font",
 		kind = Kind.Keyword,
 		documentation = [[
-		font
+font
 		]],
 	},
 	{
 		label = "font-table",
 		kind = Kind.Keyword,
 		documentation = [[
-		font-table
+font-table
 		]],
 	},
 	{
 		label = "for",
 		kind = Kind.Keyword,
 		documentation = [[
-		Starts an iterating block that reads a record from each of one or more tables at the start of each block iteration. Use an END statement to end a FOR block.
+Starts an iterating block that reads a record from each of one or more tables at the start of each block iteration. Use an END statement to end a FOR block.
 		]],
 	},
 	{
 		label = "force-file",
 		kind = Kind.Keyword,
 		documentation = [[
-		force-file
+force-file
 		]],
 	},
 	{
 		label = "foreground",
 		kind = Kind.Keyword,
 		documentation = [[
-		foreground
+foreground
 		]],
 	},
 	{
 		label = "form",
 		kind = Kind.Keyword,
 		documentation = [[
-		form
+form
 		]],
 	},
 	{
 		label = "form",
 		kind = Kind.Keyword,
 		documentation = [[
-		form
+form
 		]],
 	},
 	{
 		label = "format",
 		kind = Kind.Keyword,
 		documentation = [[
-		format
+format
 		]],
 	},
 	{
 		label = "formatted",
 		kind = Kind.Keyword,
 		documentation = [[
-		formatted
+formatted
 		]],
 	},
 	{
 		label = "form-long-input",
 		kind = Kind.Keyword,
 		documentation = [[
-		form-long-input
+form-long-input
 		]],
 	},
 	{
 		label = "forward",
 		kind = Kind.Keyword,
 		documentation = [[
-		forward
+forward
 		]],
 	},
 	{
 		label = "forwards",
 		kind = Kind.Keyword,
 		documentation = [[
-		forwards
+forwards
 		]],
 	},
 	{
 		label = "fragment",
 		kind = Kind.Keyword,
 		documentation = [[
-		fragment
+fragment
 		]],
 	},
 	{
 		label = "frame",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame
+frame
 		]],
 	},
 	{
 		label = "frame-col",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-col
+frame-col
 		]],
 	},
 	{
 		label = "frame-db",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-db
+frame-db
 		]],
 	},
 	{
 		label = "frame-down",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-down
+frame-down
 		]],
 	},
 	{
 		label = "frame-field",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-field
+frame-field
 		]],
 	},
 	{
 		label = "frame-file",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-file
+frame-file
 		]],
 	},
 	{
 		label = "frame-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-index
+frame-index
 		]],
 	},
 	{
 		label = "frame-line",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-line
+frame-line
 		]],
 	},
 	{
 		label = "frame-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		Returns the name of the frame that the cursor is in to a field that is enabled for input.
+Returns the name of the frame that the cursor is in to a field that is enabled for input.
 		]],
 	},
 	{
 		label = "frame-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-row
+frame-row
 		]],
 	},
 	{
 		label = "frame-spacing",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-spacing
+frame-spacing
 		]],
 	},
 	{
 		label = "frame-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		Stores the value of an expression in a frame field during a data entry statement.
+Stores the value of an expression in a frame field during a data entry statement.
 		]],
 	},
 	{
 		label = "frame-x",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-x
+frame-x
 		]],
 	},
 	{
 		label = "frame-y",
 		kind = Kind.Keyword,
 		documentation = [[
-		frame-y
+frame-y
 		]],
 	},
 	{
 		label = "frequency",
 		kind = Kind.Keyword,
 		documentation = [[
-		frequency
+frequency
 		]],
 	},
 	{
 		label = "from",
 		kind = Kind.Keyword,
 		documentation = [[
-		from
+from
 		]],
 	},
 	{
 		label = "from-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		from-chars
+from-chars
 		]],
 	},
 	{
 		label = "from-current",
 		kind = Kind.Keyword,
 		documentation = [[
-		from-current
+from-current
 		]],
 	},
 	{
 		label = "from-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		from-pixels
+from-pixels
 		]],
 	},
 	{
 		label = "full-height-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		full-height-chars
+full-height-chars
 		]],
 	},
 	{
 		label = "full-height-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		full-height-pixels
+full-height-pixels
 		]],
 	},
 	{
 		label = "full-pathname",
 		kind = Kind.Keyword,
 		documentation = [[
-		full-pathname
+full-pathname
 		]],
 	},
 	{
 		label = "full-width-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		full-width-chars
+full-width-chars
 		]],
 	},
 	{
 		label = "full-width-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		full-width-pixels
+full-width-pixels
 		]],
 	},
 	{
 		label = "function",
 		kind = Kind.Keyword,
 		documentation = [[
-		function
+function
 		]],
 	},
 	{
 		label = "function-call-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		function-call-type
+function-call-type
 		]],
 	},
 	{
 		label = "gateways",
 		kind = Kind.Keyword,
 		documentation = [[
-		gateways
+gateways
 		]],
 	},
 	{
 		label = "ge",
 		kind = Kind.Operator,
 		documentation = [[
-		Returns a TRUE value if the first of two expressions is greater than or equal to the second expression.
+Returns a TRUE value if the first of two expressions is greater than or equal to the second expression.
 		]],
 	},
 	{
 		label = "generate-md5",
 		kind = Kind.Keyword,
 		documentation = [[
-		generate-md5
+generate-md5
 		]],
 	},
 	{
 		label = "generate-pbe-key",
 		kind = Kind.Keyword,
 		documentation = [[
-		generate-pbe-key
+generate-pbe-key
 		]],
 	},
 	{
 		label = "generate-pbe-salt",
 		kind = Kind.Keyword,
 		documentation = [[
-		generate-pbe-salt
+generate-pbe-salt
 		]],
 	},
 	{
 		label = "generate-random-key",
 		kind = Kind.Keyword,
 		documentation = [[
-		generate-random-key
+generate-random-key
 		]],
 	},
 	{
 		label = "generate-uuid",
 		kind = Kind.Keyword,
 		documentation = [[
-		generate-uuid
+generate-uuid
 		]],
 	},
 	{
 		label = "get",
 		kind = Kind.Keyword,
 		documentation = [[
-		Returns one record for a previously opened query.
+Returns one record for a previously opened query.
 		]],
 	},
 	{
 		label = "get-attr-call-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-attr-call-type
+get-attr-call-type
 		]],
 	},
 	{
 		label = "get-attribute-node",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-attribute-node
+get-attribute-node
 		]],
 	},
 	{
 		label = "get-binary-data",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-binary-data
+get-binary-data
 		]],
 	},
 	{
 		label = "get-blue-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-blue-value
+get-blue-value
 		]],
 	},
 	{
 		label = "get-browse-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-browse-column
+get-browse-column
 		]],
 	},
 	{
 		label = "get-buffer-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-buffer-handle
+get-buffer-handle
 		]],
 	},
 	{
 		label = "getbyte",
 		kind = Kind.Keyword,
 		documentation = [[
-		getbyte
+getbyte
 		]],
 	},
 	{
 		label = "get-byte",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-byte
+get-byte
 		]],
 	},
 	{
 		label = "get-callback-proc-context",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-callback-proc-context
+get-callback-proc-context
 		]],
 	},
 	{
 		label = "get-callback-proc-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-callback-proc-name
+get-callback-proc-name
 		]],
 	},
 	{
 		label = "get-cgi-list",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-cgi-list
+get-cgi-list
 		]],
 	},
 	{
 		label = "get-cgi-long-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-cgi-long-value
+get-cgi-long-value
 		]],
 	},
 	{
 		label = "get-cgi-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-cgi-value
+get-cgi-value
 		]],
 	},
 	{
 		label = "get-class",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-class
+get-class
 		]],
 	},
 	{
 		label = "get-codepages",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-codepages
+get-codepages
 		]],
 	},
 	{
 		label = "get-collations",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-collations
+get-collations
 		]],
 	},
 	{
 		label = "get-config-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-config-value
+get-config-value
 		]],
 	},
 	{
 		label = "get-current",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-current
+get-current
 		]],
 	},
 	{
 		label = "get-double",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-double
+get-double
 		]],
 	},
 	{
 		label = "get-dropped-file",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-dropped-file
+get-dropped-file
 		]],
 	},
 	{
 		label = "get-dynamic",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-dynamic
+get-dynamic
 		]],
 	},
 	{
 		label = "get-error-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-error-column
+get-error-column
 		]],
 	},
 	{
 		label = "get-error-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-error-row
+get-error-row
 		]],
 	},
 	{
 		label = "get-file",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-file
+get-file
 		]],
 	},
 	{
 		label = "get-file-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-file-name
+get-file-name
 		]],
 	},
 	{
 		label = "get-file-offset",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-file-offset
+get-file-offset
 		]],
 	},
 	{
 		label = "get-first",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-first
+get-first
 		]],
 	},
 	{
 		label = "get-float",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-float
+get-float
 		]],
 	},
 	{
 		label = "get-green-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-green-value
+get-green-value
 		]],
 	},
 	{
 		label = "get-index-by-namespace-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-index-by-namespace-name
+get-index-by-namespace-name
 		]],
 	},
 	{
 		label = "get-index-by-qname",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-index-by-qname
+get-index-by-qname
 		]],
 	},
 	{
 		label = "get-int64",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-int64
+get-int64
 		]],
 	},
 	{
 		label = "get-iteration",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-iteration
+get-iteration
 		]],
 	},
 	{
 		label = "get-key-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-key-value
+get-key-value
 		]],
 	},
 	{
 		label = "get-last",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-last
+get-last
 		]],
 	},
 	{
 		label = "get-localname-by-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-localname-by-index
+get-localname-by-index
 		]],
 	},
 	{
 		label = "get-long",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-long
+get-long
 		]],
 	},
 	{
 		label = "get-message",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-message
+get-message
 		]],
 	},
 	{
 		label = "get-next",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-next
+get-next
 		]],
 	},
 	{
 		label = "get-number",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-number
+get-number
 		]],
 	},
 	{
 		label = "get-pointer-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-pointer-value
+get-pointer-value
 		]],
 	},
 	{
 		label = "get-prev",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-prev
+get-prev
 		]],
 	},
 	{
 		label = "get-printers",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-printers
+get-printers
 		]],
 	},
 	{
 		label = "get-property",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-property
+get-property
 		]],
 	},
 	{
 		label = "get-qname-by-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-qname-by-index
+get-qname-by-index
 		]],
 	},
 	{
 		label = "get-red-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-red-value
+get-red-value
 		]],
 	},
 	{
 		label = "get-repositioned-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-repositioned-row
+get-repositioned-row
 		]],
 	},
 	{
 		label = "get-rgb-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-rgb-value
+get-rgb-value
 		]],
 	},
 	{
 		label = "get-selected-widget",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-selected-widget
+get-selected-widget
 		]],
 	},
 	{
 		label = "get-short",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-short
+get-short
 		]],
 	},
 	{
 		label = "get-signature",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-signature
+get-signature
 		]],
 	},
 	{
 		label = "get-size",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-size
+get-size
 		]],
 	},
 	{
 		label = "get-string",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-string
+get-string
 		]],
 	},
 	{
 		label = "get-tab-item",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-tab-item
+get-tab-item
 		]],
 	},
 	{
 		label = "get-text-height-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-text-height-chars
+get-text-height-chars
 		]],
 	},
 	{
 		label = "get-text-height-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-text-height-pixels
+get-text-height-pixels
 		]],
 	},
 	{
 		label = "get-text-width-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-text-width-chars
+get-text-width-chars
 		]],
 	},
 	{
 		label = "get-text-width-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-text-width-pixels
+get-text-width-pixels
 		]],
 	},
 	{
 		label = "get-type-by-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-type-by-index
+get-type-by-index
 		]],
 	},
 	{
 		label = "get-type-by-namespace-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-type-by-namespace-name
+get-type-by-namespace-name
 		]],
 	},
 	{
 		label = "get-type-by-qname",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-type-by-qname
+get-type-by-qname
 		]],
 	},
 	{
 		label = "get-unsigned-long",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-unsigned-long
+get-unsigned-long
 		]],
 	},
 	{
 		label = "get-unsigned-short",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-unsigned-short
+get-unsigned-short
 		]],
 	},
 	{
 		label = "get-uri-by-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-uri-by-index
+get-uri-by-index
 		]],
 	},
 	{
 		label = "get-value-by-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-value-by-index
+get-value-by-index
 		]],
 	},
 	{
 		label = "get-value-by-namespace-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-value-by-namespace-name
+get-value-by-namespace-name
 		]],
 	},
 	{
 		label = "get-value-by-qname",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-value-by-qname
+get-value-by-qname
 		]],
 	},
 	{
 		label = "get-wait-state",
 		kind = Kind.Keyword,
 		documentation = [[
-		get-wait-state
+get-wait-state
 		]],
 	},
 	{
 		label = "global",
 		kind = Kind.Keyword,
 		documentation = [[
-		global
+global
 		]],
 	},
 	{
 		label = "go-on",
 		kind = Kind.Keyword,
 		documentation = [[
-		go-on
+go-on
 		]],
 	},
 	{
 		label = "go-pending",
 		kind = Kind.Keyword,
 		documentation = [[
-		go-pending
+go-pending
 		]],
 	},
 	{
 		label = "grant",
 		kind = Kind.Keyword,
 		documentation = [[
-		grant
+grant
 		]],
 	},
 	{
 		label = "graphic-edge",
 		kind = Kind.Keyword,
 		documentation = [[
-		graphic-edge
+graphic-edge
 		]],
 	},
 	{
 		label = "grid-factor-horizontal",
 		kind = Kind.Keyword,
 		documentation = [[
-		grid-factor-horizontal
+grid-factor-horizontal
 		]],
 	},
 	{
 		label = "grid-factor-vertical",
 		kind = Kind.Keyword,
 		documentation = [[
-		grid-factor-vertical
+grid-factor-vertical
 		]],
 	},
 	{
 		label = "grid-snap",
 		kind = Kind.Keyword,
 		documentation = [[
-		grid-snap
+grid-snap
 		]],
 	},
 	{
 		label = "grid-unit-height-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		grid-unit-height-chars
+grid-unit-height-chars
 		]],
 	},
 	{
 		label = "grid-unit-height-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		grid-unit-height-pixels
+grid-unit-height-pixels
 		]],
 	},
 	{
 		label = "grid-unit-width-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		grid-unit-width-chars
+grid-unit-width-chars
 		]],
 	},
 	{
 		label = "grid-unit-width-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		grid-unit-width-pixels
+grid-unit-width-pixels
 		]],
 	},
 	{
 		label = "grid-visible",
 		kind = Kind.Keyword,
 		documentation = [[
-		grid-visible
+grid-visible
 		]],
 	},
 	{
 		label = "group",
 		kind = Kind.Keyword,
 		documentation = [[
-		group
+group
 		]],
 	},
 	{
 		label = "gt",
 		kind = Kind.Operator,
 		documentation = [[
-		Returns a TRUE value if the first of two expressions is greater than the second expression.
+Returns a TRUE value if the first of two expressions is greater than the second expression.
 		]],
 	},
 	{
 		label = "guid",
 		kind = Kind.Keyword,
 		documentation = [[
-		guid
+guid
 		]],
 	},
 	{
 		label = "handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		handle
+handle
 		]],
 	},
 	{
 		label = "handler",
 		kind = Kind.Keyword,
 		documentation = [[
-		handler
+handler
 		]],
 	},
 	{
 		label = "has-records",
 		kind = Kind.Keyword,
 		documentation = [[
-		has-records
+has-records
 		]],
 	},
 	{
 		label = "having",
 		kind = Kind.Keyword,
 		documentation = [[
-		having
+having
 		]],
 	},
 	{
 		label = "header",
 		kind = Kind.Keyword,
 		documentation = [[
-		header
+header
 		]],
 	},
 	{
 		label = "height-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		height-chars
+height-chars
 		]],
 	},
 	{
 		label = "height-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		height-pixels
+height-pixels
 		]],
 	},
 	{
 		label = "help",
 		kind = Kind.Keyword,
 		documentation = [[
-		help
+help
 		]],
 	},
 	{
 		label = "hex-decode",
 		kind = Kind.Keyword,
 		documentation = [[
-		hex-decode
+hex-decode
 		]],
 	},
 	{
 		label = "hex-encode",
 		kind = Kind.Keyword,
 		documentation = [[
-		hex-encode
+hex-encode
 		]],
 	},
 	{
 		label = "hidden",
 		kind = Kind.Keyword,
 		documentation = [[
-		hidden
+hidden
 		]],
 	},
 	{
 		label = "hide",
 		kind = Kind.Keyword,
 		documentation = [[
-		hide
+hide
 		]],
 	},
 	{
 		label = "horizontal",
 		kind = Kind.Keyword,
 		documentation = [[
-		horizontal
+horizontal
 		]],
 	},
 	{
 		label = "host-byte-order",
 		kind = Kind.Keyword,
 		documentation = [[
-		host-byte-order
+host-byte-order
 		]],
 	},
 	{
 		label = "html-charset",
 		kind = Kind.Keyword,
 		documentation = [[
-		html-charset
+html-charset
 		]],
 	},
 	{
 		label = "html-end-of-line",
 		kind = Kind.Keyword,
 		documentation = [[
-		html-end-of-line
+html-end-of-line
 		]],
 	},
 	{
 		label = "html-end-of-page",
 		kind = Kind.Keyword,
 		documentation = [[
-		html-end-of-page
+html-end-of-page
 		]],
 	},
 	{
 		label = "html-frame-begin",
 		kind = Kind.Keyword,
 		documentation = [[
-		html-frame-begin
+html-frame-begin
 		]],
 	},
 	{
 		label = "html-frame-end",
 		kind = Kind.Keyword,
 		documentation = [[
-		html-frame-end
+html-frame-end
 		]],
 	},
 	{
 		label = "html-header-begin",
 		kind = Kind.Keyword,
 		documentation = [[
-		html-header-begin
+html-header-begin
 		]],
 	},
 	{
 		label = "html-header-end",
 		kind = Kind.Keyword,
 		documentation = [[
-		html-header-end
+html-header-end
 		]],
 	},
 	{
 		label = "html-title-begin",
 		kind = Kind.Keyword,
 		documentation = [[
-		html-title-begin
+html-title-begin
 		]],
 	},
 	{
 		label = "html-title-end",
 		kind = Kind.Keyword,
 		documentation = [[
-		html-title-end
+html-title-end
 		]],
 	},
 	{
 		label = "hwnd",
 		kind = Kind.Keyword,
 		documentation = [[
-		hwnd
+hwnd
 		]],
 	},
 	{
 		label = "icon",
 		kind = Kind.Keyword,
 		documentation = [[
-		icon
+icon
 		]],
 	},
 	{
 		label = "if",
 		kind = Kind.Keyword,
 		documentation = [[
-		if
+if
 		]],
 	},
 	{
 		label = "image",
 		kind = Kind.Keyword,
 		documentation = [[
-		image
+image
 		]],
 	},
 	{
 		label = "image-down",
 		kind = Kind.Keyword,
 		documentation = [[
-		image-down
+image-down
 		]],
 	},
 	{
 		label = "image-insensitive",
 		kind = Kind.Keyword,
 		documentation = [[
-		image-insensitive
+image-insensitive
 		]],
 	},
 	{
 		label = "image-size",
 		kind = Kind.Keyword,
 		documentation = [[
-		image-size
+image-size
 		]],
 	},
 	{
 		label = "image-size-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		image-size-chars
+image-size-chars
 		]],
 	},
 	{
 		label = "image-size-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		image-size-pixels
+image-size-pixels
 		]],
 	},
 	{
 		label = "image-up",
 		kind = Kind.Keyword,
 		documentation = [[
-		image-up
+image-up
 		]],
 	},
 	{
 		label = "immediate-display",
 		kind = Kind.Keyword,
 		documentation = [[
-		immediate-display
+immediate-display
 		]],
 	},
 	{
 		label = "implements",
 		kind = Kind.Keyword,
 		documentation = [[
-		implements
+implements
 		]],
 	},
 	{
 		label = "import",
 		kind = Kind.Keyword,
 		documentation = [[
-		Reads a line from an input file that might have been created by EXPORT. 
+Reads a line from an input file that might have been created by EXPORT. 
 		]],
 	},
 	{
 		label = "import-principal",
 		kind = Kind.Keyword,
 		documentation = [[
-		import-principal
+import-principal
 		]],
 	},
 	{
 		label = "in",
 		kind = Kind.Keyword,
 		documentation = [[
-		in
+in
 		]],
 	},
 	{
 		label = "increment-exclusive-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		increment-exclusive-id
+increment-exclusive-id
 		]],
 	},
 	{
 		label = "index",
 		kind = Kind.Function,
 		documentation = [[
-		Returns an INTEGER value that indicates the position of the target string within the source string.
+Returns an INTEGER value that indicates the position of the target string within the source string.
 		]],
 	},
 	{
 		label = "indexed-reposition",
 		kind = Kind.Keyword,
 		documentation = [[
-		indexed-reposition
+indexed-reposition
 		]],
 	},
 	{
 		label = "index-hint",
 		kind = Kind.Keyword,
 		documentation = [[
-		index-hint
+index-hint
 		]],
 	},
 	{
 		label = "index-information",
 		kind = Kind.Keyword,
 		documentation = [[
-		index-information
+index-information
 		]],
 	},
 	{
 		label = "indicator",
 		kind = Kind.Keyword,
 		documentation = [[
-		indicator
+indicator
 		]],
 	},
 	{
 		label = "information",
 		kind = Kind.Keyword,
 		documentation = [[
-		information
+information
 		]],
 	},
 	{
 		label = "in-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		in-handle
+in-handle
 		]],
 	},
 	{
 		label = "inherit-bgcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		inherit-bgcolor
+inherit-bgcolor
 		]],
 	},
 	{
 		label = "inherit-fgcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		inherit-fgcolor
+inherit-fgcolor
 		]],
 	},
 	{
 		label = "inherits",
 		kind = Kind.Keyword,
 		documentation = [[
-		inherits
+inherits
 		]],
 	},
 	{
 		label = "initial",
 		kind = Kind.Keyword,
 		documentation = [[
-		initial
+initial
 		]],
 	},
 	{
 		label = "initial-dir",
 		kind = Kind.Keyword,
 		documentation = [[
-		initial-dir
+initial-dir
 		]],
 	},
 	{
 		label = "initial-filter",
 		kind = Kind.Keyword,
 		documentation = [[
-		initial-filter
+initial-filter
 		]],
 	},
 	{
 		label = "initialize-document-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		initialize-document-type
+initialize-document-type
 		]],
 	},
 	{
 		label = "initiate",
 		kind = Kind.Keyword,
 		documentation = [[
-		initiate
+initiate
 		]],
 	},
 	{
 		label = "inner-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		inner-chars
+inner-chars
 		]],
 	},
 	{
 		label = "inner-lines",
 		kind = Kind.Keyword,
 		documentation = [[
-		inner-lines
+inner-lines
 		]],
 	},
 	{
 		label = "input",
 		kind = Kind.Keyword,
 		documentation = [[
-		input
+input
 		]],
 	},
 	{
 		label = "input-output",
 		kind = Kind.Keyword,
 		documentation = [[
-		input-output
+input-output
 		]],
 	},
 	{
 		label = "input-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		input-value
+input-value
 		]],
 	},
 	{
 		label = "insert",
 		kind = Kind.Keyword,
 		documentation = [[
-		insert
+insert
 		]],
 	},
 	{
 		label = "insert-attribute",
 		kind = Kind.Keyword,
 		documentation = [[
-		insert-attribute
+insert-attribute
 		]],
 	},
 	{
 		label = "insert-backtab",
 		kind = Kind.Keyword,
 		documentation = [[
-		insert-backtab
+insert-backtab
 		]],
 	},
 	{
 		label = "insert-file",
 		kind = Kind.Keyword,
 		documentation = [[
-		insert-file
+insert-file
 		]],
 	},
 	{
 		label = "insert-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		insert-row
+insert-row
 		]],
 	},
 	{
 		label = "insert-string",
 		kind = Kind.Keyword,
 		documentation = [[
-		insert-string
+insert-string
 		]],
 	},
 	{
 		label = "insert-tab",
 		kind = Kind.Keyword,
 		documentation = [[
-		insert-tab
+insert-tab
 		]],
 	},
 	{
 		label = "int",
 		kind = Kind.Keyword,
 		documentation = [[
-		int
+int
 		]],
 	},
 	{
 		label = "int64",
 		kind = Kind.Keyword,
 		documentation = [[
-		int64
+int64
 		]],
 	},
 	{
 		label = "integer",
 		kind = Kind.Function,
 		documentation = [[
-		Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a 32-bit integer value of data type INTEGER, rounding that value if necessary.
+Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a 32-bit integer value of data type INTEGER, rounding that value if necessary.
 		]],
 	},
 	{
 		label = "interface",
 		kind = Kind.Keyword,
 		documentation = [[
-		interface
+interface
 		]],
 	},
 	{
 		label = "internal-entries",
 		kind = Kind.Keyword,
 		documentation = [[
-		internal-entries
+internal-entries
 		]],
 	},
 	{
 		label = "into",
 		kind = Kind.Keyword,
 		documentation = [[
-		into
+into
 		]],
 	},
 	{
 		label = "invoke",
 		kind = Kind.Keyword,
 		documentation = [[
-		invoke
+invoke
 		]],
 	},
 	{
 		label = "is",
 		kind = Kind.Keyword,
 		documentation = [[
-		is
+is
 		]],
 	},
 	{
 		label = "is-attr-space",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-attr-space
+is-attr-space
 		]],
 	},
 	{
 		label = "is-class",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-class
+is-class
 		]],
 	},
 	{
 		label = "is-json",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-json
+is-json
 		]],
 	},
 	{
 		label = "is-lead-byte",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-lead-byte
+is-lead-byte
 		]],
 	},
 	{
 		label = "is-open",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-open
+is-open
 		]],
 	},
 	{
 		label = "is-parameter-set",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-parameter-set
+is-parameter-set
 		]],
 	},
 	{
 		label = "is-partitioned",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-partitioned
+is-partitioned
 		]],
 	},
 	{
 		label = "is-row-selected",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-row-selected
+is-row-selected
 		]],
 	},
 	{
 		label = "is-selected",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-selected
+is-selected
 		]],
 	},
 	{
 		label = "is-xml",
 		kind = Kind.Keyword,
 		documentation = [[
-		is-xml
+is-xml
 		]],
 	},
 	{
 		label = "item",
 		kind = Kind.Keyword,
 		documentation = [[
-		item
+item
 		]],
 	},
 	{
 		label = "items-per-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		items-per-row
+items-per-row
 		]],
 	},
 	{
 		label = "join",
 		kind = Kind.Keyword,
 		documentation = [[
-		join
+join
 		]],
 	},
 	{
 		label = "join-by-sqldb",
 		kind = Kind.Keyword,
 		documentation = [[
-		join-by-sqldb
+join-by-sqldb
 		]],
 	},
 	{
 		label = "kblabel",
 		kind = Kind.Function,
 		documentation = [[
-		Returns the keyboard label (such as F1) of the key that performs a specified ABL function (such as GO). 
+Returns the keyboard label (such as F1) of the key that performs a specified ABL function (such as GO). 
 		]],
 	},
 	{
 		label = "keep-connection-open",
 		documentation = [[
-		keep-connection-open
+keep-connection-open
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "keep-frame-z-order",
 		documentation = [[
-		keep-frame-z-order
+keep-frame-z-order
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "keep-messages",
 		documentation = [[
-		keep-messages
+keep-messages
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "keep-security-cache",
 		documentation = [[
-		keep-security-cache
+keep-security-cache
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "keep-tab-order",
 		documentation = [[
-		keep-tab-order
+keep-tab-order
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "key",
 		documentation = [[
-		key
+key
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "keycode",
 		documentation = [[
-		keycode
+keycode
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "key-code",
 		documentation = [[
-		key-code
+key-code
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5215,13 +5215,13 @@ data type of the list element.
 		label = "keyfunction",
 		kind = Kind.Function,
 		documentation = [[
-		Evaluates an integer expression (such as 301) and returns a character string that is the function of the key associated with that integer expression (such as GO).
+Evaluates an integer expression (such as 301) and returns a character string that is the function of the key associated with that integer expression (such as GO).
 		]],
 	},
 	{
 		label = "key-function",
 		documentation = [[
-		key-function
+key-function
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5229,20 +5229,20 @@ data type of the list element.
 		label = "keylabel",
 		kind = Kind.Function,
 		documentation = [[
-		Evaluates a key code (such as 301) and returns a character string that is the predefined keyboard label for that key (such as F1). 
+Evaluates a key code (such as 301) and returns a character string that is the predefined keyboard label for that key (such as F1). 
 		]],
 	},
 	{
 		label = "key-label",
 		documentation = [[
-		key-label
+key-label
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "keys",
 		documentation = [[
-		keys
+keys
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5250,97 +5250,97 @@ data type of the list element.
 		label = "keyword",
 		kind = Kind.Function,
 		documentation = [[
-		Returns a character value that indicates whether a string is an ABL reserved keyword.
+Returns a character value that indicates whether a string is an ABL reserved keyword.
 		]],
 	},
 	{
 		label = "keyword-all",
 		documentation = [[
-		keyword-all
+keyword-all
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "label",
 		documentation = [[
-		label
+label
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "label-bgcolor",
 		documentation = [[
-		label-bgcolor
+label-bgcolor
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "label-dcolor",
 		documentation = [[
-		label-dcolor
+label-dcolor
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "label-fgcolor",
 		documentation = [[
-		label-fgcolor
+label-fgcolor
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "label-font",
 		documentation = [[
-		label-font
+label-font
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "label-pfcolor",
 		documentation = [[
-		label-pfcolor
+label-pfcolor
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "labels",
 		documentation = [[
-		labels
+labels
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "labels-have-colons",
 		documentation = [[
-		labels-have-colons
+labels-have-colons
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "landscape",
 		documentation = [[
-		landscape
+landscape
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "languages",
 		documentation = [[
-		languages
+languages
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "large",
 		documentation = [[
-		large
+large
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "large-to-small",
 		documentation = [[
-		large-to-small
+large-to-small
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5348,41 +5348,41 @@ data type of the list element.
 		label = "last",
 		kind = Kind.Function,
 		documentation = [[
-		Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the last iteration of that block.
+Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the last iteration of that block.
 		]],
 	},
 	{
 		label = "last-asynch-request",
 		documentation = [[
-		last-asynch-request
+last-asynch-request
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "last-batch",
 		documentation = [[
-		last-batch
+last-batch
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "last-child",
 		documentation = [[
-		last-child
+last-child
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "last-event",
 		documentation = [[
-		last-event
+last-event
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "last-form",
 		documentation = [[
-		last-form
+last-form
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5390,20 +5390,20 @@ data type of the list element.
 		label = "lastkey",
 		kind = Kind.Function,
 		documentation = [[
-		Returns, as an INTEGER value, the integer key code of the most recent event read from the user (that is, from the keyboard or mouse) during an interaction with a procedure.
+Returns, as an INTEGER value, the integer key code of the most recent event read from the user (that is, from the keyboard or mouse) during an interaction with a procedure.
 		]],
 	},
 	{
 		label = "last-key",
 		documentation = [[
-		last-key
+last-key
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "last-object",
 		documentation = [[
-		last-object
+last-object
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5411,41 +5411,41 @@ data type of the list element.
 		label = "last-of",
 		kind = Kind.Function,
 		documentation = [[
-		Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the last iteration for a particular value of a break group.
+Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the last iteration for a particular value of a break group.
 		]],
 	},
 	{
 		label = "last-procedure",
 		documentation = [[
-		last-procedure
+last-procedure
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "last-server",
 		documentation = [[
-		last-server
+last-server
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "last-tab-item",
 		documentation = [[
-		last-tab-item
+last-tab-item
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "lc",
 		documentation = [[
-		lc
+lc
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "ldbname",
 		documentation = [[
-		ldbname
+ldbname
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5453,20 +5453,20 @@ data type of the list element.
 		label = "le",
 		kind = Kind.Operator,
 		documentation = [[
-		Returns a TRUE value if the first of two expressions is less than or equal to the second.
+Returns a TRUE value if the first of two expressions is less than or equal to the second.
 		]],
 	},
 	{
 		label = "leave",
 		kind = Kind.Keyword,
 		documentation = [[
-		Exits from a block. Execution continues with the first statement after the end of the block.
+Exits from a block. Execution continues with the first statement after the end of the block.
 		]],
 	},
 	{
 		label = "left-aligned",
 		documentation = [[
-		left-aligned
+left-aligned
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5490,392 +5490,392 @@ or columns in a string, an expression of type RAW, or a BLOB field.
 	{
 		label = "library",
 		documentation = [[
-		library
+library
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "like",
 		documentation = [[
-		like
+like
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "like-sequential",
 		documentation = [[
-		like-sequential
+like-sequential
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "line",
 		documentation = [[
-		line
+line
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "line-counter",
 		documentation = [[
-		line-counter
+line-counter
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "list-events",
 		documentation = [[
-		list-events
+list-events
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "listing",
 		documentation = [[
-		listing
+listing
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "list-item-pairs",
 		documentation = [[
-		list-item-pairs
+list-item-pairs
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "list-items",
 		documentation = [[
-		list-items
+list-items
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "list-property-names",
 		documentation = [[
-		list-property-names
+list-property-names
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "list-query-attrs",
 		documentation = [[
-		list-query-attrs
+list-query-attrs
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "list-set-attrs",
 		documentation = [[
-		list-set-attrs
+list-set-attrs
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "list-widgets",
 		documentation = [[
-		list-widgets
+list-widgets
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "literal-question",
 		documentation = [[
-		literal-question
+literal-question
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "little-endian",
 		documentation = [[
-		little-endian
+little-endian
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load",
 		documentation = [[
-		load
+load
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load-domains",
 		documentation = [[
-		load-domains
+load-domains
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load-icon",
 		documentation = [[
-		load-icon
+load-icon
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load-image",
 		documentation = [[
-		load-image
+load-image
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load-image-down",
 		documentation = [[
-		load-image-down
+load-image-down
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load-image-insensitive",
 		documentation = [[
-		load-image-insensitive
+load-image-insensitive
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load-image-up",
 		documentation = [[
-		load-image-up
+load-image-up
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load-mouse-pointer",
 		documentation = [[
-		load-mouse-pointer
+load-mouse-pointer
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load-picture",
 		documentation = [[
-		load-picture
+load-picture
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "load-small-icon",
 		documentation = [[
-		load-small-icon
+load-small-icon
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "local-name",
 		documentation = [[
-		local-name
+local-name
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "local-version-info",
 		documentation = [[
-		local-version-info
+local-version-info
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "locator-column-number",
 		documentation = [[
-		locator-column-number
+locator-column-number
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "locator-line-number",
 		documentation = [[
-		locator-line-number
+locator-line-number
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "locator-public-id",
 		documentation = [[
-		locator-public-id
+locator-public-id
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "locator-system-id",
 		documentation = [[
-		locator-system-id
+locator-system-id
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "locator-type",
 		documentation = [[
-		locator-type
+locator-type
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "locked",
 		documentation = [[
-		locked
+locked
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "lock-registration",
 		documentation = [[
-		lock-registration
+lock-registration
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "log",
 		documentation = [[
-		log
+log
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "log-audit-event",
 		documentation = [[
-		log-audit-event
+log-audit-event
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "logical",
 		documentation = [[
-		logical
+logical
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "login-expiration-timestamp",
 		documentation = [[
-		login-expiration-timestamp
+login-expiration-timestamp
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "login-host",
 		documentation = [[
-		login-host
+login-host
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "login-state",
 		documentation = [[
-		login-state
+login-state
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "log-manager",
 		documentation = [[
-		log-manager
+log-manager
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "logout",
 		documentation = [[
-		logout
+logout
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "lookahead",
 		documentation = [[
-		lookahead
+lookahead
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "lookup",
 		documentation = [[
-		lookup
+lookup
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "lt",
 		documentation = [[
-		lt
+lt
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "machine-class",
 		documentation = [[
-		machine-class
+machine-class
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "mandatory",
 		documentation = [[
-		mandatory
+mandatory
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "manual-highlight",
 		documentation = [[
-		manual-highlight
+manual-highlight
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "map",
 		documentation = [[
-		map
+map
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "margin-extra",
 		documentation = [[
-		margin-extra
+margin-extra
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "margin-height-chars",
 		documentation = [[
-		margin-height-chars
+margin-height-chars
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "margin-height-pixels",
 		documentation = [[
-		margin-height-pixels
+margin-height-pixels
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "margin-width-chars",
 		documentation = [[
-		margin-width-chars
+margin-width-chars
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "margin-width-pixels",
 		documentation = [[
-		margin-width-pixels
+margin-width-pixels
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "mark-new",
 		documentation = [[
-		mark-new
+mark-new
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "mark-row-state",
 		documentation = [[
-		mark-row-state
+mark-row-state
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5890,56 +5890,56 @@ value if the expression satisfies the pattern criteria.
 	{
 		label = "max",
 		documentation = [[
-		max
+max
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-button",
 		documentation = [[
-		max-button
+max-button
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-chars",
 		documentation = [[
-		max-chars
+max-chars
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-data-guess",
 		documentation = [[
-		max-data-guess
+max-data-guess
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-height",
 		documentation = [[
-		max-height
+max-height
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-height-chars",
 		documentation = [[
-		max-height-chars
+max-height-chars
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-height-pixels",
 		documentation = [[
-		max-height-pixels
+max-height-pixels
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "maximize",
 		documentation = [[
-		maximize
+maximize
 		]],
 		kind = Kind.Keyword,
 	},
@@ -5953,119 +5953,119 @@ Compares two or more values and returns the largest value.
 	{
 		label = "maximum-level",
 		documentation = [[
-		maximum-level
+maximum-level
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-rows",
 		documentation = [[
-		max-rows
+max-rows
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-size",
 		documentation = [[
-		max-size
+max-size
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-value",
 		documentation = [[
-		max-value
+max-value
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-width",
 		documentation = [[
-		max-width
+max-width
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-width-chars",
 		documentation = [[
-		max-width-chars
+max-width-chars
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "max-width-pixels",
 		documentation = [[
-		max-width-pixels
+max-width-pixels
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "md5-digest",
 		documentation = [[
-		md5-digest
+md5-digest
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "member",
 		documentation = [[
-		member
+member
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "memptr-to-node-value",
 		documentation = [[
-		memptr-to-node-value
+memptr-to-node-value
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "menu",
 		documentation = [[
-		menu
+menu
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "menubar",
 		documentation = [[
-		menubar
+menubar
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "menu-bar",
 		documentation = [[
-		menu-bar
+menu-bar
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "menu-item",
 		documentation = [[
-		menu-item
+menu-item
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "menu-key",
 		documentation = [[
-		menu-key
+menu-key
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "menu-mouse",
 		documentation = [[
-		menu-mouse
+menu-mouse
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "merge-by-field",
 		documentation = [[
-		merge-by-field
+merge-by-field
 		]],
 		kind = Kind.Keyword,
 	},
@@ -6081,70 +6081,70 @@ area at the bottom line of the window is reserved for ABL system messages.
 	{
 		label = "message-area",
 		documentation = [[
-		message-area
+message-area
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "message-area-font",
 		documentation = [[
-		message-area-font
+message-area-font
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "message-lines",
 		documentation = [[
-		message-lines
+message-lines
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "method",
 		documentation = [[
-		method
+method
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "min",
 		documentation = [[
-		min
+min
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "min-button",
 		documentation = [[
-		min-button
+min-button
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "min-column-width-chars",
 		documentation = [[
-		min-column-width-chars
+min-column-width-chars
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "min-column-width-pixels",
 		documentation = [[
-		min-column-width-pixels
+min-column-width-pixels
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "min-height-chars",
 		documentation = [[
-		min-height-chars
+min-height-chars
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "min-height-pixels",
 		documentation = [[
-		min-height-pixels
+min-height-pixels
 		]],
 		kind = Kind.Keyword,
 	},
@@ -6158,35 +6158,35 @@ Compares two or more values and returns the smallest.
 	{
 		label = "min-size",
 		documentation = [[
-		min-size
+min-size
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "min-value",
 		documentation = [[
-		min-value
+min-value
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "min-width-chars",
 		documentation = [[
-		min-width-chars
+min-width-chars
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "min-width-pixels",
 		documentation = [[
-		min-width-pixels
+min-width-pixels
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "modified",
 		documentation = [[
-		modified
+modified
 		]],
 		kind = Kind.Keyword,
 	},
@@ -6207,140 +6207,140 @@ Evaluates a date expression and returns a month INTEGER value from 1 to 12, incl
 	{
 		label = "mouse",
 		documentation = [[
-		mouse
+mouse
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "mouse-pointer",
 		documentation = [[
-		mouse-pointer
+mouse-pointer
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "movable",
 		documentation = [[
-		movable
+movable
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "move-after-tab-item",
 		documentation = [[
-		move-after-tab-item
+move-after-tab-item
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "move-before-tab-item",
 		documentation = [[
-		move-before-tab-item
+move-before-tab-item
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "move-column",
 		documentation = [[
-		move-column
+move-column
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "move-to-bottom",
 		documentation = [[
-		move-to-bottom
+move-to-bottom
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "move-to-eof",
 		documentation = [[
-		move-to-eof
+move-to-eof
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "move-to-top",
 		documentation = [[
-		move-to-top
+move-to-top
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "mpe",
 		documentation = [[
-		mpe
+mpe
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "mtime",
 		documentation = [[
-		mtime
+mtime
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "multi-compile",
 		documentation = [[
-		multi-compile
+multi-compile
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "multiple",
 		documentation = [[
-		multiple
+multiple
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "multiple-key",
 		documentation = [[
-		multiple-key
+multiple-key
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "multitasking-interval",
 		documentation = [[
-		multitasking-interval
+multitasking-interval
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "must-exist",
 		documentation = [[
-		must-exist
+must-exist
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "name",
 		documentation = [[
-		name
+name
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "namespace-prefix",
 		documentation = [[
-		namespace-prefix
+namespace-prefix
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "namespace-uri",
 		documentation = [[
-		namespace-uri
+namespace-uri
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "native",
 		documentation = [[
-		native
+native
 		]],
 		kind = Kind.Keyword,
 	},
@@ -6354,35 +6354,35 @@ Compares two expressions and returns a TRUE value if they are not equal.
 	{
 		label = "needs-appserver-prompt",
 		documentation = [[
-		needs-appserver-prompt
+needs-appserver-prompt
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "needs-prompt",
 		documentation = [[
-		needs-prompt
+needs-prompt
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "new",
 		documentation = [[
-		new
+new
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "new-instance",
 		documentation = [[
-		new-instance
+new-instance
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "new-row",
 		documentation = [[
-		new-row
+new-row
 		]],
 		kind = Kind.Keyword,
 	},
@@ -6397,7 +6397,7 @@ of the block.
 	{
 		label = "next-column",
 		documentation = [[
-		next-column
+next-column
 		]],
 		kind = Kind.Keyword,
 	},
@@ -6412,21 +6412,21 @@ the next input operation that involves that field in a frame.
 	{
 		label = "next-rowid",
 		documentation = [[
-		next-rowid
+next-rowid
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "next-sibling",
 		documentation = [[
-		next-sibling
+next-sibling
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "next-tab-item",
 		documentation = [[
-		next-tab-item
+next-tab-item
 		]],
 		kind = Kind.Keyword,
 	},
@@ -6441,294 +6441,294 @@ positive or negative value defined in the Data Dictionary.
 	{
 		label = "no",
 		documentation = [[
-		no
+no
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-apply",
 		documentation = [[
-		no-apply
+no-apply
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-array-message",
 		documentation = [[
-		no-array-message
+no-array-message
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-assign",
 		documentation = [[
-		no-assign
+no-assign
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-attr-list",
 		documentation = [[
-		no-attr-list
+no-attr-list
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-attr-space",
 		documentation = [[
-		no-attr-space
+no-attr-space
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-auto-validate",
 		documentation = [[
-		no-auto-validate
+no-auto-validate
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-bind-where",
 		documentation = [[
-		no-bind-where
+no-bind-where
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-box",
 		documentation = [[
-		no-box
+no-box
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-console",
 		documentation = [[
-		no-console
+no-console
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-convert",
 		documentation = [[
-		no-convert
+no-convert
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-convert-3d-colors",
 		documentation = [[
-		no-convert-3d-colors
+no-convert-3d-colors
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-current-value",
 		documentation = [[
-		no-current-value
+no-current-value
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-debug",
 		documentation = [[
-		no-debug
+no-debug
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "node-value-to-memptr",
 		documentation = [[
-		node-value-to-memptr
+node-value-to-memptr
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-drag",
 		documentation = [[
-		no-drag
+no-drag
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-echo",
 		documentation = [[
-		no-echo
+no-echo
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-empty-space",
 		documentation = [[
-		no-empty-space
+no-empty-space
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-error",
 		documentation = [[
-		no-error
+no-error
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-fill",
 		documentation = [[
-		no-fill
+no-fill
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-focus",
 		documentation = [[
-		no-focus
+no-focus
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-help",
 		documentation = [[
-		no-help
+no-help
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-hide",
 		documentation = [[
-		no-hide
+no-hide
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-index-hint",
 		documentation = [[
-		no-index-hint
+no-index-hint
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-inherit-bgcolor",
 		documentation = [[
-		no-inherit-bgcolor
+no-inherit-bgcolor
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-inherit-fgcolor",
 		documentation = [[
-		no-inherit-fgcolor
+no-inherit-fgcolor
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-join-by-sqldb",
 		documentation = [[
-		no-join-by-sqldb
+no-join-by-sqldb
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-labels",
 		documentation = [[
-		no-labels
+no-labels
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-lobs",
 		documentation = [[
-		no-lobs
+no-lobs
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-lock",
 		documentation = [[
-		no-lock
+no-lock
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-lookahead",
 		documentation = [[
-		no-lookahead
+no-lookahead
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-map",
 		documentation = [[
-		no-map
+no-map
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-message",
 		documentation = [[
-		no-message
+no-message
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "nonamespace-schema-location",
 		documentation = [[
-		nonamespace-schema-location
+nonamespace-schema-location
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "none",
 		documentation = [[
-		none
+none
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-pause",
 		documentation = [[
-		no-pause
+no-pause
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-prefetch",
 		documentation = [[
-		no-prefetch
+no-prefetch
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "normalize",
 		documentation = [[
-		normalize
+normalize
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-row-markers",
 		documentation = [[
-		no-row-markers
+no-row-markers
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-scrollbar-vertical",
 		documentation = [[
-		no-scrollbar-vertical
+no-scrollbar-vertical
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-separate-connection",
 		documentation = [[
-		no-separate-connection
+no-separate-connection
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-separators",
 		documentation = [[
-		no-separators
+no-separators
 		]],
 		kind = Kind.Keyword,
 	},
@@ -6742,112 +6742,112 @@ Returns TRUE if an expression is false, and FALSE if an expression is true.
 	{
 		label = "no-tab-stop",
 		documentation = [[
-		no-tab-stop
+no-tab-stop
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "not-active",
 		documentation = [[
-		not-active
+not-active
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-underline",
 		documentation = [[
-		no-underline
+no-underline
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-undo",
 		documentation = [[
-		no-undo
+no-undo
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-validate",
 		documentation = [[
-		no-validate
+no-validate
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "now",
 		documentation = [[
-		now
+now
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-wait",
 		documentation = [[
-		no-wait
+no-wait
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "no-word-wrap",
 		documentation = [[
-		no-word-wrap
+no-word-wrap
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "null",
 		documentation = [[
-		null
+null
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-aliases",
 		documentation = [[
-		num-aliases
+num-aliases
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-buffers",
 		documentation = [[
-		num-buffers
+num-buffers
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-buttons",
 		documentation = [[
-		num-buttons
+num-buttons
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-columns",
 		documentation = [[
-		num-columns
+num-columns
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-copies",
 		documentation = [[
-		num-copies
+num-copies
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-dbs",
 		documentation = [[
-		num-dbs
+num-dbs
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-dropped-files",
 		documentation = [[
-		num-dropped-files
+num-dropped-files
 		]],
 		kind = Kind.Keyword,
 	},
@@ -6861,168 +6861,168 @@ Returns the number of elements in a list of character strings as an INTEGER valu
 	{
 		label = "numeric",
 		documentation = [[
-		numeric
+numeric
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "numeric-format",
 		documentation = [[
-		numeric-format
+numeric-format
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-fields",
 		documentation = [[
-		num-fields
+num-fields
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-formats",
 		documentation = [[
-		num-formats
+num-formats
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-items",
 		documentation = [[
-		num-items
+num-items
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-iterations",
 		documentation = [[
-		num-iterations
+num-iterations
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-lines",
 		documentation = [[
-		num-lines
+num-lines
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-locked-columns",
 		documentation = [[
-		num-locked-columns
+num-locked-columns
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-messages",
 		documentation = [[
-		num-messages
+num-messages
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-parameters",
 		documentation = [[
-		num-parameters
+num-parameters
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-references",
 		documentation = [[
-		num-references
+num-references
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-replaced",
 		documentation = [[
-		num-replaced
+num-replaced
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-results",
 		documentation = [[
-		num-results
+num-results
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-selected-rows",
 		documentation = [[
-		num-selected-rows
+num-selected-rows
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-selected-widgets",
 		documentation = [[
-		num-selected-widgets
+num-selected-widgets
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-tabs",
 		documentation = [[
-		num-tabs
+num-tabs
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-to-retain",
 		documentation = [[
-		num-to-retain
+num-to-retain
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "num-visible-columns",
 		documentation = [[
-		num-visible-columns
+num-visible-columns
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "octet-length",
 		documentation = [[
-		octet-length
+octet-length
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "of",
 		documentation = [[
-		of
+of
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "off",
 		documentation = [[
-		off
+off
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "ok",
 		documentation = [[
-		ok
+ok
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "ok-cancel",
 		documentation = [[
-		ok-cancel
+ok-cancel
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "old",
 		documentation = [[
-		old
+old
 		]],
 		kind = Kind.Keyword,
 	},
@@ -7037,7 +7037,7 @@ redefines terminal keys for an application.
 	{
 		label = "on-frame-border",
 		documentation = [[
-		on-frame-border
+on-frame-border
 		]],
 		kind = Kind.Keyword,
 	},
@@ -7053,14 +7053,14 @@ for use within a GET statement, or in a browse widget.
 	{
 		label = "opsys",
 		documentation = [[
-		opsys
+opsys
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "option",
 		documentation = [[
-		option
+option
 		]],
 		kind = Kind.Keyword,
 	},
@@ -7074,14 +7074,14 @@ Returns a TRUE value if either of two logical expressions is TRUE.
 	{
 		label = "ordered-join",
 		documentation = [[
-		ordered-join
+ordered-join
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "ordinal",
 		documentation = [[
-		"ordinal"
+"ordinal"
 		]],
 		kind = Kind.Keyword,
 	},
@@ -7125,7 +7125,7 @@ Can delete one or more files, a directory, or an entire directory branch.
 	{
 		label = "os-dir",
 		documentation = [[
-		"os-dir"
+"os-dir"
 		]],
 		kind = Kind.Keyword,
 	},
@@ -7156,7 +7156,7 @@ Executes an operating system file rename or directory rename command from within
 	{
 		label = "otherwise",
 		documentation = [[
-		"otherwise"
+"otherwise"
 		]],
 		kind = Kind.Keyword,
 	},
@@ -7178,21 +7178,21 @@ the STREAM keyword in a prior OUTPUT TO statement.
 	{
 		label = "overlay",
 		documentation = [[
-		"overlay"
+"overlay"
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "override",
 		documentation = [[
-		"override"
+"override"
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "owner",
 		documentation = [[
-		"owner"
+"owner"
 		]],
 		kind = Kind.Keyword,
 	},
@@ -7208,91 +7208,91 @@ is already positioned at the beginning of a page.
 		label = "page-bottom",
 		kind = Kind.Keyword,
 		documentation = [[
-		"page-bottom"
+"page-bottom"
 		]],
 	},
 	{
 		label = "paged",
 		kind = Kind.Keyword,
 		documentation = [[
-		"paged"
+"paged"
 		]],
 	},
 	{
 		label = "page-number",
 		kind = Kind.Keyword,
 		documentation = [[
-		"page-number"
+"page-number"
 		]],
 	},
 	{
 		label = "page-size",
 		kind = Kind.Keyword,
 		documentation = [[
-		"page-size"
+"page-size"
 		]],
 	},
 	{
 		label = "page-top",
 		kind = Kind.Keyword,
 		documentation = [[
-		"page-top"
+"page-top"
 		]],
 	},
 	{
 		label = "page-width",
 		kind = Kind.Keyword,
 		documentation = [[
-		"page-width"
+"page-width"
 		]],
 	},
 	{
 		label = "parameter",
 		kind = Kind.Keyword,
 		documentation = [[
-		"parameter"
+"parameter"
 		]],
 	},
 	{
 		label = "parent",
 		kind = Kind.Keyword,
 		documentation = [[
-		"parent"
+"parent"
 		]],
 	},
 	{
 		label = "parse-status",
 		kind = Kind.Keyword,
 		documentation = [[
-		"parse-status"
+"parse-status"
 		]],
 	},
 	{
 		label = "partial-key",
 		kind = Kind.Keyword,
 		documentation = [[
-		"partial-key"
+"partial-key"
 		]],
 	},
 	{
 		label = "pascal",
 		kind = Kind.Keyword,
 		documentation = [[
-		"pascal"
+"pascal"
 		]],
 	},
 	{
 		label = "password-field",
 		kind = Kind.Keyword,
 		documentation = [[
-		"password-field"
+"password-field"
 		]],
 	},
 	{
 		label = "pathname",
 		kind = Kind.Keyword,
 		documentation = [[
-		"pathname"
+"pathname"
 		]],
 	},
 	{
@@ -7307,231 +7307,231 @@ until the user presses any key.
 		label = "pbe-hash-algorithm",
 		kind = Kind.Keyword,
 		documentation = [[
-		"pbe-hash-algorithm"
+"pbe-hash-algorithm"
 		]],
 	},
 	{
 		label = "pbe-key-rounds",
 		kind = Kind.Keyword,
 		documentation = [[
-		"pbe-key-rounds"
+"pbe-key-rounds"
 		]],
 	},
 	{
 		label = "pdbname",
 		kind = Kind.Keyword,
 		documentation = [[
-		"pdbname"
+"pdbname"
 		]],
 	},
 	{
 		label = "persistent",
 		kind = Kind.Keyword,
 		documentation = [[
-		"persistent"
+"persistent"
 		]],
 	},
 	{
 		label = "persistent-cache-disabled",
 		kind = Kind.Keyword,
 		documentation = [[
-		"persistent-cache-disabled"
+"persistent-cache-disabled"
 		]],
 	},
 	{
 		label = "pfcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		"pfcolor"
+"pfcolor"
 		]],
 	},
 	{
 		label = "pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		"pixels"
+"pixels"
 		]],
 	},
 	{
 		label = "pixels-per-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		"pixels-per-column"
+"pixels-per-column"
 		]],
 	},
 	{
 		label = "pixels-per-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		"pixels-per-row"
+"pixels-per-row"
 		]],
 	},
 	{
 		label = "popup-menu",
 		kind = Kind.Keyword,
 		documentation = [[
-		"popup-menu"
+"popup-menu"
 		]],
 	},
 	{
 		label = "popup-only",
 		kind = Kind.Keyword,
 		documentation = [[
-		"popup-only"
+"popup-only"
 		]],
 	},
 	{
 		label = "portrait",
 		kind = Kind.Keyword,
 		documentation = [[
-		"portrait"
+"portrait"
 		]],
 	},
 	{
 		label = "position",
 		kind = Kind.Keyword,
 		documentation = [[
-		"position"
+"position"
 		]],
 	},
 	{
 		label = "precision",
 		kind = Kind.Keyword,
 		documentation = [[
-		"precision"
+"precision"
 		]],
 	},
 	{
 		label = "prefer-dataset",
 		kind = Kind.Keyword,
 		documentation = [[
-		"prefer-dataset"
+"prefer-dataset"
 		]],
 	},
 	{
 		label = "prepared",
 		kind = Kind.Keyword,
 		documentation = [[
-		"prepared"
+"prepared"
 		]],
 	},
 	{
 		label = "prepare-string",
 		kind = Kind.Keyword,
 		documentation = [[
-		"prepare-string"
+"prepare-string"
 		]],
 	},
 	{
 		label = "preprocess",
 		kind = Kind.Keyword,
 		documentation = [[
-		"preprocess"
+"preprocess"
 		]],
 	},
 	{
 		label = "preselect",
 		kind = Kind.Keyword,
 		documentation = [[
-		"preselect"
+"preselect"
 		]],
 	},
 	{
 		label = "prev",
 		kind = Kind.Keyword,
 		documentation = [[
-		"prev"
+"prev"
 		]],
 	},
 	{
 		label = "prev-column",
 		kind = Kind.Keyword,
 		documentation = [[
-		"prev-column"
+"prev-column"
 		]],
 	},
 	{
 		label = "prev-sibling",
 		kind = Kind.Keyword,
 		documentation = [[
-		"prev-sibling"
+"prev-sibling"
 		]],
 	},
 	{
 		label = "prev-tab-item",
 		kind = Kind.Keyword,
 		documentation = [[
-		"prev-tab-item"
+"prev-tab-item"
 		]],
 	},
 	{
 		label = "primary",
 		kind = Kind.Keyword,
 		documentation = [[
-		"primary"
+"primary"
 		]],
 	},
 	{
 		label = "printer",
 		kind = Kind.Keyword,
 		documentation = [[
-		"printer"
+"printer"
 		]],
 	},
 	{
 		label = "printer-control-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		"printer-control-handle"
+"printer-control-handle"
 		]],
 	},
 	{
 		label = "printer-hdc",
 		kind = Kind.Keyword,
 		documentation = [[
-		"printer-hdc"
+"printer-hdc"
 		]],
 	},
 	{
 		label = "printer-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		"printer-name"
+"printer-name"
 		]],
 	},
 	{
 		label = "printer-port",
 		kind = Kind.Keyword,
 		documentation = [[
-		"printer-port"
+"printer-port"
 		]],
 	},
 	{
 		label = "printer-setup",
 		kind = Kind.Keyword,
 		documentation = [[
-		"printer-setup"
+"printer-setup"
 		]],
 	},
 	{
 		label = "private",
 		kind = Kind.Keyword,
 		documentation = [[
-		"private"
+"private"
 		]],
 	},
 	{
 		label = "private-data",
 		kind = Kind.Keyword,
 		documentation = [[
-		"private-data"
+"private-data"
 		]],
 	},
 	{
 		label = "privileges",
 		kind = Kind.Keyword,
 		documentation = [[
-		"privileges"
+"privileges"
 		]],
 	},
 	{
@@ -7548,56 +7548,56 @@ that is itself a super procedure of the declaration procedure.
 		label = "procedure-call-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		"procedure-call-type"
+"procedure-call-type"
 		]],
 	},
 	{
 		label = "procedure-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		"procedure-type"
+"procedure-type"
 		]],
 	},
 	{
 		label = "process",
 		kind = Kind.Keyword,
 		documentation = [[
-		"process"
+"process"
 		]],
 	},
 	{
 		label = "proc-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		"proc-handle"
+"proc-handle"
 		]],
 	},
 	{
 		label = "proc-status",
 		kind = Kind.Keyword,
 		documentation = [[
-		"proc-status"
+"proc-status"
 		]],
 	},
 	{
 		label = "proc-text",
 		kind = Kind.Keyword,
 		documentation = [[
-		"proc-text"
+"proc-text"
 		]],
 	},
 	{
 		label = "proc-text-buffer",
 		kind = Kind.Keyword,
 		documentation = [[
-		"proc-text-buffer"
+"proc-text-buffer"
 		]],
 	},
 	{
 		label = "profiler",
 		kind = Kind.Keyword,
 		documentation = [[
-		"profiler"
+"profiler"
 		]],
 	},
 	{
@@ -7611,21 +7611,21 @@ Returns the name of the calling program.
 		label = "progress",
 		kind = Kind.Keyword,
 		documentation = [[
-		progress
+progress
 		]],
 	},
 	{
 		label = "progress-source",
 		kind = Kind.Keyword,
 		documentation = [[
-		progress-source
+progress-source
 		]],
 	},
 	{
 		label = "prompt",
 		kind = Kind.Keyword,
 		documentation = [[
-		prompt
+prompt
 		]],
 	},
 	{
@@ -7639,168 +7639,168 @@ Requests input and places that input in the screen buffer (frame).
 		label = "promsgs",
 		kind = Kind.Keyword,
 		documentation = [[
-		promsgs
+promsgs
 		]],
 	},
 	{
 		label = "propath",
 		kind = Kind.Keyword,
 		documentation = [[
-		propath
+propath
 		]],
 	},
 	{
 		label = "property",
 		kind = Kind.Keyword,
 		documentation = [[
-		property
+property
 		]],
 	},
 	{
 		label = "protected",
 		kind = Kind.Keyword,
 		documentation = [[
-		protected
+protected
 		]],
 	},
 	{
 		label = "proversion",
 		kind = Kind.Keyword,
 		documentation = [[
-		proversion
+proversion
 		]],
 	},
 	{
 		label = "proxy",
 		kind = Kind.Keyword,
 		documentation = [[
-		proxy
+proxy
 		]],
 	},
 	{
 		label = "proxy-password",
 		kind = Kind.Keyword,
 		documentation = [[
-		proxy-password
+proxy-password
 		]],
 	},
 	{
 		label = "proxy-userid",
 		kind = Kind.Keyword,
 		documentation = [[
-		proxy-userid
+proxy-userid
 		]],
 	},
 	{
 		label = "public",
 		kind = Kind.Keyword,
 		documentation = [[
-		public
+public
 		]],
 	},
 	{
 		label = "public-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		public-id
+public-id
 		]],
 	},
 	{
 		label = "publish",
 		kind = Kind.Keyword,
 		documentation = [[
-		publish
+publish
 		]],
 	},
 	{
 		label = "published-events",
 		kind = Kind.Keyword,
 		documentation = [[
-		published-events
+published-events
 		]],
 	},
 	{
 		label = "put",
 		kind = Kind.Keyword,
 		documentation = [[
-		put
+put
 		]],
 	},
 	{
 		label = "putbyte",
 		kind = Kind.Keyword,
 		documentation = [[
-		putbyte
+putbyte
 		]],
 	},
 	{
 		label = "put-byte",
 		kind = Kind.Keyword,
 		documentation = [[
-		put-byte
+put-byte
 		]],
 	},
 	{
 		label = "put-double",
 		kind = Kind.Keyword,
 		documentation = [[
-		put-double
+put-double
 		]],
 	},
 	{
 		label = "put-float",
 		kind = Kind.Keyword,
 		documentation = [[
-		put-float
+put-float
 		]],
 	},
 	{
 		label = "put-int64",
 		kind = Kind.Keyword,
 		documentation = [[
-		put-int64
+put-int64
 		]],
 	},
 	{
 		label = "put-key-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		put-key-value
+put-key-value
 		]],
 	},
 	{
 		label = "put-long",
 		kind = Kind.Keyword,
 		documentation = [[
-		put-long
+put-long
 		]],
 	},
 	{
 		label = "put-short",
 		kind = Kind.Keyword,
 		documentation = [[
-		put-short
+put-short
 		]],
 	},
 	{
 		label = "put-string",
 		kind = Kind.Keyword,
 		documentation = [[
-		put-string
+put-string
 		]],
 	},
 	{
 		label = "put-unsigned-long",
 		kind = Kind.Keyword,
 		documentation = [[
-		put-unsigned-long
+put-unsigned-long
 		]],
 	},
 	{
 		label = "query",
 		kind = Kind.Keyword,
 		documentation = [[
-		query
+query
 		]],
 	},
 	{
@@ -7822,35 +7822,35 @@ the end of its result list (either before the first record or after the last rec
 		label = "query-open",
 		kind = Kind.Function,
 		documentation = [[
-		query-open
+query-open
 		]],
 	},
 	{
 		label = "query-prepare",
 		kind = Kind.Keyword,
 		documentation = [[
-		query-prepare
+query-prepare
 		]],
 	},
 	{
 		label = "query-tuning",
 		kind = Kind.Keyword,
 		documentation = [[
-		query-tuning
+query-tuning
 		]],
 	},
 	{
 		label = "question",
 		kind = Kind.Keyword,
 		documentation = [[
-		question
+question
 		]],
 	},
 	{
 		label = "quit",
 		kind = Kind.Keyword,
 		documentation = [[
-		quit
+quit
 		]],
 	},
 	{
@@ -7865,84 +7865,84 @@ quotes when necessary.
 		label = "radio-buttons",
 		kind = Kind.Keyword,
 		documentation = [[
-		radio-buttons
+radio-buttons
 		]],
 	},
 	{
 		label = "radio-set",
 		kind = Kind.Keyword,
 		documentation = [[
-		radio-set
+radio-set
 		]],
 	},
 	{
 		label = "random",
 		kind = Kind.Keyword,
 		documentation = [[
-		random
+random
 		]],
 	},
 	{
 		label = "raw",
 		kind = Kind.Keyword,
 		documentation = [[
-		raw
+raw
 		]],
 	},
 	{
 		label = "raw-transfer",
 		kind = Kind.Keyword,
 		documentation = [[
-		raw-transfer
+raw-transfer
 		]],
 	},
 	{
 		label = "rcode-information",
 		kind = Kind.Keyword,
 		documentation = [[
-		rcode-information
+rcode-information
 		]],
 	},
 	{
 		label = "read-available",
 		kind = Kind.Keyword,
 		documentation = [[
-		read-available
+read-available
 		]],
 	},
 	{
 		label = "read-exact-num",
 		kind = Kind.Keyword,
 		documentation = [[
-		read-exact-num
+read-exact-num
 		]],
 	},
 	{
 		label = "read-file",
 		kind = Kind.Keyword,
 		documentation = [[
-		read-file
+read-file
 		]],
 	},
 	{
 		label = "read-json",
 		kind = Kind.Keyword,
 		documentation = [[
-		read-json
+read-json
 		]],
 	},
 	{
 		label = "read-only",
 		kind = Kind.Keyword,
 		documentation = [[
-		read-only
+read-only
 		]],
 	},
 	{
 		label = "read-xml",
 		kind = Kind.Keyword,
 		documentation = [[
-		read-xml
+read-xml
 		]],
 	},
 	{
@@ -7958,7 +7958,7 @@ each keystroke a user makes and take some action based on that keystroke.
 		label = "real",
 		kind = Kind.Keyword,
 		documentation = [[
-		real
+real
 		]],
 	},
 	{
@@ -7973,84 +7973,84 @@ associated with the record buffer you name.
 		label = "record-length",
 		kind = Kind.Keyword,
 		documentation = [[
-		record-length
+record-length
 		]],
 	},
 	{
 		label = "rectangle",
 		kind = Kind.Keyword,
 		documentation = [[
-		rectangle
+rectangle
 		]],
 	},
 	{
 		label = "recursive",
 		kind = Kind.Keyword,
 		documentation = [[
-		recursive
+recursive
 		]],
 	},
 	{
 		label = "reference-only",
 		kind = Kind.Keyword,
 		documentation = [[
-		reference-only
+reference-only
 		]],
 	},
 	{
 		label = "refresh",
 		kind = Kind.Keyword,
 		documentation = [[
-		refresh
+refresh
 		]],
 	},
 	{
 		label = "refreshable",
 		kind = Kind.Keyword,
 		documentation = [[
-		refreshable
+refreshable
 		]],
 	},
 	{
 		label = "refresh-audit-policy",
 		kind = Kind.Keyword,
 		documentation = [[
-		refresh-audit-policy
+refresh-audit-policy
 		]],
 	},
 	{
 		label = "register-domain",
 		kind = Kind.Keyword,
 		documentation = [[
-		register-domain
+register-domain
 		]],
 	},
 	{
 		label = "release",
 		kind = Kind.Keyword,
 		documentation = [[
-		release
+release
 		]],
 	},
 	{
 		label = "remote",
 		kind = Kind.Keyword,
 		documentation = [[
-		remote
+remote
 		]],
 	},
 	{
 		label = "remove-events-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		remove-events-procedure
+remove-events-procedure
 		]],
 	},
 	{
 		label = "remove-super-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		remove-super-procedure
+remove-super-procedure
 		]],
 	},
 	{
@@ -8073,126 +8073,126 @@ returned value matches the data type of the expression passed to the function.
 		label = "replace-selection-text",
 		kind = Kind.Keyword,
 		documentation = [[
-		replace-selection-text
+replace-selection-text
 		]],
 	},
 	{
 		label = "reposition",
 		kind = Kind.Keyword,
 		documentation = [[
-		reposition
+reposition
 		]],
 	},
 	{
 		label = "reposition-backward",
 		kind = Kind.Keyword,
 		documentation = [[
-		reposition-backward
+reposition-backward
 		]],
 	},
 	{
 		label = "reposition-forward",
 		kind = Kind.Keyword,
 		documentation = [[
-		reposition-forward
+reposition-forward
 		]],
 	},
 	{
 		label = "reposition-mode",
 		kind = Kind.Keyword,
 		documentation = [[
-		reposition-mode
+reposition-mode
 		]],
 	},
 	{
 		label = "reposition-to-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		reposition-to-row
+reposition-to-row
 		]],
 	},
 	{
 		label = "reposition-to-rowid",
 		kind = Kind.Keyword,
 		documentation = [[
-		reposition-to-rowid
+reposition-to-rowid
 		]],
 	},
 	{
 		label = "request",
 		kind = Kind.Keyword,
 		documentation = [[
-		request
+request
 		]],
 	},
 	{
 		label = "request-info",
 		kind = Kind.Keyword,
 		documentation = [[
-		request-info
+request-info
 		]],
 	},
 	{
 		label = "reset",
 		kind = Kind.Keyword,
 		documentation = [[
-		reset
+reset
 		]],
 	},
 	{
 		label = "resizable",
 		kind = Kind.Keyword,
 		documentation = [[
-		resizable
+resizable
 		]],
 	},
 	{
 		label = "resize",
 		kind = Kind.Keyword,
 		documentation = [[
-		resize
+resize
 		]],
 	},
 	{
 		label = "response-info",
 		kind = Kind.Keyword,
 		documentation = [[
-		response-info
+response-info
 		]],
 	},
 	{
 		label = "restart-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		restart-row
+restart-row
 		]],
 	},
 	{
 		label = "restart-rowid",
 		kind = Kind.Keyword,
 		documentation = [[
-		restart-rowid
+restart-rowid
 		]],
 	},
 	{
 		label = "retain",
 		kind = Kind.Keyword,
 		documentation = [[
-		retain
+retain
 		]],
 	},
 	{
 		label = "retain-shape",
 		kind = Kind.Keyword,
 		documentation = [[
-		retain-shape
+retain-shape
 		]],
 	},
 	{
 		label = "retry",
 		kind = Kind.Keyword,
 		documentation = [[
-		retry
+retry
 		]],
 	},
 	{
@@ -8206,7 +8206,7 @@ Returns a TRUE value if the current block is being reprocessed after a previous 
 		label = "retry-cancel",
 		kind = Kind.Keyword,
 		documentation = [[
-		retry-cancel
+retry-cancel
 		]],
 	},
 	{
@@ -8224,91 +8224,91 @@ returns to the Procedure Editor
 		label = "return-inserted",
 		kind = Kind.Keyword,
 		documentation = [[
-		return-inserted
+return-inserted
 		]],
 	},
 	{
 		label = "returns",
 		kind = Kind.Keyword,
 		documentation = [[
-		returns
+returns
 		]],
 	},
 	{
 		label = "return-to-start-dir",
 		kind = Kind.Keyword,
 		documentation = [[
-		return-to-start-dir
+return-to-start-dir
 		]],
 	},
 	{
 		label = "return-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		return-value
+return-value
 		]],
 	},
 	{
 		label = "return-value-data-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		return-value-data-type
+return-value-data-type
 		]],
 	},
 	{
 		label = "reverse-from",
 		kind = Kind.Keyword,
 		documentation = [[
-		reverse-from
+reverse-from
 		]],
 	},
 	{
 		label = "revert",
 		kind = Kind.Keyword,
 		documentation = [[
-		revert
+revert
 		]],
 	},
 	{
 		label = "revoke",
 		kind = Kind.Keyword,
 		documentation = [[
-		revoke
+revoke
 		]],
 	},
 	{
 		label = "rgb-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		rgb-value
+rgb-value
 		]],
 	},
 	{
 		label = "right-aligned",
 		kind = Kind.Keyword,
 		documentation = [[
-		right-aligned
+right-aligned
 		]],
 	},
 	{
 		label = "right-trim",
 		kind = Kind.Keyword,
 		documentation = [[
-		right-trim
+right-trim
 		]],
 	},
 	{
 		label = "r-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		r-index
+r-index
 		]],
 	},
 	{
 		label = "roles",
 		kind = Kind.Keyword,
 		documentation = [[
-		roles
+roles
 		]],
 	},
 	{
@@ -8322,63 +8322,63 @@ Rounds a decimal expression to a specified number of places after the decimal po
 		label = "routine-level",
 		kind = Kind.Keyword,
 		documentation = [[
-		routine-level
+routine-level
 		]],
 	},
 	{
 		label = "row",
 		kind = Kind.Keyword,
 		documentation = [[
-		row
+row
 		]],
 	},
 	{
 		label = "row-height-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		row-height-chars
+row-height-chars
 		]],
 	},
 	{
 		label = "row-height-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		row-height-pixels
+row-height-pixels
 		]],
 	},
 	{
 		label = "rowid",
 		kind = Kind.Keyword,
 		documentation = [[
-		rowid
+rowid
 		]],
 	},
 	{
 		label = "row-markers",
 		kind = Kind.Keyword,
 		documentation = [[
-		row-markers
+row-markers
 		]],
 	},
 	{
 		label = "row-of",
 		kind = Kind.Keyword,
 		documentation = [[
-		row-of
+row-of
 		]],
 	},
 	{
 		label = "row-resizable",
 		kind = Kind.Keyword,
 		documentation = [[
-		row-resizable
+row-resizable
 		]],
 	},
 	{
 		label = "rule",
 		kind = Kind.Keyword,
 		documentation = [[
-		rule
+rule
 		]],
 	},
 	{
@@ -8392,301 +8392,301 @@ Calls an ABL procedure.
 		label = "run-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		run-procedure
+run-procedure
 		]],
 	},
 	{
 		label = "save",
 		kind = Kind.Keyword,
 		documentation = [[
-		save
+save
 		]],
 	},
 	{
 		label = "save",
 		kind = Kind.Keyword,
 		documentation = [[
-		save
+save
 		]],
 	},
 	{
 		label = "save-as",
 		kind = Kind.Keyword,
 		documentation = [[
-		save-as
+save-as
 		]],
 	},
 	{
 		label = "save-file",
 		kind = Kind.Keyword,
 		documentation = [[
-		save-file
+save-file
 		]],
 	},
 	{
 		label = "sax-complete",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-complete
+sax-complete
 		]],
 	},
 	{
 		label = "sax-parse",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-parse
+sax-parse
 		]],
 	},
 	{
 		label = "sax-parse-first",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-parse-first
+sax-parse-first
 		]],
 	},
 	{
 		label = "sax-parse-next",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-parse-next
+sax-parse-next
 		]],
 	},
 	{
 		label = "sax-parser-error",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-parser-error
+sax-parser-error
 		]],
 	},
 	{
 		label = "sax-running",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-running
+sax-running
 		]],
 	},
 	{
 		label = "sax-uninitialized",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-uninitialized
+sax-uninitialized
 		]],
 	},
 	{
 		label = "sax-write-begin",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-write-begin
+sax-write-begin
 		]],
 	},
 	{
 		label = "sax-write-complete",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-write-complete
+sax-write-complete
 		]],
 	},
 	{
 		label = "sax-write-content",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-write-content
+sax-write-content
 		]],
 	},
 	{
 		label = "sax-write-element",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-write-element
+sax-write-element
 		]],
 	},
 	{
 		label = "sax-write-error",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-write-error
+sax-write-error
 		]],
 	},
 	{
 		label = "sax-write-idle",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-write-idle
+sax-write-idle
 		]],
 	},
 	{
 		label = "sax-writer",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-writer
+sax-writer
 		]],
 	},
 	{
 		label = "sax-write-tag",
 		kind = Kind.Keyword,
 		documentation = [[
-		sax-write-tag
+sax-write-tag
 		]],
 	},
 	{
 		label = "schema",
 		kind = Kind.Keyword,
 		documentation = [[
-		schema
+schema
 		]],
 	},
 	{
 		label = "schema-location",
 		kind = Kind.Keyword,
 		documentation = [[
-		schema-location
+schema-location
 		]],
 	},
 	{
 		label = "schema-marshal",
 		kind = Kind.Keyword,
 		documentation = [[
-		schema-marshal
+schema-marshal
 		]],
 	},
 	{
 		label = "schema-path",
 		kind = Kind.Keyword,
 		documentation = [[
-		schema-path
+schema-path
 		]],
 	},
 	{
 		label = "screen",
 		kind = Kind.Keyword,
 		documentation = [[
-		screen
+screen
 		]],
 	},
 	{
 		label = "screen-io",
 		kind = Kind.Keyword,
 		documentation = [[
-		screen-io
+screen-io
 		]],
 	},
 	{
 		label = "screen-lines",
 		kind = Kind.Keyword,
 		documentation = [[
-		screen-lines
+screen-lines
 		]],
 	},
 	{
 		label = "screen-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		screen-value
+screen-value
 		]],
 	},
 	{
 		label = "scroll",
 		kind = Kind.Keyword,
 		documentation = [[
-		scroll
+scroll
 		]],
 	},
 	{
 		label = "scrollable",
 		kind = Kind.Keyword,
 		documentation = [[
-		scrollable
+scrollable
 		]],
 	},
 	{
 		label = "scrollbar-horizontal",
 		kind = Kind.Keyword,
 		documentation = [[
-		scrollbar-horizontal
+scrollbar-horizontal
 		]],
 	},
 	{
 		label = "scroll-bars",
 		kind = Kind.Keyword,
 		documentation = [[
-		scroll-bars
+scroll-bars
 		]],
 	},
 	{
 		label = "scrollbar-vertical",
 		kind = Kind.Keyword,
 		documentation = [[
-		scrollbar-vertical
+scrollbar-vertical
 		]],
 	},
 	{
 		label = "scroll-delta",
 		kind = Kind.Keyword,
 		documentation = [[
-		scroll-delta
+scroll-delta
 		]],
 	},
 	{
 		label = "scrolled-row-position",
 		kind = Kind.Keyword,
 		documentation = [[
-		scrolled-row-position
+scrolled-row-position
 		]],
 	},
 	{
 		label = "scrolling",
 		kind = Kind.Keyword,
 		documentation = [[
-		scrolling
+scrolling
 		]],
 	},
 	{
 		label = "scroll-offset",
 		kind = Kind.Keyword,
 		documentation = [[
-		scroll-offset
+scroll-offset
 		]],
 	},
 	{
 		label = "scroll-to-current-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		scroll-to-current-row
+scroll-to-current-row
 		]],
 	},
 	{
 		label = "scroll-to-item",
 		kind = Kind.Keyword,
 		documentation = [[
-		scroll-to-item
+scroll-to-item
 		]],
 	},
 	{
 		label = "scroll-to-selected-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		scroll-to-selected-row
+scroll-to-selected-row
 		]],
 	},
 	{
 		label = "sdbname",
 		kind = Kind.Keyword,
 		documentation = [[
-		sdbname
+sdbname
 		]],
 	},
 	{
 		label = "seal",
 		kind = Kind.Keyword,
 		documentation = [[
-		seal
+seal
 		]],
 	},
 	{
 		label = "seal-timestamp",
 		kind = Kind.Keyword,
 		documentation = [[
-		seal-timestamp
+seal-timestamp
 		]],
 	},
 	{
@@ -8703,756 +8703,756 @@ not find the file, it returns the Unknown value (?).
 		label = "search-self",
 		kind = Kind.Keyword,
 		documentation = [[
-		search-self
+search-self
 		]],
 	},
 	{
 		label = "search-targer",
 		kind = Kind.Keyword,
 		documentation = [[
-		search-targer
+search-targer
 		]],
 	},
 	{
 		label = "section",
 		kind = Kind.Keyword,
 		documentation = [[
-		section
+section
 		]],
 	},
 	{
 		label = "security-policy",
 		kind = Kind.Keyword,
 		documentation = [[
-		security-policy
+security-policy
 		]],
 	},
 	{
 		label = "seek",
 		kind = Kind.Keyword,
 		documentation = [[
-		seek
+seek
 		]],
 	},
 	{
 		label = "select",
 		kind = Kind.Keyword,
 		documentation = [[
-		select
+select
 		]],
 	},
 	{
 		label = "selectable",
 		kind = Kind.Keyword,
 		documentation = [[
-		selectable
+selectable
 		]],
 	},
 	{
 		label = "select-all",
 		kind = Kind.Keyword,
 		documentation = [[
-		select-all
+select-all
 		]],
 	},
 	{
 		label = "selected",
 		kind = Kind.Keyword,
 		documentation = [[
-		selected
+selected
 		]],
 	},
 	{
 		label = "select-focused-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		select-focused-row
+select-focused-row
 		]],
 	},
 	{
 		label = "selection",
 		kind = Kind.Keyword,
 		documentation = [[
-		selection
+selection
 		]],
 	},
 	{
 		label = "selection-end",
 		kind = Kind.Keyword,
 		documentation = [[
-		selection-end
+selection-end
 		]],
 	},
 	{
 		label = "selection-list",
 		kind = Kind.Keyword,
 		documentation = [[
-		selection-list
+selection-list
 		]],
 	},
 	{
 		label = "selection-start",
 		kind = Kind.Keyword,
 		documentation = [[
-		selection-start
+selection-start
 		]],
 	},
 	{
 		label = "selection-text",
 		kind = Kind.Keyword,
 		documentation = [[
-		selection-text
+selection-text
 		]],
 	},
 	{
 		label = "select-next-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		select-next-row
+select-next-row
 		]],
 	},
 	{
 		label = "select-prev-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		select-prev-row
+select-prev-row
 		]],
 	},
 	{
 		label = "select-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		select-row
+select-row
 		]],
 	},
 	{
 		label = "self",
 		kind = Kind.Keyword,
 		documentation = [[
-		self
+self
 		]],
 	},
 	{
 		label = "send",
 		kind = Kind.Keyword,
 		documentation = [[
-		send
+send
 		]],
 	},
 	{
 		label = "send-sql-statement",
 		kind = Kind.Keyword,
 		documentation = [[
-		send-sql-statement
+send-sql-statement
 		]],
 	},
 	{
 		label = "sensitive",
 		kind = Kind.Keyword,
 		documentation = [[
-		sensitive
+sensitive
 		]],
 	},
 	{
 		label = "separate-connection",
 		kind = Kind.Keyword,
 		documentation = [[
-		separate-connection
+separate-connection
 		]],
 	},
 	{
 		label = "separator-fgcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		separator-fgcolor
+separator-fgcolor
 		]],
 	},
 	{
 		label = "separators",
 		kind = Kind.Keyword,
 		documentation = [[
-		separators
+separators
 		]],
 	},
 	{
 		label = "serializable",
 		kind = Kind.Keyword,
 		documentation = [[
-		serializable
+serializable
 		]],
 	},
 	{
 		label = "serialize-hidden",
 		kind = Kind.Keyword,
 		documentation = [[
-		serialize-hidden
+serialize-hidden
 		]],
 	},
 	{
 		label = "serialize-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		serialize-name
+serialize-name
 		]],
 	},
 	{
 		label = "server",
 		kind = Kind.Keyword,
 		documentation = [[
-		server
+server
 		]],
 	},
 	{
 		label = "server-connection-bound",
 		kind = Kind.Keyword,
 		documentation = [[
-		server-connection-bound
+server-connection-bound
 		]],
 	},
 	{
 		label = "server-connection-bound-request",
 		kind = Kind.Keyword,
 		documentation = [[
-		server-connection-bound-request
+server-connection-bound-request
 		]],
 	},
 	{
 		label = "server-connection-context",
 		kind = Kind.Keyword,
 		documentation = [[
-		server-connection-context
+server-connection-context
 		]],
 	},
 	{
 		label = "server-connection-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		server-connection-id
+server-connection-id
 		]],
 	},
 	{
 		label = "server-operating-mode",
 		kind = Kind.Keyword,
 		documentation = [[
-		server-operating-mode
+server-operating-mode
 		]],
 	},
 	{
 		label = "session",
 		kind = Kind.Keyword,
 		documentation = [[
-		session
+session
 		]],
 	},
 	{
 		label = "session-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		session-id
+session-id
 		]],
 	},
 	{
 		label = "set",
 		kind = Kind.Keyword,
 		documentation = [[
-		set
+set
 		]],
 	},
 	{
 		label = "set-appl-context",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-appl-context
+set-appl-context
 		]],
 	},
 	{
 		label = "set-attr-call-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-attr-call-type
+set-attr-call-type
 		]],
 	},
 	{
 		label = "set-attribute-node",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-attribute-node
+set-attribute-node
 		]],
 	},
 	{
 		label = "set-blue-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-blue-value
+set-blue-value
 		]],
 	},
 	{
 		label = "set-break",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-break
+set-break
 		]],
 	},
 	{
 		label = "set-buffers",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-buffers
+set-buffers
 		]],
 	},
 	{
 		label = "set-callback",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-callback
+set-callback
 		]],
 	},
 	{
 		label = "set-client",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-client
+set-client
 		]],
 	},
 	{
 		label = "set-commit",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-commit
+set-commit
 		]],
 	},
 	{
 		label = "set-contents",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-contents
+set-contents
 		]],
 	},
 	{
 		label = "set-current-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-current-value
+set-current-value
 		]],
 	},
 	{
 		label = "set-db-client",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-db-client
+set-db-client
 		]],
 	},
 	{
 		label = "set-dynamic",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-dynamic
+set-dynamic
 		]],
 	},
 	{
 		label = "set-event-manager-option",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-event-manager-option
+set-event-manager-option
 		]],
 	},
 	{
 		label = "set-green-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-green-value
+set-green-value
 		]],
 	},
 	{
 		label = "set-input-source",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-input-source
+set-input-source
 		]],
 	},
 	{
 		label = "set-option",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-option
+set-option
 		]],
 	},
 	{
 		label = "set-output-destination",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-output-destination
+set-output-destination
 		]],
 	},
 	{
 		label = "set-parameter",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-parameter
+set-parameter
 		]],
 	},
 	{
 		label = "set-pointer-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-pointer-value
+set-pointer-value
 		]],
 	},
 	{
 		label = "set-property",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-property
+set-property
 		]],
 	},
 	{
 		label = "set-red-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-red-value
+set-red-value
 		]],
 	},
 	{
 		label = "set-repositioned-row",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-repositioned-row
+set-repositioned-row
 		]],
 	},
 	{
 		label = "set-rgb-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-rgb-value
+set-rgb-value
 		]],
 	},
 	{
 		label = "set-rollback",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-rollback
+set-rollback
 		]],
 	},
 	{
 		label = "set-selection",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-selection
+set-selection
 		]],
 	},
 	{
 		label = "set-size",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-size
+set-size
 		]],
 	},
 	{
 		label = "set-sort-arrow",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-sort-arrow
+set-sort-arrow
 		]],
 	},
 	{
 		label = "setuserid",
 		kind = Kind.Keyword,
 		documentation = [[
-		setuserid
+setuserid
 		]],
 	},
 	{
 		label = "set-wait-state",
 		kind = Kind.Keyword,
 		documentation = [[
-		set-wait-state
+set-wait-state
 		]],
 	},
 	{
 		label = "sha1-digest",
 		kind = Kind.Keyword,
 		documentation = [[
-		sha1-digest
+sha1-digest
 		]],
 	},
 	{
 		label = "shared",
 		kind = Kind.Keyword,
 		documentation = [[
-		shared
+shared
 		]],
 	},
 	{
 		label = "share-lock",
 		kind = Kind.Keyword,
 		documentation = [[
-		share-lock
+share-lock
 		]],
 	},
 	{
 		label = "show-in-taskbar",
 		kind = Kind.Keyword,
 		documentation = [[
-		show-in-taskbar
+show-in-taskbar
 		]],
 	},
 	{
 		label = "show-stats",
 		kind = Kind.Keyword,
 		documentation = [[
-		show-stats
+show-stats
 		]],
 	},
 	{
 		label = "side-label-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		side-label-handle
+side-label-handle
 		]],
 	},
 	{
 		label = "side-labels",
 		kind = Kind.Keyword,
 		documentation = [[
-		side-labels
+side-labels
 		]],
 	},
 	{
 		label = "signature",
 		kind = Kind.Keyword,
 		documentation = [[
-		signature
+signature
 		]],
 	},
 	{
 		label = "silent",
 		kind = Kind.Keyword,
 		documentation = [[
-		silent
+silent
 		]],
 	},
 	{
 		label = "simple",
 		kind = Kind.Keyword,
 		documentation = [[
-		simple
+simple
 		]],
 	},
 	{
 		label = "single",
 		kind = Kind.Keyword,
 		documentation = [[
-		single
+single
 		]],
 	},
 	{
 		label = "single-run",
 		kind = Kind.Keyword,
 		documentation = [[
-		single-run
+single-run
 		]],
 	},
 	{
 		label = "singleton",
 		kind = Kind.Keyword,
 		documentation = [[
-		singleton
+singleton
 		]],
 	},
 	{
 		label = "size",
 		kind = Kind.Keyword,
 		documentation = [[
-		size
+size
 		]],
 	},
 	{
 		label = "size-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		size-chars
+size-chars
 		]],
 	},
 	{
 		label = "size-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		size-pixels
+size-pixels
 		]],
 	},
 	{
 		label = "skip",
 		kind = Kind.Keyword,
 		documentation = [[
-		skip
+skip
 		]],
 	},
 	{
 		label = "skip-deleted-record",
 		kind = Kind.Keyword,
 		documentation = [[
-		skip-deleted-record
+skip-deleted-record
 		]],
 	},
 	{
 		label = "slider",
 		kind = Kind.Keyword,
 		documentation = [[
-		slider
+slider
 		]],
 	},
 	{
 		label = "small-icon",
 		kind = Kind.Keyword,
 		documentation = [[
-		small-icon
+small-icon
 		]],
 	},
 	{
 		label = "smallint",
 		kind = Kind.Keyword,
 		documentation = [[
-		smallint
+smallint
 		]],
 	},
 	{
 		label = "small-title",
 		kind = Kind.Keyword,
 		documentation = [[
-		small-title
+small-title
 		]],
 	},
 	{
 		label = "some",
 		kind = Kind.Keyword,
 		documentation = [[
-		some
+some
 		]],
 	},
 	{
 		label = "sort",
 		kind = Kind.Keyword,
 		documentation = [[
-		sort
+sort
 		]],
 	},
 	{
 		label = "sort-ascending",
 		kind = Kind.Keyword,
 		documentation = [[
-		sort-ascending
+sort-ascending
 		]],
 	},
 	{
 		label = "sort-number",
 		kind = Kind.Keyword,
 		documentation = [[
-		sort-number
+sort-number
 		]],
 	},
 	{
 		label = "source",
 		kind = Kind.Keyword,
 		documentation = [[
-		source
+source
 		]],
 	},
 	{
 		label = "source-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		source-procedure
+source-procedure
 		]],
 	},
 	{
 		label = "space",
 		kind = Kind.Keyword,
 		documentation = [[
-		space
+space
 		]],
 	},
 	{
 		label = "sql",
 		kind = Kind.Keyword,
 		documentation = [[
-		sql
+sql
 		]],
 	},
 	{
 		label = "sqrt",
 		kind = Kind.Keyword,
 		documentation = [[
-		sqrt
+sqrt
 		]],
 	},
 	{
 		label = "ssl-server-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		ssl-server-name
+ssl-server-name
 		]],
 	},
 	{
 		label = "standalone",
 		kind = Kind.Keyword,
 		documentation = [[
-		standalone
+standalone
 		]],
 	},
 	{
 		label = "start",
 		kind = Kind.Keyword,
 		documentation = [[
-		start
+start
 		]],
 	},
 	{
 		label = "start-document",
 		kind = Kind.Keyword,
 		documentation = [[
-		start-document
+start-document
 		]],
 	},
 	{
 		label = "start-element",
 		kind = Kind.Keyword,
 		documentation = [[
-		start-element
+start-element
 		]],
 	},
 	{
 		label = "start-move",
 		kind = Kind.Keyword,
 		documentation = [[
-		start-move
+start-move
 		]],
 	},
 	{
 		label = "start-resize",
 		kind = Kind.Keyword,
 		documentation = [[
-		start-resize
+start-resize
 		]],
 	},
 	{
 		label = "start-row-resize",
 		kind = Kind.Keyword,
 		documentation = [[
-		start-row-resize
+start-row-resize
 		]],
 	},
 	{
 		label = "state-detail",
 		kind = Kind.Keyword,
 		documentation = [[
-		state-detail
+state-detail
 		]],
 	},
 	{
 		label = "static",
 		kind = Kind.Keyword,
 		documentation = [[
-		static
+static
 		]],
 	},
 	{
@@ -9466,98 +9466,98 @@ Specifies the text that appears in the status line of a window.
 		label = "status-area",
 		kind = Kind.Keyword,
 		documentation = [[
-		status-area
+status-area
 		]],
 	},
 	{
 		label = "status-area-font",
 		kind = Kind.Keyword,
 		documentation = [[
-		status-area-font
+status-area-font
 		]],
 	},
 	{
 		label = "stdcall",
 		kind = Kind.Keyword,
 		documentation = [[
-		stdcall
+stdcall
 		]],
 	},
 	{
 		label = "stop",
 		kind = Kind.Keyword,
 		documentation = [[
-		stop
+stop
 		]],
 	},
 	{
 		label = "stop-after",
 		kind = Kind.Keyword,
 		documentation = [[
-		stop-after
+stop-after
 		]],
 	},
 	{
 		label = "stop-parsing",
 		kind = Kind.Keyword,
 		documentation = [[
-		stop-parsing
+stop-parsing
 		]],
 	},
 	{
 		label = "stopped",
 		kind = Kind.Keyword,
 		documentation = [[
-		stopped
+stopped
 		]],
 	},
 	{
 		label = "stored-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		stored-procedure
+stored-procedure
 		]],
 	},
 	{
 		label = "stream",
 		kind = Kind.Keyword,
 		documentation = [[
-		stream
+stream
 		]],
 	},
 	{
 		label = "stream-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		stream-handle
+stream-handle
 		]],
 	},
 	{
 		label = "stream-io",
 		kind = Kind.Keyword,
 		documentation = [[
-		stream-io
+stream-io
 		]],
 	},
 	{
 		label = "stretch-to-fit",
 		kind = Kind.Keyword,
 		documentation = [[
-		stretch-to-fit
+stretch-to-fit
 		]],
 	},
 	{
 		label = "strict",
 		kind = Kind.Keyword,
 		documentation = [[
-		strict
+strict
 		]],
 	},
 	{
 		label = "strict-entity-resolution",
 		kind = Kind.Keyword,
 		documentation = [[
-		strict-entity-resolution
+strict-entity-resolution
 		]],
 	},
 	{
@@ -9571,42 +9571,42 @@ Converts a value of any data type into a character value.
 		label = "string-value",
 		kind = Kind.Keyword,
 		documentation = [[
-		string-value
+string-value
 		]],
 	},
 	{
 		label = "string-xref",
 		kind = Kind.Keyword,
 		documentation = [[
-		string-xref
+string-xref
 		]],
 	},
 	{
 		label = "sub-average",
 		kind = Kind.Keyword,
 		documentation = [[
-		Averages values in a break group. Does not supply an average for all records, just for those in each break group.
+Averages values in a break group. Does not supply an average for all records, just for those in each break group.
 		]],
 	},
 	{
 		label = "sub-count",
 		kind = Kind.Keyword,
 		documentation = [[
-		Counts the number of times an expression is in a break group. Does not supply a count for all records, just for those in each break group.
+Counts the number of times an expression is in a break group. Does not supply a count for all records, just for those in each break group.
 		]],
 	},
 	{
 		label = "sub-maximum",
 		kind = Kind.Keyword,
 		documentation = [[
-		Shows the maximum value of an expression in a break group. Does not supply a maximum value for all records, just for those in each break group.
+Shows the maximum value of an expression in a break group. Does not supply a maximum value for all records, just for those in each break group.
 		]],
 	},
 	{
 		label = "sub-menu",
 		kind = Kind.Keyword,
 		documentation = [[
-		sub-menu
+sub-menu
 		]],
 	},
 	{
@@ -9621,14 +9621,14 @@ supply a minimum value for all records, just for those in each break group.
 		label = "subscribe",
 		kind = Kind.Keyword,
 		documentation = [[
-		subscribe
+subscribe
 		]],
 	},
 	{
 		label = "substitute",
 		kind = Kind.Keyword,
 		documentation = [[
-		substitute
+substitute
 		]],
 	},
 	{
@@ -9651,14 +9651,14 @@ in each break group.
 		label = "subtype",
 		kind = Kind.Keyword,
 		documentation = [[
-		subtype
+subtype
 		]],
 	},
 	{
 		label = "sum",
 		kind = Kind.Keyword,
 		documentation = [[
-		sum
+sum
 		]],
 	},
 	{
@@ -9673,203 +9673,203 @@ in a constructor of the defining class.
 		label = "super-procedures",
 		kind = Kind.Keyword,
 		documentation = [[
-		super-procedures
+super-procedures
 		]],
 	},
 	{
 		label = "suppress-namespace-processing",
 		kind = Kind.Keyword,
 		documentation = [[
-		suppress-namespace-processing
+suppress-namespace-processing
 		]],
 	},
 	{
 		label = "suppress-warnings",
 		kind = Kind.Keyword,
 		documentation = [[
-		suppress-warnings
+suppress-warnings
 		]],
 	},
 	{
 		label = "symmetric-encryption-algorithm",
 		kind = Kind.Keyword,
 		documentation = [[
-		symmetric-encryption-algorithm
+symmetric-encryption-algorithm
 		]],
 	},
 	{
 		label = "symmetric-encryption-iv",
 		kind = Kind.Keyword,
 		documentation = [[
-		symmetric-encryption-iv
+symmetric-encryption-iv
 		]],
 	},
 	{
 		label = "symmetric-encryption-key",
 		kind = Kind.Keyword,
 		documentation = [[
-		symmetric-encryption-key
+symmetric-encryption-key
 		]],
 	},
 	{
 		label = "symmetric-support",
 		kind = Kind.Keyword,
 		documentation = [[
-		symmetric-support
+symmetric-support
 		]],
 	},
 	{
 		label = "system-alert-boxes",
 		kind = Kind.Keyword,
 		documentation = [[
-		system-alert-boxes
+system-alert-boxes
 		]],
 	},
 	{
 		label = "system-dialog",
 		kind = Kind.Keyword,
 		documentation = [[
-		system-dialog
+system-dialog
 		]],
 	},
 	{
 		label = "system-help",
 		kind = Kind.Keyword,
 		documentation = [[
-		system-help
+system-help
 		]],
 	},
 	{
 		label = "system-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		system-id
+system-id
 		]],
 	},
 	{
 		label = "table",
 		kind = Kind.Keyword,
 		documentation = [[
-		table
+table
 		]],
 	},
 	{
 		label = "table-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		table-handle
+table-handle
 		]],
 	},
 	{
 		label = "table-number",
 		kind = Kind.Keyword,
 		documentation = [[
-		table-number
+table-number
 		]],
 	},
 	{
 		label = "table-scan",
 		kind = Kind.Keyword,
 		documentation = [[
-		table-scan
+table-scan
 		]],
 	},
 	{
 		label = "tab-position",
 		kind = Kind.Keyword,
 		documentation = [[
-		tab-position
+tab-position
 		]],
 	},
 	{
 		label = "tab-stop",
 		kind = Kind.Keyword,
 		documentation = [[
-		tab-stop
+tab-stop
 		]],
 	},
 	{
 		label = "target",
 		kind = Kind.Keyword,
 		documentation = [[
-		target
+target
 		]],
 	},
 	{
 		label = "target-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		target-procedure
+target-procedure
 		]],
 	},
 	{
 		label = "temp-directory",
 		kind = Kind.Keyword,
 		documentation = [[
-		temp-directory
+temp-directory
 		]],
 	},
 	{
 		label = "temp-table",
 		kind = Kind.Keyword,
 		documentation = [[
-		temp-table
+temp-table
 		]],
 	},
 	{
 		label = "temp-table-prepare",
 		kind = Kind.Keyword,
 		documentation = [[
-		temp-table-prepare
+temp-table-prepare
 		]],
 	},
 	{
 		label = "term",
 		kind = Kind.Keyword,
 		documentation = [[
-		term
+term
 		]],
 	},
 	{
 		label = "terminal",
 		kind = Kind.Keyword,
 		documentation = [[
-		terminal
+terminal
 		]],
 	},
 	{
 		label = "terminate",
 		kind = Kind.Keyword,
 		documentation = [[
-		terminate
+terminate
 		]],
 	},
 	{
 		label = "text",
 		kind = Kind.Keyword,
 		documentation = [[
-		text
+text
 		]],
 	},
 	{
 		label = "text-cursor",
 		kind = Kind.Keyword,
 		documentation = [[
-		text-cursor
+text-cursor
 		]],
 	},
 	{
 		label = "text-seg-grow",
 		kind = Kind.Keyword,
 		documentation = [[
-		text-seg-grow
+text-seg-grow
 		]],
 	},
 	{
 		label = "text-selected",
 		kind = Kind.Keyword,
 		documentation = [[
-		text-selected
+text-selected
 		]],
 	},
 	{
@@ -9883,56 +9883,56 @@ Describes the block statement to process if the expression is TRUE.
 		label = "this-object",
 		kind = Kind.Keyword,
 		documentation = [[
-		this-object
+this-object
 		]],
 	},
 	{
 		label = "this-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		this-procedure
+this-procedure
 		]],
 	},
 	{
 		label = "thread-safe",
 		kind = Kind.Keyword,
 		documentation = [[
-		thread-safe
+thread-safe
 		]],
 	},
 	{
 		label = "three-d",
 		kind = Kind.Keyword,
 		documentation = [[
-		three-d
+three-d
 		]],
 	},
 	{
 		label = "throw",
 		kind = Kind.Keyword,
 		documentation = [[
-		throw
+throw
 		]],
 	},
 	{
 		label = "through",
 		kind = Kind.Keyword,
 		documentation = [[
-		through
+through
 		]],
 	},
 	{
 		label = "thru",
 		kind = Kind.Keyword,
 		documentation = [[
-		thru
+thru
 		]],
 	},
 	{
 		label = "tic-marks",
 		kind = Kind.Keyword,
 		documentation = [[
-		tic-marks
+tic-marks
 		]],
 	},
 	{
@@ -9948,49 +9948,49 @@ time in hours, minutes, and seconds.
 		label = "time-source",
 		kind = Kind.Keyword,
 		documentation = [[
-		time-source
+time-source
 		]],
 	},
 	{
 		label = "title",
 		kind = Kind.Keyword,
 		documentation = [[
-		title
+title
 		]],
 	},
 	{
 		label = "title-bgcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		title-bgcolor
+title-bgcolor
 		]],
 	},
 	{
 		label = "title-dcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		title-dcolor
+title-dcolor
 		]],
 	},
 	{
 		label = "title-fgcolor",
 		kind = Kind.Keyword,
 		documentation = [[
-		title-fgcolor
+title-fgcolor
 		]],
 	},
 	{
 		label = "title-font",
 		kind = Kind.Keyword,
 		documentation = [[
-		title-font
+title-font
 		]],
 	},
 	{
 		label = "to",
 		kind = Kind.Keyword,
 		documentation = [[
-		to
+to
 		]],
 	},
 	{
@@ -10004,49 +10004,49 @@ Returns the current system date.
 		label = "toggle-box",
 		kind = Kind.Keyword,
 		documentation = [[
-		toggle-box
+toggle-box
 		]],
 	},
 	{
 		label = "tooltip",
 		kind = Kind.Keyword,
 		documentation = [[
-		tooltip
+tooltip
 		]],
 	},
 	{
 		label = "tooltips",
 		kind = Kind.Keyword,
 		documentation = [[
-		tooltips
+tooltips
 		]],
 	},
 	{
 		label = "topic",
 		kind = Kind.Keyword,
 		documentation = [[
-		topic
+topic
 		]],
 	},
 	{
 		label = "top-nav-query",
 		kind = Kind.Keyword,
 		documentation = [[
-		top-nav-query
+top-nav-query
 		]],
 	},
 	{
 		label = "top-only",
 		kind = Kind.Keyword,
 		documentation = [[
-		top-only
+top-only
 		]],
 	},
 	{
 		label = "to-rowid",
 		kind = Kind.Keyword,
 		documentation = [[
-		to-rowid
+to-rowid
 		]],
 	},
 	{
@@ -10063,112 +10063,112 @@ of the grand total is deferred until the frame goes out of scope.
 		label = "trailing",
 		kind = Kind.Keyword,
 		documentation = [[
-		trailing
+trailing
 		]],
 	},
 	{
 		label = "trans",
 		kind = Kind.Keyword,
 		documentation = [[
-		trans
+trans
 		]],
 	},
 	{
 		label = "transaction",
 		kind = Kind.Keyword,
 		documentation = [[
-		transaction
+transaction
 		]],
 	},
 	{
 		label = "transaction-mode",
 		kind = Kind.Keyword,
 		documentation = [[
-		transaction-mode
+transaction-mode
 		]],
 	},
 	{
 		label = "trans-init-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-		trans-init-procedure
+trans-init-procedure
 		]],
 	},
 	{
 		label = "transparent",
 		kind = Kind.Keyword,
 		documentation = [[
-		transparent
+transparent
 		]],
 	},
 	{
 		label = "trigger",
 		kind = Kind.Keyword,
 		documentation = [[
-		trigger
+trigger
 		]],
 	},
 	{
 		label = "triggers",
 		kind = Kind.Keyword,
 		documentation = [[
-		triggers
+triggers
 		]],
 	},
 	{
 		label = "trim",
 		kind = Kind.Keyword,
 		documentation = [[
-		trim
+trim
 		]],
 	},
 	{
 		label = "true",
 		kind = Kind.Keyword,
 		documentation = [[
-		true
+true
 		]],
 	},
 	{
 		label = "truncate",
 		kind = Kind.Keyword,
 		documentation = [[
-		truncate
+truncate
 		]],
 	},
 	{
 		label = "type",
 		kind = Kind.Keyword,
 		documentation = [[
-		type
+type
 		]],
 	},
 	{
 		label = "type-of",
 		kind = Kind.Keyword,
 		documentation = [[
-		type-of
+type-of
 		]],
 	},
 	{
 		label = "unbox",
 		kind = Kind.Keyword,
 		documentation = [[
-		unbox
+unbox
 		]],
 	},
 	{
 		label = "unbuffered",
 		kind = Kind.Keyword,
 		documentation = [[
-		unbuffered
+unbuffered
 		]],
 	},
 	{
 		label = "underline",
 		kind = Kind.Keyword,
 		documentation = [[
-		underline
+underline
 		]],
 	},
 	{
@@ -10183,35 +10183,35 @@ current iteration of a block, and indicates what action to take next.
 		label = "unformatted",
 		kind = Kind.Keyword,
 		documentation = [[
-		unformatted
+unformatted
 		]],
 	},
 	{
 		label = "union",
 		kind = Kind.Keyword,
 		documentation = [[
-		union
+union
 		]],
 	},
 	{
 		label = "unique",
 		kind = Kind.Keyword,
 		documentation = [[
-		unique
+unique
 		]],
 	},
 	{
 		label = "unique-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		unique-id
+unique-id
 		]],
 	},
 	{
 		label = "unique-match",
 		kind = Kind.Keyword,
 		documentation = [[
-		unique-match
+unique-match
 		]],
 	},
 	{
@@ -10226,28 +10226,28 @@ interactive shell to allow interactive processing of UNIX commands.
 		label = "unless-hidden",
 		kind = Kind.Keyword,
 		documentation = [[
-		unless-hidden
+unless-hidden
 		]],
 	},
 	{
 		label = "unload",
 		kind = Kind.Keyword,
 		documentation = [[
-		unload
+unload
 		]],
 	},
 	{
 		label = "unsigned-long",
 		kind = Kind.Keyword,
 		documentation = [[
-		unsigned-long
+unsigned-long
 		]],
 	},
 	{
 		label = "unsubscribe",
 		kind = Kind.Keyword,
 		documentation = [[
-		unsubscribe
+unsubscribe
 		]],
 	},
 	{
@@ -10270,119 +10270,119 @@ or variables.
 		label = "update-attribute",
 		kind = Kind.Keyword,
 		documentation = [[
-		update-attribute
+update-attribute
 		]],
 	},
 	{
 		label = "url",
 		kind = Kind.Keyword,
 		documentation = [[
-		url
+url
 		]],
 	},
 	{
 		label = "url-decode",
 		kind = Kind.Keyword,
 		documentation = [[
-		url-decode
+url-decode
 		]],
 	},
 	{
 		label = "url-encode",
 		kind = Kind.Keyword,
 		documentation = [[
-		url-encode
+url-encode
 		]],
 	},
 	{
 		label = "url-password",
 		kind = Kind.Keyword,
 		documentation = [[
-		url-password
+url-password
 		]],
 	},
 	{
 		label = "url-userid",
 		kind = Kind.Keyword,
 		documentation = [[
-		url-userid
+url-userid
 		]],
 	},
 	{
 		label = "use",
 		kind = Kind.Keyword,
 		documentation = [[
-		use
+use
 		]],
 	},
 	{
 		label = "use-dict-exps",
 		kind = Kind.Keyword,
 		documentation = [[
-		use-dict-exps
+use-dict-exps
 		]],
 	},
 	{
 		label = "use-filename",
 		kind = Kind.Keyword,
 		documentation = [[
-		use-filename
+use-filename
 		]],
 	},
 	{
 		label = "use-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		use-index
+use-index
 		]],
 	},
 	{
 		label = "user",
 		kind = Kind.Keyword,
 		documentation = [[
-		user
+user
 		]],
 	},
 	{
 		label = "use-revvideo",
 		kind = Kind.Keyword,
 		documentation = [[
-		use-revvideo
+use-revvideo
 		]],
 	},
 	{
 		label = "userid",
 		kind = Kind.Keyword,
 		documentation = [[
-		userid
+userid
 		]],
 	},
 	{
 		label = "user-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		user-id
+user-id
 		]],
 	},
 	{
 		label = "use-text",
 		kind = Kind.Keyword,
 		documentation = [[
-		use-text
+use-text
 		]],
 	},
 	{
 		label = "use-underline",
 		kind = Kind.Keyword,
 		documentation = [[
-		use-underline
+use-underline
 		]],
 	},
 	{
 		label = "use-widget-pool",
 		kind = Kind.Keyword,
 		documentation = [[
-		use-widget-pool
+use-widget-pool
 		]],
 	},
 	{
@@ -10398,119 +10398,119 @@ unqualified type names.
 		label = "v6display",
 		kind = Kind.Keyword,
 		documentation = [[
-		v6display
+v6display
 		]],
 	},
 	{
 		label = "v6frame",
 		kind = Kind.Keyword,
 		documentation = [[
-		v6frame
+v6frame
 		]],
 	},
 	{
 		label = "validate",
 		kind = Kind.Keyword,
 		documentation = [[
-		validate
+validate
 		]],
 	},
 	{
 		label = "validate-expression",
 		kind = Kind.Keyword,
 		documentation = [[
-		validate-expression
+validate-expression
 		]],
 	},
 	{
 		label = "validate-message",
 		kind = Kind.Keyword,
 		documentation = [[
-		validate-message
+validate-message
 		]],
 	},
 	{
 		label = "validate-seal",
 		kind = Kind.Keyword,
 		documentation = [[
-		validate-seal
+validate-seal
 		]],
 	},
 	{
 		label = "validation-enabled",
 		kind = Kind.Keyword,
 		documentation = [[
-		validation-enabled
+validation-enabled
 		]],
 	},
 	{
 		label = "valid-event",
 		kind = Kind.Keyword,
 		documentation = [[
-		valid-event
+valid-event
 		]],
 	},
 	{
 		label = "valid-handle",
 		kind = Kind.Keyword,
 		documentation = [[
-		valid-handle
+valid-handle
 		]],
 	},
 	{
 		label = "valid-object",
 		kind = Kind.Keyword,
 		documentation = [[
-		valid-object
+valid-object
 		]],
 	},
 	{
 		label = "value",
 		kind = Kind.Keyword,
 		documentation = [[
-		value
+value
 		]],
 	},
 	{
 		label = "value-changed",
 		kind = Kind.Keyword,
 		documentation = [[
-		value-changed
+value-changed
 		]],
 	},
 	{
 		label = "values",
 		kind = Kind.Keyword,
 		documentation = [[
-		values
+values
 		]],
 	},
 	{
 		label = "variable",
 		kind = Kind.Keyword,
 		documentation = [[
-		variable
+variable
 		]],
 	},
 	{
 		label = "verbose",
 		kind = Kind.Keyword,
 		documentation = [[
-		verbose
+verbose
 		]],
 	},
 	{
 		label = "version",
 		kind = Kind.Keyword,
 		documentation = [[
-		version
+version
 		]],
 	},
 	{
 		label = "vertical",
 		kind = Kind.Keyword,
 		documentation = [[
-		vertical
+vertical
 		]],
 	},
 	{
@@ -10532,56 +10532,56 @@ field or variable on the screen.
 		label = "view-first-column-on-reopen",
 		kind = Kind.Keyword,
 		documentation = [[
-		view-first-column-on-reopen
+view-first-column-on-reopen
 		]],
 	},
 	{
 		label = "virtual-height-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		virtual-height-chars
+virtual-height-chars
 		]],
 	},
 	{
 		label = "virtual-height-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		virtual-height-pixels
+virtual-height-pixels
 		]],
 	},
 	{
 		label = "virtual-width-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		virtual-width-chars
+virtual-width-chars
 		]],
 	},
 	{
 		label = "virtual-width-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		virtual-width-pixels
+virtual-width-pixels
 		]],
 	},
 	{
 		label = "visible",
 		kind = Kind.Keyword,
 		documentation = [[
-		visible
+visible
 		]],
 	},
 	{
 		label = "void",
 		kind = Kind.Keyword,
 		documentation = [[
-		void
+void
 		]],
 	},
 	{
 		label = "wait",
 		kind = Kind.Keyword,
 		documentation = [[
-		wait
+wait
 		]],
 	},
 	{
@@ -10598,14 +10598,14 @@ procedures while in this wait state.
 		label = "warning",
 		kind = Kind.Keyword,
 		documentation = [[
-		warning
+warning
 		]],
 	},
 	{
 		label = "web-context",
 		kind = Kind.Keyword,
 		documentation = [[
-		web-context
+web-context
 		]],
 	},
 	{
@@ -10620,378 +10620,378 @@ an INTEGER value from 1 (Sunday) to 7 (Saturday) for that date.
 		label = "when",
 		kind = Kind.Keyword,
 		documentation = [[
-		when
+when
 		]],
 	},
 	{
 		label = "where",
 		kind = Kind.Keyword,
 		documentation = [[
-		where
+where
 		]],
 	},
 	{
 		label = "while",
 		kind = Kind.Keyword,
 		documentation = [[
-		while
+while
 		]],
 	},
 	{
 		label = "widget",
 		kind = Kind.Keyword,
 		documentation = [[
-		widget
+widget
 		]],
 	},
 	{
 		label = "widget-enter",
 		kind = Kind.Keyword,
 		documentation = [[
-		widget-enter
+widget-enter
 		]],
 	},
 	{
 		label = "widget-id",
 		kind = Kind.Keyword,
 		documentation = [[
-		widget-id
+widget-id
 		]],
 	},
 	{
 		label = "widget-leave",
 		kind = Kind.Keyword,
 		documentation = [[
-		widget-leave
+widget-leave
 		]],
 	},
 	{
 		label = "widget-pool",
 		kind = Kind.Keyword,
 		documentation = [[
-		widget-pool
+widget-pool
 		]],
 	},
 	{
 		label = "width",
 		kind = Kind.Keyword,
 		documentation = [[
-		width
+width
 		]],
 	},
 	{
 		label = "width-chars",
 		kind = Kind.Keyword,
 		documentation = [[
-		width-chars
+width-chars
 		]],
 	},
 	{
 		label = "width-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		width-pixels
+width-pixels
 		]],
 	},
 	{
 		label = "window",
 		kind = Kind.Keyword,
 		documentation = [[
-		window
+window
 		]],
 	},
 	{
 		label = "window-maximized",
 		kind = Kind.Keyword,
 		documentation = [[
-		window-maximized
+window-maximized
 		]],
 	},
 	{
 		label = "window-minimized",
 		kind = Kind.Keyword,
 		documentation = [[
-		window-minimized
+window-minimized
 		]],
 	},
 	{
 		label = "window-name",
 		kind = Kind.Keyword,
 		documentation = [[
-		window-name
+window-name
 		]],
 	},
 	{
 		label = "window-normal",
 		kind = Kind.Keyword,
 		documentation = [[
-		window-normal
+window-normal
 		]],
 	},
 	{
 		label = "window-state",
 		kind = Kind.Keyword,
 		documentation = [[
-		window-state
+window-state
 		]],
 	},
 	{
 		label = "window-system",
 		kind = Kind.Keyword,
 		documentation = [[
-		window-system
+window-system
 		]],
 	},
 	{
 		label = "with",
 		kind = Kind.Keyword,
 		documentation = [[
-		with
+with
 		]],
 	},
 	{
 		label = "word-index",
 		kind = Kind.Keyword,
 		documentation = [[
-		word-index
+word-index
 		]],
 	},
 	{
 		label = "word-wrap",
 		kind = Kind.Keyword,
 		documentation = [[
-		word-wrap
+word-wrap
 		]],
 	},
 	{
 		label = "work-area-height-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		work-area-height-pixels
+work-area-height-pixels
 		]],
 	},
 	{
 		label = "work-area-width-pixels",
 		kind = Kind.Keyword,
 		documentation = [[
-		work-area-width-pixels
+work-area-width-pixels
 		]],
 	},
 	{
 		label = "work-area-x",
 		kind = Kind.Keyword,
 		documentation = [[
-		work-area-x
+work-area-x
 		]],
 	},
 	{
 		label = "work-area-y",
 		kind = Kind.Keyword,
 		documentation = [[
-		work-area-y
+work-area-y
 		]],
 	},
 	{
 		label = "workfile",
 		kind = Kind.Keyword,
 		documentation = [[
-		workfile
+workfile
 		]],
 	},
 	{
 		label = "work-table",
 		kind = Kind.Keyword,
 		documentation = [[
-		work-table
+work-table
 		]],
 	},
 	{
 		label = "write",
 		kind = Kind.Keyword,
 		documentation = [[
-		write
+write
 		]],
 	},
 	{
 		label = "write-cdata",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-cdata
+write-cdata
 		]],
 	},
 	{
 		label = "write-characters",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-characters
+write-characters
 		]],
 	},
 	{
 		label = "write-comment",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-comment
+write-comment
 		]],
 	},
 	{
 		label = "write-data-element",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-data-element
+write-data-element
 		]],
 	},
 	{
 		label = "write-empty-element",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-empty-element
+write-empty-element
 		]],
 	},
 	{
 		label = "write-entity-ref",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-entity-ref
+write-entity-ref
 		]],
 	},
 	{
 		label = "write-external-dtd",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-external-dtd
+write-external-dtd
 		]],
 	},
 	{
 		label = "write-fragment",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-fragment
+write-fragment
 		]],
 	},
 	{
 		label = "write-json",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-json
+write-json
 		]],
 	},
 	{
 		label = "write-message",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-message
+write-message
 		]],
 	},
 	{
 		label = "write-processing-instruction",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-processing-instruction
+write-processing-instruction
 		]],
 	},
 	{
 		label = "write-status",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-status
+write-status
 		]],
 	},
 	{
 		label = "write-xml",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-xml
+write-xml
 		]],
 	},
 	{
 		label = "write-xmlschema",
 		kind = Kind.Keyword,
 		documentation = [[
-		write-xmlschema
+write-xmlschema
 		]],
 	},
 	{
 		label = "x",
 		kind = Kind.Keyword,
 		documentation = [[
-		x
+x
 		]],
 	},
 	{
 		label = "xcode",
 		kind = Kind.Keyword,
 		documentation = [[
-		xcode
+xcode
 		]],
 	},
 	{
 		label = "xml-data-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		xml-data-type
+xml-data-type
 		]],
 	},
 	{
 		label = "xml-entity-expansion-limit",
 		kind = Kind.Keyword,
 		documentation = [[
-		xml-entity-expansion-limit
+xml-entity-expansion-limit
 		]],
 	},
 	{
 		label = "xml-node-type",
 		kind = Kind.Keyword,
 		documentation = [[
-		xml-node-type
+xml-node-type
 		]],
 	},
 	{
 		label = "xml-schema-path",
 		kind = Kind.Keyword,
 		documentation = [[
-		xml-schema-path
+xml-schema-path
 		]],
 	},
 	{
 		label = "xml-strict-entity-resolution",
 		kind = Kind.Keyword,
 		documentation = [[
-		xml-strict-entity-resolution
+xml-strict-entity-resolution
 		]],
 	},
 	{
 		label = "xml-suppress-namespace-processing",
 		kind = Kind.Keyword,
 		documentation = [[
-		xml-suppress-namespace-processing
+xml-suppress-namespace-processing
 		]],
 	},
 	{
 		label = "x-of",
 		kind = Kind.Keyword,
 		documentation = [[
-		x-of
+x-of
 		]],
 	},
 	{
 		label = "xref",
 		kind = Kind.Keyword,
 		documentation = [[
-		xref
+xref
 		]],
 	},
 	{
 		label = "xref-xml",
 		kind = Kind.Keyword,
 		documentation = [[
-		xref-xml
+xref-xml
 		]],
 	},
 	{
 		label = "y",
 		kind = Kind.Keyword,
 		documentation = [[
-		y
+y
 		]],
 	},
 	{
@@ -11006,35 +11006,35 @@ date, including the century, as an INTEGER value.
 		label = "year-offset",
 		kind = Kind.Keyword,
 		documentation = [[
-		year-offset
+year-offset
 		]],
 	},
 	{
 		label = "yes",
 		kind = Kind.Keyword,
 		documentation = [[
-		yes
+yes
 		]],
 	},
 	{
 		label = "yes-no",
 		kind = Kind.Keyword,
 		documentation = [[
-		yes-no
+yes-no
 		]],
 	},
 	{
 		label = "yes-no-cancel",
 		kind = Kind.Keyword,
 		documentation = [[
-		yes-no-cancel
+yes-no-cancel
 		]],
 	},
 	{
 		label = "y-of",
 		kind = Kind.Keyword,
 		documentation = [[
-		y-of
+y-of
 		]],
 	},
 }

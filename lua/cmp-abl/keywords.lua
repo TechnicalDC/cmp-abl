@@ -786,7 +786,7 @@ begin-event-group
 	},
 	{
 		label = "begins",
-		kind = Kind.Keyword,
+		kind = Kind.Operator,
 		documentation = [[
 Tests a character expression to see if that expression begins with a second character expression. 
 		]],
@@ -800,7 +800,7 @@ Causes the terminal to make a beep sound.
 	},
 	{
 		label = "between",
-		kind = Kind.Keyword,
+		kind = Kind.Operator,
 		documentation = [[
 between
 		]],
@@ -858,7 +858,12 @@ block-iteration-display
 		label = "block-level",
 		kind = Kind.Keyword,
 		documentation = [[
-Use this statement in a procedure (.p) or class (.cls) file to change the default ON ERROR directive to UNDO, THROW for all blocks that have a default error directive associated with them. (A simple DO block, for example, does not have default error handling and is not affected by this statement.). The default ON ERROR directive is either UNDO, LEAVE or UNDO, RETRY, depending on the block type. The statement must come before any executable or DEFINE statements in a file. However, it can come either before or after a USING statement. 
+Use this statement in a procedure (.p) or class (.cls) file to change the default ON ERROR 
+directive to UNDO, THROW for all blocks that have a default error directive associated with 
+them. (A simple DO block, for example, does not have default error handling and is not 
+affected by this statement.). The default ON ERROR directive is either UNDO, LEAVE or UNDO, 
+RETRY, depending on the block type. The statement must come before any executable or DEFINE 
+statements in a file. However, it can come either before or after a USING statement. 
 		]],
 	},
 	{
@@ -998,7 +1003,9 @@ buffer-field
 		label = "buffer-group-id",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns the group ID (as an integer) of the tenant group to which the current record in a specified record buffer belongs. If the buffer does not contain a record from a tenant group, the function returns the Unknown value (?).
+Returns the group ID (as an integer) of the tenant group to which the current 
+record in a specified record buffer belongs. If the buffer does not contain 
+a record from a tenant group, the function returns the Unknown value (?).
 		]],
 	},
 	{
@@ -1331,7 +1338,8 @@ class-type
 		label = "clear",
 		kind = Kind.Keyword,
 		documentation = [[
-Clears the data for all fill-in fields in a frame. It also clears the colors for all widgets in a frame, except for enabled fill-ins.
+Clears the data for all fill-in fields in a frame. It also clears the 
+colors for all widgets in a frame, except for enabled fill-ins.
 		]],
 	},
 	{
@@ -1602,16 +1610,20 @@ command
 	},
 	{
 		label = "compares",
-		kind = Kind.Keyword,
+		kind = Kind.Function,
 		documentation = [[
-COMPARE returns a LOGICAL value representing the result of the logical expression, where the comparison rules are defined by the combination of the operator, the comparison strength, and the collation.
+COMPARE returns a LOGICAL value representing the result of the logical expression, 
+where the comparison rules are defined by the combination of the operator, the 
+comparison strength, and the collation.
 		]],
 	},
 	{
 		label = "compile",
 		kind = Kind.Keyword,
 		documentation = [[
-Compiles a procedure file or a class definition file. A compilation can last for a session, or you can save it permanently for use in later sessions (as an r-code file, which has a .r extension). 
+Compiles a procedure file or a class definition file. A compilation can last for 
+a session, or you can save it permanently for use in later sessions (as an r-code 
+file, which has a .r extension). 
 		]],
 	},
 	{
@@ -1653,19 +1665,24 @@ Establishes a connection to one or more databases from within an ABL procedure o
 		label = "connected",
 		kind = Kind.Keyword,
 		documentation = [[
-Tells whether a database is connected. If logical name is the logical name or alias is the alias of a connected database, the CONNECTED function returns TRUE; otherwise, it returns FALSE.
+Tells whether a database is connected. If logical name is the logical name or alias 
+is the alias of a connected database, the CONNECTED function returns TRUE; otherwise, 
+it returns FALSE.
 		]],
 	},
 	{
 		label = "constructor",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines a constructor for a class. A constructor is a special type of method that ABL invokes to initialize data for a new object of a class that is instantiated using the NEW function (classes), NEW statement, or DYNAMIC-NEW statement, or to initialize static members of a class.
+Defines a constructor for a class. A constructor is a special type of method that ABL 
+invokes to initialize data for a new object of a class that is instantiated using the 
+NEW function (classes), NEW statement, or DYNAMIC-NEW statement, or to initialize 
+static members of a class.
 			]],
 	},
 	{
 		label = "contains",
-		kind = Kind.Keyword,
+		kind = Kind.Operator,
 		documentation = [[
 contains
 		]],
@@ -1765,7 +1782,9 @@ copy-dataset
 		label = "copy-lob",
 		kind = Kind.Keyword,
 		documentation = [[
-Copies large object data between BLOBs, CLOBs, MEMPTRs, and LONGCHARs. It also copies large object data to and from the file system, and converts large object data to or from a specified code page.
+Copies large object data between BLOBs, CLOBs, MEMPTRs, and LONGCHARs. It also copies 
+large object data to and from the file system, and converts large object data to or 
+from a specified code page.
 		]],
 	},
 	{
@@ -1786,14 +1805,16 @@ copy-temp-table
 		label = "count",
 		kind = Kind.Keyword,
 		documentation = [[
-Calculates the number of times the expression was counted in a break group and the count of all the values in all break groups.
+Calculates the number of times the expression was counted in a break group and the count 
+of all the values in all break groups.
 		]],
 	},
 	{
 		label = "count-of",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns an INTEGER value that is the total number of selected records in the table or tables you are using across break groups.
+Returns an INTEGER value that is the total number of selected records in the table or 
+tables you are using across break groups.
 		]],
 	},
 	{
@@ -1870,7 +1891,8 @@ crc-value
 		label = "create",
 		kind = Kind.Keyword,
 		documentation = [[
-Creates a record in a table, sets all the fields in the record to their default initial values, and moves a copy of the record to the record buffer.
+Creates a record in a table, sets all the fields in the record to their default 
+initial values, and moves a copy of the record to the record buffer.
 		]],
 	},
 	{
@@ -2320,9 +2342,10 @@ debug-list
 	},
 	{
 		label = "decimal",
-		kind = Kind.Keyword,
+		kind = Kind.Function,
 		documentation = [[
-Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a DECIMAL value.
+Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, 
+to a DECIMAL value.
 		]],
 	},
 	{
@@ -2644,7 +2667,8 @@ distinct
 		label = "do",
 		kind = Kind.Keyword,
 		documentation = [[
-Groups statements into a single block, optionally specifying processing services or block properties. Use an END statement to end a DO block.
+Groups statements into a single block, optionally specifying processing services 
+or block properties. Use an END statement to end a DO block.
 		]],
 	},
 	{
@@ -2847,7 +2871,8 @@ edit-cut
 		label = "editing",
 		kind = Kind.Keyword,
 		documentation = [[
-Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or UPDATE statement. 
+Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or 
+UPDATE statement. 
 		]],
 	},
 	{
@@ -2938,7 +2963,10 @@ encryption-salt
 		label = "end",
 		kind = Kind.Keyword,
 		documentation = [[
-Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DESTRUCTOR, DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET property accessor. 
+Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DESTRUCTOR, 
+DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or 
+the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET 
+property accessor. 
 		]],
 	},
 	{
@@ -3052,7 +3080,8 @@ Returns a TRUE value if two expressions are equal.
 		label = "error",
 		kind = Kind.Keyword,
 		documentation = [[
-Indicates whether an error occurred during a FILL or SAVE-ROW-CHANGES operation on the specified ProDataSet temp-table buffer. 
+Indicates whether an error occurred during a FILL or SAVE-ROW-CHANGES operation on 
+the specified ProDataSet temp-table buffer. 
 		]],
 	},
 	{
@@ -3213,7 +3242,10 @@ explicit
 		label = "export",
 		kind = Kind.Keyword,
 		documentation = [[
-Converts data to a standard character format and displays it to the current output destination (except when the current output destination is the screen) or to a named output stream. You can use data exported to a file in standard format as input to other ABL procedures.
+Converts data to a standard character format and displays it to the current output 
+destination (except when the current output destination is the screen) or to a named 
+output stream. You can use data exported to a file in standard format as input to 
+other ABL procedures.
 		]],
 	},
 	{
@@ -3234,7 +3266,9 @@ extended
 		label = "extent",
 		kind = Kind.Keyword,
 		documentation = [[
-Fixes the extent (number of elements) for an unfixed indeterminate array variable or parameter. ABL treats the fixed indeterminate array as a determinate array consistent with its data type.
+Fixes the extent (number of elements) for an unfixed indeterminate array variable or 
+parameter. ABL treats the fixed indeterminate array as a determinate array consistent 
+with its data type.
 		]],
 	},
 	{
@@ -3365,9 +3399,10 @@ file-type
 	},
 	{
 		label = "fill",
-		kind = Kind.Keyword,
+		kind = Kind.Function,
 		documentation = [[
-Generates a character string made up of a character string that is repeated a specified number of times.
+Generates a character string made up of a character string that is repeated a specified 
+number of times.
 		]],
 	},
 	{
@@ -3500,7 +3535,8 @@ find-wrap-around
 		label = "first",
 		kind = Kind.Function,
 		documentation = [[
-Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration of that block.
+Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . 
+BREAK block is the first iteration of that block.
 		]],
 	},
 	{
@@ -3542,7 +3578,9 @@ first-object
 		label = "first-of",
 		kind = Kind.Function,
 		documentation = [[
-Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . BREAK block is the first iteration for a new break group, and modifies all three block types.
+Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . 
+BREAK block is the first iteration for a new break group, and modifies all three 
+block types.
 		]],
 	},
 	{
@@ -3633,7 +3671,8 @@ font-table
 		label = "for",
 		kind = Kind.Keyword,
 		documentation = [[
-Starts an iterating block that reads a record from each of one or more tables at the start of each block iteration. Use an END statement to end a FOR block.
+Starts an iterating block that reads a record from each of one or more tables 
+at the start of each block iteration. Use an END statement to end a FOR block.
 		]],
 	},
 	{
@@ -3658,15 +3697,8 @@ form
 		]],
 	},
 	{
-		label = "form",
-		kind = Kind.Keyword,
-		documentation = [[
-form
-		]],
-	},
-	{
 		label = "format",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
 format
 		]],
@@ -3899,7 +3931,8 @@ gateways
 		label = "ge",
 		kind = Kind.Operator,
 		documentation = [[
-Returns a TRUE value if the first of two expressions is greater than or equal to the second expression.
+Returns a TRUE value if the first of two expressions is greater than or equal 
+to the second expression.
 		]],
 	},
 	{
@@ -4877,7 +4910,7 @@ inherits
 	},
 	{
 		label = "initial",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
 initial
 		]],
@@ -5012,7 +5045,8 @@ int64
 		label = "integer",
 		kind = Kind.Function,
 		documentation = [[
-Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, to a 32-bit integer value of data type INTEGER, rounding that value if necessary.
+Converts an expression of any data type, with the exception of BLOB, CLOB, and 
+RAW, to a 32-bit integer value of data type INTEGER, rounding that value if necessary.
 		]],
 	},
 	{
@@ -5215,7 +5249,8 @@ key-code
 		label = "keyfunction",
 		kind = Kind.Function,
 		documentation = [[
-Evaluates an integer expression (such as 301) and returns a character string that is the function of the key associated with that integer expression (such as GO).
+Evaluates an integer expression (such as 301) and returns a character string that 
+is the function of the key associated with that integer expression (such as GO).
 		]],
 	},
 	{
@@ -5229,7 +5264,8 @@ key-function
 		label = "keylabel",
 		kind = Kind.Function,
 		documentation = [[
-Evaluates a key code (such as 301) and returns a character string that is the predefined keyboard label for that key (such as F1). 
+Evaluates a key code (such as 301) and returns a character string that is 
+the predefined keyboard label for that key (such as F1). 
 		]],
 	},
 	{
@@ -5265,7 +5301,7 @@ keyword-all
 		documentation = [[
 label
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "label-bgcolor",
@@ -5390,7 +5426,9 @@ last-form
 		label = "lastkey",
 		kind = Kind.Function,
 		documentation = [[
-Returns, as an INTEGER value, the integer key code of the most recent event read from the user (that is, from the keyboard or mouse) during an interaction with a procedure.
+Returns, as an INTEGER value, the integer key code of the most recent event 
+read from the user (that is, from the keyboard or mouse) during an interaction 
+with a procedure.
 		]],
 	},
 	{

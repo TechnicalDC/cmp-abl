@@ -336,7 +336,8 @@ advise
 		label = "alert-box",
 		kind = Kind.Keyword,
 		documentation = [[
-alert-box
+Compile-time defined (static) popup widget to represent a 
+field or variable on the screen.
 		]],
 	},
 	{
@@ -428,7 +429,7 @@ anywhere
 		label = "append",
 		kind = Kind.Keyword,
 		documentation = [[
-append
+Indicates data will be appended to the file output stream.
 		]],
 	},
 	{
@@ -937,10 +938,11 @@ box-selectable
 		]],
 	},
 	{
-		label = "break",
+		label = "break by",
 		kind = Kind.Keyword,
 		documentation = [[
-break
+Performs aggregation for break groups if you use the BREAK 
+option in a FOR EACH block header. 
 		]],
 	},
 	{
@@ -954,7 +956,7 @@ browse
 		label = "buffer",
 		kind = Kind.Keyword,
 		documentation = [[
-buffer
+Copy of actual table with data. Used along field `define` keyword.
 		]],
 	},
 	{
@@ -968,7 +970,9 @@ buffer-chars
 		label = "buffer-compare",
 		kind = Kind.Keyword,
 		documentation = [[
-Performs a bulk comparison of two records (source and target) by comparing source and target fields of the same name for equality and storing the result in a field. 
+Performs a bulk comparison of two records (source and target) by comparing 
+source and target fields of the same name for equality and storing the 
+result in a field. 
 		]],
 	},
 	{
@@ -1275,7 +1279,7 @@ chained
 		label = "character",
 		kind = Kind.Keyword,
 		documentation = [[
-character
+Data type for string.
 		]],
 	},
 	{
@@ -1308,7 +1312,7 @@ checked
 	},
 	{
 		label = "choose",
-		kind = Kind.Keyword,
+		kind = Kind.Event,
 		documentation = [[
 choose
 		]],
@@ -1533,9 +1537,9 @@ column-font
 	},
 	{
 		label = "column-label",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-column-label
+Specifies the column label for fields or variables.
 		]],
 	},
 	{
@@ -1684,7 +1688,7 @@ static members of a class.
 		label = "contains",
 		kind = Kind.Operator,
 		documentation = [[
-contains
+Returns True if the specified sequence of characters are present.
 		]],
 	},
 	{
@@ -2204,7 +2208,7 @@ dbcollation
 		label = "dbname",
 		kind = Kind.Keyword,
 		documentation = [[
-dbname
+Database name.
 		]],
 	},
 	{
@@ -2436,7 +2440,17 @@ default-window
 		label = "define",
 		kind = Kind.Keyword,
 		documentation = [[
-define
+Defines buffers, temp-tables, frame, etc.
+		]],
+	},
+	{
+		label = "define variable",
+		kind = Kind.Keyword,
+		documentation = [[
+Defines a variable for use in one or more procedures, a variable data member 
+of a class for use in a single class or class hierarchy, or by other classes 
+and procedures, or a variable data element for use within a single class-based 
+method.
 		]],
 	},
 	{
@@ -2904,14 +2918,7 @@ Describes the block statement to process if the expression is FALSE or the Unkno
 		]],
 	},
 	{
-		label = "empty",
-		kind = Kind.Keyword,
-		documentation = [[
-empty
-		]],
-	},
-	{
-		label = "empty-temp-table",
+		label = "empty temp-table",
 		kind = Kind.Keyword,
 		documentation = [[
 Empties a temp-table.
@@ -3700,7 +3707,7 @@ form
 		label = "format",
 		kind = Kind.Property,
 		documentation = [[
-format
+The text format of a field, widget or browse-cell.
 		]],
 	},
 	{
@@ -4458,6 +4465,13 @@ get-wait-state
 		kind = Kind.Keyword,
 		documentation = [[
 global
+		]],
+	},
+	{
+		label = "global_domain",
+		kind = Kind.Field,
+		documentation = [[
+Contains default domain value.
 		]],
 	},
 	{
@@ -8269,7 +8283,7 @@ return-inserted
 		label = "returns",
 		kind = Kind.Keyword,
 		documentation = [[
-returns
+Specifies the return type for the user-defined functions.
 		]],
 	},
 	{
@@ -8441,10 +8455,10 @@ save
 		]],
 	},
 	{
-		label = "save",
+		label = "save into",
 		kind = Kind.Keyword,
 		documentation = [[
-save
+Specifies the directory where compiled binary should be stored.
 		]],
 	},
 	{
@@ -9215,9 +9229,9 @@ sha1-digest
 	},
 	{
 		label = "shared",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-shared
+Specifies that the field is shared between multiple external procedures.
 		]],
 	},
 	{

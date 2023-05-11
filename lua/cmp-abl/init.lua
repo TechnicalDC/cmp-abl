@@ -34,7 +34,7 @@ source.new = function()
 end
 
 source.get_trigger_characters = function()
-	return { '.', '&' }
+	return { '&' }
 end
 
 source._validate_options = function(_, params)

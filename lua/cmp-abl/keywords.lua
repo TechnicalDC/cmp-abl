@@ -1177,7 +1177,7 @@ can-do-domain-support
 Returns a TRUE value if a record is found that meets the specified FIND 
 criteria; otherwise it returns FALSE. CAN-FIND does not make the record 
 available to the procedure. You typically use the CAN-FIND function within 
-a VALIDATE option in a data handling statement, such as the UPDATE statement.
+a option in a data handling statement, such as the UPDATE statement.
 		]],
 	},
 	{
@@ -10462,7 +10462,7 @@ v6frame
 	},
 	{
 		label = "validate",
-		kind = Kind.Keyword,
+		kind = Kind.Function,
 		documentation = [[
 validate
 		]],

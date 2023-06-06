@@ -28,6 +28,13 @@ local Kind = {
 
 local keywords = {
 	{
+		label = "{ mfdeclre.i }",
+		kind = Kind.Module,
+		documentation = [[
+Include file for predefined variables.
+		]]
+	},
+	{
 		label = "&else",
 		kind = Kind.Keyword,
 		documentation = [[
@@ -10464,7 +10471,8 @@ v6frame
 		label = "validate",
 		kind = Kind.Function,
 		documentation = [[
-validate
+Validates the condition taken as first argument and shows the second
+argument as the error message if got false.
 		]],
 	},
 	{

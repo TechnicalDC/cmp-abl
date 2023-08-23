@@ -5850,9 +5850,15 @@ lookahead
 	{
 		label = "lookup",
 		documentation = [[
-lookup
+Returns an INTEGER value giving the position of an expression 
+in a list. Returns a 0 if the expression is not in the list.
+
+# Syntax
+```
+lookup ( expression , list [ , delimiter ] )
+```
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Function,
 	},
 	{
 		label = "lt",

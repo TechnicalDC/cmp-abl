@@ -158,6 +158,12 @@ Defines a compile-time constant (preprocessor name) non-globally.
 		kind = Kind.Keyword,
 		documentation = [[
 Returns the absolute value of a numeric value.
+
+## Syntax
+
+```
+absolute ( n )
+```
 		]],
 	},
 	{
@@ -180,6 +186,14 @@ accelerator
 		documentation = [[
 Returns the value of an aggregate expression that is calculated 
 by an ACCUMULATE or aggregate phrase of a DISPLAY statement.
+
+## Syntax
+
+```
+accum { average | count | maximum | minimum | total | sub-average
+		 | sub-count | sub-maximum | sub-minimum | sub-total }
+		 [ by break-group]
+```
 		]],
 	},
 	{
@@ -189,20 +203,14 @@ by an ACCUMULATE or aggregate phrase of a DISPLAY statement.
 Calculates one or more aggregate values of an expression during 
 the iterations of a block. Use the ACCUM function to access the 
 result of this accumulation.
-		]],
-	},
-	{
-		label = "active-form",
-		kind = Kind.Keyword,
-		documentation = [[
-active-form
-		]],
-	},
-	{
-		label = "active-window",
-		kind = Kind.Keyword,
-		documentation = [[
-active-window
+
+## Syntax
+
+```
+accumulate { average | count | maximum | minimum | total | sub-average
+			 | sub-count | sub-maximum | sub-minimum | sub-total }
+			 [ by break-group]
+```
 		]],
 	},
 	{
@@ -406,9 +414,13 @@ analyze
 	},
 	{
 		label = "and",
-		kind = Kind.Keyword,
+		kind = Kind.Operator,
 		documentation = [[
 Returns a TRUE value if each logical expression is TRUE.
+
+## Syntax
+
+`expression and expression`
 		]],
 	},
 	{
@@ -537,6 +549,15 @@ assembly
 Moves data previously placed in the screen buffer by a data input statement 
 or moves data specified within the ASSIGN statement by an expression to the 
 corresponding fields and variables in the record buffer.
+
+## Syntax
+
+```
+assign {
+           [ [ input ] frame frame | browse browse ]
+                  { field [ = expression] } [ when expression ]
+        } ... [ no-error ]
+```
 		]],
 	},
 	{
@@ -699,7 +720,13 @@ auto-zap
 		label = "available",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns a TRUE value if the record buffer you name contains a record and returns a FALSE value if the record buffer is empty. When you use the FIND statement or the FOR EACH statement to find a record, the AVM reads that record from the database into a record buffer. This record buffer has the same name as the file used by the FIND or FOR EACH statement, unless you specify otherwise. The CREATE statement creates a new record in a record buffer.
+Returns a TRUE value if the record buffer you name contains a 
+record and returns a FALSE value if the record buffer is empty. 
+When you use the FIND statement or the FOR EACH statement to find 
+a record, the AVM reads that record from the database into a record 
+buffer. This record buffer has the same name as the file used by 
+the FIND or FOR EACH statement, unless you specify otherwise. 
+The CREATE statement creates a new record in a record buffer.
 		]],
 	},
 	{
@@ -796,7 +823,12 @@ begin-event-group
 		label = "begins",
 		kind = Kind.Operator,
 		documentation = [[
-Tests a character expression to see if that expression begins with a second character expression. 
+Tests a character expression to see if that expression 
+begins with a second character expression. 
+
+## Syntax
+
+`expression1 BEGINS expression2`
 		]],
 	},
 	{
@@ -1185,6 +1217,19 @@ Returns a TRUE value if a record is found that meets the specified FIND
 criteria; otherwise it returns FALSE. CAN-FIND does not make the record 
 available to the procedure. You typically use the CAN-FIND function within 
 a option in a data handling statement, such as the UPDATE statement.
+
+## Syntax
+```
+can-find 
+  (
+    [ first | last ] record [ constant ]
+    [ of table ] [ where expression ] [ use-index index ]
+    [ using [ frame frame ] field
+        [ and [ frame frame ] field ] ...
+    ]
+    [ share-lock | no-lock ] [ no-wait ] [ no-prefetch ]
+  )
+```
 		]],
 	},
 	{
@@ -5853,7 +5898,8 @@ lookahead
 Returns an INTEGER value giving the position of an expression 
 in a list. Returns a 0 if the expression is not in the list.
 
-# Syntax
+## Syntax
+
 ```
 lookup ( expression , list [ , delimiter ] )
 ```

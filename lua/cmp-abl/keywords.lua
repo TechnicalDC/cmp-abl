@@ -35,125 +35,6 @@ Include file for predefined variables.
 		]]
 	},
 	{
-		label = "&else",
-		kind = Kind.Keyword,
-		documentation = [[
-&else
-		]],
-	},
-	{
-		label = "&elseif",
-		kind = Kind.Keyword,
-		documentation = [[
-&elseif
-		]],
-	},
-	{
-		label = "&endif",
-		kind = Kind.Keyword,
-		documentation = [[
-&endif
-		]],
-	},
-	{
-		label = "&global-define",
-		kind = Kind.Keyword,
-		documentation = [[
-Globally defines a compile-time constant (preprocessor name).
-		]],
-	},
-	{
-		label = "&if",
-		kind = Kind.Keyword,
-		documentation = [[
-&if
-		]],
-	},
-	{
-		label = "&message",
-		kind = Kind.Keyword,
-		documentation = [[
-Displays a message at compile time in the Compiler Messages dialog box.
-		]],
-	},
-	{
-		label = "&scoped-define",
-		kind = Kind.Keyword,
-		documentation = [[
-Defines a compile-time constant (preprocessor name) non-globally.
-		]],
-	},
-	{
-		label = "&then",
-		kind = Kind.Keyword,
-		documentation = [[
-&then
-		]],
-	},
-	{
-		label = "&undefine",
-		kind = Kind.Keyword,
-		documentation = [[
-&undefine
-		]],
-	},
-	{
-		label = "&webstream",
-		kind = Kind.Keyword,
-		documentation = [[
-&webstream
-		]],
-	},
-	{
-		label = "{&batch-mode}",
-		kind = Kind.Keyword,
-		documentation = [[
-{&batch-mode}
-		]],
-	},
-	{
-		label = "{&file-name}",
-		kind = Kind.Keyword,
-		documentation = [[
-{&file-name}
-		]],
-	},
-	{
-		label = "{&line-number}",
-		kind = Kind.Keyword,
-		documentation = [[
-{&line-number}
-		]],
-	},
-	{
-		label = "{&opsys}",
-		kind = Kind.Keyword,
-		documentation = [[
-{&opsys}
-		]],
-	},
-	{
-		label = "{&process-architecture}",
-		kind = Kind.Keyword,
-		documentation = [[
-{&process-architecture}
-		]],
-	},
-	{
-		label = "{&sequence}",
-		kind = Kind.Keyword,
-		documentation = [[
-{&sequence}
-		]],
-	},
-	{
-		label = "{&window-system}",
-		kind = Kind.Keyword,
-		documentation = [[
-{&window-system}
-		]],
-	},
-	{
 		label = "absolute",
 		kind = Kind.Keyword,
 		documentation = [[
@@ -161,9 +42,7 @@ Returns the absolute value of a numeric value.
 
 ## Syntax
 
-```
-absolute ( n )
-```
+` absolute ( n ) `
 		]],
 	},
 	{
@@ -1283,6 +1162,19 @@ careful-paint
 		kind = Kind.Keyword,
 		documentation = [[
 Provides a multi-branch decision based on the value of a single expression
+
+## Syntax
+
+```
+case expression :
+  {  when value [ or when value ] ... then
+       { block | statement }
+  } ...
+  [ otherwise
+       { block | statement }
+ ]
+end [ case ]
+```
 		]],
 	},
 	{
@@ -1949,6 +1841,12 @@ crc-value
 		documentation = [[
 Creates a record in a table, sets all the fields in the record to their default 
 initial values, and moves a copy of the record to the record buffer.
+
+## Syntax
+```
+create record [ for tenant tenant-expression ]
+	[ using { rowid ( nrow ) | recid ( nrec ) } ] [ no-error ]
+```
 		]],
 	},
 	{
@@ -2210,6 +2108,18 @@ data-type
 Converts a single character string, a set of month, day, and year values, an 
 integer expression, a DATETIME expression, or a DATETIME-TZ expression into a 
 DATE value.
+
+## Syntax
+
+```
+date ( month , day , year )
+
+date ( string )
+
+date ( integer-expression )
+
+date ( datetime-expression )
+```
 		]],
 	},
 	{
@@ -2217,6 +2127,17 @@ DATE value.
 		kind = Kind.Function,
 		documentation = [[
 Converts date and time values, or a character string, into a DATETIME value.
+
+## Syntax
+
+```
+datetime ( date-exp[ , mtime-exp ] )
+
+datetime ( string )
+
+datetime ( month , day , year , hours , minutes 
+       [ , seconds[ , milliseconds] ] )
+```
 		]],
 	},
 	{
@@ -2240,6 +2161,10 @@ date-format
 		documentation = [[
 Evaluates a date expression and returns a day of the month as an 
 INTEGER value from 1 to 31, inclusive.
+
+## Syntax
+
+`day ( date )`
 		]],
 	},
 	{
@@ -2489,10 +2414,139 @@ default-window
 		]],
 	},
 	{
-		label = "define",
+		label = "define buffer",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines buffers, temp-tables, frame, etc.
+ABL provides you with one default buffer for each table or temp-table 
+that you use in a procedure or class. ABL uses that buffer to store one 
+record at a time from the table as the records are needed during the procedure 
+or class. If you need more than one record or buffer at a time for a table, 
+you can use this statement to define alternate buffers that are created at 
+compile time for use in one or more procedures, or within a single class or 
+class hierarchy.
+
+## Syntax
+
+```
+define {[[ new ] shared ] | [ private | protected ] [ static ]}
+  buffer buffer-name 
+  for [ temp-table ]table-name 
+  [ preselect ][ label label-name]
+  [ namespace-uri namespace][ namespace-prefix prefix]
+  [ xml-node-name node-name][ serialize-name serialize-name ]
+```
+		]],
+	},
+	{
+		label = "define frame",
+		kind = Kind.Keyword,
+		documentation = [[
+Defines and creates a frame or dialog box that is created at compile time 
+for use in one or more procedures, or within a single class.
+
+## Syntax
+
+```
+define {[[ new ] shared ]|[ private ]} frame frame
+  [form-item...]
+  [{ header | background }head-item...]
+  {[frame-phrase]}
+```
+		]],
+	},
+	{
+		label = "define parameter",
+		kind = Kind.Keyword,
+		documentation = [[
+Each parameter requires its own DEFINE statement. The parameters must be 
+specified in the RUN statement in the same order they are defined with DEFINE 
+statements. In addition, the parameter types (INPUT, OUTPUT, INPUT-OUTPUT, 
+RETURN, TABLE, TABLE-HANDLE, DATASET, DATASET-HANDLE, and BUFFER) specified 
+in the DEFINE and RUN statements must agree. 
+
+## Syntax
+
+```
+define { input | output | input-output | return } parameter parameter
+  {{   as [ handle to ]primitive-type-name 
+       | as [ class ]{object-type-name}
+       | like field       }[ extent [constant] ]} 
+  [[ not ] case-sensitive ]
+  [ format string]
+  [ decimals n]
+  [ initial
+      { constant |{[constant[ , constant]...]}}]
+  [ column-label label]
+  [ label string]
+  [ no-undo ]
+```
+		]],
+	},
+	{
+		label = "define property",
+		kind = Kind.Keyword,
+		documentation = [[
+Defines a property of a class, declares a property prototype in an ABL interface, 
+or overrides an abstract property inherited from an ABL or .NET abstract super class. 
+A property is a named member of a class that allows you to read or write a value using 
+the same syntax as a data member. However, a property can define special methods 
+(accessors) that specify if and how the property can be read or written.
+
+## Syntax
+
+```
+define [ private | protected | public ][ static | abstract ]
+       [ override ][ serializable | non-serializable ] 
+  property property-name 
+  {{ 
+        as primitive-type-name|
+        as [ class ]object-type-name 
+     } [ extent [constant  ] ]}
+  [ initial { constant  | {[constant[ , constant]...]}}]
+  [ serialize-name serialize-name ][ no-undo ]
+  { 
+        [accessor-access-mode] get [implementation] . 
+        set [implementation] .
+     | 
+        get [implementation] .
+        [accessor-access-mode] set [implementation] .
+  }
+```
+		]],
+	},
+	{
+		label = "define query",
+		kind = Kind.Keyword,
+		documentation = [[
+Defines a variable for use in one or more procedures, a variable data member 
+of a class for use in a single class or class hierarchy, or by other classes 
+and procedures, or a variable data element for use within a single class-based 
+method.
+
+## Syntax
+
+```
+define {[[ new ] shared ]|[ private | protected ][ static ]}
+  query query
+  for buffer-name[field-list][ , buffer-name[field-list] ]...
+  [ cache n]
+  [ scrolling ]
+  [ rcode-information ]
+```
+		]],
+	},
+	{
+		label = "define stream",
+		kind = Kind.Keyword,
+		documentation = [[
+Defines a stream for use in one or more procedures, or within a single class. 
+Use this statement when you want to use streams other than the two ABL built-in 
+unnamed streams. Using additional streams allows you to get input from more than 
+one source simultaneously or to send output to more than one destination simultaneously.
+
+## Syntax
+
+`DEFINE {[[ NEW [ GLOBAL ] ] SHARED ]|[ PRIVATE ]} STREAM stream-name`
 		]],
 	},
 	{
@@ -2503,27 +2557,37 @@ Defines a variable for use in one or more procedures, a variable data member
 of a class for use in a single class or class hierarchy, or by other classes 
 and procedures, or a variable data element for use within a single class-based 
 method.
-		]],
-	},
-	{
-		label = "defined",
-		kind = Kind.Keyword,
-		documentation = [[
-defined
-		]],
-	},
-	{
-		label = "define-user-event-manager",
-		kind = Kind.Keyword,
-		documentation = [[
-define-user-event-manager
-		]],
-	},
-	{
-		label = "delegate",
-		kind = Kind.Keyword,
-		documentation = [[
-delegate
+
+## Syntax
+
+```
+define {[[ new [ global ] ] shared ]| 
+            [ private | protected | public ]
+            [ static ][ serializable | non-serializable ]}
+  variable variable-name
+  {{   as primitive-type-name 
+       | as [ class ]{object-type-name}
+       | like field       }[ extent [constant] ]} 
+  [ serialize-name serialize-name ]
+  [ bgcolor expression]
+  [ column-label label]
+  [ context-help-id expression]
+  [ dcolor expression]
+  [ decimals n]
+  [ drop-target ]
+  [ font expression]
+  [ fgcolor expression]
+  [ format string]
+  [ initial
+      { constant |{[ constant[ , constant]...]}}]
+  [ label string[ , string]...]
+  [ mouse-pointer expression]
+  [ no-undo ]
+  [[ not ] case-sensitive ]
+  [ pfcolor expression]
+  {[ view-as-phrase ]}
+  {[ trigger-phrase ]}
+```
 		]],
 	},
 	{
@@ -2531,6 +2595,15 @@ delegate
 		kind = Kind.Keyword,
 		documentation = [[
 Removes a record from a record buffer and from the database.
+
+
+## Syntax
+
+```
+delete record
+  [ validate ( condition , msg-expression ) ]
+  [ no-error ]
+```
 		]],
 	},
 	{

@@ -2607,48 +2607,6 @@ delete record
 		]],
 	},
 	{
-		label = "delete-char",
-		kind = Kind.Keyword,
-		documentation = [[
-delete-char
-		]],
-	},
-	{
-		label = "delete-current-row",
-		kind = Kind.Keyword,
-		documentation = [[
-delete-current-row
-		]],
-	},
-	{
-		label = "delete-line",
-		kind = Kind.Keyword,
-		documentation = [[
-delete-line
-		]],
-	},
-	{
-		label = "delete-result-list-entry",
-		kind = Kind.Keyword,
-		documentation = [[
-delete-result-list-entry
-		]],
-	},
-	{
-		label = "delete-selected-row",
-		kind = Kind.Keyword,
-		documentation = [[
-delete-selected-row
-		]],
-	},
-	{
-		label = "delete-selected-rows",
-		kind = Kind.Keyword,
-		documentation = [[
-delete-selected-rows
-		]],
-	},
-	{
 		label = "delimiter",
 		kind = Kind.Keyword,
 		documentation = [[
@@ -2779,6 +2737,24 @@ disp
 		kind = Kind.Keyword,
 		documentation = [[
 Moves data to a screen buffer and displays the data on the screen or other output destination. 
+
+
+## Syntax
+
+```
+display
+  {[ stream stream | stream-handle handle ] [ unless-hidden ] }
+[      { expression
+              [ format-phrase ]
+              [ ( aggregate-phrase ) ]
+              [ when expression ]
+              [ @base-field ]
+         }
+     | [ space [ ( n ) ] ]
+     |[ skip [ ( n ) ] ]
+] ...
+{ [ in window window ] [ frame-phrase ] [ no-error ] }
+```
 		]],
 	},
 	{
@@ -2832,10 +2808,32 @@ domain-type
 		]],
 	},
 	{
-		label = "dos",
+		label = "do",
 		kind = Kind.Keyword,
 		documentation = [[
-dos
+Groups statements into a single block, optionally specifying processing 
+services or block properties. Use an END statement to end a DO block.
+
+## Syntax
+
+```
+[ label : ]
+do
+  { [ for record [ , record ] ... ] }
+  [ preselect-phrase ]
+  [ query-tuning-phrase ]
+  [ variable = expression1 to expression2 [ by k ] ]
+  [ while expression ]
+  [ transaction ] 
+  [ stop-after expression ]
+  [ on-endkey-phrase ]
+  [ on-error-phrase ]
+  [ on-quit-phrase ]
+  [ on-stop-phrase ]
+  { [ frame-phrase ] } :
+
+  do-body
+```
 		]],
 	},
 	{
@@ -2850,6 +2848,13 @@ double
 		kind = Kind.Keyword,
 		documentation = [[
 Positions the cursor on a new line in a down or multi-line frame.
+
+## Syntax
+
+```
+down [ stream stream | stream-handle handle ] [ expression ]
+     { [frame-phrase ] }
+```
 		]],
 	},
 	{
@@ -3012,6 +3017,10 @@ edit-cut
 		documentation = [[
 Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or 
 UPDATE statement. 
+
+## Syntax
+
+`[ label: ] editing: statement... end`
 		]],
 	},
 	{
@@ -3047,6 +3056,10 @@ Describes the block statement to process if the expression is FALSE or the Unkno
 		kind = Kind.Keyword,
 		documentation = [[
 Empties a temp-table.
+
+## Syntax
+
+`empty temp-table temp-table-name [ no-error ]`
 		]],
 	},
 	{
@@ -3099,6 +3112,14 @@ Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DES
 DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or 
 the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET 
 property accessor. 
+
+## Syntax
+
+```
+end [ case | catch | class | constructor | destructor | enum |
+      finally | function | get | interface | method |
+      procedure | set | triggers ]
+```
 		]],
 	},
 	{
@@ -3192,6 +3213,10 @@ entity-expansion-limit
 Returns a character string (CHARACTER or LONGCHAR) entry from a list based 
 on an integer position. The data type of the returned value matches the 
 data type of the list element.
+
+## Syntax
+
+`entry ( element , list[ , character ] )`
 		]],
 	},
 	{

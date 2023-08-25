@@ -3403,6 +3403,16 @@ Converts data to a standard character format and displays it to the current outp
 destination (except when the current output destination is the screen) or to a named 
 output stream. You can use data exported to a file in standard format as input to 
 other ABL procedures.
+
+## Syntax
+
+```
+export [ stream stream | stream-handle handle ] [ delimiter character ]
+   {expression...
+      | record [ except field... ]
+    }
+  [ no-lobs ]
+```
 		]],
 	},
 	{
@@ -3602,6 +3612,23 @@ finally
 		kind = Kind.Keyword,
 		documentation = [[
 Locates a single record in a table and moves that record into a record buffer.
+
+## Syntax
+
+```
+find [ first | last | next | prev ] record 
+     [constant ]
+     [ of table ]
+     [ where expression ]
+     [ use-index index ]
+     [ using [ frame frame ] field 
+       [ and [ frame frame ] field ] ...
+     ]
+     [ share-lock | exclusive-lock | no-lock ] 
+     [ no-wait ]
+     [ no-prefetch ]
+     [ no-error ]
+```
 		]],
 	},
 	{
@@ -3694,6 +3721,10 @@ find-wrap-around
 		documentation = [[
 Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . 
 BREAK block is the first iteration of that block.
+
+## Syntax
+
+`first ( break-group )`
 		]],
 	},
 	{
@@ -3738,6 +3769,10 @@ first-object
 Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . 
 BREAK block is the first iteration for a new break group, and modifies all three 
 block types.
+
+## Syntax
+
+`first-of ( break-group )`
 		]],
 	},
 	{
@@ -3850,7 +3885,21 @@ foreground
 		label = "form",
 		kind = Kind.Keyword,
 		documentation = [[
+Defines the layout and certain processing attributes of a frame 
+for use within a single procedure. If the frame has not been 
+previously scoped, the FORM statement scopes it to the current 
+block. Use the FORM statement if you want to describe a frame 
+in a single statement rather than let ABL construct the frame 
+based on individual data handling statements in a block.
+
+## Syntax
+
+```
 form
+  [form-item ...]
+  [{ header | background }head-item...]
+  [frame-phrase]
+```
 		]],
 	},
 	{
@@ -4067,7 +4116,19 @@ full-width-pixels
 		label = "function",
 		kind = Kind.Keyword,
 		documentation = [[
-function
+Defines or declares a prototype for a user-defined function,
+or declares a Web service operation. The following syntax boxes 
+describe the syntax for each use of the statement, beginning 
+with a user-defined function definition.
+
+## Syntax
+
+```
+function function-name [ returns ] return-type [ private ]
+  [ ( parameter[ , parameter ] ... ) ] :
+
+  function-body
+```
 		]],
 	},
 	{

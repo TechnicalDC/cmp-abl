@@ -2550,6 +2550,47 @@ one source simultaneously or to send output to more than one destination simulta
 		]],
 	},
 	{
+		label = "define temp-table",
+		kind = Kind.Keyword,
+		documentation = [[
+Defines a temp-table that is created at compile time. The AVM stores 
+temp-tables in memory (with potential overflow to disk). Among procedures, 
+a temp-table can be either global (lasting for the entire ABL session) 
+or local (lasting only as long as the procedure that creates it), and 
+either shared (visible to other procedures that want to access it) or 
+non-shared (visible just to the procedure that created it). In a class, 
+a temp-table can be defined for use within a single class or class hierarchy.
+
+## Syntax
+
+```
+DEFINE {[[ NEW [ GLOBAL ] ] SHARED ]| 
+            [ PRIVATE | PROTECTED ][ STATIC ]
+            [ SERIALIZABLE | NON-SERIALIZABLE ]}
+  TEMP-TABLE temp-table-name[ NO-UNDO ] 
+  [ NAMESPACE-URI namespace][ NAMESPACE-PREFIX prefix]
+  [ XML-NODE-NAME node-name][ SERIALIZE-NAME serialize-name ] 
+  [ REFERENCE-ONLY ]
+  [ LIKE table-name
+      [ VALIDATE ]
+      [ USE-INDEX index-name[ AS PRIMARY ] ]...]
+  [ LIKE-SEQUENTIAL table-name
+      [ VALIDATE ]
+      [ USE-INDEX index-name[ AS PRIMARY ] ]...]
+  [ RCODE-INFORMATION ] 
+  [ BEFORE-TABLE before-table-name] 
+  [ FIELD field-name
+      { AS data-type|  LIKE field[ VALIDATE ]}
+  [field-options]
+  ]...
+  [ INDEX index-name
+      [[ AS | IS ][ UNIQUE ][ PRIMARY ][ WORD-INDEX ] ]
+      {index-field[ ASCENDING | DESCENDING ]}...
+	  ]...
+	```
+	]],
+	},
+	{
 		label = "define variable",
 		kind = Kind.Keyword,
 		documentation = [[
@@ -2595,7 +2636,6 @@ define {[[ new [ global ] ] shared ]|
 		kind = Kind.Keyword,
 		documentation = [[
 Removes a record from a record buffer and from the database.
-
 
 ## Syntax
 
@@ -2736,8 +2776,8 @@ disp
 		label = "display",
 		kind = Kind.Keyword,
 		documentation = [[
-Moves data to a screen buffer and displays the data on the screen or other output destination. 
-
+Moves data to a screen buffer and displays the data on the 
+screen or other output destination. 
 
 ## Syntax
 
@@ -3436,6 +3476,10 @@ extended
 Fixes the extent (number of elements) for an unfixed indeterminate array variable or 
 parameter. ABL treats the fixed indeterminate array as a determinate array consistent 
 with its data type.
+
+## Syntax
+
+`extent ( array ) = expression [ no-error ]`
 		]],
 	},
 	{
@@ -3570,6 +3614,10 @@ file-type
 		documentation = [[
 Generates a character string made up of a character string that is repeated a specified 
 number of times.
+
+## Syntax
+
+`fill ( expression , repeats )`
 		]],
 	},
 	{
@@ -3865,6 +3913,30 @@ font-table
 		documentation = [[
 Starts an iterating block that reads a record from each of one or more tables 
 at the start of each block iteration. Use an END statement to end a FOR block.
+
+## Syntax
+
+```
+[ label: ] 
+FOR [ EACH | FIRST | LAST ]record-phrase 
+  [ , [ EACH | FIRST | LAST ]record-phrase ]... 
+  [query-tuning-phrase ] 
+  [ BREAK ] 
+  [ BY expression[ DESCENDING ] 
+  | COLLATE ( string , strength[ , collation] ) [ DESCENDING ] 
+  ]... 
+  [variable = expression1 TO expression2[ BY k ] ] 
+  [ WHILE expression ] 
+  [ TRANSACTION ] 
+  [ STOP-AFTER expression ] 
+  [on-error-phrase ] 
+  [on-endkey-phrase ] 
+  [on-quit-phrase ] 
+  [on-stop-phrase ] 
+  [frame-phrase ] :
+
+  for-body
+```
 		]],
 	},
 	{
@@ -3976,7 +4048,15 @@ frame-down
 		label = "frame-field",
 		kind = Kind.Keyword,
 		documentation = [[
-frame-field
+During a data entry statement, returns the name of the input field the cursor 
+is in. At other times, returns the name of the input field the cursor was last in.
+
+The FRAME-FIELD function is particularly useful if you want to provide the user 
+with help for the input field being used.
+
+## Syntax
+
+`frame-field`
 		]],
 	},
 	{
@@ -4004,7 +4084,12 @@ frame-line
 		label = "frame-name",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns the name of the frame that the cursor is in to a field that is enabled for input.
+Returns the name of the frame that the cursor is in to a field 
+that is enabled for input.
+
+## Syntax
+
+`frame-name`
 		]],
 	},
 	{
@@ -4026,6 +4111,10 @@ frame-spacing
 		kind = Kind.Keyword,
 		documentation = [[
 Stores the value of an expression in a frame field during a data entry statement.
+
+## Syntax
+
+`FRAME-VALUE = expression`
 		]],
 	},
 	{
@@ -4151,6 +4240,10 @@ gateways
 		documentation = [[
 Returns a TRUE value if the first of two expressions is greater than or equal 
 to the second expression.
+
+## Syntax
+
+`expression { ge | >= } expression`
 		]],
 	},
 	{
@@ -4780,7 +4873,12 @@ group
 		label = "gt",
 		kind = Kind.Operator,
 		documentation = [[
-Returns a TRUE value if the first of two expressions is greater than the second expression.
+Returns a TRUE value if the first of two expressions is greater 
+than the second expression.
+
+## Syntax
+
+`expression { gt | > } expression`
 		]],
 	},
 	{
@@ -4792,9 +4890,15 @@ guid
 	},
 	{
 		label = "handle",
-		kind = Kind.Keyword,
+		kind = Kind.Function,
 		documentation = [[
-handle
+Converts a string representation of a handle to a valid handle. If the 
+string does not correlate to a valid handle in the session, the function 
+returns 0.
+
+## Syntax
+
+`handle ( handle-string )`
 		]],
 	},
 	{
@@ -4871,7 +4975,18 @@ hidden
 		label = "hide",
 		kind = Kind.Keyword,
 		documentation = [[
-hide
+Makes a widget invisible (sets its VISIBLE attribute to FALSE), or
+clears the message area for a window, or hides all widgets and 
+clears messages in a window. 
+
+## Syntax
+
+```
+hide [ stream stream | stream-handle handle ]
+  [widget-phrase | message | all ]
+  [ no-pause ]
+  [ in window window ]
+```
 		]],
 	},
 	{

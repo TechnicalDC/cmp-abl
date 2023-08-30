@@ -5155,6 +5155,18 @@ implements
 		kind = Kind.Keyword,
 		documentation = [[
 Reads a line from an input file that might have been created by EXPORT. 
+
+## Syntax
+
+```
+import [ stream stream | stream-handle handle ]
+  {    [ delimiter character ] { field | ^ } ...
+     | [ delimiter character ] record [ except field ... ]
+     | unformatted field
+  }
+  [ no-lobs ]
+  [ no-error ]
+```
 		]],
 	},
 	{
@@ -5182,7 +5194,12 @@ increment-exclusive-id
 		label = "index",
 		kind = Kind.Function,
 		documentation = [[
-Returns an INTEGER value that indicates the position of the target string within the source string.
+Returns an INTEGER value that indicates the position of 
+the target string within the source string.
+
+## Syntax
+
+`index ( source , target [ , starting ] )`
 		]],
 	},
 	{
@@ -5301,14 +5318,126 @@ inner-lines
 		label = "input",
 		kind = Kind.Keyword,
 		documentation = [[
-input
+References the value of a field in a frame.
+
+## Syntax
+
+`input [ frame frame]field`
 		]],
 	},
 	{
-		label = "input-output",
+		label = "input clear",
 		kind = Kind.Keyword,
 		documentation = [[
-input-output
+Clears any keystrokes buffered from the keyboard, discarding any type-ahead 
+characters. The INPUT CLEAR statement is useful when you want to make sure 
+the AVM clears out extra characters in the input statement that could 
+follow a field entry that is too long.
+
+## Syntax
+
+`input clear`
+		]],
+	},
+	{
+		label = "input close",
+		kind = Kind.Keyword,
+		documentation = [[
+Closes the default input source or the stream you name.
+
+## Syntax
+
+`input [ stream stream | stream-handle handle ] close`
+		]],
+	},
+	{
+		label = "input from",
+		kind = Kind.Keyword,
+		documentation = [[
+Specifies the new input source for a stream.
+
+## Syntax
+
+```
+input [ stream stream | stream-handle handle ] from
+  {    opsys-file
+     | opsys-device
+     | terminal
+     | value ( expression )
+     | os-dir ( directory ) [ no-attr-list ]
+  }
+  [ lob-dir { constant | value ( expression ) } ] 
+  [ binary ]
+  [ echo | no-echo ]
+  [ map protermcap-entry | no-map ]
+  [ unbuffered ]
+  [     no-convert 
+     | { convert
+            [ target target-codepage ]
+            [ source source-codepage ]
+          }
+  ]
+```
+		]],
+	},
+	{
+		label = "input through",
+		kind = Kind.Keyword,
+		documentation = [[
+Uses the output from a program as the input to an ABL procedure.
+
+## Syntax
+
+```
+input [ stream stream | stream-handle handle] through
+  { program-name | value ( expression ) }
+  [argument | value ( expression ) ] ...
+  [ echo | no-echo ]
+  [ map protermcap-entry | no-map ]
+  [ unbuffered ]
+  [     no-convert
+      | { convert
+           [ target target-codepage]
+           [ source source-codepage]
+        }
+  ]
+```
+		]],
+	},
+	{
+		label = "input-output close",
+		kind = Kind.Keyword,
+		documentation = [[
+Closes a specified or default stream opened by an INPUT-OUTPUT THROUGH statement.
+
+## Syntax
+
+`input-output [ stream stream | stream-handle handle ] close`
+		]],
+	},
+	{
+		label = "input-output through",
+		kind = Kind.Keyword,
+		documentation = [[
+Names a program (process) for the AVM to start. This process is 
+the input source as well as the output destination for the procedure.
+
+## Syntax
+
+```
+input-output [ stream stream | stream-handle handle ]
+  through { program-name | value ( expression ) }
+  [ argument | value ( expression ) ] ...
+  [ echo | no-echo ]
+  [ map protermcap-entry | no-map ]
+  [ unbuffered ]
+  [     no-convert
+      | { convert
+            [ target target-codepage ]
+            [ source source-codepage]
+        } 
+  ]
+```
 		]],
 	},
 	{
@@ -5322,7 +5451,18 @@ input-value
 		label = "insert",
 		kind = Kind.Keyword,
 		documentation = [[
-insert
+Creates a new database record, displays the initial values for the fields 
+in the record, prompts for values of those fields, and assigns those 
+values to the record.
+
+## Syntax
+
+```
+insert record [ except field ... ]
+  [ using { rowid ( nrow ) | recid ( nrec ) } ]
+  [ frame-phrase ]
+  [ no-error ]
+```
 		]],
 	},
 	{
@@ -5393,7 +5533,22 @@ RAW, to a 32-bit integer value of data type INTEGER, rounding that value if nece
 		label = "interface",
 		kind = Kind.Keyword,
 		documentation = [[
-interface
+Defines a user-defined interface. An interface defined with this 
+statement represents a user-defined data type that defines a set 
+of method, property, and event prototypes for methods, properties, 
+and events that can be implemented by one or more classes. 
+
+Any class that implements the interface must support all the methods, 
+properties, and events whose prototypes are defined in the interface 
+or any interface from which this interface inherits member prototypes.
+
+## Syntax
+
+```
+interface interface-type-name
+	[ inherits super-interface-name [ , super-interface-name ] ... ] :
+	interface-body
+```
 		]],
 	},
 	{
@@ -5401,6 +5556,18 @@ interface
 		kind = Kind.Keyword,
 		documentation = [[
 internal-entries
+		]],
+	},
+	{
+		label = "interval",
+		kind = Kind.Keyword,
+		documentation = [[
+Returns the time interval between two DATE, DATETIME, or DATETIME-TZ 
+values as an INT64 value. 
+
+## Syntax
+
+`interval ( datetime1 , datetime2 , interval-unit )`
 		]],
 	},
 	{

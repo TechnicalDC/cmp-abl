@@ -63,7 +63,7 @@ accelerator
 		label = "accum",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns the value of an aggregate expression that is calculated 
+Returns the value of an aggregate expression that is calculated
 by an ACCUMULATE or aggregate phrase of a DISPLAY statement.
 
 ## Syntax
@@ -79,8 +79,8 @@ accum { average | count | maximum | minimum | total | sub-average
 		label = "accumulate",
 		kind = Kind.Keyword,
 		documentation = [[
-Calculates one or more aggregate values of an expression during 
-the iterations of a block. Use the ACCUM function to access the 
+Calculates one or more aggregate values of an expression during
+the iterations of a block. Use the ACCUM function to access the
 result of this accumulation.
 
 ## Syntax
@@ -101,9 +101,17 @@ add
 	},
 	{
 		label = "add-buffer",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-add-buffer
+Adds one new buffer to a query object or dynamic ProDataSet object, without affecting the other buffers, if any.
+
+## Syntax
+`ADD-BUFFER ( buffer )`
+
+buffer: A handle to a buffer, or a CHARACTER expression that evaluates to the name of a buffer that the AVM searches for at run time.
+```
+my-query-handle:ADD-BUFFER(BUFFER Customer:HANDLE).
+```
 		]],
 	},
 	{
@@ -152,7 +160,7 @@ add-index-field
 		label = "add-interval",
 		kind = Kind.Keyword,
 		documentation = [[
-Adds a time interval to, or subtracts a time interval from, a DATE, 
+Adds a time interval to, or subtracts a time interval from, a DATE,
 DATETIME, or DATETIME-TZ value, and returns the new value.
 		]],
 	},
@@ -206,6 +214,20 @@ add-schema-location
 		]],
 	},
 	{
+		label = "add-relation",
+		kind = Kind.Keyword,
+		documentation = [[
+Adds a data-relation object for a pair of parent and child buffers to a dynamic ProDataSet object.
+
+## Syntax
+```
+ADD-RELATION ( parent-buffer-handle , child-buffer-handle ,
+ [ pairs-list [ , reposition-mode [ , nested [ , not-active [ , recursive
+ [ , foreign-key-hidden  ] ] ] ] ] ] )
+```
+		]],
+	},
+	{
 		label = "add-super-procedure",
 		kind = Kind.Keyword,
 		documentation = [[
@@ -230,7 +252,7 @@ advise
 		label = "alert-box",
 		kind = Kind.Keyword,
 		documentation = [[
-Compile-time defined (static) popup widget to represent a 
+Compile-time defined (static) popup widget to represent a
 field or variable on the screen.
 		]],
 	},
@@ -280,7 +302,7 @@ always-on-top
 		label = "ambiguous",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns a TRUE value if the last FIND statement for a particular record 
+Returns a TRUE value if the last FIND statement for a particular record
 found more than one record that met the specified index criteria.
 		]],
 	},
@@ -425,8 +447,8 @@ assembly
 		label = "assign",
 		kind = Kind.Keyword,
 		documentation = [[
-Moves data previously placed in the screen buffer by a data input statement 
-or moves data specified within the ASSIGN statement by an expression to the 
+Moves data previously placed in the screen buffer by a data input statement
+or moves data specified within the ASSIGN statement by an expression to the
 corresponding fields and variables in the record buffer.
 
 ## Syntax
@@ -464,8 +486,8 @@ async-request-handle
 		label = "at",
 		kind = Kind.Keyword,
 		documentation = [[
-The AT phrase of the Format phrase allows explicit positioning of frame objects, 
-either by row and column or by pixels. The AT phrase of the Frame phrase allows 
+The AT phrase of the Format phrase allows explicit positioning of frame objects,
+either by row and column or by pixels. The AT phrase of the Frame phrase allows
 explicit positioning of frames with windows or parent frames.
 		]],
 	},
@@ -599,12 +621,12 @@ auto-zap
 		label = "available",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns a TRUE value if the record buffer you name contains a 
-record and returns a FALSE value if the record buffer is empty. 
-When you use the FIND statement or the FOR EACH statement to find 
-a record, the AVM reads that record from the database into a record 
-buffer. This record buffer has the same name as the file used by 
-the FIND or FOR EACH statement, unless you specify otherwise. 
+Returns a TRUE value if the record buffer you name contains a
+record and returns a FALSE value if the record buffer is empty.
+When you use the FIND statement or the FOR EACH statement to find
+a record, the AVM reads that record from the database into a record
+buffer. This record buffer has the same name as the file used by
+the FIND or FOR EACH statement, unless you specify otherwise.
 The CREATE statement creates a new record in a record buffer.
 		]],
 	},
@@ -619,7 +641,7 @@ available-formats
 		label = "average",
 		kind = Kind.Keyword,
 		documentation = [[
-Calculates the average of all of the values of the expression in a break group and the average of all of the values of the expression in all break groups. 
+Calculates the average of all of the values of the expression in a break group and the average of all of the values of the expression in all break groups.
 		]],
 	},
 	{
@@ -702,8 +724,8 @@ begin-event-group
 		label = "begins",
 		kind = Kind.Operator,
 		documentation = [[
-Tests a character expression to see if that expression 
-begins with a second character expression. 
+Tests a character expression to see if that expression
+begins with a second character expression.
 
 ## Syntax
 
@@ -777,12 +799,12 @@ block-iteration-display
 		label = "block-level",
 		kind = Kind.Keyword,
 		documentation = [[
-Use this statement in a procedure (.p) or class (.cls) file to change the default ON ERROR 
-directive to UNDO, THROW for all blocks that have a default error directive associated with 
-them. (A simple DO block, for example, does not have default error handling and is not 
-affected by this statement.). The default ON ERROR directive is either UNDO, LEAVE or UNDO, 
-RETRY, depending on the block type. The statement must come before any executable or DEFINE 
-statements in a file. However, it can come either before or after a USING statement. 
+Use this statement in a procedure (.p) or class (.cls) file to change the default ON ERROR
+directive to UNDO, THROW for all blocks that have a default error directive associated with
+them. (A simple DO block, for example, does not have default error handling and is not
+affected by this statement.). The default ON ERROR directive is either UNDO, LEAVE or UNDO,
+RETRY, depending on the block type. The statement must come before any executable or DEFINE
+statements in a file. However, it can come either before or after a USING statement.
 		]],
 	},
 	{
@@ -859,8 +881,8 @@ box-selectable
 		label = "break by",
 		kind = Kind.Keyword,
 		documentation = [[
-Performs aggregation for break groups if you use the BREAK 
-option in a FOR EACH block header. 
+Performs aggregation for break groups if you use the BREAK
+option in a FOR EACH block header.
 		]],
 	},
 	{
@@ -888,9 +910,9 @@ buffer-chars
 		label = "buffer-compare",
 		kind = Kind.Keyword,
 		documentation = [[
-Performs a bulk comparison of two records (source and target) by comparing 
-source and target fields of the same name for equality and storing the 
-result in a field. 
+Performs a bulk comparison of two records (source and target) by comparing
+source and target fields of the same name for equality and storing the
+result in a field.
 		]],
 	},
 	{
@@ -925,8 +947,8 @@ buffer-field
 		label = "buffer-group-id",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns the group ID (as an integer) of the tenant group to which the current 
-record in a specified record buffer belongs. If the buffer does not contain 
+Returns the group ID (as an integer) of the tenant group to which the current
+record in a specified record buffer belongs. If the buffer does not contain
 a record from a tenant group, the function returns the Unknown value (?).
 		]],
 	},
@@ -990,7 +1012,7 @@ buttons
 		label = "by",
 		kind = Kind.Keyword,
 		documentation = [[
-Performs aggregation for break groups if you use the BREAK option in a FOR EACH block header. 
+Performs aggregation for break groups if you use the BREAK option in a FOR EACH block header.
 		]],
 	},
 	{
@@ -1074,10 +1096,10 @@ can-delete
 		label = "can-do",
 		kind = Kind.Function,
 		documentation = [[
-Checks a user ID against a list of one or more user ID matching patterns 
-that can be used to indicate what users have access to a given application 
-function. The function returns TRUE if the specified user ID has access 
-according to the list. Thus, you can implement run-time authorization 
+Checks a user ID against a list of one or more user ID matching patterns
+that can be used to indicate what users have access to a given application
+function. The function returns TRUE if the specified user ID has access
+according to the list. Thus, you can implement run-time authorization
 checking for any procedure or class in your application.
 		]],
 	},
@@ -1092,14 +1114,14 @@ can-do-domain-support
 		label = "can-find",
 		kind = Kind.Function,
 		documentation = [[
-Returns a TRUE value if a record is found that meets the specified FIND 
-criteria; otherwise it returns FALSE. CAN-FIND does not make the record 
-available to the procedure. You typically use the CAN-FIND function within 
+Returns a TRUE value if a record is found that meets the specified FIND
+criteria; otherwise it returns FALSE. CAN-FIND does not make the record
+available to the procedure. You typically use the CAN-FIND function within
 a option in a data handling statement, such as the UPDATE statement.
 
 ## Syntax
 ```
-can-find 
+can-find
   (
     [ first | last ] record [ constant ]
     [ of table ] [ where expression ] [ use-index index ]
@@ -1115,7 +1137,7 @@ can-find
 		label = "can-query",
 		kind = Kind.Function,
 		documentation = [[
-Returns a logical value indicating whether you can query a 
+Returns a logical value indicating whether you can query a
 specified attribute or method for a specified widget.
 		]],
 	},
@@ -1130,7 +1152,7 @@ can-read
 		label = "can-set",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns a logical value indicating whether you can set a specified attribute 
+Returns a logical value indicating whether you can set a specified attribute
 for a specified widget.
 		]],
 	},
@@ -1145,8 +1167,8 @@ can-write
 		label = "caps",
 		kind = Kind.Function,
 		documentation = [[
-Converts any lowercase characters in a CHARACTER or LONGCHAR expression to 
-uppercase characters, and returns the result. The data type of the returned 
+Converts any lowercase characters in a CHARACTER or LONGCHAR expression to
+uppercase characters, and returns the result. The data type of the returned
 value matches the data type of the expression passed to the function.
 		]],
 	},
@@ -1284,10 +1306,13 @@ class-type
 	},
 	{
 		label = "clear",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-Clears the data for all fill-in fields in a frame. It also clears the 
-colors for all widgets in a frame, except for enabled fill-ins.
+Removes all elements from a dynamic ProDataSet object including buffers and relations.
+
+## Sync
+
+`clear()`
 		]],
 	},
 	{
@@ -1560,8 +1585,8 @@ command
 		label = "compares",
 		kind = Kind.Function,
 		documentation = [[
-COMPARE returns a LOGICAL value representing the result of the logical expression, 
-where the comparison rules are defined by the combination of the operator, the 
+COMPARE returns a LOGICAL value representing the result of the logical expression,
+where the comparison rules are defined by the combination of the operator, the
 comparison strength, and the collation.
 		]],
 	},
@@ -1569,9 +1594,9 @@ comparison strength, and the collation.
 		label = "compile",
 		kind = Kind.Keyword,
 		documentation = [[
-Compiles a procedure file or a class definition file. A compilation can last for 
-a session, or you can save it permanently for use in later sessions (as an r-code 
-file, which has a .r extension). 
+Compiles a procedure file or a class definition file. A compilation can last for
+a session, or you can save it permanently for use in later sessions (as an r-code
+file, which has a .r extension).
 		]],
 	},
 	{
@@ -1606,15 +1631,15 @@ config-name
 		label = "connect",
 		kind = Kind.Keyword,
 		documentation = [[
-Establishes a connection to one or more databases from within an ABL procedure or class. 
+Establishes a connection to one or more databases from within an ABL procedure or class.
 		]],
 	},
 	{
 		label = "connected",
 		kind = Kind.Keyword,
 		documentation = [[
-Tells whether a database is connected. If logical name is the logical name or alias 
-is the alias of a connected database, the CONNECTED function returns TRUE; otherwise, 
+Tells whether a database is connected. If logical name is the logical name or alias
+is the alias of a connected database, the CONNECTED function returns TRUE; otherwise,
 it returns FALSE.
 		]],
 	},
@@ -1622,9 +1647,9 @@ it returns FALSE.
 		label = "constructor",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines a constructor for a class. A constructor is a special type of method that ABL 
-invokes to initialize data for a new object of a class that is instantiated using the 
-NEW function (classes), NEW statement, or DYNAMIC-NEW statement, or to initialize 
+Defines a constructor for a class. A constructor is a special type of method that ABL
+invokes to initialize data for a new object of a class that is instantiated using the
+NEW function (classes), NEW statement, or DYNAMIC-NEW statement, or to initialize
 static members of a class.
 			]],
 	},
@@ -1721,17 +1746,26 @@ convert-to-offset
 	},
 	{
 		label = "copy-dataset",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-copy-dataset
+Copies a source ProDataSet object to a target ProDataSet object. By default, the AVM
+empties the target ProDataSet object temp-tables of all records before copying the
+source ProDataSet object.
+
+## Syntax
+```
+targ-dataset-handle:COPY-DATASET ( src-dataset-handle [ , append-mode
+  [ , replace-mode[ , loose-copy-mode[ , pairs-list[ , current-only
+  [ , name-prefix] ] ] ] ] ] )
+```
 		]],
 	},
 	{
 		label = "copy-lob",
 		kind = Kind.Keyword,
 		documentation = [[
-Copies large object data between BLOBs, CLOBs, MEMPTRs, and LONGCHARs. It also copies 
-large object data to and from the file system, and converts large object data to or 
+Copies large object data between BLOBs, CLOBs, MEMPTRs, and LONGCHARs. It also copies
+large object data to and from the file system, and converts large object data to or
 from a specified code page.
 		]],
 	},
@@ -1744,16 +1778,25 @@ copy-sax-attributes
 	},
 	{
 		label = "copy-temp-table",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-copy-temp-table
+Copies a source temp-table object to a target temp-table object.
+Either of the temp-tables (source or target) may be a member of a
+ProDataSet object. The AVM empties the target temp-table of all records
+before copying the source temp-table, by default.
+
+## Syntax
+```
+targ-tt-handle:COPY-TEMP-TABLE ( src-tt-handle [ , append-mode
+  [ , replace-mode [ , loose-copy-mode [ , name prefix] ] ] ] )
+```
 		]],
 	},
 	{
 		label = "count",
 		kind = Kind.Keyword,
 		documentation = [[
-Calculates the number of times the expression was counted in a break group and the count 
+Calculates the number of times the expression was counted in a break group and the count
 of all the values in all break groups.
 		]],
 	},
@@ -1761,7 +1804,7 @@ of all the values in all break groups.
 		label = "count-of",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns an INTEGER value that is the total number of selected records in the table or 
+Returns an INTEGER value that is the total number of selected records in the table or
 tables you are using across break groups.
 		]],
 	},
@@ -1839,7 +1882,7 @@ crc-value
 		label = "create",
 		kind = Kind.Keyword,
 		documentation = [[
-Creates a record in a table, sets all the fields in the record to their default 
+Creates a record in a table, sets all the fields in the record to their default
 initial values, and moves a copy of the record to the record buffer.
 
 ## Syntax
@@ -1851,9 +1894,19 @@ create record [ for tenant tenant-expression ]
 	},
 	{
 		label = "create-like",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-create-like
+Creates a table like another existing table, or a dynamic ProDataSet
+object like another static or dynamic ProDataSet object.
+
+## Syntax
+```
+create-like ( {src-buffer-handle-exp|src-table-name-exp}
+  [ , src-index-name-exp] )
+
+create-like ( {src-dataset-handle|src-dataset-name}
+  [ , name-prefix] )
+```
 		]],
 	},
 	{
@@ -2105,8 +2158,8 @@ data-type
 		label = "date",
 		kind = Kind.Function,
 		documentation = [[
-Converts a single character string, a set of month, day, and year values, an 
-integer expression, a DATETIME expression, or a DATETIME-TZ expression into a 
+Converts a single character string, a set of month, day, and year values, an
+integer expression, a DATETIME expression, or a DATETIME-TZ expression into a
 DATE value.
 
 ## Syntax
@@ -2135,7 +2188,7 @@ datetime ( date-exp[ , mtime-exp ] )
 
 datetime ( string )
 
-datetime ( month , day , year , hours , minutes 
+datetime ( month , day , year , hours , minutes
        [ , seconds[ , milliseconds] ] )
 ```
 		]],
@@ -2144,8 +2197,8 @@ datetime ( month , day , year , hours , minutes
 		label = "datetime-tz",
 		kind = Kind.Function,
 		documentation = [[
-Converts a date, time, and time zone value, or a character string, into a 
-DATETIME-TZ value. 
+Converts a date, time, and time zone value, or a character string, into a
+DATETIME-TZ value.
 		]],
 	},
 	{
@@ -2159,7 +2212,7 @@ date-format
 		label = "day",
 		kind = Kind.Function,
 		documentation = [[
-Evaluates a date expression and returns a day of the month as an 
+Evaluates a date expression and returns a day of the month as an
 INTEGER value from 1 to 31, inclusive.
 
 ## Syntax
@@ -2325,7 +2378,7 @@ debug-list
 		label = "decimal",
 		kind = Kind.Function,
 		documentation = [[
-Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW, 
+Converts an expression of any data type, with the exception of BLOB, CLOB, and RAW,
 to a DECIMAL value.
 		]],
 	},
@@ -2417,20 +2470,20 @@ default-window
 		label = "define buffer",
 		kind = Kind.Keyword,
 		documentation = [[
-ABL provides you with one default buffer for each table or temp-table 
-that you use in a procedure or class. ABL uses that buffer to store one 
-record at a time from the table as the records are needed during the procedure 
-or class. If you need more than one record or buffer at a time for a table, 
-you can use this statement to define alternate buffers that are created at 
-compile time for use in one or more procedures, or within a single class or 
+ABL provides you with one default buffer for each table or temp-table
+that you use in a procedure or class. ABL uses that buffer to store one
+record at a time from the table as the records are needed during the procedure
+or class. If you need more than one record or buffer at a time for a table,
+you can use this statement to define alternate buffers that are created at
+compile time for use in one or more procedures, or within a single class or
 class hierarchy.
 
 ## Syntax
 
 ```
 define {[[ new ] shared ] | [ private | protected ] [ static ]}
-  buffer buffer-name 
-  for [ temp-table ]table-name 
+  buffer buffer-name
+  for [ temp-table ]table-name
   [ preselect ][ label label-name]
   [ namespace-uri namespace][ namespace-prefix prefix]
   [ xml-node-name node-name][ serialize-name serialize-name ]
@@ -2441,7 +2494,7 @@ define {[[ new ] shared ] | [ private | protected ] [ static ]}
 		label = "define frame",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines and creates a frame or dialog box that is created at compile time 
+Defines and creates a frame or dialog box that is created at compile time
 for use in one or more procedures, or within a single class.
 
 ## Syntax
@@ -2458,19 +2511,19 @@ define {[[ new ] shared ]|[ private ]} frame frame
 		label = "define parameter",
 		kind = Kind.Keyword,
 		documentation = [[
-Each parameter requires its own DEFINE statement. The parameters must be 
-specified in the RUN statement in the same order they are defined with DEFINE 
-statements. In addition, the parameter types (INPUT, OUTPUT, INPUT-OUTPUT, 
-RETURN, TABLE, TABLE-HANDLE, DATASET, DATASET-HANDLE, and BUFFER) specified 
-in the DEFINE and RUN statements must agree. 
+Each parameter requires its own DEFINE statement. The parameters must be
+specified in the RUN statement in the same order they are defined with DEFINE
+statements. In addition, the parameter types (INPUT, OUTPUT, INPUT-OUTPUT,
+RETURN, TABLE, TABLE-HANDLE, DATASET, DATASET-HANDLE, and BUFFER) specified
+in the DEFINE and RUN statements must agree.
 
 ## Syntax
 
 ```
 define { input | output | input-output | return } parameter parameter
-  {{   as [ handle to ]primitive-type-name 
+  {{   as [ handle to ]primitive-type-name
        | as [ class ]{object-type-name}
-       | like field       }[ extent [constant] ]} 
+       | like field       }[ extent [constant] ]}
   [[ not ] case-sensitive ]
   [ format string]
   [ decimals n]
@@ -2486,28 +2539,28 @@ define { input | output | input-output | return } parameter parameter
 		label = "define property",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines a property of a class, declares a property prototype in an ABL interface, 
-or overrides an abstract property inherited from an ABL or .NET abstract super class. 
-A property is a named member of a class that allows you to read or write a value using 
-the same syntax as a data member. However, a property can define special methods 
+Defines a property of a class, declares a property prototype in an ABL interface,
+or overrides an abstract property inherited from an ABL or .NET abstract super class.
+A property is a named member of a class that allows you to read or write a value using
+the same syntax as a data member. However, a property can define special methods
 (accessors) that specify if and how the property can be read or written.
 
 ## Syntax
 
 ```
 define [ private | protected | public ][ static | abstract ]
-       [ override ][ serializable | non-serializable ] 
-  property property-name 
-  {{ 
+       [ override ][ serializable | non-serializable ]
+  property property-name
+  {{
         as primitive-type-name|
-        as [ class ]object-type-name 
+        as [ class ]object-type-name
      } [ extent [constant  ] ]}
   [ initial { constant  | {[constant[ , constant]...]}}]
   [ serialize-name serialize-name ][ no-undo ]
-  { 
-        [accessor-access-mode] get [implementation] . 
+  {
+        [accessor-access-mode] get [implementation] .
         set [implementation] .
-     | 
+     |
         get [implementation] .
         [accessor-access-mode] set [implementation] .
   }
@@ -2518,9 +2571,9 @@ define [ private | protected | public ][ static | abstract ]
 		label = "define query",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines a variable for use in one or more procedures, a variable data member 
-of a class for use in a single class or class hierarchy, or by other classes 
-and procedures, or a variable data element for use within a single class-based 
+Defines a variable for use in one or more procedures, a variable data member
+of a class for use in a single class or class hierarchy, or by other classes
+and procedures, or a variable data element for use within a single class-based
 method.
 
 ## Syntax
@@ -2539,9 +2592,9 @@ define {[[ new ] shared ]|[ private | protected ][ static ]}
 		label = "define stream",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines a stream for use in one or more procedures, or within a single class. 
-Use this statement when you want to use streams other than the two ABL built-in 
-unnamed streams. Using additional streams allows you to get input from more than 
+Defines a stream for use in one or more procedures, or within a single class.
+Use this statement when you want to use streams other than the two ABL built-in
+unnamed streams. Using additional streams allows you to get input from more than
 one source simultaneously or to send output to more than one destination simultaneously.
 
 ## Syntax
@@ -2553,23 +2606,23 @@ one source simultaneously or to send output to more than one destination simulta
 		label = "define temp-table",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines a temp-table that is created at compile time. The AVM stores 
-temp-tables in memory (with potential overflow to disk). Among procedures, 
-a temp-table can be either global (lasting for the entire ABL session) 
-or local (lasting only as long as the procedure that creates it), and 
-either shared (visible to other procedures that want to access it) or 
-non-shared (visible just to the procedure that created it). In a class, 
+Defines a temp-table that is created at compile time. The AVM stores
+temp-tables in memory (with potential overflow to disk). Among procedures,
+a temp-table can be either global (lasting for the entire ABL session)
+or local (lasting only as long as the procedure that creates it), and
+either shared (visible to other procedures that want to access it) or
+non-shared (visible just to the procedure that created it). In a class,
 a temp-table can be defined for use within a single class or class hierarchy.
 
 ## Syntax
 
 ```
-DEFINE {[[ NEW [ GLOBAL ] ] SHARED ]| 
+DEFINE {[[ NEW [ GLOBAL ] ] SHARED ]|
             [ PRIVATE | PROTECTED ][ STATIC ]
             [ SERIALIZABLE | NON-SERIALIZABLE ]}
-  TEMP-TABLE temp-table-name[ NO-UNDO ] 
+  TEMP-TABLE temp-table-name[ NO-UNDO ]
   [ NAMESPACE-URI namespace][ NAMESPACE-PREFIX prefix]
-  [ XML-NODE-NAME node-name][ SERIALIZE-NAME serialize-name ] 
+  [ XML-NODE-NAME node-name][ SERIALIZE-NAME serialize-name ]
   [ REFERENCE-ONLY ]
   [ LIKE table-name
       [ VALIDATE ]
@@ -2577,8 +2630,8 @@ DEFINE {[[ NEW [ GLOBAL ] ] SHARED ]|
   [ LIKE-SEQUENTIAL table-name
       [ VALIDATE ]
       [ USE-INDEX index-name[ AS PRIMARY ] ]...]
-  [ RCODE-INFORMATION ] 
-  [ BEFORE-TABLE before-table-name] 
+  [ RCODE-INFORMATION ]
+  [ BEFORE-TABLE before-table-name]
   [ FIELD field-name
       { AS data-type|  LIKE field[ VALIDATE ]}
   [field-options]
@@ -2594,21 +2647,21 @@ DEFINE {[[ NEW [ GLOBAL ] ] SHARED ]|
 		label = "define variable",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines a variable for use in one or more procedures, a variable data member 
-of a class for use in a single class or class hierarchy, or by other classes 
-and procedures, or a variable data element for use within a single class-based 
+Defines a variable for use in one or more procedures, a variable data member
+of a class for use in a single class or class hierarchy, or by other classes
+and procedures, or a variable data element for use within a single class-based
 method.
 
 ## Syntax
 
 ```
-define {[[ new [ global ] ] shared ]| 
+define {[[ new [ global ] ] shared ]|
             [ private | protected | public ]
             [ static ][ serializable | non-serializable ]}
   variable variable-name
-  {{   as primitive-type-name 
+  {{   as primitive-type-name
        | as [ class ]{object-type-name}
-       | like field       }[ extent [constant] ]} 
+       | like field       }[ extent [constant] ]}
   [ serialize-name serialize-name ]
   [ bgcolor expression]
   [ column-label label]
@@ -2776,8 +2829,8 @@ disp
 		label = "display",
 		kind = Kind.Keyword,
 		documentation = [[
-Moves data to a screen buffer and displays the data on the 
-screen or other output destination. 
+Moves data to a screen buffer and displays the data on the
+screen or other output destination.
 
 ## Syntax
 
@@ -2822,7 +2875,7 @@ distinct
 		label = "do",
 		kind = Kind.Keyword,
 		documentation = [[
-Groups statements into a single block, optionally specifying processing services 
+Groups statements into a single block, optionally specifying processing services
 or block properties. Use an END statement to end a DO block.
 		]],
 	},
@@ -2851,7 +2904,7 @@ domain-type
 		label = "do",
 		kind = Kind.Keyword,
 		documentation = [[
-Groups statements into a single block, optionally specifying processing 
+Groups statements into a single block, optionally specifying processing
 services or block properties. Use an END statement to end a DO block.
 
 ## Syntax
@@ -2864,7 +2917,7 @@ do
   [ query-tuning-phrase ]
   [ variable = expression1 to expression2 [ by k ] ]
   [ while expression ]
-  [ transaction ] 
+  [ transaction ]
   [ stop-after expression ]
   [ on-endkey-phrase ]
   [ on-error-phrase ]
@@ -3055,8 +3108,8 @@ edit-cut
 		label = "editing",
 		kind = Kind.Keyword,
 		documentation = [[
-Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or 
-UPDATE statement. 
+Identifies the process that follows each keystroke during a PROMPT-FOR, SET, or
+UPDATE statement.
 
 ## Syntax
 
@@ -3089,6 +3142,17 @@ edit-undo
 		kind = Kind.Keyword,
 		documentation = [[
 Describes the block statement to process if the expression is FALSE or the Unknown value (?). The ELSE option is not required.
+		]],
+	},
+	{
+		label = "empty-dataset",
+		kind = Kind.Method,
+		documentation = [[
+Empties a ProDataSet object of all records in its associated temp-tables.
+
+## Syntax
+
+`empty-dataset ( )`
 		]],
 	},
 	{
@@ -3148,10 +3212,10 @@ encryption-salt
 		label = "end",
 		kind = Kind.Keyword,
 		documentation = [[
-Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DESTRUCTOR, 
-DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or 
-the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET 
-property accessor. 
+Indicates the end of a block started with a CASE, CATCH, CLASS, CONSTRUCTOR, DESTRUCTOR,
+DO, ENUM, FINALLY, FOR, FUNCTION, INTERFACE, METHOD, PROCEDURE, or REPEAT statement or
+the end of an EDITING phrase, Trigger phrase, or the implementation of a GET or SET
+property accessor.
 
 ## Syntax
 
@@ -3250,8 +3314,8 @@ entity-expansion-limit
 		label = "entry",
 		kind = Kind.Function,
 		documentation = [[
-Returns a character string (CHARACTER or LONGCHAR) entry from a list based 
-on an integer position. The data type of the returned value matches the 
+Returns a character string (CHARACTER or LONGCHAR) entry from a list based
+on an integer position. The data type of the returned value matches the
 data type of the list element.
 
 ## Syntax
@@ -3277,8 +3341,8 @@ Returns a TRUE value if two expressions are equal.
 		label = "error",
 		kind = Kind.Keyword,
 		documentation = [[
-Indicates whether an error occurred during a FILL or SAVE-ROW-CHANGES operation on 
-the specified ProDataSet temp-table buffer. 
+Indicates whether an error occurred during a FILL or SAVE-ROW-CHANGES operation on
+the specified ProDataSet temp-table buffer.
 		]],
 	},
 	{
@@ -3439,9 +3503,9 @@ explicit
 		label = "export",
 		kind = Kind.Keyword,
 		documentation = [[
-Converts data to a standard character format and displays it to the current output 
-destination (except when the current output destination is the screen) or to a named 
-output stream. You can use data exported to a file in standard format as input to 
+Converts data to a standard character format and displays it to the current output
+destination (except when the current output destination is the screen) or to a named
+output stream. You can use data exported to a file in standard format as input to
 other ABL procedures.
 
 ## Syntax
@@ -3473,8 +3537,8 @@ extended
 		label = "extent",
 		kind = Kind.Keyword,
 		documentation = [[
-Fixes the extent (number of elements) for an unfixed indeterminate array variable or 
-parameter. ABL treats the fixed indeterminate array as a determinate array consistent 
+Fixes the extent (number of elements) for an unfixed indeterminate array variable or
+parameter. ABL treats the fixed indeterminate array as a determinate array consistent
 with its data type.
 
 ## Syntax
@@ -3612,7 +3676,7 @@ file-type
 		label = "fill",
 		kind = Kind.Function,
 		documentation = [[
-Generates a character string made up of a character string that is repeated a specified 
+Generates a character string made up of a character string that is repeated a specified
 number of times.
 
 ## Syntax
@@ -3664,15 +3728,15 @@ Locates a single record in a table and moves that record into a record buffer.
 ## Syntax
 
 ```
-find [ first | last | next | prev ] record 
+find [ first | last | next | prev ] record
      [constant ]
      [ of table ]
      [ where expression ]
      [ use-index index ]
-     [ using [ frame frame ] field 
+     [ using [ frame frame ] field
        [ and [ frame frame ] field ] ...
      ]
-     [ share-lock | exclusive-lock | no-lock ] 
+     [ share-lock | exclusive-lock | no-lock ]
      [ no-wait ]
      [ no-prefetch ]
      [ no-error ]
@@ -3767,7 +3831,7 @@ find-wrap-around
 		label = "first",
 		kind = Kind.Function,
 		documentation = [[
-Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . 
+Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . .
 BREAK block is the first iteration of that block.
 
 ## Syntax
@@ -3814,8 +3878,8 @@ first-object
 		label = "first-of",
 		kind = Kind.Function,
 		documentation = [[
-Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . . 
-BREAK block is the first iteration for a new break group, and modifies all three 
+Returns a TRUE value if the current iteration of a DO, FOR EACH, or REPEAT . . .
+BREAK block is the first iteration for a new break group, and modifies all three
 block types.
 
 ## Syntax
@@ -3911,28 +3975,28 @@ font-table
 		label = "for",
 		kind = Kind.Keyword,
 		documentation = [[
-Starts an iterating block that reads a record from each of one or more tables 
+Starts an iterating block that reads a record from each of one or more tables
 at the start of each block iteration. Use an END statement to end a FOR block.
 
 ## Syntax
 
 ```
-[ label: ] 
-FOR [ EACH | FIRST | LAST ]record-phrase 
-  [ , [ EACH | FIRST | LAST ]record-phrase ]... 
-  [query-tuning-phrase ] 
-  [ BREAK ] 
-  [ BY expression[ DESCENDING ] 
-  | COLLATE ( string , strength[ , collation] ) [ DESCENDING ] 
-  ]... 
-  [variable = expression1 TO expression2[ BY k ] ] 
-  [ WHILE expression ] 
-  [ TRANSACTION ] 
-  [ STOP-AFTER expression ] 
-  [on-error-phrase ] 
-  [on-endkey-phrase ] 
-  [on-quit-phrase ] 
-  [on-stop-phrase ] 
+[ label: ]
+FOR [ EACH | FIRST | LAST ]record-phrase
+  [ , [ EACH | FIRST | LAST ]record-phrase ]...
+  [query-tuning-phrase ]
+  [ BREAK ]
+  [ BY expression[ DESCENDING ]
+  | COLLATE ( string , strength[ , collation] ) [ DESCENDING ]
+  ]...
+  [variable = expression1 TO expression2[ BY k ] ]
+  [ WHILE expression ]
+  [ TRANSACTION ]
+  [ STOP-AFTER expression ]
+  [on-error-phrase ]
+  [on-endkey-phrase ]
+  [on-quit-phrase ]
+  [on-stop-phrase ]
   [frame-phrase ] :
 
   for-body
@@ -3957,11 +4021,11 @@ foreground
 		label = "form",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines the layout and certain processing attributes of a frame 
-for use within a single procedure. If the frame has not been 
-previously scoped, the FORM statement scopes it to the current 
-block. Use the FORM statement if you want to describe a frame 
-in a single statement rather than let ABL construct the frame 
+Defines the layout and certain processing attributes of a frame
+for use within a single procedure. If the frame has not been
+previously scoped, the FORM statement scopes it to the current
+block. Use the FORM statement if you want to describe a frame
+in a single statement rather than let ABL construct the frame
 based on individual data handling statements in a block.
 
 ## Syntax
@@ -4048,10 +4112,10 @@ frame-down
 		label = "frame-field",
 		kind = Kind.Keyword,
 		documentation = [[
-During a data entry statement, returns the name of the input field the cursor 
+During a data entry statement, returns the name of the input field the cursor
 is in. At other times, returns the name of the input field the cursor was last in.
 
-The FRAME-FIELD function is particularly useful if you want to provide the user 
+The FRAME-FIELD function is particularly useful if you want to provide the user
 with help for the input field being used.
 
 ## Syntax
@@ -4084,7 +4148,7 @@ frame-line
 		label = "frame-name",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns the name of the frame that the cursor is in to a field 
+Returns the name of the frame that the cursor is in to a field
 that is enabled for input.
 
 ## Syntax
@@ -4206,8 +4270,8 @@ full-width-pixels
 		kind = Kind.Keyword,
 		documentation = [[
 Defines or declares a prototype for a user-defined function,
-or declares a Web service operation. The following syntax boxes 
-describe the syntax for each use of the statement, beginning 
+or declares a Web service operation. The following syntax boxes
+describe the syntax for each use of the statement, beginning
 with a user-defined function definition.
 
 ## Syntax
@@ -4238,7 +4302,7 @@ gateways
 		label = "ge",
 		kind = Kind.Operator,
 		documentation = [[
-Returns a TRUE value if the first of two expressions is greater than or equal 
+Returns a TRUE value if the first of two expressions is greater than or equal
 to the second expression.
 
 ## Syntax
@@ -4873,7 +4937,7 @@ group
 		label = "gt",
 		kind = Kind.Operator,
 		documentation = [[
-Returns a TRUE value if the first of two expressions is greater 
+Returns a TRUE value if the first of two expressions is greater
 than the second expression.
 
 ## Syntax
@@ -4892,8 +4956,8 @@ guid
 		label = "handle",
 		kind = Kind.Function,
 		documentation = [[
-Converts a string representation of a handle to a valid handle. If the 
-string does not correlate to a valid handle in the session, the function 
+Converts a string representation of a handle to a valid handle. If the
+string does not correlate to a valid handle in the session, the function
 returns 0.
 
 ## Syntax
@@ -4976,8 +5040,8 @@ hidden
 		kind = Kind.Keyword,
 		documentation = [[
 Makes a widget invisible (sets its VISIBLE attribute to FALSE), or
-clears the message area for a window, or hides all widgets and 
-clears messages in a window. 
+clears the message area for a window, or hides all widgets and
+clears messages in a window.
 
 ## Syntax
 
@@ -5154,7 +5218,7 @@ implements
 		label = "import",
 		kind = Kind.Keyword,
 		documentation = [[
-Reads a line from an input file that might have been created by EXPORT. 
+Reads a line from an input file that might have been created by EXPORT.
 
 ## Syntax
 
@@ -5194,7 +5258,7 @@ increment-exclusive-id
 		label = "index",
 		kind = Kind.Function,
 		documentation = [[
-Returns an INTEGER value that indicates the position of 
+Returns an INTEGER value that indicates the position of
 the target string within the source string.
 
 ## Syntax
@@ -5329,9 +5393,9 @@ References the value of a field in a frame.
 		label = "input clear",
 		kind = Kind.Keyword,
 		documentation = [[
-Clears any keystrokes buffered from the keyboard, discarding any type-ahead 
-characters. The INPUT CLEAR statement is useful when you want to make sure 
-the AVM clears out extra characters in the input statement that could 
+Clears any keystrokes buffered from the keyboard, discarding any type-ahead
+characters. The INPUT CLEAR statement is useful when you want to make sure
+the AVM clears out extra characters in the input statement that could
 follow a field entry that is too long.
 
 ## Syntax
@@ -5366,12 +5430,12 @@ input [ stream stream | stream-handle handle ] from
      | value ( expression )
      | os-dir ( directory ) [ no-attr-list ]
   }
-  [ lob-dir { constant | value ( expression ) } ] 
+  [ lob-dir { constant | value ( expression ) } ]
   [ binary ]
   [ echo | no-echo ]
   [ map protermcap-entry | no-map ]
   [ unbuffered ]
-  [     no-convert 
+  [     no-convert
      | { convert
             [ target target-codepage ]
             [ source source-codepage ]
@@ -5419,7 +5483,7 @@ Closes a specified or default stream opened by an INPUT-OUTPUT THROUGH statement
 		label = "input-output through",
 		kind = Kind.Keyword,
 		documentation = [[
-Names a program (process) for the AVM to start. This process is 
+Names a program (process) for the AVM to start. This process is
 the input source as well as the output destination for the procedure.
 
 ## Syntax
@@ -5435,7 +5499,7 @@ input-output [ stream stream | stream-handle handle ]
       | { convert
             [ target target-codepage ]
             [ source source-codepage]
-        } 
+        }
   ]
 ```
 		]],
@@ -5451,8 +5515,8 @@ input-value
 		label = "insert",
 		kind = Kind.Keyword,
 		documentation = [[
-Creates a new database record, displays the initial values for the fields 
-in the record, prompts for values of those fields, and assigns those 
+Creates a new database record, displays the initial values for the fields
+in the record, prompts for values of those fields, and assigns those
 values to the record.
 
 ## Syntax
@@ -5525,7 +5589,7 @@ int64
 		label = "integer",
 		kind = Kind.Function,
 		documentation = [[
-Converts an expression of any data type, with the exception of BLOB, CLOB, and 
+Converts an expression of any data type, with the exception of BLOB, CLOB, and
 RAW, to a 32-bit integer value of data type INTEGER, rounding that value if necessary.
 		]],
 	},
@@ -5533,13 +5597,13 @@ RAW, to a 32-bit integer value of data type INTEGER, rounding that value if nece
 		label = "interface",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines a user-defined interface. An interface defined with this 
-statement represents a user-defined data type that defines a set 
-of method, property, and event prototypes for methods, properties, 
-and events that can be implemented by one or more classes. 
+Defines a user-defined interface. An interface defined with this
+statement represents a user-defined data type that defines a set
+of method, property, and event prototypes for methods, properties,
+and events that can be implemented by one or more classes.
 
-Any class that implements the interface must support all the methods, 
-properties, and events whose prototypes are defined in the interface 
+Any class that implements the interface must support all the methods,
+properties, and events whose prototypes are defined in the interface
 or any interface from which this interface inherits member prototypes.
 
 ## Syntax
@@ -5562,8 +5626,8 @@ internal-entries
 		label = "interval",
 		kind = Kind.Keyword,
 		documentation = [[
-Returns the time interval between two DATE, DATETIME, or DATETIME-TZ 
-values as an INT64 value. 
+Returns the time interval between two DATE, DATETIME, or DATETIME-TZ
+values as an INT64 value.
 
 ## Syntax
 
@@ -5693,7 +5757,7 @@ join-by-sqldb
 		label = "kblabel",
 		kind = Kind.Function,
 		documentation = [[
-Returns the keyboard label (such as F1) of the key that performs a specified ABL function (such as GO). 
+Returns the keyboard label (such as F1) of the key that performs a specified ABL function (such as GO).
 		]],
 	},
 	{
@@ -5756,7 +5820,7 @@ key-code
 		label = "keyfunction",
 		kind = Kind.Function,
 		documentation = [[
-Evaluates an integer expression (such as 301) and returns a character string that 
+Evaluates an integer expression (such as 301) and returns a character string that
 is the function of the key associated with that integer expression (such as GO).
 		]],
 	},
@@ -5771,8 +5835,8 @@ key-function
 		label = "keylabel",
 		kind = Kind.Function,
 		documentation = [[
-Evaluates a key code (such as 301) and returns a character string that is 
-the predefined keyboard label for that key (such as F1). 
+Evaluates a key code (such as 301) and returns a character string that is
+the predefined keyboard label for that key (such as F1).
 		]],
 	},
 	{
@@ -5933,8 +5997,8 @@ last-form
 		label = "lastkey",
 		kind = Kind.Function,
 		documentation = [[
-Returns, as an INTEGER value, the integer key code of the most recent event 
-read from the user (that is, from the keyboard or mouse) during an interaction 
+Returns, as an INTEGER value, the integer key code of the most recent event
+read from the user (that is, from the keyboard or mouse) during an interaction
 with a procedure.
 		]],
 	},
@@ -6019,8 +6083,8 @@ left-aligned
 		label = "left-trim",
 		kind = Kind.Function,
 		documentation = [[
-Removes leading white space, or other specified characters, from a 
-CHARACTER or LONGCHAR expression. The data type of the returned value 
+Removes leading white space, or other specified characters, from a
+CHARACTER or LONGCHAR expression. The data type of the returned value
 matches the data type of the expression passed to the function.
 		]],
 	},
@@ -6028,7 +6092,7 @@ matches the data type of the expression passed to the function.
 		label = "length",
 		kind = Kind.Function,
 		documentation = [[
-Returns, as an INTEGER value, the number of characters, bytes, 
+Returns, as an INTEGER value, the number of characters, bytes,
 or columns in a string, an expression of type RAW, or a BLOB field.
 		]],
 	},
@@ -6336,7 +6400,7 @@ lookahead
 	{
 		label = "lookup",
 		documentation = [[
-Returns an INTEGER value giving the position of an expression 
+Returns an INTEGER value giving the position of an expression
 in a list. Returns a 0 if the expression is not in the list.
 
 ## Syntax
@@ -6435,8 +6499,8 @@ mark-row-state
 		label = "matches",
 		kind = Kind.Operator,
 		documentation = [[
-Compares a character expression to a pattern and evaluates to a TRUE 
-value if the expression satisfies the pattern criteria. 
+Compares a character expression to a pattern and evaluates to a TRUE
+value if the expression satisfies the pattern criteria.
 		]],
 	},
 	{
@@ -6625,8 +6689,8 @@ merge-by-field
 		label = "message",
 		kind = Kind.Keyword,
 		documentation = [[
-Displays messages in the message area at the bottom of the window or in an 
-alert box (or in an output stream—see the Notes section). By default, an 
+Displays messages in the message area at the bottom of the window or in an
+alert box (or in an output stream—see the Notes section). By default, an
 area at the bottom line of the window is reserved for ABL system messages.
 		]],
 	},
@@ -6942,7 +7006,7 @@ new-row
 		label = "next",
 		kind = Kind.Keyword,
 		documentation = [[
-Goes directly to the END of an iterating block and starts the next iteration 
+Goes directly to the END of an iterating block and starts the next iteration
 of the block.
 		]],
 	},
@@ -6957,7 +7021,7 @@ next-column
 		label = "next-prompt",
 		kind = Kind.Keyword,
 		documentation = [[
-Specifies the field in which you want to position the cursor during 
+Specifies the field in which you want to position the cursor during
 the next input operation that involves that field in a frame.
 		]],
 	},
@@ -6986,7 +7050,7 @@ next-tab-item
 		label = "next-value",
 		kind = Kind.Function,
 		documentation = [[
-Returns the next INT64 value of a static sequence, incremented by the 
+Returns the next INT64 value of a static sequence, incremented by the
 positive or negative value defined in the Data Dictionary.
 		]],
 	},
@@ -7582,7 +7646,7 @@ old
 		label = "on",
 		kind = Kind.Keyword,
 		documentation = [[
-The ON statement specifies a trigger for one or more events or 
+The ON statement specifies a trigger for one or more events or
 redefines terminal keys for an application.
 		]],
 	},
@@ -7597,8 +7661,8 @@ on-frame-border
 		label = "open query",
 		kind = Kind.Keyword,
 		documentation = [[
-Opens a query, which might have been previously defined in a 
-DEFINE QUERY statement. Opening a query makes it available 
+Opens a query, which might have been previously defined in a
+DEFINE QUERY statement. Opening a query makes it available
 for use within a GET statement, or in a browse widget.
 		]],
 	},
@@ -7662,7 +7726,7 @@ Executes an operating system file copy command from within ABL.
 		label = "os-create-dir",
 		kind = Kind.Function,
 		documentation = [[
-Executes an operating system command from within ABL that creates 
+Executes an operating system command from within ABL that creates
 one or more new directories.
 		]],
 	},
@@ -7670,7 +7734,7 @@ one or more new directories.
 		label = "os-delete",
 		kind = Kind.Function,
 		documentation = [[
-Executes an operating system file or directory delete from within ABL. 
+Executes an operating system file or directory delete from within ABL.
 Can delete one or more files, a directory, or an entire directory branch.
 		]],
 	},
@@ -7685,8 +7749,8 @@ Can delete one or more files, a directory, or an entire directory branch.
 		label = "os-error",
 		kind = Kind.Function,
 		documentation = [[
-Returns, as an INTEGER value, an ABL error code that indicates whether an 
-execution error occurred during the last OS-APPEND, OS-COPY, OS-CREATE-DIR, 
+Returns, as an INTEGER value, an ABL error code that indicates whether an
+execution error occurred during the last OS-APPEND, OS-COPY, OS-CREATE-DIR,
 OS-DELETE, OS-RENAME or SAVE CACHE statement.
 		]],
 	},
@@ -7694,7 +7758,7 @@ OS-DELETE, OS-RENAME or SAVE CACHE statement.
 		label = "os-getenv",
 		kind = Kind.Function,
 		documentation = [[
-Returns a string that contains the value of the desired environment variable 
+Returns a string that contains the value of the desired environment variable
 in the environment in which the ABL session is running.
 		]],
 	},
@@ -7722,7 +7786,7 @@ Specifies the new output destination for a stream.
 	{
 		label = "output close",
 		documentation = [[
-Closes the default output destination or the output stream you name with 
+Closes the default output destination or the output stream you name with
 the STREAM keyword in a prior OUTPUT TO statement.
 		]],
 		kind = Kind.Keyword,
@@ -7752,8 +7816,8 @@ the STREAM keyword in a prior OUTPUT TO statement.
 		label = "page",
 		kind = Kind.Keyword,
 		documentation = [[
-Starts a new output page for PAGED output. No action is taken if output 
-is already positioned at the beginning of a page. 
+Starts a new output page for PAGED output. No action is taken if output
+is already positioned at the beginning of a page.
 		]],
 	},
 	{
@@ -7851,8 +7915,8 @@ is already positioned at the beginning of a page.
 		label = "pause",
 		kind = Kind.Keyword,
 		documentation = [[
-Suspends processing indefinitely, or for a specified number of seconds, or 
-until the user presses any key. 
+Suspends processing indefinitely, or for a specified number of seconds, or
+until the user presses any key.
 		]],
 	},
 	{
@@ -8090,9 +8154,9 @@ until the user presses any key.
 		label = "procedure",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines an internal procedure as an ABL procedure or declares an internal procedure 
-prototype for an external routine in a Windows dynamic link library (DLL) or UNIX 
-shared library, or for an internal ABL procedure defined in an external procedure 
+Defines an internal procedure as an ABL procedure or declares an internal procedure
+prototype for an external routine in a Windows dynamic link library (DLL) or UNIX
+shared library, or for an internal ABL procedure defined in an external procedure
 that is itself a super procedure of the declaration procedure.
 		]],
 	},
@@ -8366,7 +8430,7 @@ Closes a query that was opened by a previous OPEN QUERY statement.
 		label = "query-off-end",
 		kind = Kind.Function,
 		documentation = [[
-Returns a LOGICAL value indicating whether the specified query is positioned at 
+Returns a LOGICAL value indicating whether the specified query is positioned at
 the end of its result list (either before the first record or after the last record).
 		]],
 	},
@@ -8409,7 +8473,7 @@ quit
 		label = "quoter",
 		kind = Kind.Function,
 		documentation = [[
-Converts the specified data type to CHARACTER and encloses the results in 
+Converts the specified data type to CHARACTER and encloses the results in
 quotes when necessary.
 		]],
 	},
@@ -8501,8 +8565,8 @@ read-xml
 		label = "readkey",
 		kind = Kind.Keyword,
 		documentation = [[
-Reads one keystroke from an input source and sets the value of LASTKEY to the 
-keycode of that keystroke. Use the READKEY statement when you want to look at 
+Reads one keystroke from an input source and sets the value of LASTKEY to the
+keycode of that keystroke. Use the READKEY statement when you want to look at
 each keystroke a user makes and take some action based on that keystroke.
 		]],
 	},
@@ -8517,8 +8581,8 @@ real
 		label = "recid",
 		kind = Kind.Function,
 		documentation = [[
-Returns the unique internal identifier of the database record currently 
-associated with the record buffer you name. 
+Returns the unique internal identifier of the database record currently
+associated with the record buffer you name.
 		]],
 	},
 	{
@@ -8609,7 +8673,7 @@ remove-super-procedure
 		label = "repeat",
 		kind = Kind.Keyword,
 		documentation = [[
-Begins a block of statements that are processed repeatedly until the block 
+Begins a block of statements that are processed repeatedly until the block
 ends in one of several ways. Use an END statement to end a REPEAT block.
 		]],
 	},
@@ -8617,7 +8681,7 @@ ends in one of several ways. Use an END statement to end a REPEAT block.
 		label = "replace",
 		kind = Kind.Function,
 		documentation = [[
-Returns a string with specified substring replacements. The data type of the 
+Returns a string with specified substring replacements. The data type of the
 returned value matches the data type of the expression passed to the function.
 		]],
 	},
@@ -8765,10 +8829,10 @@ retry-cancel
 		label = "return",
 		kind = Kind.Keyword,
 		documentation = [[
-Leaves the local or remote procedure or user-defined function block, trigger block, 
-database trigger block, the method block of a class, the class constructor block, 
-or the property accessor block, and returns to the calling procedure, user-defined 
-function, method, constructor, or property accessor. If there is no caller, RETURN 
+Leaves the local or remote procedure or user-defined function block, trigger block,
+database trigger block, the method block of a class, the class constructor block,
+or the property accessor block, and returns to the calling procedure, user-defined
+function, method, constructor, or property accessor. If there is no caller, RETURN
 returns to the Procedure Editor
 		]],
 	},
@@ -9245,10 +9309,10 @@ seal-timestamp
 		label = "search",
 		kind = Kind.Function,
 		documentation = [[
-Searches the directories and libraries defined in the PROPATH environment 
-variable for a file. The SEARCH function returns the full pathname of the 
-file unless it is found in your current working directory. If SEARCH does 
-not find the file, it returns the Unknown value (?). 
+Searches the directories and libraries defined in the PROPATH environment
+variable for a file. The SEARCH function returns the full pathname of the
+file unless it is found in your current working directory. If SEARCH does
+not find the file, it returns the Unknown value (?).
 		]],
 	},
 	{
@@ -10011,7 +10075,7 @@ static
 		label = "status",
 		kind = Kind.Keyword,
 		documentation = [[
-Specifies the text that appears in the status line of a window. 
+Specifies the text that appears in the status line of a window.
 		]],
 	},
 	{
@@ -10165,7 +10229,7 @@ sub-menu
 		label = "sub-minimum",
 		kind = Kind.Keyword,
 		documentation = [[
-Shows the minimum value of an expression in a break group. Does not 
+Shows the minimum value of an expression in a break group. Does not
 supply a minimum value for all records, just for those in each break group.
 		]],
 	},
@@ -10194,8 +10258,8 @@ Extracts a portion of a character string from a field or variable.
 		label = "sub-total",
 		kind = Kind.Keyword,
 		documentation = [[
-Subtotals all of the values of the expression in a break group. 
-Does not supply a total value for all records, just for those 
+Subtotals all of the values of the expression in a break group.
+Does not supply a total value for all records, just for those
 in each break group.
 		]],
 	},
@@ -10217,7 +10281,7 @@ sum
 		label = "super",
 		kind = Kind.Keyword,
 		documentation = [[
-Invokes a constructor for the immediate super class as the first statement 
+Invokes a constructor for the immediate super class as the first statement
 in a constructor of the defining class.
 		]],
 	},
@@ -10491,8 +10555,8 @@ tic-marks
 		label = "time",
 		kind = Kind.Function,
 		documentation = [[
-Returns an INTEGER value representing the time as the number of seconds since 
-midnight. Use this function together with the STRING function to produce the 
+Returns an INTEGER value representing the time as the number of seconds since
+midnight. Use this function together with the STRING function to produce the
 time in hours, minutes, and seconds.
 		]],
 	},
@@ -10605,10 +10669,10 @@ to-rowid
 		label = "total",
 		kind = Kind.Keyword,
 		documentation = [[
-Calculates the subtotal of all of the values of the expression in a 
-break group and the grand total of all of the values of the expression 
-in all break groups. When you use default aggregates, the actual display 
-of the grand total is deferred until the frame goes out of scope. 
+Calculates the subtotal of all of the values of the expression in a
+break group and the grand total of all of the values of the expression
+in all break groups. When you use default aggregates, the actual display
+of the grand total is deferred until the frame goes out of scope.
 		]],
 	},
 	{
@@ -10727,7 +10791,7 @@ underline
 		label = "undo",
 		kind = Kind.Keyword,
 		documentation = [[
-Backs out all modifications to fields and variables made during the 
+Backs out all modifications to fields and variables made during the
 current iteration of a block, and indicates what action to take next.
 		]],
 	},
@@ -10770,8 +10834,8 @@ unique-match
 		label = "unix",
 		kind = Kind.Keyword,
 		documentation = [[
-Runs a program, UNIX command, or UNIX script, or starts a UNIX 
-interactive shell to allow interactive processing of UNIX commands. 
+Runs a program, UNIX command, or UNIX script, or starts a UNIX
+interactive shell to allow interactive processing of UNIX commands.
 		]],
 	},
 	{
@@ -10806,15 +10870,15 @@ unsubscribe
 		label = "up",
 		kind = Kind.Keyword,
 		documentation = [[
-Positions the cursor on a new line in a down or multi-line frame. 
+Positions the cursor on a new line in a down or multi-line frame.
 		]],
 	},
 	{
 		label = "update",
 		kind = Kind.Keyword,
 		documentation = [[
-Displays fields or variables, requests input, and then puts the 
-input data in both the screen buffer and in the specified fields 
+Displays fields or variables, requests input, and then puts the
+input data in both the screen buffer and in the specified fields
 or variables.
 		]],
 	},
@@ -10941,8 +11005,8 @@ use-widget-pool
 		label = "using",
 		kind = Kind.Keyword,
 		documentation = [[
-Allows you to reference a single specified ABL or .NET object type, or 
-reference all the types in an ABL package or .NET namespace, using their 
+Allows you to reference a single specified ABL or .NET object type, or
+reference all the types in an ABL package or .NET namespace, using their
 unqualified type names.
 		]],
 	},
@@ -11070,14 +11134,14 @@ vertical
 		label = "view",
 		kind = Kind.Keyword,
 		documentation = [[
-Displays a widget 
+Displays a widget
 		]],
 	},
 	{
 		label = "view-as",
 		kind = Kind.Keyword,
 		documentation = [[
-Defines a compile-time defined (static) widget to represent a 
+Defines a compile-time defined (static) widget to represent a
 field or variable on the screen.
 		]],
 	},
@@ -11141,9 +11205,9 @@ wait
 		label = "wait-for",
 		kind = Kind.Keyword,
 		documentation = [[
-This WAIT-FOR statement instructs the AVM to stop executing the current 
-block until a specific ABL event occurs. The AVM continues to respond to 
-all other incoming events and execute any associated triggers or event 
+This WAIT-FOR statement instructs the AVM to stop executing the current
+block until a specific ABL event occurs. The AVM continues to respond to
+all other incoming events and execute any associated triggers or event
 procedures while in this wait state.
 		]],
 	},
@@ -11165,7 +11229,7 @@ web-context
 		label = "weekday",
 		kind = Kind.Function,
 		documentation = [[
-Evaluates a date expression and returns the day of the week as 
+Evaluates a date expression and returns the day of the week as
 an INTEGER value from 1 (Sunday) to 7 (Saturday) for that date.
 		]],
 	},
@@ -11551,7 +11615,7 @@ y
 		label = "year",
 		kind = Kind.Function,
 		documentation = [[
-Evaluates a date expression and returns the year value of that 
+Evaluates a date expression and returns the year value of that
 date, including the century, as an INTEGER value.
 		]],
 	},

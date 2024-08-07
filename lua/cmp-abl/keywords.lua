@@ -236,9 +236,9 @@ add-super-procedure
 	},
 	{
 		label = "adm-data",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-adm-data
+An arbitrary string value associated with a persistent procedure.
 		]],
 	},
 	{
@@ -2135,9 +2135,10 @@ data-source-complete-map
 	},
 	{
 		label = "data-source-modified",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-data-source-modified
+Indicates that data in the data source associated with a ProDataSet
+temp-table buffer has been modified.
 		]],
 	},
 	{
@@ -3015,9 +3016,9 @@ dump
 	},
 	{
 		label = "dynamic",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-dynamic
+Indicates whether the widget is dynamic or static.
 		]],
 	},
 	{
@@ -4975,15 +4976,9 @@ guid
 	},
 	{
 		label = "handle",
-		kind = Kind.Function,
+		kind = Kind.Property,
 		documentation = [[
-Converts a string representation of a handle to a valid handle. If the
-string does not correlate to a valid handle in the session, the function
-returns 0.
-
-## Syntax
-
-`handle ( handle-string )`
+A handle to the object.
 		]],
 	},
 	{
@@ -6956,23 +6951,32 @@ must-exist
 	{
 		label = "name",
 		documentation = [[
-name
+A string identifier for the specified object or widget.
 		]],
 		kind = Kind.Keyword,
 	},
 	{
 		label = "namespace-prefix",
+		kind = Kind.Property,
 		documentation = [[
-namespace-prefix
+This attribute returns or sets the qualified part of a namespace-aware XML node name
+(that is, the prefix before the colon character). The prefix is used to identify
+elements that belong to the namespace associated with the prefix (as set by the
+NAMESPACE-URI attribute). For nodes created with the CREATE-NODE( ) method, or
+nodes of any type other than ELEMENT or ATTRIBUTE, this attribute returns the
+Unknown value (?).
 		]],
-		kind = Kind.Keyword,
 	},
 	{
 		label = "namespace-uri",
 		documentation = [[
-namespace-uri
+The namespace URI of a namespace-aware XML node name, a SOAP-header-entryref object,
+or a ProDataSet or Temp-Table element and its child elements. The namespace of an
+XML document is used to scope XML attributes and elements. For nodes created with the
+CREATE-NODE( ) method, or nodes of any type other than ELEMENT or ATTRIBUTE,
+this attribute returns the Unknown value (?).
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "native",
@@ -7056,9 +7060,9 @@ next-rowid
 	{
 		label = "next-sibling",
 		documentation = [[
-next-sibling
+The next entry in a list of handles, relative to a given handle.
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "next-tab-item",
@@ -7449,9 +7453,9 @@ num-aliases
 	{
 		label = "num-buffers",
 		documentation = [[
-num-buffers
+The number of buffers in a query or ProDataSet object.
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "num-buttons",
@@ -7568,9 +7572,10 @@ num-parameters
 	{
 		label = "num-references",
 		documentation = [[
-num-references
+The number of references to a buffer, ProDataSet, or temp-table object that is
+defined as a parameter to which reference-only objects are bound.
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "num-replaced",
@@ -8159,9 +8164,9 @@ until the user presses any key.
 	},
 	{
 		label = "private-data",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-"private-data"
+An arbitrary string associated with the handle of an object or widget.
 		]],
 	},
 	{
@@ -9545,9 +9550,19 @@ serialize-hidden
 	},
 	{
 		label = "serialize-name",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-serialize-name
+Indicates the name of a ProDataSet, a temp-table, a temp-table buffer,
+or a temp-table buffer-field object as it should appear when serialized,
+for example into JSON or XML.
+
+This attribute's purpose overlaps with the XML-NODE-NAME attribute. Because of this overlap, the attributes interact as follows:
+
+    The READ-XML( ) and WRITE-XML( ) methods always use the XML-NODE-NAME attribute value. If you set a value for the XML-NODE-NAME attribute, it keeps that value regardless of how you set the SERIALIZE-NAME attribute.
+    If you do not set the XML-NODE-NAME attribute and set the SERIALIZE-NAME attribute, the AVM sets XML-NODE-NAME equal to SERIALIZE-NAME.
+    If you do not set either attribute, the AVM sets both to the ABL object name.
+
+Use this attribute when the serialized name either contains invalid characters for an ABL name or the serialized name is an ABL keyword.
 		]],
 	},
 	{
@@ -10698,9 +10713,10 @@ topic
 	},
 	{
 		label = "top-nav-query",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-top-nav-query
+Lets you get or set the default navigation query for a
+top-level buffer in a ProDataSet object.
 		]],
 	},
 	{
@@ -10806,9 +10822,9 @@ truncate
 	},
 	{
 		label = "type",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-type
+The type of a handle.
 		]],
 	},
 	{
@@ -10870,9 +10886,10 @@ unique
 	},
 	{
 		label = "unique-id",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-unique-id
+A value, with one noted exception, that is guaranteed unique for a
+given handle object type within an ABL session.
 		]],
 	},
 	{
@@ -11642,9 +11659,11 @@ xml-entity-expansion-limit
 	},
 	{
 		label = "xml-node-type",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-xml-node-type
+The XML node type of the buffer-field or ProDataSet object,
+which lets you specify how the object is represented in
+XML and XML Schema.
 		]],
 	},
 	{

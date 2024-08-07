@@ -8586,9 +8586,18 @@ read-only
 	},
 	{
 		label = "read-xml",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-read-xml
+Reads an XML document into a ProDataSet, temp-table, or temp-table buffer
+object. You can read data, schema, or both.
+
+## Syntax
+```
+read-xml ( source-type
+  , { file | memptr | handle | longchar }
+  , read-mode , schema-location , override-default-mapping
+  [ , field-type-mapping [ , verify-schema-mode ] ] )
+```
 		]],
 	},
 	{
@@ -9641,9 +9650,22 @@ set-break
 	},
 	{
 		label = "set-buffers",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-set-buffers
+Binds all buffers for a query or dynamic ProDataSet object at the same time.
+Any buffers previously added to the ProDataSet object are removed.
+
+Use the ADD-BUFFER( ) method to add one buffer to the object, without
+affecting the other buffers, if any.
+
+## Syntax
+```
+set-buffers ( buffer [ , buffer ] ... )
+```
+Following is an example:
+```
+my-query-handle:set-buffers(buffer customer:handle).
+```
 		]],
 	},
 	{
@@ -11517,9 +11539,21 @@ write-fragment
 	},
 	{
 		label = "write-json",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-write-json
+Writes a specified JSON string, `Progress.Json.ObjectModel.JsonArray` object, or
+`Progress.Json.ObjectModel.JsonObject` object from a corresponding ProDataSet,
+temp-table, or temp-table buffer object. In the case of a temp-table buffer object,
+all the records of the temp-table associated with the buffer object are written to
+the JSON string or JsonArray object—not just the one record in the buffer.
+
+## Syntax
+
+write-json ( target-type
+  , { file | stream | stream-handle | memptr | longchar
+        | JsonArray | JsonObject }
+  [ , formatted [ , encoding [ , omit-initial-values
+  [ , omit-outer-object [ , write-before-image ] ] ] ] ] )
 		]],
 	},
 	{
@@ -11545,16 +11579,37 @@ write-status
 	},
 	{
 		label = "write-xml",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-write-xml
+Writes an XML document from a ProDataSet, temp-table, or temp-table buffer object.
+In the case of the temp-table buffer object, all the records of the temp-table
+associated with the buffer object are written to the XML document—not just
+the one in the buffer.
+
+## Syntax
+```
+write-xml ( target-type
+  , { file | stream | stream-handle | memptr | handle | longchar }
+  [ , formatted [ , encoding [ , schema-location [ , write-xmlschema
+  [ , min-xmlschema [ , write-before-image [ , omit-initial-values
+  ] ] ] ] ] ] ] )
+```
 		]],
 	},
 	{
 		label = "write-xmlschema",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-write-xmlschema
+Writes an XML representation of the definition of a ProDataSet,
+temp-table, or temp-table buffer object (that is, an XML Schema file).
+
+## Syntax
+```
+WRITE-XMLSCHEMA ( target-type
+  , { file | stream | stream-handle | memptr | handle | longchar }
+  [ , formatted [ , encoding [ , min-xmlschema [ , omit-initial-values
+  ] ] ] ] )
+```
 		]],
 	},
 	{

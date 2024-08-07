@@ -300,10 +300,9 @@ always-on-top
 	},
 	{
 		label = "ambiguous",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-Returns a TRUE value if the last FIND statement for a particular record
-found more than one record that met the specified index criteria.
+Indicates whether more than one record matched the FIND predicate.
 		]],
 	},
 	{
@@ -493,9 +492,13 @@ explicit positioning of frames with windows or parent frames.
 	},
 	{
 		label = "attached-pairlist",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-attached-pairlist
+Returns a comma-separated list of field name pairs for fields in a
+ProDataSet temp-table buffer that are mapped to corresponding fields
+in an attached data-source object. This list includes only the field
+name pairs you specified with the most recently attached data-source
+object (in the order you specified them).
 		]],
 	},
 	{
@@ -605,9 +608,10 @@ auto-return
 	},
 	{
 		label = "auto-synchronize",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-auto-synchronize
+Indicates whether the AVM automatically synchronizes a hierarchy of
+queries on a ProDataSet temp-table buffer.
 		]],
 	},
 	{
@@ -619,15 +623,19 @@ auto-zap
 	},
 	{
 		label = "available",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-Returns a TRUE value if the record buffer you name contains a
-record and returns a FALSE value if the record buffer is empty.
-When you use the FIND statement or the FOR EACH statement to find
-a record, the AVM reads that record from the database into a record
-buffer. This record buffer has the same name as the file used by
-the FIND or FOR EACH statement, unless you specify otherwise.
-The CREATE statement creates a new record in a record buffer.
+Indicates whether a buffer contains a record.
+
+Depending on its return value, the AVAILABLE attribute indicates one of the
+following conditions when applied to the buffer-field object:
+
+    TRUE — The query buffer has a record with a field available that corresponds
+    to this buffer-field object handle.
+    FALSE — The query buffer has a record with the field missing that corresponds
+    to this buffer-field object handle.
+    Unknown value (?) — The query buffer associated with this buffer-field object
+    handle has no record.
 		]],
 	},
 	{
@@ -701,9 +709,10 @@ batch-mode
 	},
 	{
 		label = "batch-size",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-batch-size
+The maximum number of ProDataSet temp-table rows to retrieve in each FILL operation.
+The default value is zero (which retrieves all rows that satisfy the associated query).
 		]],
 	},
 	{
@@ -945,10 +954,19 @@ buffer-field
 	},
 	{
 		label = "buffer-group-id",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-Returns the group ID (as an integer) of the tenant group to which the current
-record in a specified record buffer belongs. If the buffer does not contain
+The group ID (as an integer) of the tenant group to which the current record in
+the buffer specified by the buffer handle belongs. If the buffer does not contain
+a record from a tenant group, the function returns the Unknown value (?).
+		]],
+	},
+	{
+		label = "buffer-group-name",
+		kind = Kind.Property,
+		documentation = [[
+The name (as a character string) of the tenant group to which the current record
+in the buffer specified by the buffer handle belongs. If the buffer does not contain
 a record from a tenant group, the function returns the Unknown value (?).
 		]],
 	},
@@ -975,9 +993,9 @@ buffer-name
 	},
 	{
 		label = "buffer-partition-id",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-buffer-partition-id
+The partition ID of the partition of the buffer.
 		]],
 	},
 	{
@@ -1080,16 +1098,18 @@ cancel-button
 	},
 	{
 		label = "can-create",
-		kind = Kind.Keyword,
+      kind = Kind.Property,
 		documentation = [[
-can-create
+Indicates whether the ABL user has permission to insert into the database the
+record associated with a buffer.
 		]],
 	},
 	{
 		label = "can-delete",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-can-delete
+Indicates whether the ABL user has permission to delete from the database the
+record associated with a buffer.
 		]],
 	},
 	{
@@ -1143,9 +1163,10 @@ specified attribute or method for a specified widget.
 	},
 	{
 		label = "can-read",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-can-read
+Indicates whether the ABL user has permission to read the record associated
+with a buffer or buffer-field.
 		]],
 	},
 	{
@@ -1158,9 +1179,10 @@ for a specified widget.
 	},
 	{
 		label = "can-write",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-can-write
+Indicates whether the ABL user has permission to modify the record associated
+with a buffer or buffer-field.
 		]],
 	},
 	{
@@ -1873,9 +1895,10 @@ cpterm
 	},
 	{
 		label = "crc-value",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-crc-value
+The cyclic redundancy check (CRC) value for either an r-code file, or a
+database table corresponding to a buffer object.
 		]],
 	},
 	{
@@ -1960,9 +1983,11 @@ current_date
 	},
 	{
 		label = "current-changed",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-current-changed
+Indicates whether a record in a buffer is different following a FIND CURRENT or
+GET CURRENT statement or method. If the record is different, CURRENT-CHANGED is
+TRUE. Otherwise, CURRENT-CHANGED is FALSE.
 		]],
 	},
 	{
@@ -1981,9 +2006,10 @@ current-environment
 	},
 	{
 		label = "current-iteration",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-current-iteration
+Indicates which iteration level corresponds to the buffer handle during a
+recursive FILL of a ProDataSet.
 		]],
 	},
 	{
@@ -2107,9 +2133,10 @@ dataservers
 	},
 	{
 		label = "dataset",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-dataset
+Returns the handle for the ProDataSet object of which the buffer is a member. Use this
+handle to access the attributes and methods of the associated ProDataSet object.
 		]],
 	},
 	{
@@ -2121,16 +2148,19 @@ dataset-handle
 	},
 	{
 		label = "data-source",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-data-source
+Returns the handle to the data-source object currently attached to the
+ProDataSet object buffer.
 		]],
 	},
 	{
 		label = "data-source-complete-map",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-data-source-complete-map
+Returns a comma-delimited list of field name pairs for all fields in a
+ProDataSet temp-table buffer that are mapped to corresponding fields in
+an attached data-source object.
 		]],
 	},
 	{
@@ -5814,9 +5844,17 @@ keep-tab-order
 	{
 		label = "key",
 		documentation = [[
-key
+Returns a comma-separated list of key fields for a buffer.
+
+## Syntax
+```
+data-source-handle:keys ( buffer-sequence-number )
+```
+```
+buffer-handle:keys
+```
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "keycode",
@@ -5984,9 +6022,10 @@ last-asynch-request
 	{
 		label = "last-batch",
 		documentation = [[
-last-batch
+Indicates whether a FILL operation on a ProDataSet temp-table retrieved the
+last batch of rows in its associated query.
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "last-child",
@@ -6339,9 +6378,10 @@ locator-type
 	{
 		label = "locked",
 		documentation = [[
-locked
+Indicates whether another user has a lock on a record that a FIND . . . NO-WAIT
+or GET . . . NO-WAIT statement or method is trying to access.
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "lock-registration",
@@ -6953,7 +6993,7 @@ must-exist
 		documentation = [[
 A string identifier for the specified object or widget.
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "namespace-prefix",
@@ -7009,9 +7049,11 @@ needs-prompt
 	{
 		label = "new",
 		documentation = [[
-new
+Indicates whether the record in the buffer is newly created. If the record is
+newly created, NEW is TRUE. If the record in the buffer was read from the
+database, NEW is FALSE.
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "new-instance",
@@ -7516,9 +7558,9 @@ numeric-format
 	{
 		label = "num-fields",
 		documentation = [[
-num-fields
+The number of fields defined in the buffer's table.
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "num-formats",
@@ -7537,9 +7579,9 @@ num-items
 	{
 		label = "num-iterations",
 		documentation = [[
-num-iterations
+Indicates how many levels deep you are in a recursive FILL of a ProDataSet.
 		]],
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 	},
 	{
 		label = "num-lines",
@@ -8108,9 +8150,9 @@ until the user presses any key.
 	},
 	{
 		label = "primary",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-"primary"
+This attribute sets or returns the name of the primary index of the temp-table or buffer.
 		]],
 	},
 	{
@@ -8440,9 +8482,10 @@ put-unsigned-long
 	},
 	{
 		label = "query",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-query
+The handle of the query connected to a browse widget, a buffer object, a
+data-relation object, or a data-source object.
 		]],
 	},
 	{
@@ -8630,10 +8673,17 @@ associated with the record buffer you name.
 		]],
 	},
 	{
-		label = "record-length",
-		kind = Kind.Keyword,
+		label = "recid",
+		kind = Kind.Property,
 		documentation = [[
-record-length
+The unique internal identifier of the database record currently associated with the buffer.
+		]],
+	},
+	{
+		label = "record-length",
+		kind = Kind.Property,
+		documentation = [[
+The length, in bytes, of the record associated with a buffer.
 		]],
 	},
 	{
@@ -9008,9 +9058,9 @@ row-height-pixels
 	},
 	{
 		label = "rowid",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-rowid
+The unique internal identifier of the database record currently associated with the buffer.
 		]],
 	},
 	{
@@ -10431,23 +10481,26 @@ system-id
 	},
 	{
 		label = "table",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-table
+The name of the database table containing the field associated with a widget,
+buffer, or buffer-field.
 		]],
 	},
 	{
 		label = "table-handle",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-table-handle
+Returns the handle of a temp-table object, if any, associated with the buffer
+object. If the buffer is not associated with a temp-table object, it returns
+the Unknown value (?).
 		]],
 	},
 	{
 		label = "table-number",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-table-number
+The sequence number, within the database, of the table that corresponds to a buffer.
 		]],
 	},
 	{

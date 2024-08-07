@@ -4389,9 +4389,30 @@ get-browse-column
 	},
 	{
 		label = "get-buffer-handle",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-get-buffer-handle
+Gets the handle to a particular buffer of a query or ProDataSet object.
+
+## Syntax
+```
+get-buffer-handle ( buffer-sequence-number|buffer-name )
+```
+		]],
+	},
+	{
+		label = "get-top-buffer",
+		kind = Kind.Method,
+		documentation = [[
+Gets the top-level buffer in a ProDataSet object at the specified index position.
+
+> Note: A top-level buffer is a ProDataSet object buffer
+> that is not a child in any active data relation.
+> There may be one or more top-level buffers in a ProDataSet object.
+
+## Syntax
+```
+get-top-buffer ( index )
+```
 		]],
 	},
 	{
@@ -8542,9 +8563,18 @@ read-file
 	},
 	{
 		label = "read-json",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-read-json
+Reads a specified JSON string, `Progress.Json.ObjectModel.JsonArray object`, or
+`Progress.Json.ObjectModel.JsonObject` object into a corresponding ProDataSet,
+a temp-table, or a temp-table buffer object.
+
+## Syntax
+```
+read-json ( source-type 
+  , { file | memptr | handle | longchar | JsonArray | JsonObject } 
+  [ , read-mode ] )
+```
 		]],
 	},
 	{

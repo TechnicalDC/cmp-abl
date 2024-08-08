@@ -917,39 +917,75 @@ buffer-chars
 	},
 	{
 		label = "buffer-compare",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-Performs a bulk comparison of two records (source and target) by comparing
-source and target fields of the same name for equality and storing the
-result in a field.
+This method does a rough compare of any common fields, determined by name, data
+type, and extent-matching, between the source buffer and the target buffer. The
+resulting logical value is either TRUE or FALSE as a whole. A single field that
+does not compare causes the entire buffer to return FALSE. If there are fields
+in one buffer that do not exist in the other, they are ignored.
+
+## Syntax
+```
+buffer-compare ( source-buffer-handle[ , mode-exp [ , except-list
+  [ , pairs-list[ , no-lobs ] ] ] ] )
+```
+Example:
+`buffer-compare(bh2, "binary", "cust-sales-rep,salesrep").`
 		]],
 	},
 	{
 		label = "buffer-copy",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-buffer-copy
+This method copies any common fields, determined by name, data type, and
+extent-matching, from the source buffer to the receiving buffer. If there are
+fields in one buffer that do not exist in the other, they are ignored. This
+method is used to accommodate temp-tables of joins
+
+## Syntax
+```
+buffer-copy ( source-buffer-handle
+  [ , except-list[ , pairs-list[ , no-lobs ] ] ] )
+```
+Example:
+```
+bh:buffer-copy(buffer customer:handle, ?, "cust-sales-rep,salesrep").
+```
 		]],
 	},
 	{
 		label = "buffer-create",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-Creates a dynamic buffer object.
+Creates a record, sets fields to their default values, and moves a copy of the
+record into the buffer.
+
+## Syntax
+
+`buffer-create ( [ tenant-expression ] )`
 		]],
 	},
 	{
 		label = "buffer-delete",
 		kind = Kind.Keyword,
 		documentation = [[
-buffer-delete
+Deletes a record from the record buffer and from the database.
+
+## Syntax
+
+`buffer-delete ( )`
 		]],
 	},
 	{
 		label = "buffer-field",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-buffer-field
+Returns a handle to a particular field in the buffer.
+
+## Syntax
+
+`buffer-field ( field-number | field-name )`
 		]],
 	},
 	{
@@ -1000,9 +1036,27 @@ The partition ID of the partition of the buffer.
 	},
 	{
 		label = "buffer-release",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-buffer-release
+Releases a record from a buffer object. The BUFFER-RELEASE method corresponds
+to the RELEASE statement.
+
+## Syntax
+
+`buffer-release ( )`
+		]],
+	},
+	{
+		label = "buffer-validate",
+		kind = Kind.Method,
+		documentation = [[
+Verifies that a record in a buffer object complies with mandatory field and
+unique index definitions. The BUFFER-VALIDATE( ) method corresponds to the
+VALIDATE statement.
+
+## Syntax
+
+`buffer-validate ( )`
 		]],
 	},
 	{

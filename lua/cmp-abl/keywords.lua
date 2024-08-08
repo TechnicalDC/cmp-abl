@@ -2173,9 +2173,9 @@ temp-table buffer has been modified.
 	},
 	{
 		label = "data-source-rowid",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-data-source-rowid
+Identifies the data-source row corresponding to the buffer object handle.
 		]],
 	},
 	{
@@ -2267,9 +2267,9 @@ dbcollation
 	},
 	{
 		label = "dbname",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-Database name.
+The logical name of the database from which the field is taken.
 		]],
 	},
 	{
@@ -5745,9 +5745,9 @@ is-parameter-set
 	},
 	{
 		label = "is-partitioned",
-		kind = Kind.Keyword,
+		kind = Kind.Property,
 		documentation = [[
-is-partitioned
+Indicates whether the table of the buffer is partitioned.
 		]],
 	},
 	{

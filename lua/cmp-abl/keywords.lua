@@ -137,9 +137,29 @@ add-events-procedure
 	},
 	{
 		label = "add-fields-from",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-add-fields-from
+Copies the field definitions from the specified source table to a temp-table.
+It is intended for use when a temp-table represents a join. If it finds fields
+that are already in the temp-table, it ignores them.
+
+This method cannot be called after TEMP-TABLE-PREPARE( ) has been called unless
+CLEAR( ) is called first.
+
+## Syntax
+```
+ADD-FIELDS-FROM ( { source-buffer-handle-exp | source-table-name-exp }
+[ , except-list-exp] )
+```
+## Example
+```
+DEFINE VARIABLE tth AS HANDLE NO-UNDO.
+
+CREATE TEMP-TABLE tth.
+tth:ADD-FIELDS-FROM("Customer").
+tth:ADD-FIELDS-FROM("Order").
+tth:TEMP-TABLE-PREPARE("cust-ord").
+```
 		]],
 	},
 	{
@@ -151,9 +171,26 @@ add-first
 	},
 	{
 		label = "add-index-field",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-add-index-field
+Adds the specified field to the specified index of a temp-table.
+It requires the named index to be added first.
+
+This method cannot be called after TEMP-TABLE-PREPARE( ) has
+been called unless CLEAR( ) is called first.
+
+## Syntax
+```
+ADD-INDEX-FIELD ( index-name-exp , field-name-exp [ , mode-exp ] )
+```
+
+## Example
+```
+tth:ADD-FIELDS-FROM("Customer", "SalesRep").
+tth:ADD-NEW-INDEX("abidx", TRUE, TRUE).
+tth:ADD-INDEX-FIELD("abidx", "abfield1").
+tth:ADD-INDEX-FIELD("abidx", "abfield2", "desc").
+```
 		]],
 	},
 	{
@@ -180,16 +217,40 @@ add-like-column
 	},
 	{
 		label = "add-like-field",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-add-like-field
+Adds a field, like the specified source field, to the temp-table.
+This method cannot be called after TEMP-TABLE-PREPARE( ) has
+been called unless CLEAR( ) is called first.
+
+## Syntax
+```
+ADD-LIKE-FIELD ( field-name-exp ,
+  source-buffer-field-handle-exp | source-db-field-name-exp )
+```
+## Example
+```
+tth:ADD-LIKE-FIELD("ordno","Order.OrderNum").
+tth:ADD-LIKE-FIELD(bfh:NAME, bfh).
+```
 		]],
 	},
 	{
 		label = "add-like-index",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-add-like-index
+Adds an index, like the specified source index, to the temp-table.
+This method cannot be called after TEMP-TABLE-PREPARE( ) has
+been called unless CLEAR( ) is called first.
+
+## Syntax
+```
+ADD-LIKE-INDEX ( index-name-exp , source-index-name-exp
+  { , source-buffer-handle-exp | source-db-table-name-exp } )
+```
+## Example
+
+`tth:ADD-LIKE-INDEX("abidx","name","Customer").`
 		]],
 	},
 	{

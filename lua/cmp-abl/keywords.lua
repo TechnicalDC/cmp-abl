@@ -255,16 +255,44 @@ ADD-LIKE-INDEX ( index-name-exp , source-index-name-exp
 	},
 	{
 		label = "add-new-field",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-add-new-field
+Adds a field with the specified properties to the temp-table. Additional
+properties can be manipulated by creating a buffer-field object for this field.
+This method cannot be called after TEMP-TABLE-PREPARE( ) has been called
+unless CLEAR( ) is called first.
+
+## Syntax
+```
+ADD-NEW-FIELD ( field-name-exp , datatype-exp[ , extent-exp[ , format-exp
+  [ , initial-exp[ , label-exp[ , column-label-exp ] ] ] ] ] )
+```
+## Example
+
+`tth:ADD-NEW-FIELD("abfield","char",0,"X(3)","abc").`
 		]],
 	},
 	{
 		label = "add-new-index",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-add-new-index
+Adds a new empty index with the specified name to the temp-table.
+Index components must be added with the ADD-INDEX-FIELD( ) method.
+This method cannot be called after TEMP-TABLE-PREPARE( ) has been
+called unless CLEAR( ) is called first.
+
+## Syntax
+```
+ADD-NEW-INDEX ( index-name-exp [ , unique-exp [ , primary-exp
+  [ , wordix-exp ] ] ] )
+```
+## Example
+```
+tth:ADD-FIELDS-FROM("Customer", "SalesRep").
+tth:ADD-NEW-INDEX("abidx", TRUE, TRUE).
+tth:ADD-INDEX-FIELD("abidx", "abfield1").
+tth:ADD-INDEX-FIELD("abidx", "abfield2", "desc").
+```
 		]],
 	},
 	{
@@ -1446,8 +1474,9 @@ class-type
 		kind = Kind.Method,
 		documentation = [[
 Removes all elements from a dynamic ProDataSet object including buffers and relations.
+Clears temp-table definitions and removes temp-table data.
 
-## Sync
+## Syntax
 
 `clear()`
 		]],
@@ -3302,14 +3331,20 @@ Empties a ProDataSet object of all records in its associated temp-tables.
 		]],
 	},
 	{
-		label = "empty temp-table",
-		kind = Kind.Keyword,
+		label = "empty-temp-table",
+		kind = Kind.Method,
 		documentation = [[
-Empties a temp-table.
+Deletes all records from a temp-table associated with a buffer object or
+from a temp-table directly identified by a temp-table object handle.
+
+When you empty a temp-table that is defined as UNDO within a transaction,
+the AVM deletes the records individually. This is less efficient than emptying
+the temp-table outside the transaction, where the AVM deletes all records in
+the temp-table as a unit.
 
 ## Syntax
 
-`empty temp-table temp-table-name [ no-error ]`
+`EMPTY-TEMP-TABLE ( )`
 		]],
 	},
 	{
@@ -8734,8 +8769,8 @@ a temp-table, or a temp-table buffer object.
 
 ## Syntax
 ```
-read-json ( source-type 
-  , { file | memptr | handle | longchar | JsonArray | JsonObject } 
+read-json ( source-type
+  , { file | memptr | handle | longchar | JsonArray | JsonObject }
   [ , read-mode ] )
 ```
 		]],
@@ -10669,9 +10704,15 @@ temp-table
 	},
 	{
 		label = "temp-table-prepare",
-		kind = Kind.Keyword,
+		kind = Kind.Method,
 		documentation = [[
-temp-table-prepare
+Signifies that all the field and index definitions for a temp-table
+have been supplied.
+
+## Syntax
+```
+TEMP-TABLE-PREPARE ( temp-table-name-exp [ , before-table-exp] )
+```
 		]],
 	},
 	{
